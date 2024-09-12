@@ -1,0 +1,1 @@
+web: gunicorn candlelight-worlds.wsgi --log-file -
