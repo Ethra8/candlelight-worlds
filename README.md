@@ -125,7 +125,7 @@ The project goals are as follows:
 
 ### MODELS
 
-![image](https://github.com/Ethra8/candlelight-bistro/assets/80659091/5a4b0377-bdb0-4cf5-8a48-75321bad9b85)
+
 
 
 ## WIREFRAMES
