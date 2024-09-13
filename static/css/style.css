@@ -1,6 +1,12 @@
 
 body {
-    background-color: #F9FAFC;
+    background-color: red;
+    /* background: url('{{ MEDIA_URL }}media/candlelight_worlds.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    /* font-family: "Roboto", sans-serif;
+    padding:30px; */ */
 }
 
 .form {

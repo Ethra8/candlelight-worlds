@@ -16,12 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
-    path("about/", include("about.urls"), name="about.urls"),
-    path("accounts/", include("allauth.urls")),
+    path('about/', include('about.urls'), name='about.urls'),
+    path('', include('home.urls')),
+    path('accounts/', include('allauth.urls')),
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
-    path("", include("worlds.urls"), name="worlds.urls"),
-    path("", include("bookings.urls"), name="bookings.urls"),
+    path("worlds/", include("worlds.urls"), name="worlds.urls"),
+    path("booking/", include("bookings.urls"), name="bookings.urls"),
 ]

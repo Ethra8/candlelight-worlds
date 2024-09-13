@@ -4,14 +4,14 @@
 **N.B.: This project is still under work, and has onyl reached CRU functionality, the Delete functionality has a bug on deadline, so I'm looking forward for the resubmission. Any constructive feedback would be much appreciated.**
 
 - A booking site for a restaurant that offers out-of-the-box romantic dinners. This new concept involves private rooms carefully decorated to transport our guests to different times and places, all under immersive candlelight lighting.
-- These romantic experiences not only include tasty dishes from around the globe served by our discreet and professional table service, but each private room also includes a lounge area with a king-size bed, so that the couples can relax and chill after dinner.
+- These romantic experiences not only include tasty dishes from around the globe served by our discreet and professional table service, but each private room also includes a lounge area with a king-size bed, so that couples can relax and chill after dinner, or even have a siesta!
 - Guests also have the option to spend the night, if they wish so, by paying a supplement.
 
 ### LIVE SITE
 
 ### REPOSITORY
 
-[Check the repository](https://github.com/Ethra8/candlelight-world)
+[Check Repository](https://github.com/Ethra8/candlelight-world)
 
 ### AUTHOR
 
@@ -51,9 +51,9 @@ Edna Torres Munill
    * [Accessibility](#accessibility)
      - [Contrast Validation Reports](#contrast-validation-reports)
      - [General WCAG 2.1 Report](#general-wcag-2.1-report)
-- [TECHNOLOGIES USED](#technologies-used)
+- [TECHNOLOGIES and METHODOLOGIES USED](#technologies-and-methodologies-used)
    * [Languages](#languages)
-   * [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
+   * [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
  -[CREDITS & ACKNOWEDGEMENTS](#credits-and-acknowledgements)
 
 
@@ -213,9 +213,23 @@ Please find the correspondent **compatibility and responsive testing** reflected
 | 13      | BrowserStack       | MacBook              | Safari 16.5        | OS X Ventura    |1920 x 1080                   |
 
 
-### CREDITS
 
-#### IMAGES
+# TECHNOLOGIES and METHODOLOGIES USED
+**The following technologies have been used to create this site and to deploy it. The AGILE methodology has been approached and a kanban board is linked to this project. For further det that can be viewed [here](#)**
+## LANGUAGES
+  - **Python 5.1**
+  - **JS ES6**
+  - **CSS3**
+  - **HTML5**
+
+## Frameworks, Libraries and Programs
+  - **Django 3.12.2** framework
+  - 
+ 
+
+## CREDITS & ACKNOWEDGEMENTS
+
+### IMAGES
 
 - [Hero image](https://www.freepik.com/free-photo/couple-having-dinner-valentines-day_6412178.htm#query=dinner%20candlelight&position=32&from_view=keyword&track=ais&uuid=0b778147-a7c9-4ab5-a148-ddd91935661c) by [Freepik](https://www.freepik.com/author/freepik) at [Freepik](https://www.freepik.com/)
 - [Medieval Castle Bedroom](https://in.pinterest.com/pin/823525481846848314/)

@@ -23,8 +23,8 @@
             <p>Need any extra information, or would like to rent all the rooms for a special event? <br> Please contact us, and we'll get back ASAP!</p>
 
             <form method="post">
-                {{ collaborate_form | crispy }}
                 {% csrf_token %}
+                {{ collaborate_form | crispy }}
                 <button class="btn btn-secondary" type="submit">Submit</button>
             </form>
         </div>
