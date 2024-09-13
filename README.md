@@ -125,7 +125,7 @@ The project goals are as follows:
 
 ### MODELS
 
-![image](https://github.com/Ethra8/candlelight-bistro/assets/80659091/5a4b0377-bdb0-4cf5-8a48-75321bad9b85)
+
 
 
 ## WIREFRAMES
@@ -133,13 +133,16 @@ The project goals are as follows:
 ### HOME PAGE - WIREFRAMES
 #### HOME PAGE - MOBILE AND TABLET PORTRAIT
 
+ ![image](https://github.com/user-attachments/assets/4cb95fc6-fadb-4fd1-ac16-79e3b3c8abe7)
 
-#### HOME PAGE - DESKTOP AND TABLET LANDSCAPE
+#### HOME PAGE ***index.html*** - DESKTOP AND TABLET LANDSCAPE
 
+![image](https://github.com/user-attachments/assets/0874770d-4670-4e5d-8a17-eccfcaf2c2a4)
 
-
-###  - WIREFRAMES
+### WORLD APP - WIREFRAMES
 ####  - MOBILE AND TABLET PORTRAIT
+ 
+ ![image](https://github.com/user-attachments/assets/727dbaf0-40f8-4ba1-8646-0c9a865f6f1d)
 
 
 
