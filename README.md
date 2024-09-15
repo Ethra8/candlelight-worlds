@@ -142,11 +142,24 @@ The project goals are as follows:
 - Maeve is the owner of a family-owned establishment and wants a special 1st price for a raffle.
 - Tony is in charge of finding an out-of-the-box approach to organize a team building activity for the executives of his company.
 
-### MODELS
 
 
-# AGILE METHODOLOGY
+
 ## WIREFRAMES
+
+<details>
+<summary>Click here to see the Mobile Wireframes</summary>
+
+- Home Page
+  - ![image](https://github.com/user-attachments/assets/4cb95fc6-fadb-4fd1-ac16-79e3b3c8abe7)
+- Worlds Page
+  - 
+- Booking Page
+  - 
+- About Page
+  - 
+
+</details>
 
 ### HOME PAGE - WIREFRAMES
 #### HOME PAGE ***index.html*** - MOBILE AND TABLET PORTRAIT
