@@ -1,6 +1,6 @@
 
 body {
-    background-color: red;
+    background: red;
     /* background: url('{{ MEDIA_URL }}media/candlelight_worlds.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
