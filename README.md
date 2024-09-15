@@ -119,7 +119,7 @@ The project goals are as follows:
 - Siham is looking for a special gift for her parents' aniverssary
 - Wendy and Peter want to celebrate their love and build speacial memories together 
 ## B2B
-- Oisin is the CEO of a large company and wants to treat the personnel
+- Oisin is the CEO of a large company and wants to offer a special treat to the managers after reaching an importnt milestone.
 - Maeve is the owner of a family-owned establishment and wants a special 1st price for a raffle.
 - Tony is in charge of finding an out-of-the-box approach to organize a team building activity for the executives of his company.
 
