@@ -38,7 +38,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-ethra8-candlelightworld-ojikmyc7jx4.ws.codeinstitute-ide.net']
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-ethra8-candlelightworld-ojikmyc7jx4.ws.codeinstitute-ide.net']
+CSRF_TRUSTED_ORIGINS = 'https://8000-ethra8-candlelightworld-ojikmyc7jx4.ws.codeinstitute-ide.net'
 USE_X_FORWARDED_HOST = True
 
 
