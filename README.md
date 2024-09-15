@@ -180,6 +180,8 @@ The project goals are as follows:
 You can check the Kanban project that has been used on the development of this site [here](https://github.com/users/Ethra8/projects/8)
 
 
+# TESTING
+
 ## COMPATIBILITY AND RESPONSIVE TESTING
 
 ### PRESELECTING TESTING TARGETS
