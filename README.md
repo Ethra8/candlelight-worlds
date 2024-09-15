@@ -164,8 +164,9 @@ The project goals are as follows:
 <details>
 <summary>Click here to see the Desktop & Tablet (landscape) Wireframes</summary>
 - Home Page  
-  ![image](https://github.com/user-attachments/assets/0874770d-4670-4e5d-8a17-eccfcaf2c2a4)
-
+ 
+ ![image](https://github.com/user-attachments/assets/0874770d-4670-4e5d-8a17-eccfcaf2c2a4)  
+ 
 - Worlds Page  
   ![image](https://github.com/user-attachments/assets/727dbaf0-40f8-4ba1-8646-0c9a865f6f1d)
   
@@ -178,7 +179,7 @@ The project goals are as follows:
 
 # AGILE METHODOLOGY
 ## GITHUB PROJECT - KANBAN
-You can check the Kanban project that has been used on the development of this site [here](#https://github.com/users/Ethra8/projects/8)
+You can check the Kanban project that has been used on the development of this site [here](https://github.com/users/Ethra8/projects/8)
 
 
 ## COMPATIBILITY AND RESPONSIVE TESTING
