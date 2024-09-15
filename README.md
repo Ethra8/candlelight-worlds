@@ -29,6 +29,7 @@ Edna Torres Munill
   * [User Stories](#user-stories)
   * [User Profiles](#user-profiles)
 - [UI](#ui)
+  * [Wireframes](#wireframes) 
   * [Pages](#pages)
     - [Home Page](#home-page)
     - [Worlds Page](#worlds-page)
@@ -57,8 +58,7 @@ Edna Torres Munill
     - [404 Error Page](#404-error-page)
     - [Admin Console](#admin-console)
 - [AGILE Methodology](#agile-methodology)
-  * [Wireframes](#wireframes)
-  * [Project](#github-project)
+  * [Github Project - Kanban](#github-project-kanban)
 -  [TESTING](#testing)
   * [Defect Tracking](#defect-tracking)
      - [Github Issues](#github-issues)
@@ -145,8 +145,7 @@ The project goals are as follows:
 ### MODELS
 
 
-
-
+# AGILE METHODOLOGY
 ## WIREFRAMES
 
 ### HOME PAGE - WIREFRAMES
@@ -182,7 +181,8 @@ The project goals are as follows:
 
 ####  PAGE - DESKTOP AND TABLET LANDSCAPE
 
-
+## GITHUB PROJECT - KANBAN
+You can check the Kanban project that has been used on the development of this site [here](#https://github.com/users/Ethra8/projects/8)
 
 
 ## COMPATIBILITY AND RESPONSIVE TESTING
