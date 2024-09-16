@@ -19,6 +19,7 @@ class World(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     image = CloudinaryField('image', null=True, blank=True)
     image_dining = CloudinaryField('image', null=True, blank=True)
+    image_jakuzzi = CloudinaryField('image', null=True, blank=True)
     
 
     def __str__(self):

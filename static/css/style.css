@@ -1,8 +1,8 @@
 
 body {
-    background: url('/media/hero.jpg') no-repeat center center fixed;
+    /* background: url('/media/hero.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(100vh - 164px); */
     color: #555;
     font-family: "Montserrat", sans-serif;
 }
@@ -10,6 +10,8 @@ body {
 #index {
     background: url('/media/hero.jpg') no-repeat center center fixed;
     background-size: cover;
+    height: calc(100vh - 164px);
+
 }
 
 .form {
@@ -73,10 +75,11 @@ body {
 .dark-bg {
     background-color: #445261;
 }
-/* 
+
 .main-bg {
     background-color: #F9FAFC;
-} */
+    width: 100%;
+}
 
 .card {
     border: none;
