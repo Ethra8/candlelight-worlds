@@ -102,7 +102,7 @@ The project goals are as follows:
   - All users can subscribe to the monthly newsletter.
 
 ## USER STORIES
-### As a B2C visitor 
+### As a first time visitor 
 1. [] Check all the spaces (worlds) available.
 2. [] Check all the services available.
 3. [] Sort all services and worlds both by cost and by alphabetical order.
