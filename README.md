@@ -103,32 +103,26 @@ The project goals are as follows:
 
 ## USER STORIES
 ### As a B2C visitor 
-1. [] Check all the spaces available.
-2. [] Check all the services available for each space.
-3. [] Sort all services and spaces both by cost, by alphabetical order, and by category
-4. [] Sort a specific category
-5. [] Search whithin the site for a specific word found in description or name of space or service
-6. [] Sign up for an account after a conscient decision, to receive a discount on my first booking and a free treat on my birthday.
-7. ### As a B2B visitor
-8. [] Easily acces contact form to receive the special catalogue for companies.
-9. [] View some pictures of past events as example of activities
-10. ### As an Authorized User 
-11. [] Easily log in and log out
-12. [] Easily recover my password in case I forget it
-13. [] Receive an email confirmation after registering
-14. [] Personalized user profile to store my order and billing information
-15. ### As a Shopper
-16. [] View service detail pages
-17. [] View spaces detail pages
-18. [] Adjust quantity of services to add to my bag
-19. [] View items in my bag to be purchased
-20. [] Add items to my bag
-21. [] Adjust quantity of individual items in my bag
-22. [] Delete individual items in my bag
-23. [] Easily enter payment information
-24. [] Feel secure that my payment information is safe and secure 
-25. [] View an order confirmation after checkout
-26. [] Receive an email confirmation after checking out
+1. [] Check all the spaces (worlds) available.
+2. [] Check all the services available.
+3. [] Sort all services and worlds both by cost and by alphabetical order.
+4. [] Search whithin the site for a specific word found in description or name of world or service.
+5. [] Sign up for an account after a conscient decision, to receive a discount on my first booking and a free treat on my birthday.
+### As a B2B visitor
+6. [] Easily acces contact form to receive the special catalogue for companies.
+7. [] View some pictures of past events as example of activities.
+### As an Authorized User 
+8. [] Easily log in and log out.
+9. [] Easily recover my password in case I forget it.
+10. [] Receive an email confirmation after registering.
+11. [] Personalized user profile to store my order and billing information.
+### As a Shopper
+12. [] View service detail pages.
+13. [] View world detail pages.
+14. [] Fill up a form to make a booking.
+15. [] Add world and services to my booking.
+16. [] View my booking confirmation after checkout.
+17. [] Receive an email confirmation with my booking.
 
 ## USER PROFILES
 ### B2C
