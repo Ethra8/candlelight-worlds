@@ -78,58 +78,65 @@ You will find in the points stated below a brief study aiming at providing the u
 -
 
 ## TARGET AUDIENCE
+
 The target audience of this site are as follows: 
 -
 - **B2C:**
   - Couples at any age wanting to build special memories
-  - Extroverted and introverted personalities
+  - Anyone seeking for a place to organize an event such as weddings, anniverssaries, or any other of the sort 
   - Hight ticket sale
-  - Anyone looking for the special gift like some built-in packs including special services during the stay
+  - Anyone looking for the special gift
 
 - **B2B:**
-  * Companies that want to rent various spaces and services as a treat for their team
-  * Companie that want something different as a team building activity
-  * Companies that might want to offer their premium clients a spacial gift  
+  * Companies that want to rent the events area
+  * Companies that might want to offer a stay in a world to their premium clients or collaborators as a special gift
   
 ## PROJECT GOALSS
+
 The project goals are as follows:
 - 
   - The site aims at providing B2C customers with luxuriously themed private spaces where to have any meal of the day.
   - The site aims at providing B2B customers with luxuriously themed spaces for team building, or staff gathering.
   - All users can register for an account.
-  - B2B users can send a contact form to receive customized offers on the type of service desired.
+  - B2B users can send a contact form to receive personalized atention from the team, depending on the type of event desired.
   - B2C services available can be stored in a shopping bag and bought online through Stripe API.
   - All users can subscribe to the monthly newsletter.
 
+
 ## USER STORIES
-### As a first time visitor 
-1. [] Check all the spaces (worlds) available.
-2. [] Check all the services available.
-3. [] Sort all services and worlds both by cost and by alphabetical order.
-4. [] Search whithin the site for a specific word found in description or name of world or service.
-5. [] Sign up for an account after a conscient decision, to receive a discount on my first booking and a free treat on my birthday.
+
+### As a first time B2C or B2B visitor 
+1. [X] Check all the available worlds .
+2. [] Check all the available services .
+3. [] View service detail pages.
+4. [X] View world detail pages.
+5. [] Search whithin the site for a specific word found in description or name of world or service.
+6. [] Sign up for an account after a conscient decision, to receive a discount on my first booking and a free treat on my birthday.  
+
 ### As a B2B visitor
-6. [] Easily acces contact form to receive the special catalogue for companies.
-7. [] View some pictures of past events as example of activities.
+7. [] Easily acces a contact form to receive the special catalogue for companies and events.
+8. [] View some pictures of past events as example of activities.
+
 ### As an Authorized User 
-8. [] Easily log in and log out.
-9. [] Easily recover my password in case I forget it.
-10. [] Receive an email confirmation after registering.
-11. [] Personalized user profile to store my order and billing information.
+9. [] Easily log in and log out.
+10. [] Easily recover my password in case I forget it.
+11. [] Receive an email confirmation after registering.
+12. [] Personalized user profile to store my order and billing information.
+
 ### As a Shopper
-12. [] View service detail pages.
-13. [] View world detail pages.
-14. [] Fill up a form to make a booking.
-15. [] Add world and services to my booking.
-16. [] View my booking confirmation after checkout.
-17. [] Receive an email confirmation with my booking.
+13. [] Fill up a form to make a booking.
+14. [] Add world and services to my booking.
+15. [] View my booking confirmation after checkout.
+16. [] Receive an email confirmation with my booking.
 
 ## USER PROFILES
+
 ### B2C
 - Steve is a romantic man in his thirties that works in an office and wants to surprise his partner with a very special gift for a special occasion
-- Siham is looking for a special gift for her parents' aniverssary
+- Siham is looking for a special gift for her parents' anniversary
 - Wendy and Peter want to celebrate their love and build speacial memories together 
-## B2B
+
+### B2B
 - Oisin is the CEO of a large company and wants to offer a special treat to the managers after reaching an importnt milestone.
 - Maeve is the owner of a family-owned establishment and wants a special 1st price for a raffle.
 - Tony is in charge of finding an out-of-the-box approach to organize a team building activity for the executives of his company.
