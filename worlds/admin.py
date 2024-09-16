@@ -1,12 +1,11 @@
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-from .models import Room
+from .models import World
 
 # Register your models here.
 
-@admin.register(Room)
-class RoomAdmin(SummernoteModelAdmin):
-    list_display = ('id', 'slug', 'category', 'display_name', 'description', 'image', 'image_dinning', 'image_extra')
+@admin.register(World)
+class WorldAdmin(SummernoteModelAdmin):
+    list_display = ('id', 'slug', 'display_name', 'description', 'image', 'image_dining',)
     prepopulated_fields = {'slug': ('display_name',)}
-    search_fields = ['category']
-    summernote_fields = ('description')
+    summernote_fields = ('description',)

@@ -2,10 +2,10 @@ from django.urls import path, include
 from . import views
 from django.contrib import admin
 from django.urls import path
-from worlds.views import RoomList
+from .views import WorldList, world_details
 
 
 urlpatterns = [
-    path('', views.RoomList.as_view(), name='home'),
-    path('<slug:slug>/', views.room_details, name='room_details'),
+    path('', views.WorldList.as_view(), name='worlds'),
+    path('world_details/<slug:slug>/', views.world_details, name='world_details'),
 ]

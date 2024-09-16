@@ -5,3 +5,6 @@ class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
         exclude = ['user']
+        widgets = {
+            'booking_date': forms.DateInput(attrs={'type': 'date'}),
+        }

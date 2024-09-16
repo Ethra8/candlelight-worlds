@@ -4,29 +4,26 @@
 {% block content %}
 
 <!-- index.html content starts here -->
-<div class="container-fluid">
+<div id="worlds" class="container-fluid">
     <div class="row">
 
-        <!-- Room Display -->
+        <!-- World Display -->
         <div class="col-12 mt-3 left">
             <div class="row">
-                {% for room in room_list %}
+                {% for world in world_list %}
                 <div class="col-md-6">
                     <div class="card mb-6">
                         <div class="card-body">
                             <div class="image-container">
                                 <div class="image-flash">
-                                    <p class="display_name">{{ room.display_name }}</p>
+                                    <p class="display_name">{{ world.display_name }}</p>
                                 </div>
                             </div>
-                            <p class="room-description">{{ room.description | safe}}</p>
-                            <img class="scale" src="{{ room.image.url }}" alt="">
+                            <img class="scale" src="{{ world.image.url }}" alt="">
                             <hr>
-                            <a href="{% url 'room_details' room.slug %}" class="post-link">
+                            <a href="{% url 'world_details' world.slug %}" class="post-link">
                                 <button>SHOW DETAILS</button>     
                             </a>
-                            <!-- <p class="card-text text-muted h6">{{ post.created_on}}
-                            </p> -->
                         </div>
                     </div>
                 </div>

@@ -1,34 +1,34 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.contrib import messages
-from .models import Room
+from .models import World
 
 
 # Create your views here.
-class RoomList(generic.ListView):
-    queryset = Room.objects.all()
-    template_name = "worlds/index.html"
+class WorldList(generic.ListView):
+    queryset = World.objects.all()
+    template_name = "worlds/worlds.html"
 
 
-def room_details(request, slug):
+def world_details(request, slug):
     """
-    Display an individual :model:`worlds.Room`.
+    Display an individual :model:`worlds.World`.
     **Context**
-    ``room``
-        An instance of :model:`worlds.Room`.
+    ``world``
+        An instance of :model:`worlds.World`.
     
     **Template:**
-    :template:`worlds/room_details.html`
+    :template:`worlds/world_details.html`
     """
-    queryset = Room.objects.all()
-    room = get_object_or_404(queryset, slug=slug)
-    description = get_object_or_404(queryset, description=room.description)
+    queryset = World.objects.all()
+    world = get_object_or_404(queryset, slug=slug)
+    description = get_object_or_404(queryset, description=world.description)
 
     return render(
         request,
-        "worlds/room_details.html",
+        "worlds/world_details.html",
         {
-            "room": room,
+            "world": world,
             "slug": slug,
             "description": description,
         },

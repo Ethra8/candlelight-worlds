@@ -21,15 +21,15 @@ class CreateBookingView(LoginRequiredMixin, CreateView):
         existing_bookings = Booking.objects\
             .filter(date=temp_booking.date)\
             .filter(start_time=temp_booking.start_time)\
-            .filter(room=temp_booking.room)
+            .filter(world=temp_booking.world)
             
         if existing_bookings :
-            messages.warning(self.request, f'At {temp_booking.start_time} on {temp_booking.date}, our {temp_booking.room} is already booked')
+            messages.warning(self.request, f'At {temp_booking.start_time} on {temp_booking.date}, our {temp_booking.world} is already booked')
             return redirect(reverse('booking_new'))
         else:
             messages.success(self.request, 'Your booking is confirmed')
             temp_booking.save()
-        return redirect(reverse('home'))
+        return redirect(reverse('index'))
 
 
 class BookingListView(LoginRequiredMixin, ListView):
@@ -43,7 +43,7 @@ class BookingListView(LoginRequiredMixin, ListView):
 
 class BookingUpdateView(LoginRequiredMixin, UpdateView):
     model = Booking
-    fields = ["room", "date", "start_time"]
+    fields = ["world", "date", "start_time"]
     template_name_suffix = "_update_form"
 
     def form_valid(self, form):
@@ -57,15 +57,15 @@ class BookingUpdateView(LoginRequiredMixin, UpdateView):
         existing_bookings = Booking.objects\
             .filter(date=temp_booking.date)\
             .filter(start_time=temp_booking.start_time)\
-            .filter(room=temp_booking.room)
+            .filter(world=temp_booking.world)
             
         if existing_bookings :
-            messages.warning(self.request, f'At {temp_booking.start_time} on {temp_booking.date}, our {temp_booking.room} is already booked')
+            messages.warning(self.request, f'At {temp_booking.start_time} on {temp_booking.date}, our {temp_booking.world} is already booked')
             return redirect(f'/bookings/update/{temp_booking.pk}/')
         else:
             messages.success(self.request, "Your booking's changes are confirmed!")
             temp_booking.save()
-        return redirect(reverse('home'))
+        return redirect(reverse('index'))
 
 
 

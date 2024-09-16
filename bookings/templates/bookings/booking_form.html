@@ -16,3 +16,14 @@
 
 
 {% endblock %}
+
+
+{% block extras %}
+<script>
+    $(document).ready(function() {
+      $("#id_booking_date").datepicker({
+        dateFormat: "dd-mm-yyyy"  // Match the format in your Django model
+      });
+    });
+  </script>
+{% endblock %}
