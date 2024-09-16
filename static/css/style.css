@@ -9,6 +9,10 @@ body {
     padding:30px; */ */
 }
 
+#index {
+    background: url('{{ MEDIA_URL }}candlelight_worlds.jpg') no-repeat center center fixed;
+}
+
 .form {
     padding: 5% 15%;
 }
