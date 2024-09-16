@@ -1,1 +1,1 @@
-web: gunicorn candlelight-worlds.wsgi --log-file -
+web: gunicorn candlelight.wsgi --log-file -

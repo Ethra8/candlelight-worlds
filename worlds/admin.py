@@ -6,6 +6,6 @@ from .models import World
 
 @admin.register(World)
 class WorldAdmin(SummernoteModelAdmin):
-    list_display = ('id', 'slug', 'display_name', 'description', 'image', 'image_dining', 'image_jakuzzi',)
+    list_display = ('slug', 'display_name', 'id', 'image', 'image_dining', 'image_jakuzzi',)
     prepopulated_fields = {'slug': ('display_name',)}
     summernote_fields = ('description',)

@@ -54,16 +54,14 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-ethra8-candlelightworld-ojikmyc7jx4.ws.codeinstitute-ide.net']
 
-CSRF_TRUSTED_ORIGINS = 'https://8000-ethra8-candlelightworld-ojikmyc7jx4.ws.codeinstitute-ide.net'
 USE_X_FORWARDED_HOST = True
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
