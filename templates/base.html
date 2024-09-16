@@ -25,19 +25,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
-<body class="d-flex flex-column h-100 bg-dark">
+<body class="d-flex flex-column h-100">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand"><span class="red-o">Candlelight</span> <span
+            <a class="navbar-brand" href="{% url 'index' %}"><span class="brand"><span class="red-o">Candlelight</span> <span
                         class="thin text-white">Worlds</span></span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == home_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'home' %}">Home</a>
+                            href="{% url 'index' %}">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == about_url %}active" aria-current="page{% endif %}"
@@ -73,7 +73,7 @@
                         </li>
                     {% endif %}
                 </ul>
-                <span class="navbar-text text-muted">
+                <span class="navbar-text text-muted text-left">
                     {% if user.is_authenticated %}
                         <p class="text-end m-3">You are logged in as {{ user }}</p>
                     {% else %}
