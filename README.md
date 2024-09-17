@@ -145,11 +145,11 @@ The project goals are as follows:
 
 ## WIREFRAMES
 
-To check the MOBILE & TABLET (Portrait) WIREFRAMES click on the arrow below:
+MOBILE & TABLET (Portrait) WIREFRAMES:
 -
 <details>
 <summary>Click here to see the Mobile & Tablet (portrait) Wireframes</summary>
-- **HOME PAGE**  
+- HOME PAGE
   
   ![image](https://github.com/user-attachments/assets/4cb95fc6-fadb-4fd1-ac16-79e3b3c8abe7)  
    
@@ -162,15 +162,14 @@ To check the MOBILE & TABLET (Portrait) WIREFRAMES click on the arrow below:
 </details>  
 
   
-To check the DESTOP & TABLET (Landscape) WIREFRAMES, click on the arrow below:
+DESTOP & TABLET (Landscape) WIREFRAMES:
 -
 <details>
 <summary>Click here to see the Desktop & Tablet (landscape) Wireframes</summary>
-- Home Page  
- 
+- Home Page
+
   ![image](https://github.com/user-attachments/assets/0874770d-4670-4e5d-8a17-eccfcaf2c2a4)  
- 
-- Worlds Page  
+- Worlds Page
   ![image](https://github.com/user-attachments/assets/727dbaf0-40f8-4ba1-8646-0c9a865f6f1d)
   
 - Booking Page
