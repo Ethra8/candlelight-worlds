@@ -1,8 +1,8 @@
-# CANDLELIGHT WORLDS - RESTAURANT
+# CANDLELIGHT WORLDS
 
 ## PROJECT OVERVIEW
 - A booking site for a restaurant that offers out-of-the-box romantic dinners. This new concept involves private rooms carefully decorated to transport our guests to different times and places, all under immersive candlelight lighting.
-- These romantic experiences not only include tasty dishes from around the globe served by our discreet and professional table service, but each private room also includes a lounge area with a king-size bed, so that couples can relax and chill after dinner, or even have a siesta!
+- These romantic experiences not only include tasty dishes from around the globe served by our discreet and professional table service, but each private room also includes a lounge area with a king-size bed and an in-room private jakuzzi, so that couples can relax and chill after dinner, or even have a siesta!
 - Guests also have the option to spend the night, if they wish so, by paying a supplement.
 
 ## LIVE SITE
@@ -107,13 +107,12 @@ The project goals are as follows:
 ### As a first time B2C or B2B visitor 
 - [X] View available worlds.
 - [X] View world detail pages. 
-- [] View available services.  
-- [] View service detail pages.  
-- [X] Sign up for an account after a conscient decision, to be able to make a booking.    
+- [X] Sign up for an account after a conscient decision, to be able to make a booking.
+- [ ] Check the About page 
 
 ### As a first time B2B visitor
-- [] Easily acces a contact form to receive the special catalogue for companies and events.  
-- [] View some pictures of past events as example of activities.  
+- [ ] Easily acces a contact form to receive the special catalogue for company events.  
+- [ ] View some pictures of past events as example of activities.  
 
 ### As an Authorized User 
 - [X] Easily log in and log out.  
@@ -124,7 +123,6 @@ The project goals are as follows:
 ### As an Authorized Customer
 - [X] Fill up a form to make a booking.  
 - [X] Add desired world to my booking.  
-- [] Add desired services to my booking.
 - [X] View my booking after sending the booking form.
 - [X] Update or delete my booking/s.  
 - [X] View confirmation message on the site for every action taken.  
@@ -193,23 +191,24 @@ You can check the Kanban project that has been used on the development of this s
     
     * **BROWSER MARKET SHARE** - Most commonly used browsers worldwide:
 
-    ![image](https://github.com/Ethra8/history_beyond_myth/assets/80659091/77d7356e-35e0-4fbf-9d28-2e75215bb96b)
+    ![image](https://github.com/user-attachments/assets/7a7c49ff-13d3-48f9-ae03-1a4e84a70167)
 
      * **BROWSER VERSION MARKET SHARE** - Most commonly used browser versions worldwide:
 
-    ![image](https://github.com/Ethra8/history_beyond_myth/assets/80659091/2cf8b70e-99ba-46f0-bd41-a88fc75d0649)
-    
+    ![image](https://github.com/user-attachments/assets/05f21ad4-3469-4e97-b870-f6f6334751f5)
+
     * **OS MARKET SHARE** - Most commonly used operation systems worldwide:
 
-    ![image](https://github.com/Ethra8/history_beyond_myth/assets/80659091/9373a798-32b1-4e80-95e6-1406bcda0a37)
+    ![image](https://github.com/user-attachments/assets/217ec506-783f-455c-b6e3-821f5269c326)
 
     * **MOBILE vs DESKTOP vs TABLET MARKET SHARE** - Most commonly used devices worldwide:
 
-    ![image](https://github.com/Ethra8/history_beyond_myth/assets/80659091/57cabf42-8cee-4263-a6c5-ac1f9ac581f5)
+    ![image](https://github.com/user-attachments/assets/7b5b8335-2f93-46a8-908b-4e470b42f2a4)
 
     * **SCREEN RESOLUTION STATS** - Most common screen resolution (in pixels) worldwide:
 
-    ![image](https://github.com/Ethra8/history_beyond_myth/assets/80659091/3b4fd7bf-c127-4323-a8d0-efb71b547417)
+    ![image](https://github.com/user-attachments/assets/550ec6df-12c2-4055-8662-53c6758dc221)
+
 
 
 ### TESTING TARGETS TABLE
