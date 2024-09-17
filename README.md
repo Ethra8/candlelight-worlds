@@ -191,23 +191,24 @@ You can check the Kanban project that has been used on the development of this s
     
     * **BROWSER MARKET SHARE** - Most commonly used browsers worldwide:
 
-    ![image](https://github.com/Ethra8/history_beyond_myth/assets/80659091/77d7356e-35e0-4fbf-9d28-2e75215bb96b)
+    ![image](https://github.com/user-attachments/assets/7a7c49ff-13d3-48f9-ae03-1a4e84a70167)
 
      * **BROWSER VERSION MARKET SHARE** - Most commonly used browser versions worldwide:
 
-    ![image](https://github.com/Ethra8/history_beyond_myth/assets/80659091/2cf8b70e-99ba-46f0-bd41-a88fc75d0649)
-    
+    ![image](https://github.com/user-attachments/assets/05f21ad4-3469-4e97-b870-f6f6334751f5)
+
     * **OS MARKET SHARE** - Most commonly used operation systems worldwide:
 
-    ![image](https://github.com/Ethra8/history_beyond_myth/assets/80659091/9373a798-32b1-4e80-95e6-1406bcda0a37)
+    ![image](https://github.com/user-attachments/assets/217ec506-783f-455c-b6e3-821f5269c326)
 
     * **MOBILE vs DESKTOP vs TABLET MARKET SHARE** - Most commonly used devices worldwide:
 
-    ![image](https://github.com/Ethra8/history_beyond_myth/assets/80659091/57cabf42-8cee-4263-a6c5-ac1f9ac581f5)
+    ![image](https://github.com/user-attachments/assets/7b5b8335-2f93-46a8-908b-4e470b42f2a4)
 
     * **SCREEN RESOLUTION STATS** - Most common screen resolution (in pixels) worldwide:
 
-    ![image](https://github.com/Ethra8/history_beyond_myth/assets/80659091/3b4fd7bf-c127-4323-a8d0-efb71b547417)
+    ![image](https://github.com/user-attachments/assets/550ec6df-12c2-4055-8662-53c6758dc221)
+
 
 
 ### TESTING TARGETS TABLE
