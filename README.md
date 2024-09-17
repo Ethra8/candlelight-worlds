@@ -25,7 +25,7 @@ Edna Torres Munill
   * [Author](#author)
 - [UX](#ux)
   * [Target Audience](#target-audience)
-  * [Project Goals](#project-goal)
+  * [Project Goals](#project-goals)
   * [User Stories](#user-stories)
   * [User Profiles](#user-profiles)
 - [UI](#ui)
@@ -93,7 +93,7 @@ The target audience of this site are as follows:
   * Companies that want to rent the events area
   * Companies that might want to offer a stay in a world to their premium clients or collaborators as a special gift
   
-## PROJECT GOALSS
+## PROJECT GOALS
 
 The project goals are as follows:
 - 
