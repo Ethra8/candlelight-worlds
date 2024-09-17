@@ -11,8 +11,8 @@
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for world in world_list %}
-                <div class="col-md-6">
-                    <div class="card mb-6">
+                <div class="col-md-12">
+                    <div class="card mb-12">
                         <div class="card-body">
                             <div class="image-container">
                                 <div class="image-flash">
@@ -20,10 +20,13 @@
                                 </div>
                             </div>
                             <img class="scale" src="{{ world.image.url }}" alt="">
-                            <hr>
+                            
                             <a href="{% url 'world_details' world.slug %}" class="post-link">
                                 <button>SHOW DETAILS</button>     
                             </a>
+                            <br>
+                            <hr>
+                            <br>
                         </div>
                     </div>
                 </div>
