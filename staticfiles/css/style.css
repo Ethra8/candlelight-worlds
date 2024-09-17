@@ -1,8 +1,6 @@
 
 body {
-    /* background: url('/media/hero.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px); */
+    background: black;
     color: #555;
     font-family: "Montserrat", sans-serif;
 }
@@ -10,8 +8,12 @@ body {
 #index {
     background: url('/media/hero.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(100vh - 350px);
+    width: 100% !important;
+}
 
+#index h1 {
+    margin: auto auto auto 30%;
 }
 
 .form {
@@ -19,6 +21,11 @@ body {
     background-color: rgba(235, 235, 235, 0.85);
     width: 80%;
     margin: 0 auto;
+}
+
+.text-muted {
+    color: #6d6d6d !important;
+    --bs-text-opacity: 1 !important;
 }
 
 #booking-form h1,
