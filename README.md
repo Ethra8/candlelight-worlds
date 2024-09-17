@@ -5,11 +5,9 @@
 - These romantic experiences not only include tasty dishes from around the globe served by our discreet and professional table service, but each private room also includes a lounge area with a king-size bed, so that couples can relax and chill after dinner, or even have a siesta!
 - Guests also have the option to spend the night, if they wish so, by paying a supplement.
 
-### LIVE SITE
 Visit the live site [here](https://candlelight-worlds-f913477cd630.herokuapp.com/)
 -
 
-### REPOSITORY
 Check Repository [here](https://github.com/Ethra8/candlelight-world)
 -
 
