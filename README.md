@@ -106,28 +106,28 @@ The project goals are as follows:
 ## USER STORIES
 
 ### As a first time B2C or B2B visitor 
-[X] Check all the available worlds.
-[] Check all the available services.
-[] View service detail pages.
-[X] View world detail pages.
-[X] Sign up for an account after a conscient decision, to be able to view, update and cancel my bookings.  
+- [X] Check all the available worlds.  
+- [] Check all the available services.  
+- [] View service detail pages.  
+- [X] View world detail pages.  
+- [X] Sign up for an account after a conscient decision, to be able to view, update and cancel my bookings.    
 
 ### As a B2B visitor
-[] Easily acces a contact form to receive the special catalogue for companies and events.
-[] View some pictures of past events as example of activities.
+- [] Easily acces a contact form to receive the special catalogue for companies and events.  
+- [] View some pictures of past events as example of activities.  
 
 ### As an Authorized User 
-[X] Easily log in and log out.
-[] Easily recover my password in case I forget it.
-[X] View a confirmation message after registering.
+- [X] Easily log in and log out.  
+- [] Easily recover my password in case I forget it.  
+- [X] View a confirmation message after registering.  
 
 ### As a Shopper
-[X] Fill up a form to make a booking.
-[X] Add desired world to my booking.
-[X] Add desired services to my booking.
-[X] View my booking after sending the booking form.
-[X] Update or delete my bookings.
-[X] View confirmation message for every action taken.
+- [X] Fill up a form to make a booking.  
+- [X] Add desired world to my booking.  
+- [X] Add desired services to my booking.
+- [X] View my booking after sending the booking form.
+- [X] Update or delete my bookings.  
+- [X] View confirmation message for every action taken.  
 
 ## USER PROFILES
 
