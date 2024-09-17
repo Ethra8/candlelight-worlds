@@ -146,8 +146,10 @@ The project goals are as follows:
 ## WIREFRAMES
 
 ### MOBILE & TABLET (Portrait) WIREFRAMES
+To check the wireframes, click on the arrow below:
+-
 <details>
-<summary>***Click here*** to see the **Mobile & Tablet (portrait) Wireframes**</summary>
+<summary>Click here to see the Mobile & Tablet (portrait) Wireframes</summary>
 - **HOME PAGE**  
   
   ![image](https://github.com/user-attachments/assets/4cb95fc6-fadb-4fd1-ac16-79e3b3c8abe7)  
@@ -161,6 +163,8 @@ The project goals are as follows:
 </details>  
   
 ### DESTOP & TABLET (Landscape) WIREFRAMES
+To check the wireframes, click on the arrow below:
+-
 <details>
 <summary>Click here to see the Desktop & Tablet (landscape) Wireframes</summary>
 - Home Page  
