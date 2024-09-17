@@ -106,22 +106,23 @@ The project goals are as follows:
 ## USER STORIES
 
 ### As a first time B2C or B2B visitor 
-- [X] Check all the available worlds.  
-- [] Check all the available services.  
+- [X] View available worlds.
+- [X] View world detail pages. 
+- [] View available services.  
 - [] View service detail pages.  
-- [X] View world detail pages.  
-- [X] Sign up for an account after a conscient decision, to be able to view, update and cancel my bookings.    
+- [X] Sign up for an account after a conscient decision, to be able to make a booking.    
 
-### As a B2B visitor
+### As a first time B2B visitor
 - [] Easily acces a contact form to receive the special catalogue for companies and events.  
 - [] View some pictures of past events as example of activities.  
 
 ### As an Authorized User 
 - [X] Easily log in and log out.  
-- [] Easily recover my password in case I forget it.  
+- [] Easily recover my password in case I forget it.
+- [X] Receive an email to confirm my registration, so that I can be sure of my credentials.
 - [X] View a confirmation message after registering.  
 
-### As a Shopper
+### As a Customer
 - [X] Fill up a form to make a booking.  
 - [X] Add desired world to my booking.  
 - [X] Add desired services to my booking.
@@ -129,12 +130,13 @@ The project goals are as follows:
 - [X] Update or delete my bookings.  
 - [X] View confirmation message for every action taken.  
 
+
 ## USER PROFILES
 
 ### B2C
 - Steve is a romantic man in his thirties that works in an office and wants to surprise his partner with a very special gift for a special occasion
 - Siham is looking for a special gift for her parents' anniversary
-- Wendy and Peter want to celebrate their love and build speacial memories together 
+- Wendy and Peter want to celebrate their 25th anniversary and build special memories together. 
 
 ### B2B
 - Oisin is the CEO of a large company and wants to offer a special treat to the managers after reaching an importnt milestone.
@@ -142,13 +144,12 @@ The project goals are as follows:
 - Tony is in charge of finding an out-of-the-box approach to organize a team building activity for the executives of his company.
 
 
-
-
 ## WIREFRAMES
+
 ### MOBILE & TABLET (Portrait) WIREFRAMES
 <details>
-<summary>Click here to see the Mobile & Tablet (portrait) Wireframes</summary>
-- Home Page  
+<summary>***Click here*** to see the **Mobile & Tablet (portrait) Wireframes**</summary>
+- **HOME PAGE**  
   
   ![image](https://github.com/user-attachments/assets/4cb95fc6-fadb-4fd1-ac16-79e3b3c8abe7)  
    
@@ -165,7 +166,7 @@ The project goals are as follows:
 <summary>Click here to see the Desktop & Tablet (landscape) Wireframes</summary>
 - Home Page  
  
- ![image](https://github.com/user-attachments/assets/0874770d-4670-4e5d-8a17-eccfcaf2c2a4)  
+  ![image](https://github.com/user-attachments/assets/0874770d-4670-4e5d-8a17-eccfcaf2c2a4)  
  
 - Worlds Page  
   ![image](https://github.com/user-attachments/assets/727dbaf0-40f8-4ba1-8646-0c9a865f6f1d)
