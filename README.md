@@ -145,8 +145,7 @@ The project goals are as follows:
 
 ## WIREFRAMES
 
-### MOBILE & TABLET (Portrait) WIREFRAMES
-To check the wireframes, click on the arrow below:
+To check the MOBILE & TABLET (Portrait) WIREFRAMES click on the arrow below:
 -
 <details>
 <summary>Click here to see the Mobile & Tablet (portrait) Wireframes</summary>
@@ -161,9 +160,9 @@ To check the wireframes, click on the arrow below:
 - About Page
   - 
 </details>  
+
   
-### DESTOP & TABLET (Landscape) WIREFRAMES
-To check the wireframes, click on the arrow below:
+To check the DESTOP & TABLET (Landscape) WIREFRAMES, click on the arrow below:
 -
 <details>
 <summary>Click here to see the Desktop & Tablet (landscape) Wireframes</summary>
