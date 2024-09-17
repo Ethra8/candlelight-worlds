@@ -265,6 +265,6 @@ Please find the correspondent **compatibility and responsive testing** reflected
 - Medieval Castle Bedroom - AI generated (ChatGPT)
 - Medieval Castle Dinning Table - AI generated (ChatGPT)
 - Medieval Castle Jakuzzi - AI generated (ChatGPT)
-- [Italian Renaissance Villa Dinning Area](https://www.pinterest.es/pin/145100419219410839/) from [Homes of the Rich](https://homesoftherich.net/2008/11/italian-renaissance-villa-in-california/) at [Pinterest](https://www.pinterest.com)
-- [Italian Renaissance Villa Bedroom](https://homesoftherichest.wordpress.com/wp-content/uploads/2008/11/sanjuan9.jpg)
+- Italian Renaissance Villa Dinning Area - AI generated (ChatGPT)
+- Italian Renaissance Villa Bedroom - AI generated (ChatGPT)
 - Italian Renaissance Villa Jakuzzi - AI generated (ChatGPT)
