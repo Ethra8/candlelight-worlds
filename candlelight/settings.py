@@ -44,7 +44,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEVELOPMENT')
 
-ALLOWED_HOSTS = ['8000-ethra8-candlelightworld-ojikmyc7jx4.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['8000-ethra8-candlelightworld-ojikmyc7jx4.ws.codeinstitute-ide.net', 'candlelight-worlds-f913477cd630.herokuapp.com']
 
 USE_X_FORWARDED_HOST = True
 
