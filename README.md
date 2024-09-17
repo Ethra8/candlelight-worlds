@@ -120,25 +120,25 @@ The project goals are as follows:
 
 ### As an Authorized User 
 - [X] Easily log in and log out.  
-- [] Easily recover my password in case I forget it.
+- [X] Easily recover my password in case I forget it.
 - [X] Receive an email to confirm my registration, so that I can be sure of my credentials.
 - [X] View a confirmation message after registering.  
 
-### As a Customer
+### As an Authorized Customer
 - [X] Fill up a form to make a booking.  
 - [X] Add desired world to my booking.  
-- [X] Add desired services to my booking.
+- [] Add desired services to my booking.
 - [X] View my booking after sending the booking form.
-- [X] Update or delete my bookings.  
-- [X] View confirmation message for every action taken.  
+- [X] Update or delete my booking/s.  
+- [X] View confirmation message on the site for every action taken.  
 
 
 ## USER PROFILES
 
 ### B2C
-- Steve is a romantic man in his thirties that works in an office and wants to surprise his partner with a very special gift for a special occasion
+- Steve is a romantic man in his thirties and wants to surprise his partner with a very special gift for a special occasion
 - Siham is looking for a special gift for her parents' anniversary
-- Wendy and Peter want to celebrate their 25th anniversary and build special memories together. 
+- Wendy and Peter want to celebrate their 25th anniversary and build more special memories together. 
 
 ### B2B
 - Oisin is the CEO of a large company and wants to offer a special treat to the managers after reaching an importnt milestone.
