@@ -107,13 +107,12 @@ The project goals are as follows:
 ### As a first time B2C or B2B visitor 
 - [X] View available worlds.
 - [X] View world detail pages. 
-- [] View available services.  
-- [] View service detail pages.  
-- [X] Sign up for an account after a conscient decision, to be able to make a booking.    
+- [X] Sign up for an account after a conscient decision, to be able to make a booking.
+- [ ] Check the About page 
 
 ### As a first time B2B visitor
-- [] Easily acces a contact form to receive the special catalogue for companies and events.  
-- [] View some pictures of past events as example of activities.  
+- [ ] Easily acces a contact form to receive the special catalogue for company events.  
+- [ ] View some pictures of past events as example of activities.  
 
 ### As an Authorized User 
 - [X] Easily log in and log out.  
@@ -124,7 +123,6 @@ The project goals are as follows:
 ### As an Authorized Customer
 - [X] Fill up a form to make a booking.  
 - [X] Add desired world to my booking.  
-- [] Add desired services to my booking.
 - [X] View my booking after sending the booking form.
 - [X] Update or delete my booking/s.  
 - [X] View confirmation message on the site for every action taken.  
