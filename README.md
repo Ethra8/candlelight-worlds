@@ -6,10 +6,12 @@
 - Guests also have the option to spend the night, if they wish so, by paying a supplement.
 
 ### LIVE SITE
+Visit the live site [here](https://candlelight-worlds-f913477cd630.herokuapp.com/)
+-
 
 ### REPOSITORY
-
-[Check Repository](https://github.com/Ethra8/candlelight-world)
+Check Repository [here](https://github.com/Ethra8/candlelight-world)
+-
 
 ### AUTHOR
 
