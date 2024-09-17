@@ -16,6 +16,19 @@ body {
     margin: auto auto auto 30%;
 }
 
+.overlay-dark {
+    background-color: rgba(33, 32, 32 , 0.6);
+    position: fixed;
+    background-size: cover;
+    height: 100vh;
+} 
+
+.bg-candles {
+    background: url('/media/enchanting-glow-fairy-lights-candles-creating-magical-ambiance.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh);
+}
+
 .form {
     padding: 5% 15%;
     background-color: rgba(235, 235, 235, 0.85);
