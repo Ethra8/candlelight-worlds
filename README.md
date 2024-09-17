@@ -244,8 +244,18 @@ Please find the correspondent **compatibility and responsive testing** reflected
   - **HTML5**
 
 ## Frameworks, Libraries and Programs
-  - **Django 3.12.2** framework
-  - 
+  - **Django 3.12.2** - Whithin django framework, many libraries and modules have been used. For mode details on the libraies and modules, refer to requirements.py on the root directory.
+  - **Bootstrap 5**
+  - **Cloudinary** - Database for images
+  - Chrome Dev Tools - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used Lighthouse reports to check and improve core web vitals, including accessibility issues.
+  - [Favicon](https://favicon.io/) - To create the logo, and the icon on the title included in each page of this site
+  - [Font Awesome](https://fontawesome.com/) - For the icons used
+  - [Google Fonts](https://fonts.google.com/) - To select fonts and implement them in the site
+  - [Github](https://github.com) - To deploy the site online, and Github desktop app to link _Visual Studio Code_ to Github.com
+  - [Coolors](https://coolors.co) - To insert colors selected previously directly through visual studio code, but used this tool to display the palette beautifully, and insert it in this readme file.
+  - [Amiresponsive](https://ui.dev/amiresponsive) - To display the site in all types of devices simultaneously.
+  - [EqualWeb Accessibility Checker](https://chrome.google.com/webstore/detail/equalweb-accessibility-ch/imemciokfejbnonkkinhcdfigdilcllg/related?utm_source=chrome-ntp-icon) - Google Chrome extension to check general errors and contract errors for optimal accessibility.
+  - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorithm.
  
 
 ## CREDITS & ACKNOWEDGEMENTS
