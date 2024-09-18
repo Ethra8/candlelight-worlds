@@ -35,7 +35,7 @@ footer {
 }
 
 #index h1 {
-    margin: auto auto auto 30%;
+    margin: auto auto auto 10%;
 }
 
 .btn-index-cta {
@@ -43,16 +43,13 @@ footer {
     color: black;
     padding: 2rem;
     width: 250px;
-    margin: 0 -25px 50px !important;
+    margin: 0 auto 50px 10% !important;
     /* height:  */
 }
 
 .btn-index-cta:hover {
     background-color: #f69700; /* matches yellow with daisy on bg */
     color: black;
-    padding: 2rem;
-    width: 250px;
-    margin: 0 -25px 50px !important;  
 }
 
 /* #worlds {
@@ -299,4 +296,10 @@ footer {
     .w-100 {
         width: 120% !important
     }
+
+    .btn-index-cta {
+        margin: 0 auto 50px !important;
+        /* height:  */
+    }
+    
 }
