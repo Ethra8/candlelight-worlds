@@ -1,30 +1,76 @@
 
 body {
-    background: black;
+    background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #555;
     font-family: "Montserrat", sans-serif;
 }
 
+nav,
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+.nav-link,
+.nav-item {
+    color: #c3c3c3 !important;
+}
+
+.nav-link:hover,
+.nav-item:hover {
+    color: red !important;
+    font-weight: 500;
+}
+
+.text-fire {
+    color: rgb(199, 48, 10);
+}
+
 #index {
-    background: url('/media/hero.jpg') no-repeat center center fixed;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
     background-size: cover;
     height: calc(100vh - 350px);
-    width: 100% !important;
 }
 
 #index h1 {
     margin: auto auto auto 30%;
 }
 
+.btn-index-cta {
+    background-color: rgba(199, 48, 10); /* reddish */
+    color: black;
+    padding: 2rem;
+    width: 250px;
+    margin: 0 -25px 50px !important;
+    /* height:  */
+}
+
+.btn-index-cta:hover {
+    background-color: #f69700; /* matches yellow with daisy on bg */
+    color: black;
+    padding: 2rem;
+    width: 250px;
+    margin: 0 -25px 50px !important;  
+}
+
+/* #worlds {
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    background-size: cover;
+    height: calc(100vh - 350px);
+} */
+
 .overlay-dark {
-    background-color: rgba(33, 32, 32 , 0.6);
+    background-color: rgba(0, 0, 0, 0.85);
     position: fixed;
     background-size: cover;
     height: 100vh;
 } 
 
 .bg-candles {
-    background: url('/media/enchanting-glow-fairy-lights-candles-creating-magical-ambiance.jpg') no-repeat center center fixed;
+    background: url('/media/bg-candles1jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh);
 }
@@ -98,7 +144,7 @@ body {
 
 .main-bg {
     background-color: #F9FAFC;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .card {
@@ -235,4 +281,22 @@ body {
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+
+
+@media (max-width: 796px) {
+
+    #index h1 {
+        margin:  70px auto 50px !important;
+        text-align: center !important;
+    }
+
+    #index h4 {
+        text-align: center !important;
+    }
+
+    .w-100 {
+        width: 120% !important
+    }
 }

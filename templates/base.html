@@ -44,16 +44,16 @@
 <body class="d-flex flex-column h-100">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'index' %}"><span class="brand"><span class="red-o">Candlelight</span> <span
+    <nav class="navbar navbar-expand-lg navbar-dark pl-2 pr-2 pl-md-5 pr-md-5">
+        <div class="container-fluid pl-2 pr-2 pl-md-5 pr-md-5">
+            <a class="navbar-brand" href="{% url 'index' %}"><span class="brand"><span class="text-fire">CandleLight</span> <span
                         class="thin text-white">Worlds</span></span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
                     <li class="nav-item d-block d-md-none">
                         <a class="nav-link {% if request.path == home_url %}active" aria-current="page{% endif %}"
                             href="{% url 'index' %}">Home</a>
@@ -119,7 +119,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 dark-bg">
+    <footer class="footer mt-auto py-3">
         <p class="m-0 text-center text-white">
       {% block copyright %}Made by Edna Torres Munill{% endblock copyright %}
         </p>
