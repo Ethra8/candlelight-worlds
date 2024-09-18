@@ -261,7 +261,7 @@ Please find the correspondent **compatibility and responsive testing** reflected
 
 ### IMAGES
 - [Hero image](https://www.freepik.com/free-photo/couple-having-dinner-valentines-day_6412178.htm#query=dinner%20candlelight&position=32&from_view=keyword&track=ais&uuid=0b778147-a7c9-4ab5-a148-ddd91935661c) by [Freepik](https://www.freepik.com/author/freepik) at [Freepik](https://www.freepik.com/)
-- [Candle on the index page background](https://www.freepik.com/free-photo/enchanting-glow-fairy-lights-candles-creating-magical-ambiance_136714970.htm) at [Freepik](https://www.freepik.com)
+- [Candle on the index page background](https://www.freepik.com/free-photo/enchanting-glow-fairy-lights-candles-creating-magical-ambiance_136714970.htm) by AI at [Freepik](https://www.freepik.com)
 - Medieval Castle Bedroom - AI generated (ChatGPT)
 - Medieval Castle Dinning Table - AI generated (ChatGPT)
 - Medieval Castle Jakuzzi - AI generated (ChatGPT)
