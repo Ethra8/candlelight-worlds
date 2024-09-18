@@ -243,7 +243,7 @@ Please find the correspondent **compatibility and responsive testing** reflected
   - **HTML5**
 
 ## Frameworks, Libraries and Programs
-  - **Django 3.12.2** - Whithin django framework, many libraries and modules have been used. For mode details on the libraies and modules, refer to requirements.py on the root directory.
+  - **Django 3.12.2** - Whithin django framework, many libraries and modules have been used. For mode details, please refer to the requirements.txt file in the root directory.
   - **Bootstrap 5**
   - **Cloudinary** - Database for images
   - Chrome Dev Tools - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used Lighthouse reports to check and improve core web vitals, including accessibility issues.
