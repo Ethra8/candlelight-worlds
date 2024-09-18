@@ -81,25 +81,25 @@ You will find in the points stated below a brief study aiming at providing the u
 The target audience of this site are as follows: 
 -
 - **B2C:**
-  - Couples at any age wanting to build special memories
-  - Anyone seeking for a place to organize an event such as weddings, anniverssaries, or any other of the sort 
-  - Hight ticket sale
-  - Anyone looking for the special gift
+  * Medium to hight ticket sale
+  * Couples at any age wanting to add special memories
+  * Someone seeking for a place to organize a special event such as weddings, anniversaries, or any other of the sort 
+  * Someone looking for the special gift to offer
 
 - **B2B:**
   * Companies that want to rent the events area
-  * Companies that might want to offer a stay in a world to their premium clients or collaborators as a special gift
+  * Companies that might want to offer a special gift to their premium clients or collaborators
   
 ## PROJECT GOALS
 
 The project goals are as follows:
 - 
-  - The site aims at providing B2C customers with luxuriously themed private spaces where to have any meal of the day.
-  - The site aims at providing B2B customers with luxuriously themed spaces for team building, or staff gathering.
-  - All users can register for an account.
-  - B2B users can send a contact form to receive personalized atention from the team, depending on the type of event desired.
-  - B2C services available can be stored in a shopping bag and bought online through Stripe API.
-  - All users can subscribe to the monthly newsletter.
+  * The site aims at providing B2C customers with luxuriously themed private spaces where to have any meal of the day.
+  * The site aims at providing B2B customers with luxuriously themed spaces for team building, staff gathering, and events.
+  * Any users can register for an account to store, read, update and cancel their bookings.
+  * B2B users can send a contact form to receive personalized atention from the team, depending on the type of event desired.
+  * B2C services available can be stored in a shopping bag and bought online through Stripe API.
+  * All users can subscribe to the monthly newsletter.
 
 
 ## USER STORIES
