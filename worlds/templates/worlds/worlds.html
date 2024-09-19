@@ -8,8 +8,8 @@
    
     <div class="row">
         <!-- World Display -->
-        <div class="col-12 col-lg-8 mt-3 left">
-            <div class="row">
+        <div class="col-12 col-lg-11 col-xl-9 mt-3 ">
+            <div class="row ml-0 worlds-second-row">
                 {% for world in world_list %}
                 <div class="col-12 world-card">
                     <div class="card mb-12">
@@ -20,7 +20,7 @@
                                 </div>
                             </div>
                             <img class="scale" src="{{ world.image.url }}" alt="">
-                            
+                            <p class="world-short-description">{{ world.short_description }}</p>
                             <a href="{% url 'world_details' world.slug %}">
                                 <button class="btn rounded-pill world-detail-link">SHOW DETAILS</button>     
                             </a>

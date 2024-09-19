@@ -22,6 +22,7 @@ def world_details(request, slug):
     """
     queryset = World.objects.all()
     world = get_object_or_404(queryset, slug=slug)
+    # short_description = get_object_or_404(queryset, short_description=world.short_description)
     description = get_object_or_404(queryset, description=world.description)
 
     return render(
@@ -30,6 +31,7 @@ def world_details(request, slug):
         {
             "world": world,
             "slug": slug,
+            # 'short_description': short_description,
             "description": description,
         },
     )

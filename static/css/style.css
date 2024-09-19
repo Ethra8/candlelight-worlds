@@ -38,8 +38,7 @@ footer {
     margin: auto auto auto 10%;
 }
 
-.btn-index-cta,
-.world-detail-link {
+.btn-index-cta {
     background-color: rgba(199, 48, 10); /* reddish */
     color: white;
     padding: 2rem;
@@ -50,38 +49,32 @@ footer {
 
 .btn-index-cta:hover,
 .world-detail-link:hover {
-    background-color: #f69700; /* matches yellow with daisy on bg */
+    background-color: #f69700; /* matches yellow daisy on bg */
     color: black;
 }
 
 .world-detail-link {
     background-color: rgba(199, 48, 10); /* reddish */
     position: absolute;
-    top: 220px;
-    left: 200px;
+    top: 240px;
+    left: 338px;
     color: white;
     padding: 0.5rem;
     width: 250px;
-    /* margin: 0 auto 50px 10% !important; */
-    /* height:  */
 }
 
 #worlds {
     background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
     background-size: cover;
     height: fit-content;
-    /* background-color: rgba(0, 0, 0, 0.7);
-    position: fixed;
-    background-size: cover;
-    height: calc(100vh - 350px);
-    height: 100vh; */
+    padding: 0 7%;
 }
 
 .image-flash {
     position: absolute;
     top: 5%;
     right: 0;
-    left: 270px;
+    left: 320px;
     padding: 10px;
     background-color: #303133; /*#c7300a;  reddish */
 } 
@@ -93,18 +86,39 @@ footer {
     padding: 40px;
 }
 
+.world-short-description {
+    color: white !important;
+    position: absolute;
+    left: 338px;
+    top: 90px;
+}
+
+.scale {
+    position: relative;
+    height: 280px !important;
+    width: 280px !important;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.display_name {
+    color: white;
+    margin: 4px;
+    text-transform: uppercase;
+}
+
+.room-description {
+    margin-left: 5%;
+    color: lightgray;
+}
+
+
 .overlay-dark {
     background-color: rgba(0, 0, 0, 0.85);
     position: fixed;
     background-size: cover;
     height: 100vh;
 } 
-
-/* .bg-candles {
-    background: url('/media/bg-candles1jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh);
-} */
 
 
 /* Contact Form*/
@@ -159,10 +173,6 @@ footer {
     color: #4A4A4F;
 }
 
-.red-o {
-    color: #E84610;
-}
-
 .thin {
     font-weight: 300;
 }
@@ -189,26 +199,12 @@ footer {
     position: relative;
 }
 
-.scale {
-    position: relative;
-    height: 250px !important;
-    width: 250px !important;
-    vertical-align: middle;
-    object-fit: cover;
-}
-
-.display_name {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
-}
-
-.masthead {
+/* .masthead {
     margin-top: 10px;
     overflow: hidden;
     position: relative;
     display: inline-block;
-    /* height: 30vh; */
+    height: 30vh;
     width: 100%;
 }
 
@@ -236,27 +232,8 @@ footer {
     -moz-transform: skew(15deg);
     transform: skew(15deg);
     z-index: 100;
-}
-
-/* .profile-image {
-    width: 75%;
-    margin: 40px auto;
 } */
 
-/* .world-detail-link {
-    text-decoration: none;
-    color: #445261;
-}
-
-.world-detail-link:hover,
-.page-link {
-    color: #E84610;
-} */
-
-.room-description {
-    margin-left: 5%;
-    color: lightgray;
-}
 
 .btn-signup,
 .btn-edit {
@@ -341,7 +318,7 @@ footer {
         background-color: rgba(0, 0, 0, 0.9);
         /* border: outset 3px #c73064; */
         margin: 35px auto;
-        padding: 40px;
+        padding: 40px 10px;
     }
 
     .scale {
@@ -350,6 +327,42 @@ footer {
         height: auto; /* Ensures the image maintains its aspect ratio */
         vertical-align: middle;
         margin-top: 72px;
+    }
+
+    .world-short-description {
+        position: relative;
+        left: 0;
+        top: 0;
+        padding-top: 30px;
+        display: flex;
+        text-align: left !important;
+    }
+    
+    .world-detail-link {
+        position: relative;
+        left: auto;
+        right:auto;
+        top: 0;
+        margin: 30px auto;
+        /* margin-top: 30px; */
+    }
+
+    .image-container {
+        text-align: center !important;
+    }
+
+    #worlds .worlds-second-row {
+        text-align: center;
+        margin-left: 0;
+    }
+
+}
+
+
+@media (max-width: 475px) {
+ 
+    #worlds {
+        padding: 0;
     }
     
 }
