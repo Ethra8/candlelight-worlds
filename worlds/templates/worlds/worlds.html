@@ -1,17 +1,17 @@
 
 {% extends "base.html" %}
+{% load static %}
+
 
 {% block content %}
-
-<div id="worlds" class="container-fluid bg-candles ">
+<div id="worlds" class="container-fluid">
    
     <div class="row">
-        <div class="overlay-dark"></div>
         <!-- World Display -->
-        <div class="col-12 mt-3 left">
+        <div class="col-12 col-lg-8 mt-3 left">
             <div class="row">
                 {% for world in world_list %}
-                <div class="col-md-12">
+                <div class="col-12 world-card">
                     <div class="card mb-12">
                         <div class="card-body">
                             <div class="image-container">
@@ -21,12 +21,12 @@
                             </div>
                             <img class="scale" src="{{ world.image.url }}" alt="">
                             
-                            <a href="{% url 'world_details' world.slug %}" class="post-link">
-                                <button>SHOW DETAILS</button>     
+                            <a href="{% url 'world_details' world.slug %}">
+                                <button class="btn rounded-pill world-detail-link">SHOW DETAILS</button>     
                             </a>
-                            <br>
+                            <!-- <br>
                             <hr>
-                            <br>
+                            <br> -->
                         </div>
                     </div>
                 </div>

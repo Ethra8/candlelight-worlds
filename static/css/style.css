@@ -38,26 +38,60 @@ footer {
     margin: auto auto auto 10%;
 }
 
-.btn-index-cta {
+.btn-index-cta,
+.world-detail-link {
     background-color: rgba(199, 48, 10); /* reddish */
-    color: black;
+    color: white;
     padding: 2rem;
     width: 250px;
     margin: 0 auto 50px 10% !important;
     /* height:  */
 }
 
-.btn-index-cta:hover {
+.btn-index-cta:hover,
+.world-detail-link:hover {
     background-color: #f69700; /* matches yellow with daisy on bg */
     color: black;
 }
 
-/* #worlds {
-    background-color: rgba(0, 0, 0, 0.85);
+.world-detail-link {
+    background-color: rgba(199, 48, 10); /* reddish */
+    position: absolute;
+    top: 220px;
+    left: 200px;
+    color: white;
+    padding: 0.5rem;
+    width: 250px;
+    /* margin: 0 auto 50px 10% !important; */
+    /* height:  */
+}
+
+#worlds {
+    background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: fit-content;
+    /* background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     background-size: cover;
     height: calc(100vh - 350px);
-} */
+    height: 100vh; */
+}
+
+.image-flash {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    left: 270px;
+    padding: 10px;
+    background-color: #303133; /*#c7300a;  reddish */
+} 
+
+.world-card {
+    background-color: rgba(0, 0, 0, 0.9);
+    /* border: outset 3px #c73064; */
+    margin: 35px auto;
+    padding: 40px;
+}
 
 .overlay-dark {
     background-color: rgba(0, 0, 0, 0.85);
@@ -66,12 +100,14 @@ footer {
     height: 100vh;
 } 
 
-.bg-candles {
+/* .bg-candles {
     background: url('/media/bg-candles1jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh);
-}
+} */
 
+
+/* Contact Form*/
 .form {
     padding: 5% 15%;
     background-color: rgba(235, 235, 235, 0.85);
@@ -153,14 +189,6 @@ footer {
     position: relative;
 }
 
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #188181;
-} 
-
 .scale {
     position: relative;
     height: 250px !important;
@@ -210,21 +238,20 @@ footer {
     z-index: 100;
 }
 
-
-.profile-image {
+/* .profile-image {
     width: 75%;
     margin: 40px auto;
-}
+} */
 
-.post-link {
+/* .world-detail-link {
     text-decoration: none;
     color: #445261;
 }
 
-.post-link:hover,
+.world-detail-link:hover,
 .page-link {
     color: #E84610;
-}
+} */
 
 .room-description {
     margin-left: 5%;
@@ -300,6 +327,29 @@ footer {
     .btn-index-cta {
         margin: 0 auto 50px !important;
         /* height:  */
+    }
+    .image-flash {
+        position: absolute;
+        top: 5%;
+        right: 0;
+        left: 0;
+        padding: 10px;
+        background-color: #c7300a; /* reddish */
+    } 
+    
+    .world-card {
+        background-color: rgba(0, 0, 0, 0.9);
+        /* border: outset 3px #c73064; */
+        margin: 35px auto;
+        padding: 40px;
+    }
+
+    .scale {
+        position: relative;
+        width: 100% !important;
+        height: auto; /* Ensures the image maintains its aspect ratio */
+        vertical-align: middle;
+        margin-top: 72px;
     }
     
 }
