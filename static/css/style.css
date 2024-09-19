@@ -8,6 +8,9 @@ body {
 
 nav,
 footer {
+    margin-left: 0;
+    margin-right: -12px;
+    padding: 16px 7% !important;
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
 }
@@ -361,8 +364,25 @@ footer {
 
 @media (max-width: 475px) {
  
-    #worlds {
-        padding: 0;
+    #worlds .worlds-second-row {
+        /* margin-left: 0;
+        margin-right:0; */
     }
+
+    #worlds,
+    body {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    nav,
+    footer {
+    margin-left: 0;
+    margin-right: -12px;
+    padding: 16px 3% !important;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
     
 }
