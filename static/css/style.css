@@ -9,8 +9,8 @@ body {
 nav,
 footer {
     margin-left: 0;
-    margin-right: -12px;
-    padding: 16px 7% !important;
+    /* margin-right: -12px; */
+    padding: 16px 5% !important;
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
 }
@@ -290,6 +290,10 @@ footer {
 
 
 @media (max-width: 796px) {
+
+    .row>* {
+        padding-left: 0;
+    }
 
     #index h1 {
         margin:  70px auto 50px !important;
