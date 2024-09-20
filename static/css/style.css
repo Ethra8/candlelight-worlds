@@ -35,6 +35,7 @@ footer {
     position: fixed;
     background-size: cover;
     height: calc(100vh - 350px);
+    margin-top: 104px;
 }
 
 #index h1 {
@@ -71,7 +72,7 @@ footer {
     background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
     background-size: cover;
     height: fit-content;
-    padding: 115px 7% 70px!important;
+    padding: 115px 7% 70px;
 }
 
 .image-flash {
@@ -189,11 +190,6 @@ footer {
     background-color: #445261;
 }
 
-/* .main-bg {
-    background-color: #F9FAFC;
-    width: 100%;
-} */
-
 .card {
     border: none;
     background-color: transparent;
@@ -202,15 +198,6 @@ footer {
 .image-container {
     position: relative;
 }
-
-/* .masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 30vh;
-    width: 100%;
-} */
 
 .masthead-text {
     background-color: rgba(0, 0, 0, 0.9);
@@ -289,6 +276,13 @@ footer {
     color: rgb(222, 146, 168);
 }
 
+
+@media (max-width: 991px) {
+    
+    #index {
+        margin-top: 76px;
+    }
+}
 
 
 @media (max-width: 796px) {
