@@ -237,13 +237,13 @@ Please find the correspondent **compatibility and responsive testing** reflected
 # TECHNOLOGIES and METHODOLOGIES USED
 **The following technologies have been used to create this site and to deploy it. The AGILE methodology has been approached and a kanban board is linked to this project. For further det that can be viewed [here](#)**
 ## LANGUAGES
-  - **Python 5.1**
+  - **Python 3.12.2**
   - **JS ES6**
   - **CSS3**
   - **HTML5**
 
 ## Frameworks, Libraries and Programs
-  - **Django 3.12.2** - Whithin django framework, many libraries and modules have been used. For mode details, please refer to the requirements.txt file in the root directory.
+  - **Django 5.1** - Whithin django framework, many libraries and modules have been used. For mode details, please refer to the requirements.txt file in the root directory.
   - **Bootstrap 5**
   - **Cloudinary** - Database for images
   - Chrome Dev Tools - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used Lighthouse reports to check and improve core web vitals, including accessibility issues.
@@ -268,3 +268,7 @@ Please find the correspondent **compatibility and responsive testing** reflected
 - Italian Renaissance Villa Dinning Area - AI generated (ChatGPT)
 - Italian Renaissance Villa Bedroom - AI generated (ChatGPT)
 - Italian Renaissance Villa Jakuzzi - AI generated (ChatGPT)
+
+## ACKNOWLEDGEMENTS
+- Sites thoroughly researched: [Stackoverflow](https://stackoverflow.com/), [Django Projecc Forum](https://forum.djangoproject.com/), 
+
