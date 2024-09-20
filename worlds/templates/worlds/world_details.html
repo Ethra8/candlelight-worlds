@@ -6,9 +6,9 @@
 {% block content %}
 <div class="masthead">
     <div class="container">
-        <div class="row g-0">
-            {% if world.image %}
-            <div class="col-12 masthead-text">
+        <div class="row g-0 masthead-text">
+
+            <div class="col-12 col-lg-9 masthead-text">
                 
                 <h1>{{ world.display_name }}</h1>
                 
@@ -16,18 +16,13 @@
 
                 {{ world.price }}
                 
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4 scale"><img src="{{ world.image.url }}" alt="image of the bedroom" style="width:250px; height:fit-content"></div>
-                    <div class="col-12 col-md-6 col-lg-4 scale"><img src="{{ world.image_dining.url }}" alt="image of the dining area" style="width:250px; height:fit-content"></div>
-                    <div class="col-12 col-md-6 col-lg-4 scale"><img src="{{ world.image_jakuzzi.url }}" alt="image of the jakuzzi" style="width:250px; height:fit-content"></div>
-                </div>
             </div>
 
-            {% else %}
-            <div class="d-none d-md-block col-md-6 masthead-image">
-                <img src="{% static 'images/candlelight_worlds.jpg' %}" class="scale" alt="placeholder">
+            <div class="col-12 col-lg-3 order-lg-first">
+                <div class="col-12 col-md-6 col-lg-4 scale"><img src="{{ world.image.url }}" alt="image of the bedroom" style="width:250px; height:fit-content"></div>
+                <div class="col-12 col-md-6 col-lg-4 scale"><img src="{{ world.image_dining.url }}" alt="image of the dining area" style="width:250px; height:fit-content"></div>
+                <div class="col-12 col-md-6 col-lg-4 scale"><img src="{{ world.image_jakuzzi.url }}" alt="image of the jakuzzi" style="width:250px; height:fit-content"></div>
             </div>
-            {% endif %}
 
             <a href="{% url 'booking_new' %}" class="btn btn-secondary btn-sm btn-card book-button">Book Now!</a>
         </div>

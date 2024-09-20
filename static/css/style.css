@@ -66,11 +66,12 @@ footer {
     width: 250px;
 }
 
-#worlds {
+#worlds,
+.masthead {
     background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
     background-size: cover;
     height: fit-content;
-    padding: 0 7%;
+    padding: 115px 7% 70px!important;
 }
 
 .image-flash {
@@ -188,10 +189,10 @@ footer {
     background-color: #445261;
 }
 
-.main-bg {
+/* .main-bg {
     background-color: #F9FAFC;
-    /* width: 100%; */
-}
+    width: 100%;
+} */
 
 .card {
     border: none;
@@ -209,11 +210,12 @@ footer {
     display: inline-block;
     height: 30vh;
     width: 100%;
-}
+} */
 
 .masthead-text {
-    background-color: #191a1b;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #c3c3c3;
+    line-height: 2;
     position: relative;
     padding: 50px;
 }
@@ -235,7 +237,7 @@ footer {
     -moz-transform: skew(15deg);
     transform: skew(15deg);
     z-index: 100;
-} */
+}
 
 
 .btn-signup,
@@ -323,9 +325,8 @@ footer {
     
     .world-card {
         background-color: rgba(0, 0, 0, 0.9);
-        /* border: outset 3px #c73064; */
         margin: 35px auto;
-        padding: 40px 10px;
+        padding: 40px 10px 40px 20px;
     }
 
     .scale {
