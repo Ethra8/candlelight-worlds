@@ -23,7 +23,9 @@ Edna Torres Munill
 - [UX](#ux)
   * [Target Audience](#target-audience)
   * [Project Goals](#project-goals)
-  * [User Stories](#user-stories)
+  * [Stories](#stories)
+     - [User Stories](#user-stories)
+     - [Site Owner Stories](#site-owner-stories)
   * [User Profiles](#user-profiles)
 - [UI](#ui)
   * [Wireframes](#wireframes) 
@@ -126,6 +128,11 @@ The project goals are as follows:
 - [X] View my booking after sending the booking form.
 - [X] Update or delete my booking/s.  
 - [X] View confirmation message on the site for every action taken.  
+
+## SITE OWNER STORIES
+As a site owner, the following functionalities have been included on this site:
+- [X] Add, update or delete worlds directly from the Admin.  
+- [X] Style the font size and display of each world's details page 
 
 
 ## USER PROFILES
