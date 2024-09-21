@@ -14,6 +14,8 @@ class World(models.Model):
     image_jakuzzi = CloudinaryField('image', null=True, blank=True)
     image_siesta = CloudinaryField('image', null=True, blank=True)
     
-    
+    class Meta:
+        ordering = ['display_name']  # Alphabetical order by 'display_name'
+
     def __str__(self):
         return f'{self.display_name}'
