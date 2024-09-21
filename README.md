@@ -108,9 +108,10 @@ The project goals are as follows:
 
 ### As a first time B2C or B2B visitor 
 - [X] View available worlds.
-- [X] View world detail pages. 
+- [X] View world detail pages.
+- [X] View each worlds' details page images in full size
 - [X] Sign up for an account after a conscient decision, to be able to make a booking.
-- [ ] Check the About page 
+- [ ] Check the About page.
 
 ### As a first time B2B visitor
 - [ ] Easily acces a contact form to receive the special catalogue for company events.  
