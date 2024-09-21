@@ -23,7 +23,9 @@ Edna Torres Munill
 - [UX](#ux)
   * [Target Audience](#target-audience)
   * [Project Goals](#project-goals)
-  * [User Stories](#user-stories)
+  * [Stories](#stories)
+     - [User Stories](#user-stories)
+     - [Site Owner Stories](#site-owner-stories)
   * [User Profiles](#user-profiles)
 - [UI](#ui)
   * [Wireframes](#wireframes) 
@@ -106,9 +108,10 @@ The project goals are as follows:
 
 ### As a first time B2C or B2B visitor 
 - [X] View available worlds.
-- [X] View world detail pages. 
+- [X] View world detail pages.
+- [X] View each worlds' details page images in full size
 - [X] Sign up for an account after a conscient decision, to be able to make a booking.
-- [ ] Check the About page 
+- [ ] Check the About page.
 
 ### As a first time B2B visitor
 - [ ] Easily acces a contact form to receive the special catalogue for company events.  
@@ -126,6 +129,12 @@ The project goals are as follows:
 - [X] View my booking after sending the booking form.
 - [X] Update or delete my booking/s.  
 - [X] View confirmation message on the site for every action taken.  
+
+## SITE OWNER STORIES
+As a site owner, the following functionalities have been included on this site, to manually access and set the following:
+- [X] Add, update or delete worlds directly from the Admin.  
+- [X] Style the font size and display of each world's details page.
+- [X] Add, update of delete images from the world's details page.
 
 
 ## USER PROFILES
@@ -237,13 +246,13 @@ Please find the correspondent **compatibility and responsive testing** reflected
 # TECHNOLOGIES and METHODOLOGIES USED
 **The following technologies have been used to create this site and to deploy it. The AGILE methodology has been approached and a kanban board is linked to this project. For further det that can be viewed [here](#)**
 ## LANGUAGES
-  - **Python 5.1**
+  - **Python 3.12.2**
   - **JS ES6**
   - **CSS3**
   - **HTML5**
 
 ## Frameworks, Libraries and Programs
-  - **Django 3.12.2** - Whithin django framework, many libraries and modules have been used. For mode details, please refer to the requirements.txt file in the root directory.
+  - **Django 5.1** - Whithin django framework, many libraries and modules have been used. For mode details, please refer to the requirements.txt file in the root directory.
   - **Bootstrap 5**
   - **Cloudinary** - Database for images
   - Chrome Dev Tools - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used Lighthouse reports to check and improve core web vitals, including accessibility issues.
@@ -268,3 +277,7 @@ Please find the correspondent **compatibility and responsive testing** reflected
 - Italian Renaissance Villa Dinning Area - AI generated (ChatGPT)
 - Italian Renaissance Villa Bedroom - AI generated (ChatGPT)
 - Italian Renaissance Villa Jakuzzi - AI generated (ChatGPT)
+
+## ACKNOWLEDGEMENTS
+- Sites thoroughly researched: [Stackoverflow](https://stackoverflow.com/), [Django Projecc Forum](https://forum.djangoproject.com/), 
+
