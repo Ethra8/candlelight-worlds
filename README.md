@@ -130,7 +130,7 @@ The project goals are as follows:
 - [X] View confirmation message on the site for every action taken.  
 
 ## SITE OWNER STORIES
-As a site owner, the following functionalities have been included on this site:
+As a site owner, the following functionalities have been included on this site without need to touch the code:
 - [X] Add, update or delete worlds directly from the Admin.  
 - [X] Style the font size and display of each world's details page 
 
