@@ -70,6 +70,26 @@ INSTALLED_APPS = [
     'bookings',
 ]
 
+SUMMERNOTE_CONFIG = {
+    'summernote': {
+        # 'width': '100%',
+        # 'height': '400',
+        'toolbar': [
+            ['style', ['style']],  # Style dropdown
+            ['font', ['bold', 'italic', 'underline', 'clear']],  # Basic font styling
+            ['fontsize', ['fontsize']],  # Font size dropdown
+            ['color', ['color']],  # Font color
+            ['para', ['ul', 'ol', 'paragraph']],  # Paragraph options
+            ['insert', ['link', 'picture', 'video']],  # Insert options
+            ['view', ['fullscreen', 'codeview', 'help']],  # Fullscreen and code view options
+        ],
+        # Specify the font sizes available in the dropdown
+        'fontSizes': ['8', '9', '10', '12', '14', '16', '18', '20', '24', '28', '36', '48', '64'],
+    },
+    # 'iframe': False,  # Optional: You can enable iframe if needed
+}
+
+# SUMMERNOTE_THEME = 'bs4'
 
 SITE_ID = 1
 

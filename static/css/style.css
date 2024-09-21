@@ -30,12 +30,16 @@ footer {
     color: rgb(199, 48, 10);
 }
 
+.main-bg {
+    margin-top: 104px;
+}
+
+
 #index {
     background-color: rgba(0, 0, 0, 0.85);
     position: fixed;
     background-size: cover;
     height: calc(100vh - 350px);
-    margin-top: 104px;
 }
 
 #index h1 {
@@ -57,6 +61,7 @@ footer {
     color: black;
 }
 
+/* Worlds */
 .world-detail-link {
     background-color: rgba(199, 48, 10); /* reddish */
     position: absolute;
@@ -67,12 +72,11 @@ footer {
     width: 250px;
 }
 
-#worlds,
-.masthead {
+#worlds {
     background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
     background-size: cover;
     height: fit-content;
-    padding: 115px 7% 70px;
+    padding: 0 7% 70px;
 }
 
 .image-flash {
@@ -92,9 +96,11 @@ footer {
 }
 
 .world-short-description {
+    text-align: justify;
     color: white !important;
     position: absolute;
     left: 338px;
+    right: 18px;
     top: 90px;
 }
 
@@ -190,6 +196,8 @@ footer {
     background-color: #445261;
 }
 
+/* Worlds */
+
 .card {
     border: none;
     background-color: transparent;
@@ -199,7 +207,15 @@ footer {
     position: relative;
 }
 
-.masthead-text {
+/* World Details */
+
+.details {
+    background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: fit-content;
+}
+
+.details-info {
     background-color: rgba(0, 0, 0, 0.9);
     color: #c3c3c3;
     line-height: 2;
@@ -207,25 +223,38 @@ footer {
     padding: 50px;
 }
 
-.masthead-image {
+.details-text {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #c3c3c3;
+    line-height: 2;
     position: relative;
-    overflow: hidden;
+    padding: 50px;
 }
 
-.masthead-image:after {
-    content: "";
+.details-text h1 {
+    padding: 30px 0;
+}
+
+.details-text p {
+    padding: 0;
+    text-align: justify;
+}
+
+.details-scale {
+    position: relative;
+    width: 100% !important;
+    height: auto; /* Ensures the image maintains its aspect ratio */
+    vertical-align: middle;
+    margin-top: 72px !important;
+}
+
+.details h3 {
     position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
+    bottom: 50px;
+    right: 7%;
+    font-size: 2rem;
+    font-weight: 700;
 }
-
 
 .btn-signup,
 .btn-edit {
@@ -277,18 +306,55 @@ footer {
 }
 
 
+@media (min-width: 1200px) {
+    .details {
+        padding: 0 7% 70px;
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .details {
+        padding: 0 3% 70px;
+    }
+
+}
+
+
 @media (max-width: 991px) {
     
-    #index {
+    .main-bg {
         margin-top: 76px;
+        padding: 0 4% 70px;
     }
+
+    .details {
+        padding: 0 1% 70px;
+    }
+
+    .details-info {
+        padding: 50px 20px;
+    }
+
+    .details-text {
+        padding: 0;
+    }
+
+    .details-scale {
+        position: relative;
+        width: 100% !important;
+        height: auto; /* Ensures the image maintains its aspect ratio */
+        vertical-align: middle;
+        margin-top: 72px !important;
+    }
+
 }
 
 
 @media (max-width: 796px) {
 
     .row>* {
-        padding-left: 0;
+        /* padding-left: 0; */
     }
 
     #index h1 {
@@ -329,6 +395,14 @@ footer {
         height: auto; /* Ensures the image maintains its aspect ratio */
         vertical-align: middle;
         margin-top: 72px;
+    }
+
+    .details-scale {
+        position: relative;
+        width: 100% !important;
+        height: auto; /* Ensures the image maintains its aspect ratio */
+        vertical-align: middle;
+        margin-top: 72px !important;
     }
 
     .world-short-description {

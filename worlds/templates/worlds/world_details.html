@@ -4,24 +4,24 @@
 
 
 {% block content %}
-<div class="masthead">
-    <div class="container">
-        <div class="row g-0 masthead-text">
+<div class="details">
+    <div class="container-fluid">
+        <div class="row g-0 details-info">
 
-            <div class="col-12 col-lg-9 masthead-text">
+            <div class="col-12 col-lg-9 details-text">
                 
                 <h1>{{ world.display_name }}</h1>
                 
-                {{ world.description | safe }}
+                <p>{{ world.description | safe }}</p>
 
-                {{ world.price }}
+                <h3>{{ world.price }} €</h3>
                 
             </div>
 
             <div class="col-12 col-lg-3 order-lg-first">
-                <div class="col-12 col-md-6 col-lg-4 scale"><img src="{{ world.image.url }}" alt="image of the bedroom" style="width:250px; height:fit-content"></div>
-                <div class="col-12 col-md-6 col-lg-4 scale"><img src="{{ world.image_dining.url }}" alt="image of the dining area" style="width:250px; height:fit-content"></div>
-                <div class="col-12 col-md-6 col-lg-4 scale"><img src="{{ world.image_jakuzzi.url }}" alt="image of the jakuzzi" style="width:250px; height:fit-content"></div>
+                <div class="col-12 col-md-9 col-lg-12 img-fluid mx-auto d-block"><a href="{{ world.image_dining.url }}" target="_blank"><img class="details-scale" src="{{ world.image_dining.url }}" alt="image of the dining area"></a></div>
+                <div class="col-12 col-md-9 col-lg-12 img-fluid mx-auto d-bloc"><a href="{{ world.image_jakuzzi.url }}" target="_blank"><img class="details-scale" src="{{ world.image_jakuzzi.url }}" alt="image of the jakuzzi"></div>
+                <div class="col-12 col-md-9 col-lg-12 img-fluid mx-auto d-bloc"><a href="{{ world.image_siesta.url }}" target="_blank"><img class="details-scale" src="{{ world.image_siesta.url }}" alt="image of the siesta area"></div>
             </div>
 
             <a href="{% url 'booking_new' %}" class="btn btn-secondary btn-sm btn-card book-button">Book Now!</a>
