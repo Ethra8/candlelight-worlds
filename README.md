@@ -122,13 +122,11 @@ The project goals are as follows:
 - [X] Easily recover my password in case I forget it.
 - [X] Receive an email to confirm my registration, so that I can be sure of my credentials.
 - [X] View a confirmation message after registering.  
-
-### As an Authorized Customer
-- [X] Fill up a form to make a booking.  
-- [X] Add desired world to my booking.  
-- [X] View my booking after sending the booking form.
-- [X] Update or delete my booking/s.  
-- [X] View confirmation message on the site for every action taken.  
+- [X] Make a booking.   
+- [X] View a list with my bookings after sending the booking form.
+- [X] Update or delete my bookings.  
+- [X] View confirmation message on the site for every action taken.
+- [X] Be sure that no one else can access my bookings. 
 
 ## SITE OWNER STORIES
 As a site owner, the following functionalities have been included on this site, to manually access and set the following:
