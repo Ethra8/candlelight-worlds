@@ -96,7 +96,7 @@ footer {
 }
 
 .world-card {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.95);
     /* border: outset 3px #c73064; */
     margin: 35px auto;
     padding: 40px;
@@ -133,15 +133,8 @@ footer {
 }
 
 
-.overlay-dark {
-    background-color: rgba(0, 0, 0, 0.85);
-    position: fixed;
-    background-size: cover;
-    height: 100vh;
-} 
-
-
 /* Contact Form*/
+
 .form {
     padding: 5% 15%;
     background-color: rgba(0, 0, 0, 0.95);
@@ -158,19 +151,27 @@ footer {
 #booking-form h1,
 #booking-list h1 {
     padding-bottom: 40px;
+    text-transform: uppercase;
 }
 
+#booking-update
+
+
+/* Booking List */
+
 #booking-list {
-    padding: 5%;
-    border: #191a1b;
-    border-style: outset;
-    border-width: 2px;
-    margin: 5% auto;
+    padding: 5% 15%;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: #dbd0ba;
     width: 80%;
+    margin: 40px auto;
 }
 
 .booking-list-object {
-    margin: 20px;
+    margin: 30px auto 20px 0;
+    font-size: 1.1rem;
+    background-color: #21201e;
+    padding: 20px;
 }
 
 .update {
@@ -182,7 +183,7 @@ footer {
 
 .delete {
     text-decoration: none;
-    background-color: rgb(255, 85, 47);
+    background-color: rgb(199, 48, 10);
     margin: 10px;
     padding: 5px 10px;
 }
@@ -419,8 +420,6 @@ footer {
         right: 0;
         left: 0;
         padding: 10px;
-        background-color: #47443e;
-        color: #21201e;
     } 
     
     .world-card {

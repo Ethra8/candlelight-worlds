@@ -15,14 +15,14 @@
                     <div class="card mb-12">
                         <div class="card-body">
                             <div class="image-container">
-                                <div class="image-flash text-grey">
+                                <div class="image-flash text-grey rounded">
                                     <p class="worlds-display_name">{{ world.display_name }}</p>
                                 </div>
                             </div>
                             <img class="scale" src="{{ world.image_dining.url }}" alt="">
                             <p class="world-short-description">{{ world.short_description }}</p>
                             <a href="{% url 'world_details' world.slug %}">
-                                <button class="btn rounded-pill world-detail-link">SHOW DETAILS</button>     
+                                <button class="btn world-detail-link rounded">SHOW DETAILS</button>     
                             </a>
                             <!-- <br>
                             <hr>

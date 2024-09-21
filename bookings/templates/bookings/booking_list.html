@@ -1,12 +1,15 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %}
+
 {% load static %}
 {% load crispy_forms_tags %}
 
-<div id="booking-list">
+{% block content %}
+
+<div id="booking-list" class="rounded">
     <h1>My Bookings</h1>
-    <ul>
+    <ul  class="list-unstyled">
     {% for booking in object_list %}
-        <li class="booking-list-object">{{booking.room}}: {{ booking.date }} - {{ booking.start_time }} <a class="update" href="{% url 'booking_update' booking.pk %}">UPDATE</a> <a class="delete" href="{% url 'booking_confirm_delete' booking.pk %}">DELETE</a></li>
+        <li class="booking-list-object rounded"><strong class="text-uppercase">{{booking.world}}</strong>: {{ booking.date }} - {{ booking.time }} <a class="update rounded" href="{% url 'booking_update' booking.pk %}">UPDATE</a> <a class="delete rounded" href="{% url 'booking_confirm_delete' booking.pk %}">DELETE</a></li>
     {% empty %}
         <li>No bookings to display yet.</li>
     {% endfor %}

@@ -20,11 +20,11 @@ class CreateBookingView(LoginRequiredMixin, CreateView):
         # check if time/ date is available
         existing_bookings = Booking.objects\
             .filter(date=temp_booking.date)\
-            .filter(start_time=temp_booking.start_time)\
+            .filter(time=temp_booking.time)\
             .filter(world=temp_booking.world)
             
         if existing_bookings :
-            messages.warning(self.request, f'At {temp_booking.start_time} on {temp_booking.date}, our {temp_booking.world} is already booked')
+            messages.warning(self.request, f'At {temp_booking.time} on {temp_booking.date}, our {temp_booking.world} is already booked')
             return redirect(reverse('booking_new'))
         else:
             messages.success(self.request, 'Your booking is confirmed')
@@ -43,7 +43,7 @@ class BookingListView(LoginRequiredMixin, ListView):
 
 class BookingUpdateView(LoginRequiredMixin, UpdateView):
     model = Booking
-    fields = ["world", "date", "start_time"]
+    fields = ["world", "date", "time"]
     template_name_suffix = "_update_form"
 
     def form_valid(self, form):
@@ -56,11 +56,11 @@ class BookingUpdateView(LoginRequiredMixin, UpdateView):
         # check if time/ date is available
         existing_bookings = Booking.objects\
             .filter(date=temp_booking.date)\
-            .filter(start_time=temp_booking.start_time)\
+            .filter(time=temp_booking.time)\
             .filter(world=temp_booking.world)
             
         if existing_bookings :
-            messages.warning(self.request, f'At {temp_booking.start_time} on {temp_booking.date}, our {temp_booking.world} is already booked')
+            messages.warning(self.request, f'At {temp_booking.time} on {temp_booking.date}, our {temp_booking.world} is already booked')
             return redirect(f'/bookings/update/{temp_booking.pk}/')
         else:
             messages.success(self.request, "Your booking's changes are confirmed!")
@@ -81,7 +81,7 @@ class BookingDeleteView(LoginRequiredMixin, DeleteView):
         # def form_valid(self, form):
         #     existing_bookings = Booking.objects\
         #         .filter(date=temp_booking.date)\
-        #         .filter(start_time=temp_booking.start_time)\
+        #         .filter(time=temp_booking.time)\
         #         .filter(room=temp_booking.room)
                 
         # return redirect(reverse('home'))

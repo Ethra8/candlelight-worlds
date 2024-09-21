@@ -1,13 +1,17 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %}
+
 {% load static %}
 {% load crispy_forms_tags %}
 
-<div class="form">
-    <form method="post">
-        {% csrf_token %}
-        {{ form | crispy }}
-        <input type="submit" value="Update">
-    </form>
-</div>
+{% block content %}
 
+<div id="booking-update">
+    <div class="form">
+        <form method="post">
+            {% csrf_token %}
+            {{ form | crispy }}
+            <input type="submit" value="Update">
+        </form>
+    </div>
+</div>
 {% endblock %}

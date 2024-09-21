@@ -6,10 +6,10 @@
 {% block content %}
 <div class="details">
     <div class="container-fluid">
-        <div class="row g-5 details-info">
+        <div class="row g-5 details-info rounded">
 
             <div class="col-12 col-lg-9 details-text">
-                <div class="details-heading text-grey">
+                <div class="details-heading text-grey rounded">
                     <h1>{{ world.display_name }}</h1>
                 </div>
                 <!-- <h1>{{ world.display_name }}</h1> -->
@@ -21,7 +21,7 @@
                         <h3 class="mr-5">{{ world.price }} €</h3>
                     </div>
                     <div class="col-12 col-lg-12 text-center">
-                        <a href="{% url 'booking_new' %}" class="btn btn-book text-upper w-100">Book Now!</a>
+                        <a href="{% url 'booking_new' %}" class="btn btn-book text-upper w-100 rounded">Book Now!</a>
                     </div>                    
                 </div>
             
