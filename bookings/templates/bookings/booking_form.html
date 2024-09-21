@@ -1,17 +1,21 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} 
+
+{% block content %}
+
 {% load static %}
 {% load crispy_forms_tags %}
-
-<div class="form">
-  <h1>BOOKING FORM</h1>
-
-  <form method="post">
+<div id="contact-form">
+  <div class="form">
+    <h1>BOOKING FORM</h1>
+  
+    <form method="post">
       {{ form | crispy }}
       {% csrf_token %}
-      <button type="submit" class="btn btn-secondary btn-lg btn-card submit-btn"
+      <button type="submit" class="btn btn-book btn-card submit-btn"
       id="book-button">BOOK NOW</button>
     </form>
-  
+    
+  </div>  
 </div>
 
 

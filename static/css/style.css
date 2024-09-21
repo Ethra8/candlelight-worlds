@@ -16,7 +16,7 @@ footer {
 
 .nav-link,
 .nav-item {
-    color: #c3c3c3 !important;
+    color: #dbd0ba !important;
 }
 
 .nav-link:hover,
@@ -144,9 +144,10 @@ footer {
 /* Contact Form*/
 .form {
     padding: 5% 15%;
-    background-color: rgba(235, 235, 235, 0.85);
+    background-color: rgba(0, 0, 0, 0.95);
+    color: #dbd0ba;
     width: 80%;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 .text-muted {
