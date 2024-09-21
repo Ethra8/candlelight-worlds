@@ -29,15 +29,14 @@ class CreateBookingView(LoginRequiredMixin, CreateView):
         else:
             messages.success(self.request, 'Your booking is confirmed')
             temp_booking.save()
-        return redirect(reverse('index'))
+        return redirect(reverse('booking_list'))
 
 
 class BookingListView(LoginRequiredMixin, ListView):
     model = Booking
-    # paginate_by = 1000 # if pagination is desired
 
     def get_queryset(self, **kwargs):
-       qs = super().get_queryset(**kwargs)
+       qs = super().get_queryset(**kwargs).order_by('date')
        return qs.filter(user=self.request.user)
 
 
@@ -47,7 +46,7 @@ class BookingUpdateView(LoginRequiredMixin, UpdateView):
     template_name_suffix = "_update_form"
 
     def form_valid(self, form):
-        # LOGIC NOT WORKING: need to make sure that object that we're updating was created by logged-in user
+        # Make sure that booking can only be acessed by logged-in user
         if form.instance.user != self.request.user:
             messages.warning(self.request, 'You can only update your own bookings!')
             return redirect(reverse('booking_list'))
@@ -65,23 +64,29 @@ class BookingUpdateView(LoginRequiredMixin, UpdateView):
         else:
             messages.success(self.request, "Your booking's changes are confirmed!")
             temp_booking.save()
-        return redirect(reverse('index'))
+        return redirect(f'/bookings/manage/')
 
 
+# class BookingDeleteView(LoginRequiredMixin, DeleteView):
+#     model = Booking
+#     template_name = 'bookings/booking_confirm_delete.html'
+#     success_url = reverse_lazy('booking_list')
+
+#     def delete(self, request):   
+#         # Add a success message before deletion
+#         messages.success(self.request, "Your booking has been deleted.")
+        
+#         return redirect(f'/bookings/booking_confirm_delete')
+        
 
 class BookingDeleteView(LoginRequiredMixin, DeleteView):
     model = Booking
-    template = 'bookings/booking_confirm_delete.html'
+    template_name = 'bookings/booking_confirm_delete.html'
+    success_url = reverse_lazy('booking_list')  # Ensure this matches your URL patterns
 
-    def delete(request, *args, **kwargs):   
-        success_url = "booking_list"
+    def post(self, request, *args, **kwargs):
+        # Add the success message before deletion
         messages.success(self.request, "Your booking has been deleted.")
         
-
-        # def form_valid(self, form):
-        #     existing_bookings = Booking.objects\
-        #         .filter(date=temp_booking.date)\
-        #         .filter(time=temp_booking.time)\
-        #         .filter(room=temp_booking.room)
-                
-        # return redirect(reverse('home'))
+        # Call super to perform the deletion and redirect
+        return super().post(request, *args, **kwargs)

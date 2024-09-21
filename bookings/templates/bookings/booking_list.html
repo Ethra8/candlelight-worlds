@@ -9,11 +9,26 @@
     <h1>My Bookings</h1>
     <ul  class="list-unstyled">
     {% for booking in object_list %}
-        <li class="booking-list-object rounded"><strong class="text-uppercase">{{booking.world}}</strong>: {{ booking.date }} - {{ booking.time }} <a class="update rounded" href="{% url 'booking_update' booking.pk %}">UPDATE</a> <a class="delete rounded" href="{% url 'booking_confirm_delete' booking.pk %}">DELETE</a></li>
+        <li class="booking-list-object rounded"><strong class="text-uppercase">{{booking.world}}</strong><br> {{ booking.date }} from {{ booking.time }} <a class="btn-update rounded text-grey" href="{% url 'booking_update' booking.pk %}"><i class="fa-solid fa-pen-to-square"></i></a> <a class="btn-delete rounded" href="{% url 'booking_confirm_delete' booking.pk %}"><i class="fa-solid fa-trash"></i></a></li>
     {% empty %}
         <li>No bookings to display yet.</li>
     {% endfor %}
     </ul>    
 </div>
+
+{% if messages %}
+<div class="container text-white">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            {% for message in messages %}
+            <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+                {{ message | safe }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
 
 {% endblock %}
