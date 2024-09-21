@@ -29,10 +29,7 @@
 
     <!-- Load jQuery first -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Load jQuery UI -->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <!-- Load Summernote JS -->
-    <script src="{% static 'summernote/summernote-bs5.min.js' %}"></script>
+    
     <!-- Load Summernote CSS -->
     <link href="{% static 'summernote/summernote-bs5.min.css' %}" rel="stylesheet">
 
@@ -127,12 +124,19 @@
         </p>
     </footer>
 
+
+
+    <!-- Load jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <!-- Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Optional JavaScript: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/19349c9d8e.js" crossorigin="anonymous"></script>
+    <!-- Load Summernote JS -->
+    <script src="{% static 'summernote/summernote-bs5.min.js' %}"></script>
+
     
     {% block extras %}
     {% endblock %}

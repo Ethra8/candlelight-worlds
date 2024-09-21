@@ -2,17 +2,16 @@
 body {
     background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #555;
+    /* color: #555; */
     font-family: "Montserrat", sans-serif;
 }
 
 nav,
 footer {
     margin-left: 0;
-    /* margin-right: -12px; */
     padding: 16px 5% !important;
     background-color: rgba(0, 0, 0, 0.9);
-    color: white;
+    color: #dbd0ba;
 }
 
 .nav-link,
@@ -22,12 +21,16 @@ footer {
 
 .nav-link:hover,
 .nav-item:hover {
-    color: red !important;
+    color: #f69700 !important;
     font-weight: 500;
 }
 
 .text-fire {
-    color: rgb(199, 48, 10);
+    color:  #f69700;
+}
+
+.text-grey {
+    color: #dbd0ba !important;
 }
 
 .main-bg {
@@ -47,8 +50,8 @@ footer {
 }
 
 .btn-index-cta {
-    background-color: rgba(199, 48, 10); /* reddish */
-    color: white;
+    background-color: #f69700;
+    color: #21201e;
     padding: 2rem;
     width: 250px;
     margin: 0 auto 50px 10% !important;
@@ -56,18 +59,19 @@ footer {
 }
 
 .btn-index-cta:hover,
-.world-detail-link:hover {
-    background-color: #f69700; /* matches yellow daisy on bg */
-    color: black;
+.world-detail-link:hover,
+.btn-book:hover {
+    background-color: #b57002;
+    color: #21201e;
 }
 
 /* Worlds */
 .world-detail-link {
-    background-color: rgba(199, 48, 10); /* reddish */
+    background-color: #f69700;
     position: absolute;
     top: 240px;
     left: 338px;
-    color: white;
+    color: #21201e;
     padding: 0.5rem;
     width: 250px;
 }
@@ -85,7 +89,7 @@ footer {
     right: 0;
     left: 320px;
     padding: 10px;
-    background-color: #303133; /*#c7300a;  reddish */
+    background-color: #47443e;
 } 
 
 .world-card {
@@ -97,7 +101,7 @@ footer {
 
 .world-short-description {
     text-align: justify;
-    color: white !important;
+    color: #dbd0ba;
     position: absolute;
     left: 338px;
     right: 18px;
@@ -113,14 +117,16 @@ footer {
 }
 
 .display_name {
-    color: white;
+    color: #dbd0ba;
+    font-size: 1.1rem;
+    font-weight: 500;
     margin: 4px;
     text-transform: uppercase;
 }
 
 .room-description {
     margin-left: 5%;
-    color: lightgray;
+    color: #dbd0ba;
 }
 
 
@@ -232,7 +238,7 @@ footer {
 }
 
 .details-text h1 {
-    padding: 30px 0;
+    padding: 30px 20px;
 }
 
 .details-text p {
@@ -248,12 +254,24 @@ footer {
     margin-top: 72px !important;
 }
 
+.details-description {
+    padding: 0 2% 40px;
+}
+
 .details h3 {
-    position: absolute;
+    /* position: absolute;
     bottom: 50px;
-    right: 7%;
+    right: 7%; */
     font-size: 2rem;
     font-weight: 700;
+}
+
+.btn-book {
+    background-color: #f69700;
+    width: 250px;
+    padding: 10px;
+    text-transform: uppercase;
+    margin: 40px auto;
 }
 
 .btn-signup,
@@ -380,7 +398,9 @@ footer {
         right: 0;
         left: 0;
         padding: 10px;
-        background-color: #c7300a; /* reddish */
+        background-color: #47443e;
+        color: #21201e;
+    
     } 
     
     .world-card {
