@@ -6,12 +6,12 @@
 {% load crispy_forms_tags %}
 <div id="contact-form">
   <div class="form">
-    <h1>BOOKING FORM</h1>
+    <h1 class="mb-5">BOOKING FORM</h1>
   
     <form method="post">
       {{ form | crispy }}
       {% csrf_token %}
-      <button type="submit" class="btn btn-book btn-card submit-btn"
+      <button type="submit" class="btn btn-book w-100 submit-btn"
       id="book-button">BOOK NOW</button>
     </form>
     

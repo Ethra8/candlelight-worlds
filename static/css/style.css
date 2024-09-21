@@ -384,6 +384,13 @@ footer {
         margin-top: 72px !important;
     }
 
+    .form {
+        padding: 70px 7%;
+        background-color: rgba(0, 0, 0, 0.95);
+        width: 90%;
+        margin: 40px auto;
+    }
+    
 }
 
 
@@ -414,7 +421,6 @@ footer {
         padding: 10px;
         background-color: #47443e;
         color: #21201e;
-    
     } 
     
     .world-card {
@@ -484,12 +490,18 @@ footer {
 
     nav,
     footer {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 16px 3% !important;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-}
+        margin-left: 0;
+        margin-right: 0;
+        padding: 16px 3% !important;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+    }
 
-    
+    .form {
+        padding: 50px 4% 10px;
+        background-color: rgba(0, 0, 0, 0.95);
+        width: 100%;
+        margin: 40px auto;
+    }
+ 
 }
