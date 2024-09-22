@@ -10,13 +10,13 @@ class WorldList(generic.ListView):
     template_name = "worlds/worlds.html"
 
 
-def world_details(request, slug):
+def world_details(request, pk):
     """
     Display an individual model:`worlds.World`. on 
     worlds/worlds.html page
     """
     queryset = World.objects.all()
-    world = get_object_or_404(queryset, slug=slug)
+    world = get_object_or_404(queryset, pk=pk)
     
     price = world.price
     description = world.description
@@ -24,7 +24,7 @@ def world_details(request, slug):
     template = 'worlds/world_details.html'
     context = {
         "world": world,
-        "slug": slug,
+        "pk": pk,
         "price": price,
         "description": description,
     }
@@ -34,8 +34,8 @@ def world_details(request, slug):
     # queryset = World.objects.all()
     # world = get_object_or_404(queryset, slug=slug)
     # price = get_object_or_404(queryset, price=price)
-    # # short_description = get_object_or_404(queryset, short_description=world.short_description)
-    # description = get_object_or_404(queryset, description=world.description)
+    # # short_description = get_object_or_404(queryset, short_description=short_description)
+    # description = get_object_or_404(queryset, description=description)
 
     # template = 'worlds/world_details.html'
     # context = {

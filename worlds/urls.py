@@ -7,5 +7,5 @@ from .views import WorldList, world_details
 
 urlpatterns = [
     path('', views.WorldList.as_view(), name='worlds'),
-    path('world_details/<slug:slug>/', views.world_details, name='world_details'),
+    path('world_details/<int:pk>/', views.world_details, name='world_details'),
 ]

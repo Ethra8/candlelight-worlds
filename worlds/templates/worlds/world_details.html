@@ -23,7 +23,7 @@
                         <h3 class="mr-5 mr-md-0">{{ world.price }} €</h3>
                     </div>
                     <div class="col-12 col-lg-12 text-center p-0">
-                        <a href="{% url 'booking_new' %}" class="btn btn-book text-upper w-100 rounded">Book Now!</a>
+                        <a href="{% url 'booking_new' world.pk  %}" class="btn btn-book text-upper w-100 rounded">Book Now!</a>
                     </div>                    
                 </div>
             

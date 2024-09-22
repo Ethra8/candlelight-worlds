@@ -21,7 +21,7 @@
                             </div>
                             <img class="scale" src="{{ world.image_dining.url }}" alt="">
                             <p class="world-short-description">{{ world.short_description }}</p>
-                            <a href="{% url 'world_details' world.slug %}">
+                            <a href="{% url 'world_details' world.id %}">
                                 <button class="btn world-detail-link rounded">SHOW DETAILS</button>     
                             </a>
                             <!-- <br>

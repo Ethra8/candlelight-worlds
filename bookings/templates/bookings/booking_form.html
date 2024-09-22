@@ -29,5 +29,23 @@
         dateFormat: "dd-mm-yyyy"  // Match format in model
       });
     });
+
+    window.onload = function() {
+    // Get the current URL
+    const url = window.location.pathname;
+
+    // Extract the last part of the URL (world id) by splitting the URL by '/'
+    const segments = url.split('/');
+    const worldId = segments[segments.length - 1] || segments[segments.length - 2]; // Last segment may be empty due to trailing slash
+
+    // Find the select element
+    const selectElement = document.getElementById('id_world');
+
+    // Check if the worldId is valid, then set the value of the select element
+    if (selectElement) {
+        selectElement.value = worldId;
+    }
+}
+
   </script>
 {% endblock %}
