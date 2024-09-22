@@ -128,6 +128,17 @@ footer {
 } */
 
 
+/* Error Page */
+
+#error-page {
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    background-size: cover;
+    height: calc(100vh - 350px);
+}
+
+
+
 /* Index */
 
 #index {
