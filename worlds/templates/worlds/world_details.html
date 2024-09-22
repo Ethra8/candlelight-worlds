@@ -6,28 +6,30 @@
 {% block content %}
 <div class="details">
     <div class="container-fluid">
-        <div class="row g-5 details-info rounded">
+        <div class="row g-0 details-info rounded">
 
-            <div class="col-12 col-lg-9 details-text">
-                <div class="details-heading text-grey rounded">
-                    <h1>{{ world.display_name }}</h1>
+            <div class="col-12 col-lg-8 details-text">
+                <div>
+                    <div class="details-heading text-grey rounded">
+                        <h1>{{ world.display_name }}</h1>
+                    </div>  
+                    <div class="details-description mt-5">
+                        {{ world.description | safe }}
+                    </div>    
                 </div>
-                <!-- <h1>{{ world.display_name }}</h1> -->
-                
-                <div class="details-description">{{ world.description | safe }}</div>
 
-                <div class="row pl-md-5 mx-5">
-                    <div class="col-12 col-lg-12 text-end mr-5">
-                        <h3 class="mr-5">{{ world.price }} €</h3>
+                <div class="row mx-0">
+                    <div class="col-12 col-lg-12 text-end mr-5 p-0">
+                        <h3 class="mr-5 mr-md-0">{{ world.price }} €</h3>
                     </div>
-                    <div class="col-12 col-lg-12 text-center">
+                    <div class="col-12 col-lg-12 text-center p-0">
                         <a href="{% url 'booking_new' %}" class="btn btn-book text-upper w-100 rounded">Book Now!</a>
                     </div>                    
                 </div>
             
             </div>
 
-            <div class="col-12 col-lg-3 order-lg-first">
+            <div class="col-12 col-lg-4 order-lg-first details-img-parent">
                 <div class="col-12 col-md-9 col-lg-12 img-fluid mx-auto d-block"><a href="{{ world.image_dining.url }}" target="_blank"><img class="details-scale1" src="{{ world.image_dining.url }}" alt="image of the dining area"></a></div>
                 <div class="col-12 col-md-9 col-lg-12 img-fluid mx-auto d-bloc"><a href="{{ world.image_jakuzzi.url }}" target="_blank"><img class="details-scale" src="{{ world.image_jakuzzi.url }}" alt="image of the jakuzzi"></a></div>
                 <div class="col-12 col-md-9 col-lg-12 img-fluid mx-auto d-bloc"><a href="{{ world.image_siesta.url }}" target="_blank"><img class="details-scale" src="{{ world.image_siesta.url }}" alt="image of the siesta area"></a></div>

@@ -246,6 +246,7 @@ footer {
     background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
     background-size: cover;
     height: fit-content;
+    padding: 0 4% 70px;
 }
 
 .details-info {
@@ -253,7 +254,7 @@ footer {
     color: #c3c3c3;
     line-height: 2;
     position: relative;
-    padding: 50px;
+    padding: 0;
     margin-top: 40px;
     text-align: justify;
 }
@@ -274,7 +275,7 @@ footer {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 200;
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     background-color: #21201e;
 }
 
@@ -286,6 +287,10 @@ footer {
 .details-text p {
     padding: 0;
     text-align: justify;
+}
+
+.details-img-parent {
+    padding: 50px 20px 50px 50px;
 }
 
 .details-scale {
@@ -306,7 +311,7 @@ footer {
 
 
 .details-description {
-    padding: 0 2% 40px;
+    padding: 0 0 40px;
 }
 
 .details h3 {
@@ -371,38 +376,19 @@ footer {
 }
 
 
-@media (min-width: 1200px) {
-    .details {
-        padding: 0 7% 70px;
-    }
-}
-
-
-@media (max-width: 1199px) {
-    .details {
-        padding: 0 3% 70px;
-    }
-
-}
-
 
 @media (max-width: 991px) {
     
-    .main-bg {
-        /* margin-top: 76px;
-        padding: 0 0 70px; */
-    }
-
-    .details {
-        padding: 0 1% 70px;
-    }
-
     .details-info {
-        padding: 50px 20px;
+        padding: 4%;
     }
 
     .details-text {
-        padding: 0;
+        padding: 4%;
+    }
+
+    .details-img-parent {
+        padding: 7%;
     }
 
     .details-scale {
@@ -434,8 +420,8 @@ footer {
 @media (max-width: 796px) {
 
     .row>* {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 3%;
+        padding-right: 3%;
     }
 
     #index h1 {
@@ -542,6 +528,14 @@ footer {
     #worlds .worlds-second-row {
         /* margin-left: 0;
         margin-right:0; */
+    }
+
+    .details {
+        padding: 0 0 70px;
+    }
+
+    .details-info {
+        padding: 3%;
     }
 
     #booking-list {
