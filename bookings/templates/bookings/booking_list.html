@@ -9,16 +9,26 @@
     <h1>My Bookings</h1>
     <ul  class="list-unstyled">
     {% for booking in object_list %}
-        <li class="booking-list-object rounded position-relative">
-            <p><strong class="text-uppercase">
+        <li class="booking-list-object rounded d-flex row">
+            <div class="col-12 col-md-8">
+                <p><strong class="text-uppercase">
                     {{booking.world}}</strong></p>
-            <br>
-            <p><strong>Date:</strong> {{ booking.date }}</p>
-            <p><strong>Time:</strong> {{ booking.time }}</span></p>
-            <p class="booking-list-a"><a class="btn-update rounded text-grey" href="{% url 'booking_update' booking.pk %}">
-                    <i class="fa-solid fa-pen-to-square"></i></a>
-                <a class="btn-delete rounded" href="{% url 'booking_confirm_delete' booking.pk %}">
-                    <i class="fa-solid fa-trash"></i></a></p>
+                <p><strong>Date:</strong> {{ booking.date }}</p>
+                <p><strong>Time:</strong> {{ booking.time }}</span></p>
+            </div>
+            <div class="col-4 col-md-2 mt-3 mt-md-0">
+                <!-- <div class="row booking-list-a"> -->
+                    <a class="col-md-2 btn-update rounded text-grey" href="{% url 'booking_update' booking.pk %}">
+                        <i class="fa-solid fa-pen-to-square"></i></a>
+            </div>
+            <div class="col-4 col-md-2 mt-3 mt-md-0">
+                <a class="col-md-2 btn-delete rounded" href="{% url 'booking_confirm_delete' booking.pk %}">
+                    <i class="fa-solid fa-trash"></i></a>
+            </div>
+
+                <!-- </div> -->
+            <!-- </div> -->
+
         </li>
     {% empty %}
         <li>No bookings to display yet.</li>

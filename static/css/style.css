@@ -14,25 +14,8 @@ footer {
     color: #dbd0ba;
 }
 
-.nav-link,
-.nav-item {
-    color: #dbd0ba !important;
-}
 
-.nav-link:hover,
-.nav-item:hover {
-    color: #f69700 !important;
-    font-weight: 500;
-}
-
-.text-fire {
-    color:  #f69700;
-}
-
-.text-grey {
-    color: #dbd0ba !important;
-}
-
+/* Custom */
 .alert {
     background-color: #f69700;
     border-radius: 15px !important;
@@ -44,9 +27,49 @@ footer {
     z-index: 9999;
 }
 
+.brand {
+    font-family: "Lato", sans-serif !important;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #4A4A4F;
+}
+
+.thin {
+    font-weight: 300;
+}
+
+.text-muted {
+    color: #6d6d6d !important;
+    --bs-text-opacity: 1 !important;
+}
+
+.text-fire {
+    color: #f69700;
+}
+
+.text-grey {
+    color: #dbd0ba !important;
+}
+
 .main-bg {
     margin-top: 104px;
 }
+
+/* Navbar Classes */
+
+.nav-link,
+.nav-item {
+    color: #dbd0ba !important;
+}
+
+.nav-link:hover,
+.nav-item:hover {
+    color: #f69700 !important;
+    font-weight: 500;
+}
+
+
+/* Index */
 
 #index {
     background-color: rgba(0, 0, 0, 0.85);
@@ -77,15 +100,6 @@ footer {
 }
 
 /* Worlds */
-.world-detail-link {
-    background-color: #f69700;
-    position: absolute;
-    top: 240px;
-    left: 338px;
-    color: #21201e;
-    padding: 0.5rem;
-    width: 250px;
-}
 
 #worlds {
     background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
@@ -112,15 +126,6 @@ footer {
     padding: 40px;
 }
 
-.world-short-description {
-    text-align: justify;
-    color: #dbd0ba;
-    position: absolute;
-    left: 338px;
-    right: 18px;
-    top: 90px;
-}
-
 .scale {
     position: relative;
     height: 280px !important;
@@ -137,24 +142,33 @@ footer {
     text-transform: uppercase;
 }
 
-.room-description {
-    margin-left: 5%;
+.world-short-description {
+    text-align: justify;
     color: #dbd0ba;
+    position: absolute;
+    left: 338px;
+    right: 18px;
+    top: 90px;
+}
+
+.world-detail-link {
+    background-color: #f69700;
+    position: absolute;
+    top: 240px;
+    left: 338px;
+    color: #21201e;
+    padding: 0.5rem;
+    width: 250px;
 }
 
 
-/* Contact Form*/
+/* Forms */
 .form {
     padding: 5% 15%;
     background-color: rgba(0, 0, 0, 0.95);
     color: #dbd0ba;
     width: 80%;
     margin: 40px auto;
-}
-
-.text-muted {
-    color: #6d6d6d !important;
-    --bs-text-opacity: 1 !important;
 }
 
 #booking-form h1,
@@ -166,7 +180,7 @@ footer {
 /* Booking List */
 
 #booking-list {
-    padding: 5% 15%;
+    padding: 5% 7%;
     background-color: rgba(0, 0, 0, 0.95);
     color: #dbd0ba;
     width: 80%;
@@ -178,31 +192,33 @@ footer {
 }
 
 .booking-list-object {
-    margin: 30px auto 20px 0;
+    margin: 0 auto 30px 0;
     font-size: 1.1rem;
     background-color: #21201e;
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
 }
 
 .btn-update {
     text-decoration: none;
-    /* background-color: rgb(255, 255, 47); */
     margin: 30px 50px 20px 0 !important;
     padding: 5px 10px;
     border: solid 1px; 
+    width: 38px;
 }
 
-p.booking-list-a {
+/* p.booking-list-a {
     margin-top: 20px;
-}
+} */
 
 .btn-delete {
     text-decoration: none;
     background-color: rgb(199, 48, 10);
     margin: 30px 50px 20px 0 !important;
     padding: 5px 10px;
+    width: 38px;
 }
 
 /* Booking Update */
@@ -211,26 +227,6 @@ p.booking-list-a {
     position: absolute;
     right: 40px;
     top: 40px;
-}
-
-
-.brand {
-    font-family: "Lato", sans-serif !important;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4A4A4F;
-}
-
-.thin {
-    font-weight: 300;
-}
-
-.light-bg {
-    background-color: #fff;
-}
-
-.dark-bg {
-    background-color: #445261;
 }
 
 /* Worlds */
@@ -271,7 +267,6 @@ p.booking-list-a {
     background-color: rgba(0, 0, 0, 0.9);
     color: #c3c3c3;
     line-height: 2;
-    /* position: relative; */
     padding: 50px;
 }
 
@@ -286,7 +281,6 @@ p.booking-list-a {
 .details-text h1 {
     font-family: "Montserrat Alternates", sans-serif;
     text-transform: uppercase;
-    /* padding: 30px 20px; */
 }
 
 .details-text p {
@@ -297,7 +291,7 @@ p.booking-list-a {
 .details-scale {
     position: relative;
     width: 100% !important;
-    height: auto; /* Ensures the image maintains its aspect ratio */
+    height: auto;
     vertical-align: middle;
     margin-top: 72px !important;
 }
@@ -305,7 +299,7 @@ p.booking-list-a {
 .details-scale1 {
     position: relative;
     width: 100% !important;
-    height: auto; /* Ensures the image maintains its aspect ratio */
+    height: auto;
     vertical-align: middle;
     margin-top: 0 !important;
 }
@@ -316,9 +310,6 @@ p.booking-list-a {
 }
 
 .details h3 {
-    /* position: absolute;
-    bottom: 50px;
-    right: 7%; */
     font-size: 2rem;
     font-weight: 700;
 }
@@ -524,6 +515,14 @@ p.booking-list-a {
     #worlds .worlds-second-row {
         text-align: center;
         margin-left: 0;
+    }
+
+    #booking-list {
+        padding: 40px 7%;
+        background-color: rgba(0, 0, 0, 0.95);
+        color: #dbd0ba;
+        width: 95%;
+        margin: 40px auto;
     }
 
 }

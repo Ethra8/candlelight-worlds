@@ -4,8 +4,8 @@ from cloudinary.models import CloudinaryField
 
 
 TIME_SLOTS = [
-    ('10:00 AM - 05:00 PM', '10:00 AM - 05:00 PM'),
-    ('07:00 PM - 08:00 AM', '07:00 PM - 08:00 AM'),
+    ('10 am - 5 pm', '10 am - 5 pm'),
+    ('7 pm - 8 am', '7 pm - 8 am'),
 ]
 
 class Booking(models.Model):
