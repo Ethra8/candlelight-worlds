@@ -14,21 +14,16 @@
                 <p><strong class="text-uppercase">
                     {{booking.world}}</strong></p>
                 <p><strong>Date:</strong> {{ booking.date }}</p>
-                <p><strong>Time:</strong> {{ booking.time }}</span></p>
+                <p class="mb-md-0"><strong>Time:</strong> {{ booking.time }}</span></p>
             </div>
-            <div class="col-6 col-md-3 mt-3 mt-md-0 text-center">
-                <!-- <div class="row booking-list-a"> -->
-                    <a class="col-md-2 btn-update rounded text-grey" href="{% url 'booking_update' booking.pk %}">
-                        <i class="fa-solid fa-pen-to-square"></i></a>
+            <div class="col-4 col-md-2 mt-2 mt-md-0 bookings-btn-parent">
+                <a class="col-md-2 btn-update rounded text-grey" href="{% url 'booking_update' booking.pk %}">
+                    <i class="fa-solid fa-pen-to-square"></i></a>
             </div>
-            <div class="col-6 col-md-1 mt-3 mt-md-0 text-center">
+            <div class="col-8 col-md-2 mt-2 mt-md-0 bookings-btn-parent">
                 <a class="col-md-2 btn-delete rounded" href="{% url 'booking_confirm_delete' booking.pk %}">
                     <i class="fa-solid fa-trash"></i></a>
             </div>
-
-                <!-- </div> -->
-            <!-- </div> -->
-
         </li>
     {% empty %}
         <li>No bookings to display yet.</li>

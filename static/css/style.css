@@ -68,6 +68,20 @@ footer {
     font-weight: 500;
 }
 
+/* Account */
+
+.btn-signup,
+.btn-edit {
+    background-color: #188181;
+    color: #fff;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: #23BBBB;
+}
+
 
 /* Index */
 
@@ -121,7 +135,6 @@ footer {
 
 .world-card {
     background-color: rgba(0, 0, 0, 0.95);
-    /* border: outset 3px #c73064; */
     margin: 35px auto;
     padding: 40px;
 }
@@ -163,6 +176,7 @@ footer {
 
 
 /* Forms */
+
 .form {
     padding: 5% 15%;
     background-color: rgba(0, 0, 0, 0.95);
@@ -201,27 +215,37 @@ footer {
     align-items: center;
 }
 
+.bookings-btn-parent {
+    display: flex;
+    justify-content: end;
+}
+
 .btn-update {
     text-decoration: none;
-    margin: 30px 50px 20px 0 !important;
     padding: 5px 10px;
     border: solid 1px; 
     width: 38px;
 }
 
-/* p.booking-list-a {
-    margin-top: 20px;
-} */
-
 .btn-delete {
     text-decoration: none;
-    background-color: rgb(199, 48, 10);
-    margin: 30px 50px 20px 0 !important;
+    /* background-color: rgb(199, 48, 10); */
     padding: 5px 10px;
+    border: solid 1px #dbd0ba; 
     width: 38px;
+    color: #dbd0ba;
 }
 
-/* Booking Update */
+.btn-delete {
+    /* color: #fff; */
+    /* background: #E84610; */
+}
+
+.faded {
+    color: rgb(172, 175, 175);
+}
+
+/* Booking Update Page */
 
 #booking-update .btn-close {
     position: absolute;
@@ -309,7 +333,6 @@ footer {
     margin-top: 0 !important;
 }
 
-
 .details-description {
     padding: 0 0 40px;
 }
@@ -326,19 +349,9 @@ footer {
     margin: 40px 0;
 }
 
-.btn-signup,
-.btn-edit {
-    background-color: #188181;
-    color: #fff;
-}
 
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
-}
 
-.link {
+/* .link {
     color: #23BBBB;
     text-decoration: none;
 }
@@ -347,33 +360,7 @@ footer {
 .link:active {
     color: #445261;
     text-decoration: underline;
-}
-
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
-}
-
-.btn-delete {
-    color: #fff;
-    background: #E84610;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
-}
-
-.faded {
-    color: rgb(172, 175, 175);
-}
-
-.approval {
-    color: rgb(222, 146, 168);
-}
+} */
 
 
 
@@ -417,7 +404,7 @@ footer {
 }
 
 
-@media (max-width: 796px) {
+@media (max-width: 767px) {
 
     .row>* {
         padding-left: 3%;
@@ -505,11 +492,14 @@ footer {
 
     #booking-list {
         padding: 40px 7%;
-        background-color: rgba(0, 0, 0, 0.95);
-        color: #dbd0ba;
         width: 95%;
         margin: 40px auto;
     }
+
+    .bookings-btn-parent {
+        justify-content: start;
+    }
+    
 
 }
 
@@ -521,8 +511,8 @@ footer {
         margin-left: 0;
         /* margin-right: -22px; */
         padding: 16px 3% !important;
-        background-color: rgba(0, 0, 0, 0.9);
-        color: white;
+        /* background-color: rgba(0, 0, 0, 0.9); */
+        /* color: white; */
     }
 
     #worlds .worlds-second-row {
@@ -551,15 +541,12 @@ footer {
     }
 
     .form {
-        /* padding: 50px 4% 10px; */
-        /* background-color: rgba(0, 0, 0, 0.95); */
         width: 100%;
         margin: 40px auto;
     }
 
-    .btn-update {
+    /* .btn-update {
         margin: 40px 40px 20px 0 !important;
-    }
+    } */
     
- 
 }
