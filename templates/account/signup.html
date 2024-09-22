@@ -5,12 +5,12 @@
 {% block head_title %}{% trans "Signup" %}{% endblock head_title %}
 
 {% block content %}
-  <div class="container">
+  <div class="container account">
     <div class="row">
       <div class="col-md-8 mt-3 offset-md-2">
         <h3>{% trans "Sign Up" %}</h3>
-        <p>{% blocktrans %}Welcome back to Candlelight Worlds. Already have an account? Then please
-          <a class="link" href="{{ login_url }}">sign in</a> instead.{% endblocktrans %}
+        <p>{% blocktrans %}Welcome to Candlelight Worlds.<br> Already have an account? Then please
+          <a href="{{ login_url }}">sign in</a> instead.{% endblocktrans %}
         </p>
     </div>
   </div>

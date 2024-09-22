@@ -55,6 +55,7 @@ footer {
     margin-top: 104px;
 }
 
+
 /* Navbar Classes */
 
 .nav-link,
@@ -70,7 +71,51 @@ footer {
 
 /* Account */
 
-.btn-signup,
+.account {
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 76px;
+    padding: 50px;
+    width: 75%;
+    color: #dbd0ba;
+}
+
+.account h3 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.row:nth-of-type(1) p:first-of-type {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.account p {
+    padding-bottom: 10px;
+}
+
+.account button,
+.account [type="submit"] {
+    background-color: #f69700;
+    color: #dbd0ba;
+    text-transform: uppercase;
+    color: #21201e;
+    font-weight: 600;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 7px 15px;
+}
+
+.account button:hover,
+.account [type="submit"]:hover {
+    background-color: #b57002;
+}
+
+.account a {
+    text-decoration: none;
+    color: #f69700;
+}
+
+/* .btn-signup,
 .btn-edit {
     background-color: #188181;
     color: #fff;
@@ -80,7 +125,7 @@ footer {
 .btn-signup:active {
     background-color: #fff;
     color: #23BBBB;
-}
+} */
 
 
 /* Index */
@@ -348,19 +393,6 @@ footer {
     text-transform: uppercase;
     margin: 40px 0;
 }
-
-
-
-/* .link {
-    color: #23BBBB;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
-} */
 
 
 

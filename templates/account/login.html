@@ -7,14 +7,17 @@
 
 {% block content %}
 
-<div class="container">
+<div class="container account">
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
+            
             <h3>{% trans "Sign In" %}</h3>
 
-            <p>{% blocktrans %}Welcome back to CandleLight Worlds! To make a booking, please log in. If
-                you have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
-                first.{% endblocktrans %}</p>
+            <p>{% blocktrans %}
+                    Welcome back to CandleLight Worlds!<br>
+                    To make a booking, please log in.<br>
+                    If you have not created an account yet, then <a href="{{ signup_url }}">sign up</a> first.
+                {% endblocktrans %}</p>
         </div>
     </div>
     <div class="row">
