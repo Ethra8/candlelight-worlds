@@ -67,26 +67,13 @@ class BookingUpdateView(LoginRequiredMixin, UpdateView):
         return redirect(f'/bookings/manage/')
 
 
-# class BookingDeleteView(LoginRequiredMixin, DeleteView):
-#     model = Booking
-#     template_name = 'bookings/booking_confirm_delete.html'
-#     success_url = reverse_lazy('booking_list')
-
-#     def delete(self, request):   
-#         # Add a success message before deletion
-#         messages.success(self.request, "Your booking has been deleted.")
-        
-#         return redirect(f'/bookings/booking_confirm_delete')
-        
 
 class BookingDeleteView(LoginRequiredMixin, DeleteView):
     model = Booking
     template_name = 'bookings/booking_confirm_delete.html'
-    success_url = reverse_lazy('booking_list')  # Ensure this matches your URL patterns
-
+    success_url = reverse_lazy('booking_list')
+    
+    # add post() instead of delete() to avoid booking getting deleted before showing message
     def post(self, request, *args, **kwargs):
-        # Add the success message before deletion
-        messages.success(self.request, "Your booking has been deleted.")
-        
-        # Call super to perform the deletion and redirect
+        messages.success(self.request, "Your booking has successfully been deleted.")
         return super().post(request, *args, **kwargs)

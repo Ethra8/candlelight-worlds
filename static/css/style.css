@@ -48,7 +48,6 @@ footer {
     margin-top: 104px;
 }
 
-
 #index {
     background-color: rgba(0, 0, 0, 0.85);
     position: fixed;
@@ -183,20 +182,26 @@ footer {
     font-size: 1.1rem;
     background-color: #21201e;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .btn-update {
     text-decoration: none;
     /* background-color: rgb(255, 255, 47); */
-    margin: 10px;
+    margin: 30px 50px 20px 0 !important;
     padding: 5px 10px;
-    border: solid 1px 
+    border: solid 1px; 
+}
+
+p.booking-list-a {
+    margin-top: 20px;
 }
 
 .btn-delete {
     text-decoration: none;
     background-color: rgb(199, 48, 10);
-    margin: 10px;
+    margin: 30px 50px 20px 0 !important;
     padding: 5px 10px;
 }
 
@@ -254,6 +259,7 @@ footer {
     position: relative;
     padding: 50px;
     margin-top: 40px;
+    text-align: justify;
 }
 
 .details-text {
@@ -261,7 +267,7 @@ footer {
     flex-direction: column;  /* Align items vertically */
     justify-content: space-between; /* Push the last child to the bottom */
     margin-bottom: 0;
-
+    text-align: justify;
     background-color: rgba(0, 0, 0, 0.9);
     color: #c3c3c3;
     line-height: 2;
@@ -393,7 +399,7 @@ footer {
     
     .main-bg {
         margin-top: 76px;
-        padding: 0 4% 70px;
+        padding: 0 0 70px;
     }
 
     .details {
@@ -422,6 +428,14 @@ footer {
         width: 90%;
         margin: 40px auto;
     }
+
+    #booking-list {
+        padding: 40px 7%;
+        background-color: rgba(0, 0, 0, 0.95);
+        color: #dbd0ba;
+        width: 80%;
+        margin: 40px auto;
+    }
     
 }
 
@@ -429,7 +443,8 @@ footer {
 @media (max-width: 796px) {
 
     .row>* {
-        /* padding-left: 0; */
+        padding-left: 0;
+        padding-right: 0;
     }
 
     #index h1 {
@@ -444,6 +459,12 @@ footer {
     .btn-index-cta {
         margin: 0 auto 50px !important;
         /* height:  */
+    }
+
+    #worlds,
+    body {
+        padding-right: 0;
+        padding-left: 0;
     }
     
     .image-flash {
@@ -510,24 +531,30 @@ footer {
 
 @media (max-width: 475px) {
  
+    nav,
+    footer {
+        margin-left: 0;
+        /* margin-right: -22px; */
+        padding: 16px 3% !important;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+    }
+
     #worlds .worlds-second-row {
         /* margin-left: 0;
         margin-right:0; */
     }
 
-    #worlds,
-    body {
-        padding-right: 0;
-        padding-left: 0;
+    #booking-list {
+        padding: 40px 7%;
+        background-color: rgba(0, 0, 0, 0.95);
+        color: #dbd0ba;
+        width: 95%;
+        margin: 40px auto;
     }
 
-    nav,
-    footer {
-        margin-left: 0;
-        margin-right: 0;
-        padding: 16px 3% !important;
-        background-color: rgba(0, 0, 0, 0.9);
-        color: white;
+    .booking-list-object .btn {
+        margin-top: 50px !important;
     }
 
     .form {
@@ -536,5 +563,10 @@ footer {
         width: 100%;
         margin: 40px auto;
     }
+
+    .btn-update {
+        margin: 40px 40px 20px 0 !important;
+    }
+    
  
 }
