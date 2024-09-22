@@ -115,18 +115,6 @@ footer {
     color: #f69700;
 }
 
-/* .btn-signup,
-.btn-edit {
-    background-color: #188181;
-    color: #fff;
-}
-
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
-} */
-
 
 /* Error Page */
 
@@ -136,7 +124,6 @@ footer {
     background-size: cover;
     height: calc(100vh - 350px);
 }
-
 
 
 /* Index */
