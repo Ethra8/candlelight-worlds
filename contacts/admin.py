@@ -1,18 +1,12 @@
 from django.contrib import admin
 
-from .models import ContactRequest, ContactEmailList
+from .models import ContactRequest
 
 
 
 class ContactRequestAdmin(admin.ModelAdmin):
 
-    list_display = ('name', 'company_name', 'email', 'read',)
-
-
-class ContactEmailListAdmin(admin.ModelAdmin):
-
-    list_display = ('name', 'company_name', 'email', 'is_user',)
+    list_display = ('user', 'name', 'company_name', 'email', 'read',)
 
 
 admin.site.register(ContactRequest, ContactRequestAdmin)
-admin.site.register(ContactEmailList, ContactEmailListAdmin)
