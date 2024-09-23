@@ -4,6 +4,25 @@ body {
     background-size: cover;
     /* color: #555; */
     font-family: "Montserrat", sans-serif;
+    z-index: 0;  /* Ensure the body is beneath overlay */
+}
+/* 
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+} */
+
+.black-transparency {
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 300;
+    padding: 0;
+    width: 100%;
 }
 
 nav,
@@ -57,6 +76,8 @@ p {
 
 .main-bg {
     margin-top: 104px;
+    position: relative;
+    z-index: 2;  /* Higher than the overlay */
 }
 
 
@@ -150,11 +171,11 @@ p {
     background-color: rgba(0, 0, 0, 0.85);
     position: fixed;
     background-size: cover;
-    height: calc(100vh - 350px);
+    height: calc(100vh - 450px);
 }
 
 #index h1 {
-    margin: auto auto auto 10%;
+    margin: auto auto auto 20%;
     font-family: "Lato", sans-serif;
 }
 
@@ -163,7 +184,7 @@ p {
     color: #21201e;
     padding: 2rem;
     width: 250px;
-    margin: 0 auto 50px 10% !important;
+    margin: 0 auto 50px 20% !important;
     /* height:  */
 }
 
@@ -180,7 +201,15 @@ p {
     background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
     background-size: cover;
     height: fit-content;
+    padding: 0;
+    z-index: 999 !important;
+}
+
+#worlds .black-transparency {
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 300;
     padding: 0 7% 70px;
+    width: 100%;
 }
 
 .image-flash {
@@ -288,20 +317,22 @@ p {
     padding: 5px 10px;
     border: solid 1px; 
     width: 38px;
+    transition: all 0.2s linear;
 }
 
 .btn-delete {
     text-decoration: none;
-    /* background-color: rgb(199, 48, 10); */
     padding: 5px 10px;
     border: solid 1px #dbd0ba; 
     width: 38px;
     color: #dbd0ba;
+    transition: all 0.2s linear;
 }
 
-.btn-delete {
-    /* color: #fff; */
-    /* background: #E84610; */
+.btn-update:hover,
+.btn-delete:hover {
+    color: #f69700 !important;
+    border-color:  #f69700; 
 }
 
 .faded {
@@ -334,7 +365,14 @@ p {
     background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
     background-size: cover;
     height: fit-content;
+    /* padding: 0 4% 70px; */
+}
+
+.details .black-transparency {
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 300;
     padding: 0 4% 70px;
+    width: 100%;
 }
 
 .details-info {
@@ -416,6 +454,10 @@ p {
 
 
 @media (max-width: 991px) {
+
+    .main-bg {
+        margin-top: 75px;
+    }
 
     .account {
         padding: 50px;
@@ -500,7 +542,7 @@ p {
     
     .world-card {
         margin: 35px auto;
-        padding: 40px 10px 40px 20px;
+        padding: 10px;
     }
 
     .scale {
@@ -544,6 +586,18 @@ p {
     #worlds .worlds-second-row {
         text-align: center;
         margin-left: 0;
+        margin-right:0;
+    }
+
+    #worlds .black-transparency {
+        /* padding: 0 0 70px; */
+        width: 100%;
+        background-size: cover;
+    }
+    
+    .world-detail-link {
+        width: 100%;
+        margin-bottom: 0;
     }
 
     #booking-list {
@@ -567,6 +621,18 @@ p {
         margin-left: 0;
         padding: 16px 3% !important;
     }
+
+    #index {
+        margin: auto;
+        height: calc(100vh - 250px);
+    }
+    
+    .btn-index-cta {
+        padding: 2rem;
+        width: 250px;
+        margin: 0 auto 50px !important;
+        /* height:  */
+    }    
 
     .account {
         padding: 7%;

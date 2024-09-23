@@ -44,7 +44,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True # os.environ.get('DEVELOPMENT')
 
-ALLOWED_HOSTS = ['8000-ethra8-candlelightworld-ojikmyc7jx4.ws.codeinstitute-ide.net', 'candlelight-worlds-f913477cd630.herokuapp.com']
+ALLOWED_HOSTS = ['8000-ethra8-candlelightworld-ojikmyc7jx4.ws.codeinstitute-ide.net', 'candlelight-worlds-f913477cd630.herokuapp.com',]
 
 USE_X_FORWARDED_HOST = True
 
@@ -148,7 +148,8 @@ DATABASES = {
 CSRF_TRUSTED_ORIGINS = [
     "https://*.gitpod.io",
     "https://*.herokuapp.com",
-    'https://8000-ethra8-candlelightworld-ojikmyc7jx4.ws.codeinstitute-ide.net'
+    'https://8000-ethra8-candlelightworld-ojikmyc7jx4.ws.codeinstitute-ide.net',
+    'https://amiresponsive.co.uk/'
 ]
 
 # Password validation
