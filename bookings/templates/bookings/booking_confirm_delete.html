@@ -11,8 +11,9 @@
 
     <form method="post">
         {% csrf_token %}
-        <p>Are you sure you want to delete "{{ object }}"?</p>
-        {{ form }}
+        <p>Are you sure you want to delete your booking:<br>
+            "<strong>{{ object.world.display_name }}:</strong> {{ object.date }} at {{ object.time }}"?</p>
+            {{ form }}
         <input type="submit" value="Cancel Booking">
     </form>
     
