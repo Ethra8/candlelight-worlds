@@ -5,16 +5,17 @@
 
 {% block content %}
 
-<div class="form position-relative">
-    <!-- <a class="btn-update"><i class="fa-solid fa-backward"></i></a> -->
+<div id="booking-confirm-delete" class="form position-relative">
+
     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close" onclick="window.history.back();"></button>
 
-    <form class="form" method="post">
+    <form method="post">
         {% csrf_token %}
         <p>Are you sure you want to delete "{{ object }}"?</p>
         {{ form }}
-        <input type="submit" value="Confirm">
+        <input type="submit" value="Cancel Booking">
     </form>
+    
 </div>
 
 

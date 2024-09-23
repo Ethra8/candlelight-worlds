@@ -17,11 +17,11 @@
                 <p class="mb-md-0"><strong>Time:</strong> {{ booking.time }}</span></p>
             </div>
             <div class="col-4 col-md-2 mt-2 mt-md-0 bookings-btn-parent">
-                <a class="col-md-2 btn-update rounded text-grey" href="{% url 'booking_update' booking.pk %}">
+                <a class="col-md-2 btn-update rounded text-grey" href="{% url 'booking_update' booking.pk %}" aria-label="Update booking for {{ booking.world }} on {{ booking.date }}">
                     <i class="fa-solid fa-pen-to-square"></i></a>
             </div>
             <div class="col-8 col-md-2 mt-2 mt-md-0 bookings-btn-parent">
-                <a class="col-md-2 btn-delete rounded" href="{% url 'booking_confirm_delete' booking.pk %}">
+                <a class="col-md-2 btn-delete rounded" href="{% url 'booking_confirm_delete' booking.pk %}" aria-label="Delete booking for {{ booking.world }} on {{ booking.date }}">
                     <i class="fa-solid fa-trash"></i></a>
             </div>
         </li>

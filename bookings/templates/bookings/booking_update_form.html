@@ -7,12 +7,11 @@
 <div id="booking-update" class="rounded">
     
     <div class="form position-relative">
-        <!-- <a class="btn-update"><i class="fa-solid fa-backward"></i></a> -->
+
         <button type="button" class="btn-close btn-close-white" aria-label="Close" onclick="window.history.back();"></button>
+        <h3>Update Booking</h3>
         <div>
-            <form method="post">
-                
-                
+            <form method="post">                
                 {% csrf_token %}
                 {{ form | crispy }}
                 <input type="submit" value="Update" class="btn btn-update rounded w-100 btn-book">

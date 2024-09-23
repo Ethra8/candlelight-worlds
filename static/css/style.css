@@ -14,6 +14,10 @@ footer {
     color: #dbd0ba;
 }
 
+p {
+    text-align: justify;
+}
+
 
 /* Custom */
 .alert {
@@ -69,7 +73,7 @@ footer {
     font-weight: 500;
 }
 
-/* Account */
+/* Account & Booking_update h3 */
 
 .account {
     background-color: rgba(0, 0, 0, 0.9);
@@ -79,7 +83,8 @@ footer {
     color: #dbd0ba;
 }
 
-.account h3 {
+.account h3,
+#booking-update h3 {
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
@@ -94,19 +99,20 @@ footer {
 }
 
 .account button,
-.account [type="submit"] {
+.account [type="submit"],
+#booking-confirm-delete [type="submit"] {
     background-color: #f69700;
-    color: #dbd0ba;
     text-transform: uppercase;
     color: #21201e;
     font-weight: 600;
     margin-top: 1rem;
     border-radius: 10px;
-    padding: 7px 15px;
+    padding: 8px 15px;
 }
 
 .account button:hover,
-.account [type="submit"]:hover {
+.account [type="submit"]:hover,
+#booking-confirm-delete [type="submit"] {
     background-color: #b57002;
 }
 
@@ -199,7 +205,7 @@ footer {
 }
 
 .world-short-description {
-    text-align: justify;
+    /* text-align: justify; */
     color: #dbd0ba;
     position: absolute;
     left: 338px;
@@ -221,10 +227,10 @@ footer {
 /* Forms */
 
 .form {
-    padding: 5% 15%;
+    padding: 5% 4%;
     background-color: rgba(0, 0, 0, 0.95);
     color: #dbd0ba;
-    width: 80%;
+    width: 60%;
     margin: 40px auto;
 }
 
@@ -290,7 +296,8 @@ footer {
 
 /* Booking Update Page */
 
-#booking-update .btn-close {
+#booking-update .btn-close,
+#booking-confirm-delete .btn-close {
     position: absolute;
     right: 40px;
     top: 40px;
@@ -323,7 +330,7 @@ footer {
     position: relative;
     padding: 0;
     margin-top: 40px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .details-text {
@@ -331,7 +338,7 @@ footer {
     flex-direction: column;  /* Align items vertically */
     justify-content: space-between; /* Push the last child to the bottom */
     margin-bottom: 0;
-    text-align: justify;
+    /* text-align: justify; */
     background-color: rgba(0, 0, 0, 0.9);
     color: #c3c3c3;
     line-height: 2;
@@ -353,7 +360,7 @@ footer {
 
 .details-text p {
     padding: 0;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .details-img-parent {
@@ -573,7 +580,10 @@ footer {
     .form {
         width: 100%;
         margin: 40px auto;
+        padding: 70px 7%;
     }
+
+    
 
     /* .btn-update {
         margin: 40px 40px 20px 0 !important;

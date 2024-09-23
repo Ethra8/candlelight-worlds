@@ -41,11 +41,18 @@
     // Find the select element
     const selectElement = document.getElementById('id_world');
 
-    // Check if the worldId is valid, then set the value of the select element
+    // Find the option that matches the worldId and set it as selected
     if (selectElement) {
-        selectElement.value = worldId;
+        const options = selectElement.options;
+        for (let i = 0; i < options.length; i++) {
+            if (options[i].value === worldId) {
+                options[i].selected = true;
+                break;  // Stop once the matching option is found
+            }
+        }
     }
-}
+  }
 
   </script>
+  
 {% endblock %}

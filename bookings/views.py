@@ -73,7 +73,7 @@ class BookingDeleteView(LoginRequiredMixin, DeleteView):
     template_name = 'bookings/booking_confirm_delete.html'
     success_url = reverse_lazy('booking_list')
     
-    # add post() instead of delete() to avoid booking getting deleted before showing message
+    # add def post() instead of delete() to avoid booking getting deleted before showing message
     def post(self, request, *args, **kwargs):
         messages.success(self.request, "Your booking has successfully been deleted.")
         return super().post(request, *args, **kwargs)
