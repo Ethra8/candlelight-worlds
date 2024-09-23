@@ -185,8 +185,15 @@ DESTOP & TABLET (Landscape) WIREFRAMES:
 
 
 # AGILE METHODOLOGY
+Agile methodologies and principles guide the planning and creation of thi site. While not adhering strictly to traditional Agile methodologies, such as scheduled sprints or scrums, the development process has been based on Agile principles, focusing on flexibility, continuous improvement, and rapid adaptation to change. Instead of using sprints, we focus directly on the priority level of the User Stories within each epic.  
+
+The approach is straightforward: develop features in a logical sequence, addressing core functionalities first before expanding to more complex features.
+
 ## GITHUB PROJECT - KANBAN
-You can check the Kanban project that has been used on the development of this site [here](https://github.com/users/Ethra8/projects/8)
+When bugs or issues are encountered, they are recorded as bug issues and added to the backlog, to the 'bug' column. This allows us to continue progressing in other areas while periodically revisiting and prioritizing the backlog based on severity and impact. This method ensures that we maintain development, while systematically addressing and resolving issues.
+
+A project kanban board has been used to track progress, moving user stories between 'Todo', 'In Progress', 'Bug', and 'Done' columns as appropriate.
+You can check the Kanban project [here](https://github.com/users/Ethra8/projects/8)
 
 
 # TESTING
