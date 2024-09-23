@@ -13,8 +13,10 @@
             <div class="col-12 col-md-8">
                 <p><strong class="text-uppercase">
                     {{booking.world}}</strong></p>
-                <p><strong>Date:</strong> {{ booking.date }}</p>
-                <p class="mb-md-0"><strong>Time:</strong> {{ booking.time }}</span></p>
+                <p class="mb-0"><strong>
+                    Date:</strong> {{ booking.date }}</p>
+                <p><strong>
+                    Time:</strong> {{ booking.time }}</span></p>
             </div>
             <div class="col-4 col-md-2 mt-2 mt-md-0 bookings-btn-parent">
                 <a class="col-md-2 btn-update rounded text-grey" href="{% url 'booking_update' booking.pk %}" aria-label="Update booking for {{ booking.world }} on {{ booking.date }}">

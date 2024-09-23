@@ -2,22 +2,23 @@
 
 {% load i18n %}
 {% load account socialaccount %}
+{% load crispy_forms_tags %}
 
 {% block head_title %}{% trans "Confirm Access" %}{% endblock head_title %}
 
 {% block content %}
 <div class="container account">
   <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
+    <div class="col-12 mt-3 mx-0">
       <h3>{% trans "Confirm Access" %}</h3>
       <p>{% blocktranslate %}To safeguard the security of your account, please enter your password:{% endblocktranslate %}</p>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
+    <div class="col-12 mt-3 mx-0">
       <form class="reauthenticate" method="POST" action="{% url 'account_reauthenticate' %}">
         {% csrf_token %}
-        {{ form.as_p }}
+        {{ form|crispy }}
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}

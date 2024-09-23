@@ -11,7 +11,7 @@
 {% block content %}
 <div class="container account">
     <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
+        <div class="col-12 mt-3 mx-0">
             <h3>{% trans "Email Address" %}</h3>
             {% if emailaddresses %}
                 {% if current_emailaddress %}
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-8 mt-3 offset-md-2">        
+                <div class="col-12 mt-3 mx-0">        
                     <form method="post" action="{% url 'account_email' %}">
                         {% csrf_token %}
                         <input type="hidden" name="email" value="{{ new_emailaddress.email }}">

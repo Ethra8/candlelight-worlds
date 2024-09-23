@@ -8,7 +8,7 @@
 {% block content %}
 <div class="container account">
     <div class="row">
-      <div class="col-md-8 mt-3 offset-md-2">
+      <div class="col-12 mt-3 mx-0">
 
         <h3>{% trans "Email Addresses" %}</h3>
         {% if emailaddresses %}
@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-8 mt-3 offset-md-2">
+      <div class="col-12 mt-3 mx-0">
 
           <form action="{% url 'account_email' %}" class="email_list" method="post">
             {% csrf_token %}
@@ -49,7 +49,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
+        <div class="col-12 mt-3 mx-0">
       
           {% else %}
           {% include "account/snippets/warn_no_email.html" %}

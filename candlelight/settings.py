@@ -68,6 +68,7 @@ INSTALLED_APPS = [
     'worlds',
     'about',
     'bookings',
+    'contacts',
 ]
 
 SUMMERNOTE_CONFIG = {

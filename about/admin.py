@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import About, CollaborateRequest
+from .models import About
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -7,8 +7,3 @@ from django_summernote.admin import SummernoteModelAdmin
 class AboutAdmin(SummernoteModelAdmin):
     summernote_fields = ('content',)
 
-
-@admin.register(CollaborateRequest)
-class CollaborateRequestAdmin(admin.ModelAdmin):
-
-    list_display = ('email', 'company_name', 'name', 'read',)

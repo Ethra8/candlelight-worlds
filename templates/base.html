@@ -2,6 +2,7 @@
 
 {% url 'home' as home_url %}
 {% url 'about' as about_url %}
+{% url 'contacts' as contact_url %}
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
@@ -24,13 +25,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
     <!-- Load jQuery first for Summernote -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Load Summernote CSS -->
     <link href="{% static 'summernote/summernote-bs5.min.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
 
@@ -54,6 +56,10 @@
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == worlds_url %}active" aria-current="page{% endif %}"
                             href="{% url 'worlds' %}">Worlds</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == contact_url %}active" aria-current="page{% endif %}"
+                            href="{% url 'contacts' %}">Contact</a>
                     </li>                    
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == about_url %}active" aria-current="page{% endif %}"

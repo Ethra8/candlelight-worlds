@@ -73,13 +73,21 @@ p {
     font-weight: 500;
 }
 
-/* Account & Booking_update h3 */
+/* Account, Contact & Booking_update h3 */
 
 .account {
     background-color: rgba(0, 0, 0, 0.9);
-    margin-top: 76px;
+    margin: 76px auto;
     padding: 50px;
-    width: 75%;
+    width: 50%;
+    color: #dbd0ba;
+}
+
+.contact-form {
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 76px auto;
+    padding: 30px;
+    width: 50%;
     color: #dbd0ba;
 }
 
@@ -89,9 +97,10 @@ p {
     margin-bottom: 1rem;
 }
 
-.row:nth-of-type(1) p:first-of-type {
+.account .row:nth-of-type(1) p:first-of-type,
+.contact-form .row:nth-of-type(1) p:first-of-type {
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .account p {
@@ -100,7 +109,8 @@ p {
 
 .account button,
 .account [type="submit"],
-#booking-confirm-delete [type="submit"] {
+#booking-confirm-delete [type="submit"],
+.contact-form button {
     background-color: #f69700;
     text-transform: uppercase;
     color: #21201e;
@@ -108,11 +118,13 @@ p {
     margin-top: 1rem;
     border-radius: 10px;
     padding: 8px 15px;
+    width: 100%;
 }
 
 .account button:hover,
 .account [type="submit"]:hover,
-#booking-confirm-delete [type="submit"] {
+#booking-confirm-delete [type="submit"],
+.contact-form button:hover {
     background-color: #b57002;
 }
 
@@ -224,7 +236,7 @@ p {
 }
 
 
-/* Forms */
+/* Forms General */
 
 .form {
     padding: 5% 4%;
@@ -235,8 +247,10 @@ p {
 }
 
 #booking-form h1,
-#booking-list h1 {
-    padding-bottom: 40px;
+#booking-list h1,
+.contact-form h2 {
+    padding-bottom: 30px;
+    text-transform: uppercase;
 }
 
 
@@ -402,6 +416,11 @@ p {
 
 
 @media (max-width: 991px) {
+
+    .account {
+        padding: 50px;
+        width: 75%;
+    }    
     
     .details-info {
         padding: 4%;
@@ -425,18 +444,21 @@ p {
 
     .form {
         padding: 70px 40px;
-        background-color: rgba(0, 0, 0, 0.95);
         width: 90%;
         margin: 40px auto;
     }
 
     #booking-list {
         padding: 40px 7%;
-        background-color: rgba(0, 0, 0, 0.95);
-        color: #dbd0ba;
         width: 80%;
         margin: 40px auto;
     }
+
+    .contact-form {
+        padding: 4%;
+        width: 75%;
+    }
+    
     
 }
 
@@ -474,12 +496,9 @@ p {
         right: 0;
         left: 0;
         padding: 10px;
-        background-color: #47443e;
-        color: #21201e;
     } 
     
     .world-card {
-        background-color: rgba(0, 0, 0, 0.9);
         margin: 35px auto;
         padding: 40px 10px 40px 20px;
     }
@@ -546,16 +565,13 @@ p {
     nav,
     footer {
         margin-left: 0;
-        /* margin-right: -22px; */
         padding: 16px 3% !important;
-        /* background-color: rgba(0, 0, 0, 0.9); */
-        /* color: white; */
     }
 
-    #worlds .worlds-second-row {
-        /* margin-left: 0;
-        margin-right:0; */
-    }
+    .account {
+        padding: 7%;
+        width: 100%;
+    }    
 
     .details {
         padding: 0 0 70px;
@@ -583,10 +599,9 @@ p {
         padding: 70px 7%;
     }
 
-    
-
-    /* .btn-update {
-        margin: 40px 40px 20px 0 !important;
-    } */
+    .contact-form {
+        padding: 4%;
+        width: 100%;
+    }
     
 }

@@ -11,7 +11,7 @@
 
     <form method="post">
         {% csrf_token %}
-        <p>Are you sure you want to delete your booking:<br>
+        <p>Are you sure you want to cancel your booking:<br>
             "<strong>{{ object.world.display_name }}:</strong> {{ object.date }} at {{ object.time }}"?</p>
             {{ form }}
         <input type="submit" value="Cancel Booking">
