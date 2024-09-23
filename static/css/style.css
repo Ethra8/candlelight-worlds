@@ -2,27 +2,8 @@
 body {
     background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
     background-size: cover;
-    /* color: #555; */
     font-family: "Montserrat", sans-serif;
-    z-index: 0;  /* Ensure the body is beneath overlay */
-}
-/* 
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 1; 
-} */
-
-.black-transparency {
-    background-color: rgba(0, 0, 0, 0.55);
-    z-index: 300;
-    padding: 0;
-    width: 100%;
+    z-index: 0;  
 }
 
 nav,
@@ -185,7 +166,7 @@ p {
     padding: 2rem;
     width: 250px;
     margin: 0 auto 50px 20% !important;
-    /* height:  */
+    transition: all 0.2s linear;
 }
 
 .btn-index-cta:hover,
@@ -346,6 +327,7 @@ p {
     position: absolute;
     right: 40px;
     top: 40px;
+    transition: all 0.2s linear;
 }
 
 /* Worlds */
@@ -449,6 +431,7 @@ p {
     padding: 10px;
     text-transform: uppercase;
     margin: 40px 0;
+    transition: all 0.2s linear;
 }
 
 
