@@ -1,4 +1,5 @@
 # CANDLELIGHT WORLDS
+![image](https://github.com/user-attachments/assets/3fbe4063-a3ce-4be9-9f37-912db1aecd1c)
 
 ## PROJECT OVERVIEW
 - A booking site for a restaurant that offers out-of-the-box romantic dinners. This new concept involves private rooms carefully decorated to transport our guests to different times and places, all under immersive candlelight lighting.
