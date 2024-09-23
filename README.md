@@ -110,12 +110,10 @@ The project goals are as follows:
 - [X] View available worlds.
 - [X] View world detail pages.
 - [X] View each worlds' details page images in full size
-- [X] Sign up for an account after a conscient decision, to be able to make a booking.
 - [ ] Check the About page.
+- [X] Send a request through a form
+- [X] Sign up for an account after a conscient decision, to be able to make a booking.
 
-### As a first time B2B visitor
-- [ ] Easily acces a contact form to receive the special catalogue for company events.  
-- [ ] View some pictures of past events as example of activities.  
 
 ### As an Authorized User 
 - [X] Easily log in and log out.  
@@ -133,6 +131,8 @@ As a site owner, the following functionalities have been included on this site, 
 - [X] Add, update or delete worlds directly from the Admin.  
 - [X] Style the font size and display of each world's details page.
 - [X] Add, update of delete images from the world's details page.
+- [X] Access contact requests sent by users throkugh the contact form to the admin.
+- [X] Display clearly if the request sender is an authenticated user or not.
 
 
 ## USER PROFILES
@@ -145,7 +145,7 @@ As a site owner, the following functionalities have been included on this site, 
 ### B2B
 - Oisin is the CEO of a large company and wants to offer a special treat to the managers after reaching an importnt milestone.
 - Maeve is the owner of a family-owned establishment and wants a special 1st price for a raffle.
-- Tony is in charge of finding an out-of-the-box approach to organize a team building activity for the executives of his company.
+
 
 
 ## WIREFRAMES
