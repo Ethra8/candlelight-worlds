@@ -1,6 +1,7 @@
 {% load static %}
 
 {% url 'index' as home_url %}
+{% url 'worlds' as worlds_url %}
 {% url 'about' as about_url %}
 {% url 'contacts' as contact_url %}
 {% url 'account_login' as login_url %}
@@ -54,7 +55,7 @@
                         <a class="nav-link" href="{% url 'index' %}">Home</a>
                     </li>                    
                     <li class="nav-item">
-                        <a class="nav-link {% if request.resolver_match.url_name == 'worlds' %}active" aria-current="page{% endif %}"
+                        <a class="nav-link {% if request.path == worlds_url %}active" aria-current="page{% endif %}"
                             href="{% url 'worlds' %}">Worlds</a>
                     </li>
                     <li class="nav-item">
