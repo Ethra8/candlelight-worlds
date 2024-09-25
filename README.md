@@ -30,8 +30,8 @@ Edna Torres Munill
   * [User Profiles](#user-profiles)
 - [UI](#ui)
   * [Wireframes](#wireframes)
-    - [Mobile & Tablet (portrait)](#mobile-&-tablets-(portrait))
-    - [Desktop and Tablet (landscape)](#desktop-&-table-(landscape))
+    - [Mobile & Tablet (portrait)](#mobile-&-tablet-(portrait))
+    - [Desktop & Tablet (landscape)](#desktop-&-tablet-(landscape))
   * [Pages](#pages)
     - [Home Page](#home-page)
     - [Worlds Page](#worlds-page)
@@ -160,8 +160,8 @@ As a site owner, the following functionalities have been included on this site, 
 
 ## WIREFRAMES
 
-MOBILE & TABLET (Portrait) WIREFRAMES:
--
+### MOBILE & TABLET (Portrait)
+
 <details>
 <summary>Click here to see the Mobile & Tablet (portrait) Wireframes</summary>
 - HOME Page
@@ -188,8 +188,8 @@ MOBILE & TABLET (Portrait) WIREFRAMES:
 </details>  
 
   
-DESKTOP & TABLET (Landscape) WIREFRAMES:
--
+### DESKTOP & TABLET (Landscape)
+
 <details>
 <summary>Click here to see the Desktop & Tablet (landscape) Wireframes</summary>
 - Home Page
