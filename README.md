@@ -158,7 +158,6 @@ MOBILE & TABLET (Portrait) WIREFRAMES:
 - HOME Page
   
   - ![image](https://github.com/user-attachments/assets/fb475774-52f1-49d1-a9c8-830e615be9ad)
-
    
 - WORLDS Page
   - ![image](https://github.com/user-attachments/assets/b8ae0f97-1a63-4d0c-a0cb-be636aa19962)
@@ -170,7 +169,7 @@ MOBILE & TABLET (Portrait) WIREFRAMES:
   - ![image](https://github.com/user-attachments/assets/be2530c1-76a4-47f9-89a4-3c12f20bd83e)
 
 - MY BOOKINGS Page (list)
-  - ![image](https://github.com/user-attachments/assets/790267c2-72ed-4eb8-b254-d221a1ef3f10)
+  - ![image](https://github.com/user-attachments/assets/9802a0f9-9418-4c19-a654-e494d49eb5f4)
 
 - CONTACT Page (form)
   - ![image](https://github.com/user-attachments/assets/d208fb55-37d4-408e-97dc-5454c191ee2e)
