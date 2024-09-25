@@ -39,6 +39,7 @@
 </head>
 
 <body class="d-flex flex-column h-100">
+    <div class="black-transparency">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark pl-2 pr-2 pl-md-5 pr-md-5 fixed-top">
@@ -66,17 +67,6 @@
                         <a class="nav-link {% if request.path == about_url %}active" aria-current="page{% endif %}"
                             href="{% url 'about' %}">About</a>
                     </li>
-                    <!-- {% if user.is_authenticated %}
-                    {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == signup_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'account_signup' %}">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == login_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'account_login' %}">Login</a>
-                    </li>
-                    {% endif %} -->
                 </ul>
                 <span class="navbar-text text-center">
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
@@ -84,7 +74,7 @@
                             <a class="nav-link pt-0 pb-0" href="#" id="user-options" role="button" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 <div class="text-lg-center">
-                                    <p class="text-center m-0"><i class="user-icon fa-solid fa-user"></i>{% if user.is_authenticated %}<br>{{ user }}{% else %}login{% endif %}</p>
+                                    <p class="text-center m-0"><i class="user-icon fa-solid fa-user"></i>{% if user.is_authenticated %}<br>{{ user }}{% else %}<br>log-in{% endif %}</p>
                                 </div>
                             </a>
                             <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -116,7 +106,7 @@
         </div>
     </div>
     
-    <main class="main-bg black-transparency">
+    <main class="main-bg">
 
         {% block content %}
         <!-- Content Goes here -->

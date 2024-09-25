@@ -62,7 +62,7 @@ p {
 .main-bg {
     margin-top: 94px;
     position: relative;
-    height: fit-content !important;
+    min-height: fit-content !important;
 }
 
 .black-transparency {

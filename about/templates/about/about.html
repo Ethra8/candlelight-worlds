@@ -3,17 +3,17 @@
 
 
 {% block content %}
-<div id="about" class="container mt-5 account">
+<div id="about" class="container mt-5">
     <div class="row">
-        <div class="col-12 col-md-4 text-center">
+        <div class="col-12 text-center h-50">
             {% if "placeholder" in about.image.url %}
             <img src="{% static 'images/nobody.jpg' %}" class="profile-image" alt="{{ about.title }}">
             {% else %}
-            <img class="about-img" src="{{ about.image.url }}" class="about-image" alt="{{ about.title }}">
+            <img class="about-img scale" src="{{ about.image.url }}" class="about-image" alt="{{ about.title }}">
             {% endif %}
         </div>
-        <div class="col-12 col-md-8">
-            <h2>{{ about.title }}</h2>
+        <div class="col-12">
+            <h2 class="col-12 m-5">{{ about.title }}</h2>
             {{ about.content | safe }}
         </div>
     </div>
