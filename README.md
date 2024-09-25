@@ -72,7 +72,13 @@ Edna Torres Munill
 - [TECHNOLOGIES and METHODOLOGIES USED](#technologies-and-methodologies-used)
   * [Languages](#languages)
   * [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
--[CREDITS & ACKNOWEDGEMENTS](#credits-and-acknowledgements)
+- [DEPLOYMENT](#deployment)
+  * [Version Control](#version-control)
+  * [Heroku](#heroku)
+  * [Local Copy](#local-copy)
+    - [How to Clone](#how-to-clone)
+    - [How to Fork](#how-to-fork)
+- [CREDITS & ACKNOWEDGEMENTS](#credits-and-acknowledgements)
 
 
 # UX
@@ -121,7 +127,7 @@ The project goals are as follows:
 - [X] Easily recover my password in case I forget it.
 - [X] Receive an email to confirm my registration, so that I can be sure of my credentials.
 - [X] View a confirmation message after registering.  
-- [X] Make a booking.   
+- [X] Make a booking selecting the world and time.   
 - [X] View a list with my bookings after sending the booking form.
 - [X] Update or delete my bookings.  
 - [X] View confirmation message on the site for every action taken.
@@ -134,6 +140,7 @@ As a site owner, the following functionalities have been included on this site, 
 - [X] Add, update of delete images from the world's details page.
 - [X] Access contact requests sent by users throkugh the contact form to the admin.
 - [X] Display clearly if the request sender is an authenticated user or not.
+- [X] Know if the request sender is a actingon behalf of a company
 
 
 ## USER PROFILES
@@ -155,20 +162,31 @@ MOBILE & TABLET (Portrait) WIREFRAMES:
 -
 <details>
 <summary>Click here to see the Mobile & Tablet (portrait) Wireframes</summary>
-- HOME PAGE
+- HOME Page
   
-  ![image](https://github.com/user-attachments/assets/4cb95fc6-fadb-4fd1-ac16-79e3b3c8abe7)  
+  - ![image](https://github.com/user-attachments/assets/fb475774-52f1-49d1-a9c8-830e615be9ad)
    
-- Worlds Page
-  - 
-- Booking Page
-  - 
+- WORLDS Page
+  - ![image](https://github.com/user-attachments/assets/b8ae0f97-1a63-4d0c-a0cb-be636aa19962)
+
+- WORLD DETAILS Page
+  - ![image](https://github.com/user-attachments/assets/2570940e-31ce-4774-86a2-e8073c9d5f51)
+
+- NEW BOOKING Page (form)
+  - ![image](https://github.com/user-attachments/assets/be2530c1-76a4-47f9-89a4-3c12f20bd83e)
+
+- MY BOOKINGS Page (list)
+  - ![image](https://github.com/user-attachments/assets/9802a0f9-9418-4c19-a654-e494d49eb5f4)
+
+- CONTACT Page (form)
+  - ![image](https://github.com/user-attachments/assets/d208fb55-37d4-408e-97dc-5454c191ee2e)
+
 - About Page
   - 
 </details>  
 
   
-DESTOP & TABLET (Landscape) WIREFRAMES:
+DESKTOP & TABLET (Landscape) WIREFRAMES:
 -
 <details>
 <summary>Click here to see the Desktop & Tablet (landscape) Wireframes</summary>
@@ -270,11 +288,63 @@ Please find the correspondent **compatibility and responsive testing** reflected
   - [Amiresponsive](https://ui.dev/amiresponsive) - To display the site in all types of devices simultaneously.
   - [EqualWeb Accessibility Checker](https://chrome.google.com/webstore/detail/equalweb-accessibility-ch/imemciokfejbnonkkinhcdfigdilcllg/related?utm_source=chrome-ntp-icon) - Google Chrome extension to check general errors and contract errors for optimal accessibility.
   - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorithm.
- 
 
-## CREDITS & ACKNOWEDGEMENTS
 
-### IMAGES
+# DEPLOYMENT
+## VERSION CONTROL
+The site was created using Gitpod editor and pushed to Github to the remote repository **‘candlelight-wolds’**.  
+The following git commands were given to the terminal throughout development to push updated code to the remote repo on Github:
+1. ```git add .``` - Command to add the updated file(s) to the staging area before they are committed to the *main branch*, represented by a '**.**'.
+2. ```git commit -m “commit text”``` - Command to commit changes to the local repository queue ready for the final push.
+3. ```git push``` - Command to push all updated code to the remote repository on Github.
+4. ```python3 manage.py runserver``` - Command to run **python** app on local server.
+
+### SECRETS
+To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, SECRET_KEY) to Github:
+1. Create an ***env.py*** file on the main directory of the app.
+2. Ensure that env.py is included in the ***.gitignore*** file.
+3. To include secret variables on the env.py file:
+   - (i) On the top of the file, include the imports:
+   -```import os
+       from pathlib import Path```
+   - (ii) Include eac hsecret var following this example:
+   - ```os.environ.setdefault('DATABASE_URL', 'your-data-base-url')```
+   - (iii) Import Operational System to your ***settings.py***, so it can access the system variables secretly stored in your env.py file:
+   - ```import os```
+   - (iv) To access the system variables in your settings.py file, use the following method to store them in other safe variables:
+   - ```DATABASE_URL = os.environ.get("DATABASE_URL")```
+4. BEFORE COMMITTING TO GITHUB:
+   - On the terminal, type ```git add .```, then ```git status``` and make sure the env.py file is not in the list. Once you are reassured that it is not in the list of files to be committed, safely commit.
+
+## HEROKU
+### App Preparation
+1. Create and add the **'Procfile'** to the root directory of the app, and include ```web: gunicorn candlelight.wsgi --log-file -```  Heroku relies on this file to determine how to run your application, ensuring the correct setup of your web server. Use commands like ```web: gunicorn PROJ_NAME.wsgi``` in the 'Procfile' to instruct Heroku on starting your web server with Gunicorn.
+2. If you haven't done so yet, create a ***requirements.txt*** file to store necessary modules and libraries:
+   - ```pip3 install -r requirements.txt```
+3. Ensure you have updated the ***requirements.txt*** file listing all project dependencies. The comnmand to update the file is ```pip3 freeze > requirements.txt```
+4. Set up necessary **configuration variables** in Heroku ***setting tab > Config Vars*** *(eg. SECRET_KEY, DATABASE_URL, etc.)*.
+5. Add Heroku to your ALLOWED_HOSTS in your app's *'settings.py'* file: ```candlelight-worlds.herokuapp.com```.
+   
+### Create Heroku App
+1. Sign up to an account on [Heroku](https://heroku.com)
+2. Create new app. Remember that app name must be unique on the whole of Heroku site.
+   - ![image](https://github.com/user-attachments/assets/43f0170f-e3dd-4651-9a32-d287f6237b17)
+
+3. Store all the secret environment variables (secret keys) on **settings** > **Config Vars**:
+   - ![image](https://github.com/user-attachments/assets/48671b5e-99a8-4472-97b8-94af79a84ad5)
+     
+### Deployment Method
+1. Ensure that in your **settings.py**, ```DEBUG = False``` before doing the last commit to Github.
+2. **On Heroku**, click the **deploy** tab
+3. Scroll down and select Github
+4. Use the github link and type in the name of your repository
+5. Click **deploy from branch** and select *main*
+6. Once your application is running, switch to **Automatic Deploys** so that any changes are automatically reflected in Heroku deployed app.  
+  
+  
+# CREDITS & ACKNOWEDGEMENTS
+
+## IMAGES
 - [Hero image](https://www.freepik.com/free-photo/couple-having-dinner-valentines-day_6412178.htm#query=dinner%20candlelight&position=32&from_view=keyword&track=ais&uuid=0b778147-a7c9-4ab5-a148-ddd91935661c) by [Freepik](https://www.freepik.com/author/freepik) at [Freepik](https://www.freepik.com/)
 - [Candle on the index page background](https://www.freepik.com/free-photo/enchanting-glow-fairy-lights-candles-creating-magical-ambiance_136714970.htm) by AI at [Freepik](https://www.freepik.com)
 - Medieval Castle Bedroom - AI generated (ChatGPT)
