@@ -184,7 +184,7 @@ As a site owner, the following functionalities have been included on this site, 
 - CONTACT Page (form)
   - ![image](https://github.com/user-attachments/assets/d208fb55-37d4-408e-97dc-5454c191ee2e)
 
-- About Page
+- ABOUT Page
   - 
 </details>  
 
@@ -193,23 +193,32 @@ As a site owner, the following functionalities have been included on this site, 
 
 <details>
 <summary>Click here to see the Desktop & Tablet (landscape) Wireframes</summary>
-- Home Page
-
-  ![image](https://github.com/user-attachments/assets/0874770d-4670-4e5d-8a17-eccfcaf2c2a4)  
-- Worlds Page
-  ![image](https://github.com/user-attachments/assets/727dbaf0-40f8-4ba1-8646-0c9a865f6f1d)
+- HOME Page
   
-- Booking Page
-  - 
-- About Page
+  - ![image](https://github.com/user-attachments/assets/39bc1b2d-1cc4-4619-b63a-2d98d5a1ddd0)
+
+- WORLDS Page
+  - ![image](https://github.com/user-attachments/assets/c007a6fe-a6ff-426b-af68-eb420f1e78ea)
+  
+- WORLD DETAILS Page
+  - ![image](https://github.com/user-attachments/assets/7445f09b-e381-4ffe-8636-f530ea9c3c7b)
+
+- NEW BOOKING Page
+  - ![image](https://github.com/user-attachments/assets/97f377ed-9551-471f-abb1-b680d94d0142)
+
+- MY BOOKINGS Page
+  - ![image](https://github.com/user-attachments/assets/10638afe-57ed-418c-bfcf-d85f4d5d1707)
+
+- CONTACT Page
+  - ![image](https://github.com/user-attachments/assets/462ad81a-57f4-4f23-a44b-47b13f51ee4b)
+
+- ABOUT Page
   - 
 </details>
 
 
 # AGILE METHODOLOGY
-Agile methodologies and principles guide the planning and creation of thi site. While not adhering strictly to traditional Agile methodologies, such as scheduled sprints or scrums, the development process has been based on Agile principles, focusing on flexibility, continuous improvement, and rapid adaptation to change. Instead of using sprints, we focus directly on the priority level of the User Stories within each epic.  
-
-The approach is straightforward: develop features in a logical sequence, addressing core functionalities first before expanding to more complex features.
+Agile methodologies and principles has guided the planning and creation of this site. Eventhough it does not strictly adhere to traditional Agile methodologies, the development process has been based on Agile principles, focusing on flexibility, continuous improvement, and an agile adaptation to change. The focus has been put on the priority level of the User Stories, adding extra features once the basic functionality had been satisfied. The development of features has been made in a logical sequence, addressing core CRUD functionalities first before expanding to the other features.
 
 ## GITHUB PROJECT - KANBAN
 When bugs or issues are encountered, they are recorded as bug issues and added to the backlog, to the 'bug' column. This allows us to continue progressing in other areas while periodically revisiting and prioritizing the backlog based on severity and impact. This method ensures that we maintain development, while systematically addressing and resolving issues.
@@ -268,6 +277,28 @@ Please find the correspondent **compatibility and responsive testing** reflected
 | 12      | BrowserStack       | Asus ZenBook UX305   | Firefox 117        |Windows 11       |1920 x 1080                   |
 | 13      | BrowserStack       | MacBook              | Safari 16.5        | OS X Ventura    |1920 x 1080                   |
 
+
+### TEST VIDEOS
+TEST 1
+-
+TEST 2
+-
+TEST 3
+-
+TEST 4
+-
+TEST 5
+-
+TEST 6
+-
+TEST 7
+-
+TEST 8
+-
+TEST 9
+-
+TEST 10
+-
 
 
 # TECHNOLOGIES and METHODOLOGIES USED
