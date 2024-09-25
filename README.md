@@ -198,10 +198,11 @@ As a site owner, the following functionalities have been included on this site, 
   - ![image](https://github.com/user-attachments/assets/39bc1b2d-1cc4-4619-b63a-2d98d5a1ddd0)
 
 - WORLDS Page
-  - 
+  - ![image](https://github.com/user-attachments/assets/c007a6fe-a6ff-426b-af68-eb420f1e78ea)
   
 - WORLD DETAILS Page
-  - 
+  - ![image](https://github.com/user-attachments/assets/7445f09b-e381-4ffe-8636-f530ea9c3c7b)
+
 - NEW BOOKING Page
   - 
 - MY BOOKINGS Page
