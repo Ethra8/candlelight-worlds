@@ -157,10 +157,11 @@ MOBILE & TABLET (Portrait) WIREFRAMES:
 <summary>Click here to see the Mobile & Tablet (portrait) Wireframes</summary>
 - HOME Page
   
-  ![image](https://github.com/user-attachments/assets/4cb95fc6-fadb-4fd1-ac16-79e3b3c8abe7)  
+  - ![image](https://github.com/user-attachments/assets/fb475774-52f1-49d1-a9c8-830e615be9ad)
+
    
 - WORLDS Page
-  - ![image](https://github.com/user-attachments/assets/a349f78b-bde1-4882-ac9c-b2e6d4cde735)
+  - ![image](https://github.com/user-attachments/assets/b8ae0f97-1a63-4d0c-a0cb-be636aa19962)
 
 - WORLD DETAILS Page
   - ![image](https://github.com/user-attachments/assets/2570940e-31ce-4774-86a2-e8073c9d5f51)
