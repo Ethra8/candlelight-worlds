@@ -210,7 +210,7 @@ p {
     font-weight: 600;
     padding: 2rem;
     width: 250px;
-    margin: 40px auto 50px 20% !important;
+    margin: 40px auto 0 20% !important;
     transition: all 0.2s linear;
 }
 
@@ -507,6 +507,10 @@ p {
         margin-top: 75px;
     }
 
+    .btn-index-cta {
+        margin: 0 auto 50px !important;
+    }
+
     .account {
         padding: 50px;
         width: 75%;
@@ -573,11 +577,6 @@ p {
 
     #index h4 {
         text-align: center !important;
-    }
-
-    .btn-index-cta {
-        margin: 30px auto 50px !important;
-        /* height:  */
     }
 
     #worlds,
