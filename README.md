@@ -184,7 +184,7 @@ As a site owner, the following functionalities have been included on this site, 
 - CONTACT Page (form)
   - ![image](https://github.com/user-attachments/assets/d208fb55-37d4-408e-97dc-5454c191ee2e)
 
-- About Page
+- ABOUT Page
   - 
 </details>  
 
@@ -193,15 +193,22 @@ As a site owner, the following functionalities have been included on this site, 
 
 <details>
 <summary>Click here to see the Desktop & Tablet (landscape) Wireframes</summary>
-- Home Page
-
-  ![image](https://github.com/user-attachments/assets/0874770d-4670-4e5d-8a17-eccfcaf2c2a4)  
-- Worlds Page
-  ![image](https://github.com/user-attachments/assets/727dbaf0-40f8-4ba1-8646-0c9a865f6f1d)
+- HOME Page
   
-- Booking Page
+  - ![image](https://github.com/user-attachments/assets/39bc1b2d-1cc4-4619-b63a-2d98d5a1ddd0)
+
+- WORLDS Page
   - 
-- About Page
+  
+- WORLD DETAILS Page
+  - 
+- NEW BOOKING Page
+  - 
+- MY BOOKINGS Page
+  -  
+- CONTACT Page
+  - 
+- ABOUT Page
   - 
 </details>
 
