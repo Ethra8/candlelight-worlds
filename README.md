@@ -204,11 +204,14 @@ As a site owner, the following functionalities have been included on this site, 
   - ![image](https://github.com/user-attachments/assets/7445f09b-e381-4ffe-8636-f530ea9c3c7b)
 
 - NEW BOOKING Page
-  - 
+  - ![image](https://github.com/user-attachments/assets/97f377ed-9551-471f-abb1-b680d94d0142)
+
 - MY BOOKINGS Page
-  -  
+  - ![image](https://github.com/user-attachments/assets/10638afe-57ed-418c-bfcf-d85f4d5d1707)
+
 - CONTACT Page
-  - 
+  - ![image](https://github.com/user-attachments/assets/462ad81a-57f4-4f23-a44b-47b13f51ee4b)
+
 - ABOUT Page
   - 
 </details>
