@@ -121,7 +121,7 @@ The project goals are as follows:
 - [X] Easily recover my password in case I forget it.
 - [X] Receive an email to confirm my registration, so that I can be sure of my credentials.
 - [X] View a confirmation message after registering.  
-- [X] Make a booking.   
+- [X] Make a booking selecting the world and time.   
 - [X] View a list with my bookings after sending the booking form.
 - [X] Update or delete my bookings.  
 - [X] View confirmation message on the site for every action taken.
@@ -134,6 +134,7 @@ As a site owner, the following functionalities have been included on this site, 
 - [X] Add, update of delete images from the world's details page.
 - [X] Access contact requests sent by users throkugh the contact form to the admin.
 - [X] Display clearly if the request sender is an authenticated user or not.
+- [X] Know if the request sender is a actingon behalf of a company
 
 
 ## USER PROFILES
