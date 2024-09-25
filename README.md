@@ -57,7 +57,7 @@ Edna Torres Munill
     - [Admin Console](#admin-console)
 - [AGILE Methodology](#agile-methodology)
   * [Github Project - Kanban](#github-project---kanban)
--  [TESTING](#testing)
+- [TESTING](#testing)
   * [Defect Tracking](#defect-tracking)
     - [Github Issues](#github-issues)
     - [Defects of Note](#defects-of-note)
