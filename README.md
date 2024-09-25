@@ -334,11 +334,12 @@ To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, S
    - ![image](https://github.com/user-attachments/assets/48671b5e-99a8-4472-97b8-94af79a84ad5)
      
 ### Deployment Method
-1. Click the **deploy** tab
-2. Scroll down and select Github
-3. Use the github link and type in the name of your repository
-4. Click **deploy from branch** and select *main*
-5. Once your application is running, switch to **Automatic Deploys** so that any changes are automatically reflected in Heroku deployed app.  
+1. Ensure that in your **settings.py**, ```DEBUG = False``` before doing the last commit to Github.
+2. **On Heroku**, click the **deploy** tab
+3. Scroll down and select Github
+4. Use the github link and type in the name of your repository
+5. Click **deploy from branch** and select *main*
+6. Once your application is running, switch to **Automatic Deploys** so that any changes are automatically reflected in Heroku deployed app.  
   
   
 # CREDITS & ACKNOWEDGEMENTS
