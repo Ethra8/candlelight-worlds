@@ -137,12 +137,13 @@ The project goals are as follows:
 
 ## SITE OWNER STORIES
 As a site owner, the following functionalities have been included on this site, to manually access and set the following:
-- [X] Add, update or delete worlds directly from the Admin.  
+- [X] Add, update or delete worlds directly from the admin.  
 - [X] Style the font size and display of each world's details page.
 - [X] Add, update of delete images from the world's details page.
 - [X] Access contact requests sent by users throkugh the contact form to the admin.
 - [X] Display clearly if the request sender is an authenticated user or not.
-- [X] Know if the request sender is a actingon behalf of a company
+- [X] Know if the request sender is a acting on behalf of a company.
+- [ ] Edit the about page from the admin.
 
 
 ## USER PROFILES
@@ -175,7 +176,7 @@ As a site owner, the following functionalities have been included on this site, 
   - ![image](https://github.com/user-attachments/assets/2570940e-31ce-4774-86a2-e8073c9d5f51)
 
 - NEW BOOKING Page (form)
-  - ![image](https://github.com/user-attachments/assets/be2530c1-76a4-47f9-89a4-3c12f20bd83e)
+  - ![image](https://github.com/user-attachments/assets/a042a479-bba2-405f-b75f-c89924ac140a)
 
 - MY BOOKINGS Page (list)
   - ![image](https://github.com/user-attachments/assets/9802a0f9-9418-4c19-a654-e494d49eb5f4)
