@@ -50,8 +50,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
-                    <li class="nav-item d-block d-md-none {% if request.resolver_match.url_name == 'index' %}active" aria-current="page{% endif %}">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-grey pl-5">
+                    <li class="nav-item d-block d-md-none {% if request.path == home_url or '/' %}active" aria-current="page{% endif %}">
                         <a class="nav-link" href="{% url 'index' %}">Home</a>
                     </li>                    
                     <li class="nav-item">
@@ -66,7 +66,7 @@
                         <a class="nav-link {% if request.path == about_url %}active" aria-current="page{% endif %}"
                             href="{% url 'about' %}">About</a>
                     </li>
-                    {% if user.is_authenticated %}
+                    <!-- {% if user.is_authenticated %}
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == signup_url %}active" aria-current="page{% endif %}"
@@ -76,7 +76,7 @@
                         <a class="nav-link {% if request.path == login_url %}active" aria-current="page{% endif %}"
                             href="{% url 'account_login' %}">Login</a>
                     </li>
-                    {% endif %}
+                    {% endif %} -->
                 </ul>
                 <span class="navbar-text text-center">
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
@@ -84,7 +84,7 @@
                             <a class="nav-link pt-0 pb-0" href="#" id="user-options" role="button" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 <div class="text-lg-center">
-                                    <p class="text-center m-0"><i class="user-icon fa-solid fa-user"></i>{% if user.is_authenticated %}<br>{{ user }}{% endif %}</p>
+                                    <p class="text-center m-0"><i class="user-icon fa-solid fa-user"></i>{% if user.is_authenticated %}<br>{{ user }}{% else %}login{% endif %}</p>
                                 </div>
                             </a>
                             <div class="dropdown-menu border-0" aria-labelledby="user-options">

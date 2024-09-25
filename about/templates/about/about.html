@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
-{% load crispy_forms_tags %}
+
 
 {% block content %}
-<div class="container mt-5 account">
+<div id="about" class="container mt-5 account">
     <div class="row">
         <div class="col-12 col-md-4 text-center">
-            {% if "placeholder" in about.profile_image.url %}
+            {% if "placeholder" in about.image.url %}
             <img src="{% static 'images/nobody.jpg' %}" class="profile-image" alt="{{ about.title }}">
             {% else %}
-            <img src="{{ about.profile_image.url }}" class="profile-image" alt="{{ about.title }}">
+            <img class="about-img" src="{{ about.image.url }}" class="about-image" alt="{{ about.title }}">
             {% endif %}
         </div>
         <div class="col-12 col-md-8">

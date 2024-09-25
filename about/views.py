@@ -1,40 +1,18 @@
 from django.shortcuts import render
-from django.contrib import messages
 from .models import About
-# Create your views here.
 
 
 def about_me(request):
     """
-    Renders the most recent information on the website author
-    and allows user collaboration requests.
-
+    Renders the most recent information on the site.
     Displays an individual instance of :model:`about.About`.
 
-    **Context**
-    ``about``
-        The most recent instance of :model:`about.About`.
-        ``collaborate_form``
-            An instance of :form:`about.CollaborateForm`.
-
-    **Template**
-    :template:`about/about.html`
     """
-
-    if request.method == "POST":
-        collaborate_form = CollaborateForm(data=request.POST)
-        if collaborate_form.is_valid():
-            collaborate_form.save()
-            messages.add_message(
-                request, messages.SUCCESS,
-                'Your request has been successfully received.<br> We endeavour to respond within 2 working days.'  # noqa
-            )
     about = About.objects.all().order_by('-updated_on').first()
 
-    return render(
-        request,
-        "about/about.html",
-        {
+    template = "about/about.html"
+    context = {
             "about": about,
-        },
-    )
+        }
+
+    return render(request, template, context)

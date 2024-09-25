@@ -3,7 +3,9 @@ body {
     background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: "Montserrat", sans-serif;
-    z-index: 0;  
+    z-index: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 nav,
@@ -58,8 +60,9 @@ p {
 }
 
 .main-bg {
-    margin-top: 76px;
+    margin-top: 94px;
     position: relative;
+    height: fit-content !important;
 }
 
 .black-transparency {
@@ -87,6 +90,10 @@ p {
     color: #f69700 !important;
 }
 
+.navbar-brand {
+    margin-right: 5%;
+}
+
 .user-icon {
     color: #f69700 !important;
     font-size: 1.5rem;
@@ -100,6 +107,7 @@ p {
     background-color: black;
     color: #f69700;
 }
+
 
 /* Account, Contact & Booking_update h3 */
 
@@ -500,6 +508,26 @@ p {
 }
 
 
+/* About Page */
+
+#about {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 76px auto;
+    padding: 0;
+    width: 75%;
+    color: #dbd0ba;
+}
+
+.about-img {
+    position: relative;
+    width: 100% !important;
+    height: auto !important;
+    vertical-align: middle;
+    margin-top: 72px !important;
+}
+
+
 @media (max-width: 991px) {
 
     .main-bg {
@@ -578,8 +606,7 @@ p {
         text-align: center !important;
     }
 
-    #worlds,
-    body {
+    #worlds {
         padding-right: 0;
         padding-left: 0;
     }
