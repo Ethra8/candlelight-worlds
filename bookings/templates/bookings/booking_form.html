@@ -5,8 +5,8 @@
 
 {% block content %}
 
-  <div class="form">
-    
+  <div id="booking-form" class="form position-relative">
+    <button type="button" class="btn-close btn-close-white" aria-label="Close" onclick="window.history.back();"></button>
     <h1 class="mb-5">BOOKING FORM</h1>
   
     <form method="post">
@@ -24,12 +24,14 @@
 
 {% block extras %}
 <script>
+    // Match date format in model
     $(document).ready(function() {
       $("#id_booking_date").datepicker({
-        dateFormat: "dd-mm-yyyy"  // Match format in model
+        dateFormat: "dd-mm-yyyy"
       });
     });
 
+    // Prepopulate email field with user email
     window.onload = function() {
     // Get the current URL
     const url = window.location.pathname;
@@ -47,12 +49,11 @@
         for (let i = 0; i < options.length; i++) {
             if (options[i].value === worldId) {
                 options[i].selected = true;
-                break;  // Stop once the matching option is found
+                break;  // Break loop once the matching option is found
             }
         }
     }
   }
 
-  </script>
-  
+</script>
 {% endblock %}

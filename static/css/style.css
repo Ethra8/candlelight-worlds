@@ -19,7 +19,8 @@ p {
 }
 
 
-/* Custom */
+/* Custom Classes*/
+
 .alert {
     background-color: #f69700;
     color: #21201e;
@@ -57,9 +58,8 @@ p {
 }
 
 .main-bg {
-    margin-top: 104px;
+    margin-top: 76px;
     position: relative;
-    z-index: 2;  /* Higher than the overlay */
 }
 
 .black-transparency {
@@ -83,14 +83,43 @@ p {
     font-weight: 500;
 }
 
+.active {
+    color: #f69700 !important;
+}
+
+.user-icon {
+    color: #f69700 !important;
+    font-size: 1.5rem;
+}
+
+.dropdown-menu {
+    background-color: black;
+}
+
+.dropdown-menu a:hover {
+    background-color: black;
+    color: #f69700;
+}
+
 /* Account, Contact & Booking_update h3 */
 
 .account {
+    position: relative;
     background-color: rgba(0, 0, 0, 0.9);
     margin: 76px auto;
     padding: 50px;
     width: 50%;
     color: #dbd0ba;
+}
+
+.account .btn-close,
+.contact-form .btn-close {
+    position: absolute !important;
+    right: 12px;
+    width: fit-content;
+    top: 0;
+    transition: all 0.2s linear;
+    background-color: transparent;
 }
 
 .contact-form {
@@ -160,7 +189,7 @@ p {
     background-color: rgba(0, 0, 0, 0.85);
     position: fixed;
     background-size: cover;
-    height: calc(100vh - 450px);
+    height: calc(100vh - 350px);
 }
 
 #index h1 {
@@ -168,12 +197,20 @@ p {
     font-family: "Lato", sans-serif;
 }
 
+#index p {
+    font-family: "Shadows Into Light", system-ui;
+    color: #f69700;
+    font-size: 2rem;
+    margin: auto auto auto 20%;
+}
+
 .btn-index-cta {
     background-color: #f69700;
     color: #21201e;
+    font-weight: 600;
     padding: 2rem;
     width: 250px;
-    margin: 0 auto 50px 20% !important;
+    margin: 40px auto 50px 20% !important;
     transition: all 0.2s linear;
 }
 
@@ -185,6 +222,15 @@ p {
 }
 
 /* Worlds */
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.image-container {
+    position: relative;
+}
 
 #worlds {
     background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
@@ -235,7 +281,6 @@ p {
 }
 
 .world-short-description {
-    /* text-align: justify; */
     color: #dbd0ba;
     position: absolute;
     left: 338px;
@@ -249,8 +294,106 @@ p {
     top: 240px;
     left: 338px;
     color: #21201e;
+    font-weight: 700;
     padding: 0.5rem;
     width: 250px;
+}
+
+
+/* World Details */
+
+.details {
+    background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: fit-content;
+}
+
+.details .black-transparency {
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 300;
+    padding: 0 4% 70px;
+    width: 100%;
+    margin-top: 0;
+}
+
+.details-info {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #c3c3c3;
+    line-height: 2;
+    position: relative;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.details-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push the last child to the bottom */
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #c3c3c3;
+    line-height: 2;
+    padding: 50px;
+}
+
+.details-heading {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 200;
+    padding: 20px;
+    margin-bottom: 80px;
+    background-color: #21201e;
+}
+
+.details-text h1 {
+    font-family: "Montserrat Alternates", sans-serif;
+    text-transform: uppercase;
+    color: #
+}
+
+.details-text p {
+    padding: 0;
+}
+
+.details-img-parent {
+    padding: 50px 20px 50px 50px;
+}
+
+.details-scale {
+    position: relative;
+    width: 100% !important;
+    height: auto;
+    vertical-align: middle;
+    margin-top: 72px !important;
+}
+
+.details-scale1 {
+    position: relative;
+    width: 100% !important;
+    height: auto;
+    vertical-align: middle;
+    margin-top: 0 !important;
+}
+
+.details-description {
+    padding: 0 0 40px;
+}
+
+.details h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.details p strong {
+    color: #f69700 !important;
+}
+
+.btn-book {
+    background-color: #f69700;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 40px 0;
+    transition: all 0.2s linear;
 }
 
 
@@ -272,14 +415,32 @@ p {
 }
 
 
+/* Booking Form */
+
+#booking-form .btn-close {
+    position: absolute !important;
+    right: 30px;
+    top: 30px;
+    transition: all 0.2s linear;
+}
+
+
 /* Booking List */
 
 #booking-list {
+    position: relative;
     padding: 5% 7%;
     background-color: rgba(0, 0, 0, 0.95);
     color: #dbd0ba;
     width: 80%;
     margin: 40px auto;
+}
+
+#booking-list .btn-close {
+    position: absolute !important;
+    right: -20px;
+    top: -20px;
+    transition: all 0.2s linear;
 }
 
 #booking-list h1 {
@@ -328,6 +489,7 @@ p {
     color: rgb(172, 175, 175);
 }
 
+
 /* Booking Update Page */
 
 #booking-update .btn-close,
@@ -337,112 +499,6 @@ p {
     top: 40px;
     transition: all 0.2s linear;
 }
-
-/* Worlds */
-
-.card {
-    border: none;
-    background-color: transparent;
-}
-
-.image-container {
-    position: relative;
-}
-
-/* World Details */
-
-.details {
-    background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: fit-content;
-    /* padding: 0 4% 70px; */
-}
-
-.details .black-transparency {
-    background-color: rgba(0, 0, 0, 0.55);
-    z-index: 300;
-    padding: 0 4% 70px;
-    width: 100%;
-    margin-top: 0;
-}
-
-.details-info {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: #c3c3c3;
-    line-height: 2;
-    position: relative;
-    padding: 0;
-    margin-top: 40px;
-    /* text-align: justify; */
-}
-
-.details-text {
-    display: flex;
-    flex-direction: column;  /* Align items vertically */
-    justify-content: space-between; /* Push the last child to the bottom */
-    margin-bottom: 0;
-    /* text-align: justify; */
-    background-color: rgba(0, 0, 0, 0.9);
-    color: #c3c3c3;
-    line-height: 2;
-    padding: 50px;
-}
-
-.details-heading {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 200;
-    padding: 20px;
-    margin-bottom: 80px;
-    background-color: #21201e;
-}
-
-.details-text h1 {
-    font-family: "Montserrat Alternates", sans-serif;
-    text-transform: uppercase;
-}
-
-.details-text p {
-    padding: 0;
-    /* text-align: justify; */
-}
-
-.details-img-parent {
-    padding: 50px 20px 50px 50px;
-}
-
-.details-scale {
-    position: relative;
-    width: 100% !important;
-    height: auto;
-    vertical-align: middle;
-    margin-top: 72px !important;
-}
-
-.details-scale1 {
-    position: relative;
-    width: 100% !important;
-    height: auto;
-    vertical-align: middle;
-    margin-top: 0 !important;
-}
-
-.details-description {
-    padding: 0 0 40px;
-}
-
-.details h3 {
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.btn-book {
-    background-color: #f69700;
-    padding: 10px;
-    text-transform: uppercase;
-    margin: 40px 0;
-    transition: all 0.2s linear;
-}
-
 
 
 @media (max-width: 991px) {
@@ -471,7 +527,7 @@ p {
     .details-scale {
         position: relative;
         width: 100% !important;
-        height: auto; /* Ensures the image maintains its aspect ratio */
+        height: auto;
         vertical-align: middle;
         margin-top: 72px !important;
     }
@@ -509,12 +565,18 @@ p {
         text-align: center !important;
     }
 
+    #index p {
+        font-size: 1.7rem;
+        margin: 0 auto 50px !important;
+        text-align: center !important;
+    }
+
     #index h4 {
         text-align: center !important;
     }
 
     .btn-index-cta {
-        margin: 0 auto 50px !important;
+        margin: 30px auto 50px !important;
         /* height:  */
     }
 
@@ -540,7 +602,7 @@ p {
     .scale {
         position: relative;
         width: 100% !important;
-        height: auto; /* Ensures the image maintains its aspect ratio */
+        height: auto;
         vertical-align: middle;
         margin-top: 72px;
     }
@@ -548,7 +610,7 @@ p {
     .details-scale {
         position: relative;
         width: 100% !important;
-        height: auto; /* Ensures the image maintains its aspect ratio */
+        height: auto;
         vertical-align: middle;
         margin-top: 72px !important;
     }
@@ -568,7 +630,6 @@ p {
         right:auto;
         top: 0;
         margin: 30px auto;
-        /* margin-top: 30px; */
     }
 
     .image-container {
@@ -582,7 +643,6 @@ p {
     }
 
     #worlds .black-transparency {
-        /* padding: 0 0 70px; */
         width: 100%;
         background-size: cover;
     }
@@ -623,7 +683,6 @@ p {
         padding: 2rem;
         width: 250px;
         margin: 0 auto 50px !important;
-        /* height:  */
     }    
 
     .account {

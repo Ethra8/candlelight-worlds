@@ -8,6 +8,8 @@
 {% block content %}
   <div class="container account">
     <div class="row">
+      <button type="button" class="btn-close btn-close-white" aria-label="Close" onclick="window.location.href='{% url 'index' %}';"></button>
+
       <div class="col-12 mt-3 mx-0">
         <h3>{% trans "Sign Up" %}</h3>
         <p>{% blocktrans %}Welcome to Candlelight Worlds.<br> Already have an account? Then please
