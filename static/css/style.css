@@ -20,6 +20,19 @@ footer {
     color: #dbd0ba;
 }
 
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: #dbd0ba;
+    margin: 0 auto;
+}
+
+footer p {
+    text-align: center;
+}
+
 p {
     text-align: justify;
 }
@@ -64,17 +77,15 @@ p {
 }
 
 .main-bg {
-    margin-top: 94px !important;
-    /* position: relative; */
-    /* min-height: fit-content !important; */
-    flex: 1; /* This makes the content area grow and fill the remaining space between header and footer */
+    margin-top: 94px;
+    flex: 1; /* forces content area to grow and fill remaining space between header and footer */
+    min-height: calc(100vh - 222px) !important;
 }
 
 .black-transparency {
     background-color: rgba(0, 0, 0, 0.55);
     z-index: 300;
     width: 100%;
-    /* min-height: 100%; */
 }
 
 
@@ -118,20 +129,18 @@ p {
 
 .account {
     position: relative;
-    /* background-color: rgba(0, 0, 0, 0.9); */
-    margin: 76px auto;
-    padding: 50px;
+    /* margin: 76px auto auto; */
+    padding: 5% 0%;
     width: 50%;
     color: #dbd0ba;
-    /* min-height: calc(100vh - 250px); */
+    max-width: 500px;
 }
 
 .account > :first-child {
     position: relative;
     background-color: rgba(0, 0, 0, 0.9);
-    margin: 76px auto;
+    margin: 0 auto;
     padding: 50px;
-    /* width: 50%; */
     color: #dbd0ba;
 }
 
@@ -351,7 +360,7 @@ p {
 .details-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Push the last child to the bottom */
+    justify-content: space-between; /* Push the last child to the bottom: price + btn-book */
     margin-bottom: 0;
     background-color: rgba(0, 0, 0, 0.9);
     color: #c3c3c3;
@@ -564,12 +573,8 @@ p {
 
 @media (max-width: 991px) {
 
-    /* .main-bg {
-        margin-top: 75px;
-    } */
-
-    .btn-index-cta {
-        margin: 0 auto 50px !important;
+    .main-bg {
+        margin-top: 76px;
     }
 
     .account {
@@ -620,6 +625,10 @@ p {
 
 @media (max-width: 767px) {
 
+    .btn-index-cta {
+        margin: 0 auto 50px !important;
+    }
+
     .row>* {
         padding-left: 3%;
         padding-right: 3%;
@@ -639,6 +648,11 @@ p {
     #index h4 {
         text-align: center !important;
     }
+
+    .account {
+        padding: 50px 7%;
+        width: 100%;
+    }    
 
     #worlds {
         padding-right: 0;
@@ -745,7 +759,7 @@ p {
     }    
 
     .account {
-        padding: 7%;
+        padding: 7% 0;
         width: 100%;
     }    
 

@@ -13,7 +13,7 @@
 <html class="h-100" lang="en">
 
 <head>
-    <title>Candlelight Worlds</title>
+    <title>CandleLight Worlds</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Google Fonts CSS -->
@@ -87,7 +87,7 @@
                                     {% endif %}
                                 </div>
                             </li>
-                        </ul>    <!-- <p class="text-center m-3">You are not logged in</p> -->
+                        </ul>
                     </span>
                 </div>
             </div>
@@ -105,24 +105,26 @@
                 </div>
             </div>
         </div>
-        
-        <main class="main-bg flex-grow-1">
+        <div class="d-flex">
+            <main class="main-bg flex-grow-1">
 
-            {% block content %}
-            <!-- Content Goes here -->
-            {% endblock content %}
+                {% block content %}
+                <!-- Content Goes here -->
+                {% endblock content %}
 
-        </main>
+            </main>
+        </div>
     </div>
     <!-- Footer -->
-    <footer class="footer mt-auto py-3">
+    <footer class="footer d-flex flex-column py-3 justify-content-center h-100">
         <p class="m-0 text-center text-muted">
-        {% block copyright %}Made by EdnaTM{% endblock copyright %}
+        {% block copyright %}2024 EdnaTM{% endblock copyright %}
         </p>
-        <p class="m-0 text-center text-white">Follow us: <i class="fab fa-facebook-square ms-3"></i>
-            <i class="fab fa-twitter-square ms-3"></i>
-            <i class="fab fa-instagram-square ms-3"></i>
-            <i class="fab fa-youtube-square ms-3"></i>
+        <p class="m-0 mt-1 text-center text-grey">
+            <a href="https://www.facebook.com" target= "_blank" aria-label="go to facebook site"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.twitter.com" target= "_blank" aria-label="go to twitter site"><i class="fab fa-twitter-square ms-3 ml-0"></i></a>
+            <a href="https://www.instagram.com" target= "_blank" aria-label="go to instagram site"><i class="fab fa-instagram-square ms-3"></i></a>
+            <a href="https://www.youtube.com" target= "_blank" aria-label="go to youtube site"><i class="fab fa-youtube-square ms-3"></i></a>
         </p>
     </footer>
 
