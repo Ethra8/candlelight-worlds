@@ -173,7 +173,7 @@ As a site owner, the following functionalities have been included on this site, 
   - ![image](https://github.com/user-attachments/assets/b8ae0f97-1a63-4d0c-a0cb-be636aa19962)
 
 - WORLD DETAILS Page
-  - ![image](https://github.com/user-attachments/assets/2570940e-31ce-4774-86a2-e8073c9d5f51)
+  - ![image](https://github.com/user-attachments/assets/f5d59d71-70bf-4c8d-b86c-ecf0046fb301)
 
 - NEW BOOKING Page (form)
   - ![image](https://github.com/user-attachments/assets/a042a479-bba2-405f-b75f-c89924ac140a)
@@ -185,7 +185,9 @@ As a site owner, the following functionalities have been included on this site, 
   - ![image](https://github.com/user-attachments/assets/d208fb55-37d4-408e-97dc-5454c191ee2e)
 
 - ABOUT Page
-  - 
+  - ![image](https://github.com/user-attachments/assets/dca1cdec-264f-4a42-8078-3c1331951d5b)
+
+
 </details>  
 
   
@@ -210,10 +212,11 @@ As a site owner, the following functionalities have been included on this site, 
   - ![image](https://github.com/user-attachments/assets/10638afe-57ed-418c-bfcf-d85f4d5d1707)
 
 - CONTACT Page
-  - ![image](https://github.com/user-attachments/assets/462ad81a-57f4-4f23-a44b-47b13f51ee4b)
+  - ![image](https://github.com/user-attachments/assets/a0eb920b-754e-4eb5-982a-1a6460911556)
 
 - ABOUT Page
-  - 
+  - ![image](https://github.com/user-attachments/assets/531ef85a-96bd-4612-b8c2-528b49e48ef4)
+
 </details>
 
 
