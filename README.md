@@ -185,7 +185,9 @@ As a site owner, the following functionalities have been included on this site, 
   - ![image](https://github.com/user-attachments/assets/d208fb55-37d4-408e-97dc-5454c191ee2e)
 
 - ABOUT Page
-  - 
+  - ![image](https://github.com/user-attachments/assets/dca1cdec-264f-4a42-8078-3c1331951d5b)
+
+
 </details>  
 
   
@@ -210,10 +212,11 @@ As a site owner, the following functionalities have been included on this site, 
   - ![image](https://github.com/user-attachments/assets/10638afe-57ed-418c-bfcf-d85f4d5d1707)
 
 - CONTACT Page
-  - ![image](https://github.com/user-attachments/assets/462ad81a-57f4-4f23-a44b-47b13f51ee4b)
+  - ![image](https://github.com/user-attachments/assets/a0eb920b-754e-4eb5-982a-1a6460911556)
 
 - ABOUT Page
-  - 
+  - ![image](https://github.com/user-attachments/assets/531ef85a-96bd-4612-b8c2-528b49e48ef4)
+
 </details>
 
 
