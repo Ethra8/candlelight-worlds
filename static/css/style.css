@@ -425,24 +425,7 @@ p {
     padding: 10px;
     font-weight: 600;
     text-transform: uppercase;
-    margin: 40px 0;
     transition: all 0.2s linear;
-}
-
-
-/* About */
-
-#about {
-    padding: 7%;
-}
-
-.about-img {
-    position: relative;
-    width: 100% !important;
-    height: 280px !important;
-    vertical-align: middle;
-    object-fit: cover;
-    margin-top: 0;
 }
 
 
@@ -556,19 +539,24 @@ p {
     position: relative;
     background-color: rgba(0, 0, 0, 0.9);
     margin: 76px auto;
-    padding: 0;
+    padding: 3%;
     width: 75%;
     color: #dbd0ba;
+}
+
+#about > :first-child {
+    padding: 30px;
 }
 
 .about-img {
     position: relative;
     width: 100% !important;
-    height: auto;
+    height: 320px;
     vertical-align: middle;
     object-fit: cover;
     margin-top: 0;
 }
+
 
 
 @media (max-width: 991px) {
@@ -625,10 +613,6 @@ p {
 
 @media (max-width: 767px) {
 
-    .btn-index-cta {
-        margin: 0 auto 50px !important;
-    }
-
     .row>* {
         padding-left: 3%;
         padding-right: 3%;
@@ -647,6 +631,10 @@ p {
 
     #index h4 {
         text-align: center !important;
+    }
+
+    .btn-index-cta {
+        margin: 0 auto 50px !important;
     }
 
     .account {
@@ -733,6 +721,16 @@ p {
 
     .bookings-btn-parent {
         justify-content: start;
+    }
+    
+    #about {
+        padding: 3%;
+        width: 100%;
+        color: #dbd0ba;
+    }
+    
+    #about > :first-child {
+        /* padding: 30px; */
     }
     
 

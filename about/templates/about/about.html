@@ -4,23 +4,26 @@
 
 {% block content %}
 <div id="about" class="container">
-    <div class="row">
-        <div class="col-12 text-center h-50">
-            {% if "placeholder" in about.image.url %}
-            <img class="about-img scale" src="{% static 'images/nobody.jpg' %}" class="about-image" alt="{{ about.title }}">
-            {% else %}
-            <img class="about-img scale" src="{{ about.image.url }}" alt="{{ about.title }}">
-            {% endif %}
+    <div>
+        <div class="row">
+            <div class="col-12 text-center h-50">
+                {% if "placeholder" in about.image.url %}
+                <img class="about-img" src="{% static 'images/nobody.jpg' %}" class="about-image" alt="{{ about.title }}">
+                {% else %}
+                <img class="about-img" src="{{ about.image.url }}" alt="{{ about.title }}">
+                {% endif %}
+            </div>
+            <div class="col-12 mt-5 mb-5">
+                <h2 class="col-12 text-fire">{{ about.title }}</h2>
+                <div class="mt-5">
+                    {{ about.content | safe }}
+                </div>
+            </div>
+            <div class="col-12">
+                <h5 class="col-12">Need any extra information? Contact us!</h5>
+                <a href="{% url 'contact' %}" class="btn btn-about text-upper w-100 rounded mt-5 mb-5">Contact Now</a>
+            </div>
         </div>
-        <div class="col-12">
-            <h2 class="col-12 m-5 text-fire">{{ about.title }}</h2>
-            {{ about.content | safe }}
-        </div>
-        <div class="col-12">
-            <h5 class="col-12 m-5">Need any exra information? Contact us!</h5>
-            <a href="{% url 'contact' %}" class="btn btn-about text-upper w-100 rounded">Book Now!</a>
-        </div>
-
     </div>
 </div>
 {% endblock content %}
