@@ -9,33 +9,34 @@
 {% block content %}
 
 <div class="container account">
-    <div class="row">
-        <div class="col-12 mt-3 mx-0">
-            
-            <h3>{% trans "Sign In" %}</h3>
+    <div>
+        <div class="row">
+            <div class="col-12 mt-3 mx-0">
+                
+                <h3>{% trans "Sign In" %}</h3>
 
-            <p>{% blocktrans %}
-                    Welcome back to CandleLight Worlds!<br>
-                    To make a booking, please log in.<br>
-                    If you have not created an account yet, then <a href="{{ signup_url }}">sign up</a> first.
-                {% endblocktrans %}</p>
+                <p>{% blocktrans %}
+                        Welcome back to CandleLight Worlds!<br>
+                        To make a booking, please log in.<br>
+                        If you have not created an account yet, then <a href="{{ signup_url }}">sign up</a> first.
+                    {% endblocktrans %}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3 mx-0">
+                <form class="login" method="POST" action="{% url 'account_login' %}">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+
+                    <button class="btn btn-signup right" type="submit">{% trans "Sign In" %}</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3">
+                <p>Forgot your password? Recover your password <a href="{% url 'account_reset_password' %}">here</a></p>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12 mt-3 mx-0">
-            <form class="login" method="POST" action="{% url 'account_login' %}">
-                {% csrf_token %}
-                {{ form | crispy }}
-
-                <button class="btn btn-signup right" type="submit">{% trans "Sign In" %}</button>
-            </form>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 mt-3">
-            <p>Forgot your password? Recover your password <a href="{% url 'account_reset_password' %}">here</a></p>
-        </div>
-    </div>
-
 </div>
 {% endblock %}
