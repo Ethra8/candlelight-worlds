@@ -3,5 +3,5 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.contact_form, name='contacts'),
+    path('', views.contact_form, name='contact'),
 ]

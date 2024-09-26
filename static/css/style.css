@@ -1,11 +1,15 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
 
 body {
+    display: flex;
+    flex-direction: column;
     background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: "Montserrat", sans-serif;
-    z-index: 0;
-    padding-left: 0;
-    padding-right: 0;
 }
 
 nav,
@@ -14,6 +18,9 @@ footer {
     padding: 16px 5% !important;
     background-color: rgba(0, 0, 0, 0.9);
     color: #dbd0ba;
+    margin-top: 0;
+    /* flex: 1; */
+    max-height: 70px;
 }
 
 p {
@@ -60,16 +67,17 @@ p {
 }
 
 .main-bg {
-    margin-top: 94px;
-    position: relative;
-    min-height: fit-content !important;
+    margin-top: 94px !important;
+    /* position: relative; */
+    /* min-height: fit-content !important; */
+    flex: 1; /* This makes the content area grow and fill the remaining space between header and footer */
 }
 
 .black-transparency {
     background-color: rgba(0, 0, 0, 0.55);
     z-index: 300;
     width: 100%;
-    height: 100%;
+    /* min-height: 100%; */
 }
 
 
@@ -112,6 +120,16 @@ p {
 /* Account, Contact & Booking_update h3 */
 
 .account {
+    position: relative;
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    margin: 76px auto;
+    padding: 50px;
+    width: 50%;
+    color: #dbd0ba;
+    min-height: calc(100vh - 250px);
+}
+
+.account > :first-child {
     position: relative;
     background-color: rgba(0, 0, 0, 0.9);
     margin: 76px auto;
@@ -224,7 +242,8 @@ p {
 
 .btn-index-cta:hover,
 .world-detail-link:hover,
-.btn-book:hover {
+.btn-book:hover,
+.btn-about:hover {
     background-color: #b57002;
     color: #21201e;
 }
@@ -394,13 +413,30 @@ p {
     color: #f69700 !important;
 }
 
-.btn-book {
+.btn-book,
+.btn-about {
     background-color: #f69700;
     padding: 10px;
     font-weight: 600;
     text-transform: uppercase;
     margin: 40px 0;
     transition: all 0.2s linear;
+}
+
+
+/* About */
+
+#about {
+    padding: 7%;
+}
+
+.about-img {
+    position: relative;
+    width: 100% !important;
+    height: 280px !important;
+    vertical-align: middle;
+    object-fit: cover;
+    margin-top: 0;
 }
 
 
@@ -522,17 +558,18 @@ p {
 .about-img {
     position: relative;
     width: 100% !important;
-    height: auto !important;
+    height: auto;
     vertical-align: middle;
-    margin-top: 72px !important;
+    object-fit: cover;
+    margin-top: 0;
 }
 
 
 @media (max-width: 991px) {
 
-    .main-bg {
+    /* .main-bg {
         margin-top: 75px;
-    }
+    } */
 
     .btn-index-cta {
         margin: 0 auto 50px !important;
