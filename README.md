@@ -382,15 +382,11 @@ To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, S
 # CREDITS & ACKNOWEDGEMENTS
 
 ## IMAGES
-- [Hero image](https://www.freepik.com/free-photo/couple-having-dinner-valentines-day_6412178.htm#query=dinner%20candlelight&position=32&from_view=keyword&track=ais&uuid=0b778147-a7c9-4ab5-a148-ddd91935661c) by [Freepik](https://www.freepik.com/author/freepik) at [Freepik](https://www.freepik.com/)
-- [Candle on the index page background](https://www.freepik.com/free-photo/enchanting-glow-fairy-lights-candles-creating-magical-ambiance_136714970.htm) by AI at [Freepik](https://www.freepik.com)
-- Medieval Castle Bedroom - AI generated (ChatGPT)
-- Medieval Castle Dinning Table - AI generated (ChatGPT)
-- Medieval Castle Jakuzzi - AI generated (ChatGPT)
-- Italian Renaissance Villa Dinning Area - AI generated (ChatGPT)
-- Italian Renaissance Villa Bedroom - AI generated (ChatGPT)
-- Italian Renaissance Villa Jakuzzi - AI generated (ChatGPT)
+- [Hero image](https://www.freepik.com/free-photo/enchanting-glow-fairy-lights-candles-creating-magical-ambiance_136714970.htm) by [
+frimufilms](https://www.freepik.com/author/frimufilms) at [Freepik](https://www.freepik.com/)
+- All other images on the site have been created by ChatGPT specially for this site.
 
 ## ACKNOWLEDGEMENTS
-- Sites thoroughly researched: [Stackoverflow](https://stackoverflow.com/), [Django Projecc Forum](https://forum.djangoproject.com/), 
+- Sites thoroughly researched: [Stackoverflow](https://stackoverflow.com/), [Django Projecc Forum](https://forum.djangoproject.com/).
+  
 
