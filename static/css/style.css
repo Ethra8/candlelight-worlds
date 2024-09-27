@@ -335,17 +335,7 @@ p {
 /* World Details */
 
 .details {
-    background: url('/media/bg-candles1.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: fit-content;
-}
-
-.details .black-transparency {
-    background-color: rgba(0, 0, 0, 0.55);
-    z-index: 300;
-    padding: 0 4% 70px;
-    width: 100%;
-    margin-top: 0;
+    padding: 0 7% 50px;
 }
 
 .details-info {
@@ -558,6 +548,14 @@ p {
 }
 
 
+@media (max-width: 1199px) {
+
+    .details {
+        padding: 0 3% 50px;
+    }    
+
+}
+
 
 @media (max-width: 991px) {
 
@@ -568,8 +566,8 @@ p {
     .account {
         padding: 50px;
         width: 75%;
-    }    
-    
+    }  
+        
     .details-info {
         padding: 4%;
     }
@@ -667,6 +665,10 @@ p {
         vertical-align: middle;
         margin-top: 72px;
     }
+
+    .details {
+        padding: 0 1% 50px;
+    }    
 
     .details-scale {
         position: relative;

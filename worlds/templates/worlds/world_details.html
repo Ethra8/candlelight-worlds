@@ -5,7 +5,6 @@
 
 {% block content %}
 <div class="details">
-    <!-- <div class="black-transparency"> -->
     <div class="container-fluid">
         <div class="row g-0 details-info rounded">
 
@@ -20,7 +19,7 @@
                 </div>
 
                 <div class="row mx-0">
-                    <div class="col-12 col-lg-12 text-end mr-5 p-0">
+                    <div class="col-12 col-lg-12 text-end mr-5 mb-5 p-0">
                         <h3 class="mr-5 mr-md-0">{{ world.price }} €</h3>
                     </div>
                     <div class="col-12 col-lg-12 text-center p-0">
@@ -30,10 +29,10 @@
             
             </div>
 
-            <div class="col-12 col-lg-4 order-lg-first details-img-parent">
+            <div class="col-12 col-lg-4 order-lg-first details-img-parent d-flex flex-column justify-content-center">
                 <div class="col-12 col-md-9 col-lg-12 img-fluid mx-auto d-block"><a href="{{ world.image_dining.url }}" target="_blank"><img class="details-scale1" src="{{ world.image_dining.url }}" alt="image of the dining area"></a></div>
-                <div class="col-12 col-md-9 col-lg-12 img-fluid mx-auto d-bloc"><a href="{{ world.image_jakuzzi.url }}" target="_blank"><img class="details-scale" src="{{ world.image_jakuzzi.url }}" alt="image of the jakuzzi"></a></div>
-                <div class="col-12 col-md-9 col-lg-12 img-fluid mx-auto d-bloc"><a href="{{ world.image_siesta.url }}" target="_blank"><img class="details-scale" src="{{ world.image_siesta.url }}" alt="image of the siesta area"></a></div>
+                <div class="col-12 col-md-9 col-lg-12 img-fluid mx-auto d-block"><a href="{{ world.image_jakuzzi.url }}" target="_blank"><img class="details-scale" src="{{ world.image_jakuzzi.url }}" alt="image of the jakuzzi"></a></div>
+                <div class="col-12 col-md-9 col-lg-12 img-fluid mx-auto d-block"><a href="{{ world.image_siesta.url }}" target="_blank"><img class="details-scale" src="{{ world.image_siesta.url }}" alt="image of the siesta area"></a></div>
             </div>
 
         </div>
