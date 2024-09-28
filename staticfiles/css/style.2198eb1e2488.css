@@ -1,0 +1,796 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url("/static/images/bg-candles1.c539123d66b8.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav,
+footer {
+    margin-left: 0;
+    padding: 16px 5% !important;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #dbd0ba;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: #dbd0ba;
+    margin: 0 auto;
+}
+
+footer p {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+
+/* Custom Classes*/
+
+.alert {
+    background-color: #f69700;
+    color: #21201e;
+    border-radius: 15px !important;
+    position: absolute !important;
+    top: 104px !important;
+    right: 7% !important;
+    width: 50% !important;
+    height: fit-content !important;
+    z-index: 9999;
+}
+
+.brand {
+    font-family: "Lato", sans-serif !important;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #4A4A4F;
+}
+
+.thin {
+    font-weight: 300;
+}
+
+.text-muted {
+    color: #6d6d6d !important;
+    --bs-text-opacity: 1 !important;
+}
+
+.text-fire {
+    color: #f69700;
+}
+
+.text-grey {
+    color: #dbd0ba !important;
+}
+
+.main-bg {
+    margin-top: 94px;
+    flex: 1; /* forces content area to grow and fill remaining space between header and footer */
+    min-height: calc(100vh - 222px) !important;
+}
+
+.black-transparency {
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 300;
+    width: 100%;
+}
+
+
+/* Navbar Classes */
+
+.nav-link,
+.nav-item {
+    color: #dbd0ba !important;
+}
+
+.nav-link:hover,
+.nav-item:hover {
+    color: #f69700 !important;
+    font-weight: 500;
+}
+
+.active {
+    color: #f69700 !important;
+}
+
+.navbar-brand {
+    margin-right: 5%;
+}
+
+.user-icon {
+    color: #f69700 !important;
+    font-size: 1.5rem;
+}
+
+.dropdown-menu {
+    background-color: black;
+}
+
+.dropdown-menu a:hover {
+    background-color: black;
+    color: #f69700;
+}
+
+
+/* Account, Contact & Booking_update h3 */
+
+.account {
+    position: relative;
+    /* margin: 76px auto auto; */
+    padding: 5% 0%;
+    width: 50%;
+    color: #dbd0ba;
+    max-width: 500px;
+}
+
+.account > :first-child {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 0 auto;
+    padding: 50px;
+    color: #dbd0ba;
+}
+
+.account .btn-close,
+.contact-form .btn-close {
+    position: absolute !important;
+    right: 12px;
+    width: fit-content;
+    top: 0;
+    transition: all 0.2s linear;
+    background-color: transparent;
+}
+
+.contact-form {
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 76px auto;
+    padding: 30px;
+    width: 50%;
+    color: #dbd0ba;
+}
+
+.account h3,
+#booking-update h3 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.account .row:nth-of-type(1) p:first-of-type,
+.contact-form .row:nth-of-type(1) p:first-of-type {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.account p {
+    padding-bottom: 10px;
+}
+
+.account button,
+.account [type="submit"],
+#booking-confirm-delete [type="submit"],
+.contact-form button {
+    background-color: #f69700;
+    text-transform: uppercase;
+    color: #21201e;
+    font-weight: 600;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 8px 15px;
+    width: 100%;
+}
+
+.account button:hover,
+.account [type="submit"]:hover,
+#booking-confirm-delete [type="submit"],
+.contact-form button:hover {
+    background-color: #b57002;
+}
+
+.account a {
+    text-decoration: none;
+    color: #f69700;
+}
+
+
+/* Error Page */
+
+#error-page {
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    background-size: cover;
+    height: calc(100vh - 350px);
+}
+
+
+/* Index */
+
+#index {
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    background-size: cover;
+    height: calc(100vh - 350px);
+}
+
+#index h1 {
+    margin: auto auto auto 20%;
+    font-family: "Lato", sans-serif;
+}
+
+#index p {
+    font-family: "Shadows Into Light", system-ui;
+    color: #f69700;
+    font-size: 2rem;
+    margin: auto auto auto 20%;
+}
+
+.btn-index-cta {
+    background-color: #f69700;
+    color: #21201e;
+    font-weight: 600;
+    padding: 2rem;
+    width: 250px;
+    margin: 40px auto 0 20% !important;
+    transition: all 0.2s linear;
+}
+
+.btn-index-cta:hover,
+.world-detail-link:hover,
+.btn-book:hover,
+.btn-about:hover {
+    background-color: #b57002;
+    color: #21201e;
+}
+
+/* Worlds */
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.image-container {
+    position: relative;
+}
+
+#worlds {
+    background: url("/static/images/bg-candles1.c539123d66b8.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: fit-content;
+    padding: 0;
+    z-index: 999 !important;
+}
+
+#worlds .black-transparency {
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 300;
+    padding: 0 7% 70px;
+    width: 100%;
+}
+
+.image-flash {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 200;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    left: 320px;
+    padding: 10px;
+    background-color: #21201e;
+}
+
+.world-card {
+    background-color: rgba(0, 0, 0, 0.95);
+    margin: 35px auto;
+    padding: 40px;
+}
+
+.scale {
+    position: relative;
+    height: 280px !important;
+    width: 280px !important;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.worlds-display_name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 4px;
+    text-transform: uppercase;
+}
+
+.world-short-description {
+    color: #dbd0ba;
+    position: absolute;
+    left: 338px;
+    right: 18px;
+    top: 90px;
+}
+
+.world-detail-link {
+    background-color: #f69700;
+    position: absolute;
+    top: 240px;
+    left: 338px;
+    color: #21201e;
+    font-weight: 700;
+    padding: 0.5rem;
+    width: 250px;
+}
+
+
+/* World Details */
+
+.details {
+    padding: 0 7% 50px;
+}
+
+.details-info {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #c3c3c3;
+    line-height: 2;
+    position: relative;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.details-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push the last child to the bottom: price + btn-book */
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #c3c3c3;
+    line-height: 2;
+    padding: 50px;
+}
+
+.details-heading {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 200;
+    padding: 20px;
+    margin-bottom: 80px;
+    background-color: #21201e;
+}
+
+.details-text h1 {
+    font-family: "Montserrat Alternates", sans-serif;
+    text-transform: uppercase;
+}
+
+.details-text p {
+    padding: 0;
+}
+
+.details-img-parent {
+    padding: 50px 20px 50px 50px;
+}
+
+.details-scale {
+    position: relative;
+    width: 100% !important;
+    height: auto;
+    vertical-align: middle;
+    margin-top: 72px !important;
+}
+
+.details-scale1 {
+    position: relative;
+    width: 100% !important;
+    height: auto;
+    vertical-align: middle;
+    margin-top: 0 !important;
+}
+
+.details-description {
+    padding: 0 0 40px;
+}
+
+.details h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.details p strong {
+    color: #f69700 !important;
+}
+
+.btn-book,
+.btn-about {
+    background-color: #f69700;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+}
+
+
+/* Forms General */
+
+.form {
+    padding: 5% 4%;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: #dbd0ba;
+    width: 60%;
+    margin: 40px auto;
+}
+
+#booking-form h1,
+#booking-list h1,
+.contact-form h2 {
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+
+/* Booking Form */
+
+#booking-form .btn-close {
+    position: absolute !important;
+    right: 30px;
+    top: 30px;
+    transition: all 0.2s linear;
+}
+
+
+/* Booking List */
+
+#booking-list {
+    position: relative;
+    padding: 5% 7%;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: #dbd0ba;
+    width: 80%;
+    margin: 40px auto;
+}
+
+#booking-list .btn-close {
+    position: absolute !important;
+    right: -20px;
+    top: -20px;
+    transition: all 0.2s linear;
+}
+
+#booking-list h1 {
+    text-transform: uppercase;
+}
+
+.booking-list-object {
+    margin: 0 auto 30px 0;
+    font-size: 1.1rem;
+    background-color: #21201e;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bookings-btn-parent {
+    display: flex;
+    justify-content: end;
+}
+
+.btn-update {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: solid 1px; 
+    width: 38px;
+    transition: all 0.2s linear;
+}
+
+.btn-delete {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: solid 1px #dbd0ba; 
+    width: 38px;
+    color: #dbd0ba;
+    transition: all 0.2s linear;
+}
+
+.btn-update:hover,
+.btn-delete:hover {
+    color: #f69700 !important;
+    border-color:  #f69700; 
+}
+
+.faded {
+    color: rgb(172, 175, 175);
+}
+
+
+/* Booking Update Page */
+
+#booking-update .btn-close,
+#booking-confirm-delete .btn-close {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    transition: all 0.2s linear;
+}
+
+
+/* About Page */
+
+#about {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 76px auto;
+    padding: 3%;
+    width: 75%;
+    color: #dbd0ba;
+}
+
+#about > :first-child {
+    padding: 30px;
+}
+
+.about-img {
+    position: relative;
+    width: 100% !important;
+    height: 320px;
+    vertical-align: middle;
+    object-fit: cover;
+    margin-top: 0;
+}
+
+
+@media (max-width: 1199px) {
+
+    .details {
+        padding: 0 3% 50px;
+    }    
+
+}
+
+
+@media (max-width: 991px) {
+
+    .main-bg {
+        margin-top: 76px;
+    }
+
+    .account {
+        padding: 50px;
+        width: 75%;
+    }  
+        
+    .details-info {
+        padding: 4%;
+    }
+
+    .details-text {
+        padding: 4%;
+    }
+
+    .details-img-parent {
+        padding: 7%;
+    }
+
+    .details-scale {
+        position: relative;
+        width: 100% !important;
+        height: auto;
+        vertical-align: middle;
+        margin-top: 72px !important;
+    }
+
+    .form {
+        padding: 70px 40px;
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    #booking-list {
+        padding: 40px 7%;
+        width: 80%;
+        margin: 40px auto;
+    }
+
+    .contact-form {
+        padding: 4%;
+        width: 75%;
+    }
+    
+    
+}
+
+
+@media (max-width: 767px) {
+
+    .row>* {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    #index h1 {
+        margin:  70px auto 50px !important;
+        text-align: center !important;
+    }
+
+    #index p {
+        font-size: 1.7rem;
+        margin: 0 auto 50px !important;
+        text-align: center !important;
+    }
+
+    #index h4 {
+        text-align: center !important;
+    }
+
+    .btn-index-cta {
+        margin: 0 auto 50px !important;
+    }
+
+    .account {
+        padding: 50px 7%;
+        width: 100%;
+    }    
+
+    #worlds {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .image-flash {
+        position: absolute;
+        top: 5%;
+        right: 0;
+        left: 0;
+        padding: 10px;
+    } 
+    
+    .world-card {
+        margin: 35px auto;
+        padding: 10px;
+    }
+
+    .scale {
+        position: relative;
+        width: 100% !important;
+        height: auto;
+        vertical-align: middle;
+        margin-top: 72px;
+    }
+
+    .details {
+        padding: 0 1% 50px;
+    }    
+
+    .details-scale {
+        position: relative;
+        width: 100% !important;
+        height: auto;
+        vertical-align: middle;
+        margin-top: 72px !important;
+    }
+
+    .world-short-description {
+        position: relative;
+        left: 0;
+        top: 0;
+        padding-top: 30px;
+        display: flex;
+        text-align: left !important;
+    }
+    
+    .world-detail-link {
+        position: relative;
+        left: auto;
+        right:auto;
+        top: 0;
+        margin: 30px auto;
+    }
+
+    .image-container {
+        text-align: center !important;
+    }
+
+    #worlds .worlds-second-row {
+        text-align: center;
+        margin-left: 0;
+        margin-right:0;
+    }
+
+    #worlds .black-transparency {
+        width: 100%;
+        background-size: cover;
+    }
+    
+    .world-detail-link {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #booking-list {
+        padding: 40px 7%;
+        width: 95%;
+        margin: 40px auto;
+    }
+
+    .bookings-btn-parent {
+        justify-content: start;
+    }
+    
+    #about {
+        padding: 3%;
+        width: 100%;
+        color: #dbd0ba;
+    }
+    
+    #about > :first-child {
+        /* padding: 30px; */
+    }
+    
+
+}
+
+
+@media (max-width: 475px) {
+ 
+    nav,
+    footer {
+        margin-left: 0;
+        padding: 16px 3% !important;
+    }
+
+    #index {
+        margin: auto;
+        height: calc(100vh - 250px);
+    }
+    
+    .btn-index-cta {
+        padding: 2rem;
+        width: 250px;
+        margin: 0 auto 50px !important;
+    }    
+
+    .account {
+        padding: 7% 0;
+        width: 100%;
+    }    
+
+    .details {
+        padding: 0 0 70px;
+    }
+
+    .details-info {
+        padding: 3%;
+    }
+
+    #booking-list {
+        padding: 40px 7%;
+        background-color: rgba(0, 0, 0, 0.95);
+        color: #dbd0ba;
+        width: 95%;
+        margin: 40px auto;
+    }
+
+    .booking-list-object .btn {
+        margin-top: 50px !important;
+    }
+
+    .form {
+        width: 100%;
+        margin: 40px auto;
+        padding: 70px 7%;
+    }
+
+    .contact-form {
+        padding: 4%;
+        width: 100%;
+    }
+    
+}

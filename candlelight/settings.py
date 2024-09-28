@@ -42,7 +42,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = os.environ.get('DEVELOPMENT')
+# DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-ethra8-candlelightworld-ojikmyc7jx4.ws.codeinstitute-ide.net', 'candlelight-worlds-f913477cd630.herokuapp.com',]
 
@@ -202,11 +204,11 @@ MESSAGE_TAGS = {
     messages.ERROR: 'alert-danger',
 }
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -215,7 +217,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# # Cloudinay Storage (img in admin)
+# # Cloudinay Storage (img in admin)q
 # DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # # Optional, for static files
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
