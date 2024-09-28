@@ -33,6 +33,7 @@ Edna Torres Munill
   * [Wireframes](#wireframes)
     - [Mobile & Tablet (portrait)](#mobile-&-tablet-(portrait))
     - [Desktop & Tablet (landscape)](#desktop-&-tablet-(landscape))
+  * [Features](#features)
   * [Pages](#pages)
     - [Home Page](#home-page)
     - [Worlds Page](#worlds-page)
