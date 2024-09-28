@@ -122,7 +122,7 @@ The project goals are as follows:
 - [X] View available worlds.
 - [X] View world detail pages.
 - [X] View each worlds' details page images in full size
-- [ ] Check the About page.
+- [X] Check the About page.
 - [X] Send a request through a form
 - [X] Sign up for an account after a conscient decision, to be able to make a booking.
 
