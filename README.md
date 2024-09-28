@@ -325,6 +325,8 @@ TEST 10
   - [Amiresponsive](https://ui.dev/amiresponsive) - To display the site in all types of devices simultaneously.
   - [EqualWeb Accessibility Checker](https://chrome.google.com/webstore/detail/equalweb-accessibility-ch/imemciokfejbnonkkinhcdfigdilcllg/related?utm_source=chrome-ntp-icon) - Google Chrome extension to check general errors and contract errors for optimal accessibility.
   - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorithm.
+  - [Blisk](https://blisk.io/devices) to check the viewport of multiple devices, very useful for testing.
+  - [BrowserStack](browserstack.com) to test responsiveness by emulating different devices, os and browser vendors.
 
 
 # DEPLOYMENT
