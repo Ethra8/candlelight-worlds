@@ -36,8 +36,10 @@ Edna Torres Munill
   * [Pages](#pages)
     - [Home Page](#home-page)
     - [Worlds Page](#worlds-page)
-    - [Services Page](#services-page)
-    - [Booking Page](#booking-page)
+    - [World Details Page](#world-details-page)
+    - [Booking Form Page](#booking-form-page)
+    - [Booking List Page](#booking-list-page)
+    - [Contact Page](#contact-page)
     - [404 Error Page](#404-error-page)
   * [Design Choices](#design-choices)
     - [Colors](#colors)
@@ -144,7 +146,7 @@ As a site owner, the following functionalities have been included on this site, 
 - [X] Access contact requests sent by users throkugh the contact form to the admin.
 - [X] Display clearly if the request sender is an authenticated user or not.
 - [X] Know if the request sender is a acting on behalf of a company.
-- [ ] Edit the about page from the admin.
+- [X] Edit the about page from the admin.
 
 
 ## USER PROFILES
@@ -158,7 +160,7 @@ As a site owner, the following functionalities have been included on this site, 
 - Oisin is the CEO of a large company and wants to offer a special treat to the managers after reaching an importnt milestone.
 - Maeve is the owner of a family-owned establishment and wants a special 1st price for a raffle.
 
-
+# UI
 
 ## WIREFRAMES
 
@@ -219,6 +221,68 @@ As a site owner, the following functionalities have been included on this site, 
   - ![image](https://github.com/user-attachments/assets/531ef85a-96bd-4612-b8c2-528b49e48ef4)
 
 </details>
+
+
+## FEATURES
+This site contains the following features, all of which are **fully responsive**:  
+  
+- **Navigation Bar**: Fixed to the top to make it easy for users to navigate around the site at any time. Contains links to pages, and acces to user's account.
+- **Backgroung hero image**: Fixed to the background of the body.
+- **Background overlay**: Increases opacity of hero image fixed on the body to improve visual impact on text.
+- **Footer**: Pushed to the bottom, contains social media icons with links to each social media pages.
+- **Booking Form**: A *crispy form* to book a world. The form contains a styled *Book Now* button below the following fields:
+  * ***World selector***: Prepopulates automatically when user accesses the bookign form from the *Book Now!* button on the *world details page*
+  * ***Date picker***
+  * ***Time frame*** selector
+- **Contact Form**: A *crispy form* to contact the site's owner. a styled *Submit* button below the following fields, all of which are mandatory but the *company name* field:
+  * ***name***
+  * ***company name*** - in case a company wants to contact, and keep trac kof B2B customers and request.
+  * ***email***
+  * ***message***
+- **Buttons**: All buttons are styled seamlessly for design consistency.
+- **Icons**: All icons are taken from *Fontawesome*, and have been styled to match the site's design:
+  * User: Placed on the navigation bar
+  * Update
+
+## PAGES
+This site contains the following responsive pages, all of which contain the followingn features:
+- **Navigation Bar**
+- **Backgroung hero image**: Fixed to the background
+- **Back transparent overlay**: Increased opacity of hero image to improve visual impact on text.
+- **Footer**: 
+- 
+### HOME PAGE
+  ![image](https://github.com/user-attachments/assets/315d5c51-4eee-4aa1-b84d-328f347184d5)  
+
+The **home page** contains the following features:
+- Navigation Bar: Allows users to access different pages of the site, as well as registering or logging in to an account.
+- Hero image fixed as a background
+- Button to directly access the 'worlds' page
+- Footer
+
+### WORLDS PAGE
+  ![image](https://github.com/user-attachments/assets/8f442a73-d68f-4d94-9636-28ac66a8e714)  
+
+The **worlds page** contains the following features:
+- Navigation Bar: Allows users to access different pages of the site, as well as registering or logging in to an account.
+- Hero image fixed as a background
+- A list of individual cards for each world including: a short description, the picture of the world's *dining area*, and a button to "see details" of each world.
+- Footer
+
+### WORLD DETAILS PAGE
+  ![image](https://github.com/user-attachments/assets/98021936-5759-44a5-8047-69d714b909f2)  
+
+The **world details page** contains the following features:
+- Navigation Bar: Allows users to access different pages of the site, as well as registering or logging in to an account.
+- Hero image fixed as a background
+- All the worlds are displayed in individual cards with a short comment, the picture of each world's *dining area*, and a button to "see details" of each world.
+- Footer
+
+
+### BOOKING FORM PAGE
+### BOOKING LIST PAGE
+### CONTACT PAGE
+### 404 ERROR PAGE
 
 
 # AGILE METHODOLOGY
