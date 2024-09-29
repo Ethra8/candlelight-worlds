@@ -402,13 +402,13 @@ Please find the correspondent **compatibility and responsive testing** reflected
 
 | TEST no.| TOOL               | DEVICE               | BROWSER            | OS              | VIEWPORT width x height (px) |
 |---------|--------------------|----------------------|--------------------|-----------------|------------------------------|
-| 1       | Chrome Dev emulator| Samsung Galaxy S20   | Chrome 117         |Windows 10       |360 x 800                     | 
+| 1       | Chrome Dev emulator| [Samsung Galaxy S8](https://blisk.io/devices/details/galaxy-s8)   | Chrome 117         |Windows 11       |360 x 740             | 
 | 2       | BrowserStack       | Samsung Galaxy S22   | Chrome             |Android 12.0     |360 x 780                     |
 | 3       | BrowserStack       | Samsung Galaxy S22   | Edge               |Android 12.0     |360 x 780                     |
 | 4       | BrowserStack       | iPhone 12 Mini       | Safari             | iOS 16.0        |360 x 780                     |
 | 5       | Blisk              | iPhone SE 2022       | Chrome             | iOS             |375 x 667                     |
 | 6       | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 729                     |
-| 7       | BrowserStack       | [Samsung GAlaxy S22 Ultra](https://blisk.io/devices/details/galaxy-s22-ultra)| Chrome          | Android 13.0        |384 x 824                     |
+| 7       | BrowserStack       | [Samsung Galaxy S22 Ultra](https://blisk.io/devices/details/galaxy-s22-ultra)| Chrome          | Android 13.0        |384 x 824  |
 | 8       | BrowserStack       | iPhone 14 Pro        | Safari 16.3        | iOS             |393 x 852                     |
 | 9       | REAL Laptop Device | PC Notebook HP -15-bs013ns| Chrome 117    |Windows 10 -64bit|1366 x 768                    |
 | 10      | Blisk              | MacBook Pro          | Chrome 117         | macOS           |1440 x 900                    |
@@ -420,6 +420,10 @@ Please find the correspondent **compatibility and responsive testing** reflected
 ### TEST RESULT VIDEOS
 TEST 1
 -
+
+https://github.com/user-attachments/assets/d89bee18-7c29-42b7-9e46-d9610ef703b6
+
+
 TEST 2
 -
 TEST 3
