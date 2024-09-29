@@ -1,10 +1,13 @@
 # CANDLELIGHT WORLDS
-![image](https://github.com/user-attachments/assets/3fbe4063-a3ce-4be9-9f37-912db1aecd1c)
+![image](https://github.com/user-attachments/assets/8bde8516-951f-4d6c-acc5-739914f6e475)
+
 
 ## PROJECT OVERVIEW
-- A booking site for a restaurant that offers out-of-the-box romantic dinners. This new concept involves private rooms carefully decorated to transport our guests to different times and places, all under immersive candlelight lighting.
-- These romantic experiences not only include tasty dishes from around the globe served by our discreet and professional table service, but each private room also includes a lounge area with a king-size bed and an in-room private jakuzzi, so that couples can relax and chill after dinner, or even have a siesta!
-- Guests also have the option to spend the night, if they wish so, by paying a supplement.
+- A booking site for a business that offers different **out-of-the-box romantic day or night experiences** including meals vailable in two different time frames: daytime & nightime -daytime includes brunch and lunch, and nightime includes dinner and breakfast.
+- This new concept involves **private spaces called worlds, each exquisitely decorated to transport our guests to different times and places**. Each private world includes three areas: The **Dining Area**, an in-room or bathroom king-size **Jakuzzi**, and a **Resting Area** (or *siesta* area) furnished with a king size bed and fine linen.
+- The project's name reflects the very ***essence*** of the primary idea of the owner, which is to make **worlds fully immersed in a warm candlelight lighting**, which undoubtedly fosters a unique and unforgetable atmosphere.
+- These romantic experiences' **tasty dishes** are carefully selected with recipes from around the world, **adapted to each world's theme** and served by our discreet and professional table service.
+
 
 ## LIVE SITE
 Visit the live site **[here](https://candlelight-worlds-f913477cd630.herokuapp.com/)**
@@ -32,11 +35,22 @@ Edna Torres Munill
   * [Wireframes](#wireframes)
     - [Mobile & Tablet (portrait)](#mobile-&-tablet-(portrait))
     - [Desktop & Tablet (landscape)](#desktop-&-tablet-(landscape))
+  * [Features](#features)
+    - [Responsiveness](#responsiveness)
+    - [Accessibility](#accessibility)
+    - [Navigation Bar](#navigation-bar)
+    - [Footer](#footer)
+    - [User Authentication](#user-authentication)
+    - [Confirmation Messages](#confirmation-messages)
+    - [404 Error Page](#404-error-page)
+    - [Admin Console](#admin-console)
   * [Pages](#pages)
     - [Home Page](#home-page)
     - [Worlds Page](#worlds-page)
-    - [Services Page](#services-page)
-    - [Booking Page](#booking-page)
+    - [World Details Page](#world-details-page)
+    - [Booking Form Page](#booking-form-page)
+    - [Booking List Page](#booking-list-page)
+    - [Contact Page](#contact-page)
     - [404 Error Page](#404-error-page)
   * [Design Choices](#design-choices)
     - [Colors](#colors)
@@ -48,18 +62,14 @@ Edna Torres Munill
     - [Read](#read)
     - [Update](#update)
     - [Delete](#delete)
-  * [Features](#features)
-    - [Responsiveness](#responsiveness)
-    - [Accessibility](#accessibility)
-    - [Navigation Bar](#navigation-bar)
-    - [Footer](#footer)
-    - [User Authentication](#user-authentication)
-    - [Confirmation Messages](#confirmation-messages)
-    - [404 Error Page](#404-error-page)
-    - [Admin Console](#admin-console)
+
 - [AGILE Methodology](#agile-methodology)
   * [Github Project - Kanban](#github-project---kanban)
 - [TESTING](#testing)
+  * [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
+    - [Preselecting Testing Targets](#preselecting-testing-targets)
+    - [Testing Targets Table](testing-targets-table)
+    - [Test Result Videos](test-results-videos)
   * [Defect Tracking](#defect-tracking)
     - [Github Issues](#github-issues)
     - [Defects of Note](#defects-of-note)
@@ -114,16 +124,15 @@ The project goals are as follows:
 
 
 ## USER STORIES
-
+To make the user experience on the site seamless and meaningful, the following stories have been followed as a guide to implementing functionalities of the site:
 ### As a first time B2C or B2B visitor 
 - [X] View available worlds.
 - [X] View world detail pages.
 - [X] View each worlds' details page images in full size
-- [ ] Check the About page.
+- [X] Check the About page.
 - [X] Send a request through a form
 - [X] Sign up for an account after a conscient decision, to be able to make a booking.
-
-
+  
 ### As an Authorized User 
 - [X] Easily log in and log out.  
 - [X] Easily recover my password in case I forget it.
@@ -131,23 +140,22 @@ The project goals are as follows:
 - [X] View a confirmation message after registering.  
 - [X] Make a booking selecting the world and time.   
 - [X] View a list with my bookings after sending the booking form.
-- [X] Update or delete my bookings.  
+- [X] Update or delete a booking.  
 - [X] View confirmation message on the site for every action taken.
 - [X] Be sure that no one else can access my bookings. 
-
+  
 ## SITE OWNER STORIES
-As a site owner, the following functionalities have been included on this site, to manually access and set the following:
+To make the site owner's life easier, the following functionalities have been included on this site, to manually access and update the following from the admin panel, without touching any code:
 - [X] Add, update or delete worlds directly from the admin.  
-- [X] Style the font size and display of each world's details page.
-- [X] Add, update of delete images from the world's details page.
-- [X] Access contact requests sent by users throkugh the contact form to the admin.
+- [X] Edit and style the text of each world.
+- [X] Add, update or delete images from each world.
+- [X] Access from the admin the contact requests sent by users via the contact form.
 - [X] Display clearly if the request sender is an authenticated user or not.
-- [X] Know if the request sender is a acting on behalf of a company.
-- [ ] Edit the about page from the admin.
-
-
+- [X] Display clearly if the request sender is a acting on behalf of a company.
+- [X] Edit and style the text, display and image of the about page from the admin panel.
+  
+  
 ## USER PROFILES
-
 ### B2C
 - Steve is a romantic man in his thirties and wants to surprise his partner with a very special gift for a special occasion
 - Siham is looking for a special gift for her parents' anniversary
@@ -158,6 +166,7 @@ As a site owner, the following functionalities have been included on this site, 
 - Maeve is the owner of a family-owned establishment and wants a special 1st price for a raffle.
 
 
+# UI
 
 ## WIREFRAMES
 
@@ -220,6 +229,70 @@ As a site owner, the following functionalities have been included on this site, 
 </details>
 
 
+## FEATURES
+This site contains the following features:     
+- **Responsiveness**: All pages and features are fully responsive - please refer to the [Testing Targets Table](#testing-targets-table) or the [Responsive Testing Videos](#test-result-videos) for further details.
+- **Accessibility**: This site takes accessibility very seriously, and has performed different tests. All the reports can be checked [here](#accessibility-testing)
+- **Navigation Bar**: Fixed to the top to make it easy for users to navigate around the site at any time. Contains links to pages, and acces to user's account.
+- **Backgroung image**: Fixed to the background of the body, the hero image takes up all of the available space in all types fo devices.
+- **Background overlay**: Fixed on the upper layer of the background image, it increases opacity of hero image fixed on the body to improve visual accessibility of text.
+- **Footer**: Pushed to the bottom, contains social media icons with links to each social media pages.
+- **Booking Form**: A *crispy form* to book a world. The form contains a styled *Book Now* button below the following fields:
+  * ***World selector***: Prepopulates automatically when user accesses the bookign form from the *Book Now!* button on the *world details page*
+  * ***Date picker***
+  * ***Time frame*** selector
+- **Contact Form**: A *crispy form* to contact the site's owner. a styled *Submit* button below the following fields, all of which are mandatory but the *company name* field:
+  * ***name***
+  * ***company name*** - in case a company wants to contact, and keep trac kof B2B customers and request.
+  * ***email***
+  * ***message***
+- **Buttons**: All buttons are styled seamlessly for design consistency. The background colour is the main theme colour #f69700. On *hover*, it slightly darkens to #b57002 while the font colour remains dark grey #21201e
+- **Icons**: All icons are taken from *Fontawesome*, and have been styled to match the site's design:
+  * *User icon*: Placed on the navigation bar, it enables unidentified users to easily login or register for an account, and also enables authentified users to access their booking list, and to logout. It has been styled matching the main colour of the theme #f69700.
+  * *Update Booking icon*: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to update the booking to a new date, time, or world all together. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.
+  * *Delete Booking icon*: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to delete the booking. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.
+
+## PAGES
+This site contains the following responsive pages, all of which contain the following features which are placed on the *body* element of the *base.html* template, that acts as the main dynamic *django template* for all the other pages of the site. You can also check further details about each feature of the main **body** of each page [here](#features):
+- **Navigation Bar**
+- **Backgroung hero image**
+- **Back transparent overlay**
+- **Footer**
+  
+### HOME PAGE
+The **home page** corresponds to the *index.html* template from the *home app*, acting as the landing page of the site, and contains the following features:
+- **Main body element** - as detailed [above](#pages)
+- **Main Header of the site**:
+  * ***Title*** of the site: Its colours guide the theme of the site -*CandleLight* in #f69700, and *Worlds* in white, standing out from the light grey of the rest of the text on the site.
+  * ***Slogan*** of the site: *'Travel through space and time'* styled in a light grey #dbd0ba font *Shadows Into Light*.
+
+  ![image](https://github.com/user-attachments/assets/315d5c51-4eee-4aa1-b84d-328f347184d5)
+  
+### WORLDS PAGE
+  ![image](https://github.com/user-attachments/assets/8f442a73-d68f-4d94-9636-28ac66a8e714)  
+
+The **worlds page** contains the following features:
+- Navigation Bar: Allows users to access different pages of the site, as well as registering or logging in to an account.
+- Hero image fixed as a background
+- A list of individual cards for each world including: a short description, the picture of the world's *dining area*, and a button to "see details" of each world.
+- Footer
+
+### WORLD DETAILS PAGE
+  ![image](https://github.com/user-attachments/assets/98021936-5759-44a5-8047-69d714b909f2)  
+
+The **world details page** contains the following features:
+- Navigation Bar: Allows users to access different pages of the site, as well as registering or logging in to an account.
+- Hero image fixed as a background
+- All the worlds are displayed in individual cards with a short comment, the picture of each world's *dining area*, and a button to "see details" of each world.
+- Footer
+
+
+### BOOKING FORM PAGE
+### BOOKING LIST PAGE
+### CONTACT PAGE
+### 404 ERROR PAGE
+
+
 # AGILE METHODOLOGY
 Agile methodologies and principles has guided the planning and creation of this site. Eventhough it does not strictly adhere to traditional Agile methodologies, the development process has been based on Agile principles, focusing on flexibility, continuous improvement, and an agile adaptation to change. The focus has been put on the priority level of the User Stories, adding extra features once the basic functionality had been satisfied. The development of features has been made in a logical sequence, addressing core CRUD functionalities first before expanding to the other features.
 
@@ -232,10 +305,10 @@ You can check the Kanban project [here](https://github.com/users/Ethra8/projects
 
 # TESTING
 
-## COMPATIBILITY AND RESPONSIVE TESTING
+## COMPATIBILITY AND RESPONSIVE TESTING  
 
 ### PRESELECTING TESTING TARGETS
-- To meaningful testing of site, [Stat Counter](https://gs.statcounter.com) has been used, in order to get an insight of the following:
+- For a meaningful testing of the site, [Stat Counter](https://gs.statcounter.com) has been used, in order to get an insight of the following:
     
     * **BROWSER MARKET SHARE** - Most commonly used browsers worldwide:
 
@@ -260,7 +333,7 @@ You can check the Kanban project [here](https://github.com/users/Ethra8/projects
 
 
 ### TESTING TARGETS TABLE
-Following all the above information, compatibility and responsive testing has been done on the most common *browser versions*, *OS*, and *screen resolution* combinations, by using [Browser Stack](https://chrome.google.com/webstore/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb) Chrome extension, which has been downloaded, the *Chrome Dev tool's emulator*, and real devices owned by me. 
+Following all the above information, compatibility and responsive testing has been done on the most common *browser versions*, *OS*, and *screen resolution* combinations, by using [Browser Stack](https://chrome.google.com/webstore/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb) Chrome extension, the *Chrome Dev tool's emulator*, and real devices owned by me. 
 
 Please find the correspondent **compatibility and responsive testing** reflected in the following table:
 
@@ -271,7 +344,7 @@ Please find the correspondent **compatibility and responsive testing** reflected
 | 3       | BrowserStack       | Samsung Galaxy S22   | Edge               |Android 12.0     |360 x 780                     |
 | 4       | BrowserStack       | iPhone 12 Mini       | Safari             | iOS 16.0        |360 x 780                     |
 | 5       | Blisk              | iPhone SE 2022       | Chrome             | iOS             |375 x 667                     |
-| 6       | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 857                     |
+| 6       | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 729                     |
 | 7       | BrowserStack       | iPhone 13            | Safari 17.0        | iOS             |390 x 844                     |
 | 8       | BrowserStack       | iPhone 14 Pro        | Safari 16.3        | iOS             |393 x 852                     |
 | 9       | REAL Laptop Device | PC Notebook HP -15-bs013ns| Chrome 117    |Windows 10 -64bit|1366 x 768                    |
@@ -281,7 +354,7 @@ Please find the correspondent **compatibility and responsive testing** reflected
 | 13      | BrowserStack       | MacBook              | Safari 16.5        | OS X Ventura    |1920 x 1080                   |
 
 
-### TEST VIDEOS
+### TEST RESULT VIDEOS
 TEST 1
 -
 TEST 2
@@ -294,6 +367,10 @@ TEST 5
 -
 TEST 6
 -
+
+https://github.com/user-attachments/assets/23fa1a68-13d4-40b8-8cca-e5cecfb7778a
+
+
 TEST 7
 -
 TEST 8
@@ -303,6 +380,19 @@ TEST 9
 TEST 10
 -
 
+## DEFECT TRACKING
+
+### GITHUB ISSUES
+The defects or bugs that have appeared while programming this site have been tracked usign the **Github issues**, and have been placed in the *bug* column of the *[project's kanban](https://github.com/users/Ethra8/projects/8/views/1)* to be easily tracked and solved.  
+
+### DEFECTS OF NOTE
+No defects of note have been detected on the site.
+  
+### OUTSTANDING DEFECTS
+No outstanding defects have been detected on the site.
+
+
+## ACCESSIBILITY TESTING
 
 # TECHNOLOGIES and METHODOLOGIES USED
 **The following technologies have been used to create this site and to deploy it. The AGILE methodology has been approached and a kanban board is linked to this project. For further det that can be viewed [here](#)**
@@ -326,7 +416,8 @@ TEST 10
   - [EqualWeb Accessibility Checker](https://chrome.google.com/webstore/detail/equalweb-accessibility-ch/imemciokfejbnonkkinhcdfigdilcllg/related?utm_source=chrome-ntp-icon) - Google Chrome extension to check general errors and contract errors for optimal accessibility.
   - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorithm.
   - [Blisk](https://blisk.io/devices) to check the viewport of multiple devices, very useful for testing.
-  - [BrowserStack](browserstack.com) to test responsiveness by emulating different devices, os and browser vendors.
+  - [BrowserStack](browserstack.com) to test responsiveness by emulating different devices, operating systems and browser vendors.
+  - [XRecorder](https://videoeditor-videorecorder-screenrecorder.en.uptodown.com/android) for Android to record the compatibility and responsiveness testing performed on real Android device.
 
 
 # DEPLOYMENT
@@ -373,12 +464,17 @@ To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, S
    - ![image](https://github.com/user-attachments/assets/48671b5e-99a8-4472-97b8-94af79a84ad5)
      
 ### Deployment Method
-1. Ensure that in your **settings.py**, ```DEBUG = False``` before doing the last commit to Github.
-2. **On Heroku**, click the **deploy** tab
-3. Scroll down and select Github
+1. Ensure that in your **settings.py**, ```DEBUG = False``` before doing the last commit to Github before deploying to Heroku.
+2. **On Heroku**, click the **deploy** tab on the top navigation bar.
+3. Scroll down and select Github as 'Deployment method'
 4. Use the github link and type in the name of your repository
-5. Click **deploy from branch** and select *main*
-6. Once your application is running, switch to **Automatic Deploys** so that any changes are automatically reflected in Heroku deployed app.  
+   ![image](https://github.com/user-attachments/assets/ea9b0af6-b0ad-4bcb-9b2c-842e2fa738db)
+
+5. Scroll down, to **'Manual Deploy'** configuration and select ***main*** on the dropdown for the ***branch the deploy***
+6. Then click on **deploy from branch**
+   ![image](https://github.com/user-attachments/assets/4b1a00cd-9f53-4540-a5cb-316c150b6578)
+7. Once the app is loaded, click on the 'View' button that appears only then.
+8. Once your application is running, you can switch to **Automatic Deploys** so that any changes in the repositori are automatically reflected in Heroku deployed app.  
   
   
 # CREDITS & ACKNOWEDGEMENTS
@@ -386,9 +482,9 @@ To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, S
 ## IMAGES
 - [Hero image](https://www.freepik.com/free-photo/enchanting-glow-fairy-lights-candles-creating-magical-ambiance_136714970.htm) by [
 frimufilms](https://www.freepik.com/author/frimufilms) at [Freepik](https://www.freepik.com/)
-- All other images on the site have been created by ChatGPT specially for this site.
+- All other images on the site have been generated with AI using *ChatGPT* tool, by the creator of this site, and exclusively for this site.
 
 ## ACKNOWLEDGEMENTS
-- Sites thoroughly researched: [Stackoverflow](https://stackoverflow.com/), [Django Projecc Forum](https://forum.djangoproject.com/).
+- Sites thoroughly researched: [Stackoverflow](https://stackoverflow.com/), [Django Projects Forum](https://forum.djangoproject.com/).
   
 
