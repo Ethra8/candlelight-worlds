@@ -3,9 +3,11 @@
 
 
 ## PROJECT OVERVIEW
-- A booking site for a restaurant that offers out-of-the-box romantic dinners. This new concept involves private rooms carefully decorated to transport our guests to different times and places, all under immersive candlelight lighting.
-- These romantic experiences not only include tasty dishes from around the globe served by our discreet and professional table service, but each private room also includes a lounge area with a king-size bed and an in-room private jakuzzi, so that couples can relax and chill after dinner, or even have a siesta!
-- Guests also have the option to spend the night, if they wish so, by paying a supplement.
+- A booking site for a business that offers different out-of-the-box romantic day or night experiences including meals, and avalable in two different time frames; one including daytime, and the other comprising dinner time until breakfast.
+- This new concept involves private spaces called worlds, each exquisitely decorated to transport our guests to different times and places. Each private world includes three areas: The dining Area, an in-room or bathroom king-size Jakuzzi, and a resting area (or *siesta* luxurious space) furnished with a king size bed and fine linen.
+- The project's name reflects the very essence of the primary idea of the owner, which is to make worlds fully immersed in a warm candlelight lighting, which undoubtedly fosters a unique and unforgetable atmosphere.
+- These romantic experiences' tasty dishes are carefully selected with recipes from around the world, adapted to each world's theme and served by our discreet and professional table service.
+
 
 ## LIVE SITE
 Visit the live site **[here](https://candlelight-worlds-f913477cd630.herokuapp.com/)**
@@ -34,6 +36,14 @@ Edna Torres Munill
     - [Mobile & Tablet (portrait)](#mobile-&-tablet-(portrait))
     - [Desktop & Tablet (landscape)](#desktop-&-tablet-(landscape))
   * [Features](#features)
+    - [Responsiveness](#responsiveness)
+    - [Accessibility](#accessibility)
+    - [Navigation Bar](#navigation-bar)
+    - [Footer](#footer)
+    - [User Authentication](#user-authentication)
+    - [Confirmation Messages](#confirmation-messages)
+    - [404 Error Page](#404-error-page)
+    - [Admin Console](#admin-console)
   * [Pages](#pages)
     - [Home Page](#home-page)
     - [Worlds Page](#worlds-page)
@@ -52,18 +62,14 @@ Edna Torres Munill
     - [Read](#read)
     - [Update](#update)
     - [Delete](#delete)
-  * [Features](#features)
-    - [Responsiveness](#responsiveness)
-    - [Accessibility](#accessibility)
-    - [Navigation Bar](#navigation-bar)
-    - [Footer](#footer)
-    - [User Authentication](#user-authentication)
-    - [Confirmation Messages](#confirmation-messages)
-    - [404 Error Page](#404-error-page)
-    - [Admin Console](#admin-console)
+
 - [AGILE Methodology](#agile-methodology)
   * [Github Project - Kanban](#github-project---kanban)
 - [TESTING](#testing)
+  * [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
+    - [Preselecting Testing Targets](#preselecting-testing-targets)
+    - [Testing Targets Table](testing-targets-table)
+    - [Test Result Videos](test-results-videos)
   * [Defect Tracking](#defect-tracking)
     - [Github Issues](#github-issues)
     - [Defects of Note](#defects-of-note)
@@ -225,10 +231,11 @@ As a site owner, the following functionalities have been included on this site, 
 
 
 ## FEATURES
-This site contains the following features, all of which are **fully responsive**:  
-  
+This site contains the following features:     
+- **Responsiveness**: All pages and features are fully responsive - please refer to the [Testing Targets Table](#testing-targets-table) or the [Responsive Testing Videos](#test-videos) for further details.
+- **Accessibility**: This site takes accessibility very seriously, and has performed different tests. All the reports can be checked [here]
 - **Navigation Bar**: Fixed to the top to make it easy for users to navigate around the site at any time. Contains links to pages, and acces to user's account.
-- **Backgroung hero image**: Fixed to the background of the body.
+- **Backgroung**: Fixed to the background of the body, the hero image takes up all of the available space in all types fo devices.
 - **Background overlay**: Increases opacity of hero image fixed on the body to improve visual impact on text.
 - **Footer**: Pushed to the bottom, contains social media icons with links to each social media pages.
 - **Booking Form**: A *crispy form* to book a world. The form contains a styled *Book Now* button below the following fields:
@@ -298,10 +305,10 @@ You can check the Kanban project [here](https://github.com/users/Ethra8/projects
 
 # TESTING
 
-## COMPATIBILITY AND RESPONSIVE TESTING
+## COMPATIBILITY AND RESPONSIVE TESTING  
 
-### PRESELECTING TESTING TARGETS
-- To meaningful testing of site, [Stat Counter](https://gs.statcounter.com) has been used, in order to get an insight of the following:
+### 1. PRESELECTING TESTING TARGETS
+- For a meaningful testing of the site, [Stat Counter](https://gs.statcounter.com) has been used, in order to get an insight of the following:
     
     * **BROWSER MARKET SHARE** - Most commonly used browsers worldwide:
 
@@ -325,8 +332,8 @@ You can check the Kanban project [here](https://github.com/users/Ethra8/projects
 
 
 
-### TESTING TARGETS TABLE
-Following all the above information, compatibility and responsive testing has been done on the most common *browser versions*, *OS*, and *screen resolution* combinations, by using [Browser Stack](https://chrome.google.com/webstore/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb) Chrome extension, which has been downloaded, the *Chrome Dev tool's emulator*, and real devices owned by me. 
+### 2. TESTING TARGETS TABLE
+Following all the above information, compatibility and responsive testing has been done on the most common *browser versions*, *OS*, and *screen resolution* combinations, by using [Browser Stack](https://chrome.google.com/webstore/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb) Chrome extension, the *Chrome Dev tool's emulator*, and real devices owned by me. 
 
 Please find the correspondent **compatibility and responsive testing** reflected in the following table:
 
@@ -337,7 +344,7 @@ Please find the correspondent **compatibility and responsive testing** reflected
 | 3       | BrowserStack       | Samsung Galaxy S22   | Edge               |Android 12.0     |360 x 780                     |
 | 4       | BrowserStack       | iPhone 12 Mini       | Safari             | iOS 16.0        |360 x 780                     |
 | 5       | Blisk              | iPhone SE 2022       | Chrome             | iOS             |375 x 667                     |
-| 6       | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 857                     |
+| 6       | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 729                     |
 | 7       | BrowserStack       | iPhone 13            | Safari 17.0        | iOS             |390 x 844                     |
 | 8       | BrowserStack       | iPhone 14 Pro        | Safari 16.3        | iOS             |393 x 852                     |
 | 9       | REAL Laptop Device | PC Notebook HP -15-bs013ns| Chrome 117    |Windows 10 -64bit|1366 x 768                    |
@@ -347,7 +354,7 @@ Please find the correspondent **compatibility and responsive testing** reflected
 | 13      | BrowserStack       | MacBook              | Safari 16.5        | OS X Ventura    |1920 x 1080                   |
 
 
-### TEST VIDEOS
+### 2. TEST VIDEOS
 TEST 1
 -
 TEST 2
@@ -360,6 +367,10 @@ TEST 5
 -
 TEST 6
 -
+
+https://github.com/user-attachments/assets/23fa1a68-13d4-40b8-8cca-e5cecfb7778a
+
+
 TEST 7
 -
 TEST 8
@@ -439,12 +450,17 @@ To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, S
    - ![image](https://github.com/user-attachments/assets/48671b5e-99a8-4472-97b8-94af79a84ad5)
      
 ### Deployment Method
-1. Ensure that in your **settings.py**, ```DEBUG = False``` before doing the last commit to Github.
-2. **On Heroku**, click the **deploy** tab
-3. Scroll down and select Github
+1. Ensure that in your **settings.py**, ```DEBUG = False``` before doing the last commit to Github before deploying to Heroku.
+2. **On Heroku**, click the **deploy** tab on the top navigation bar.
+3. Scroll down and select Github as 'Deployment method'
 4. Use the github link and type in the name of your repository
-5. Click **deploy from branch** and select *main*
-6. Once your application is running, switch to **Automatic Deploys** so that any changes are automatically reflected in Heroku deployed app.  
+   ![image](https://github.com/user-attachments/assets/ea9b0af6-b0ad-4bcb-9b2c-842e2fa738db)
+
+5. Scroll down, to **'Manual Deploy'** configuration and select ***main*** on the dropdown for the ***branch the deploy***
+6. Then click on **deploy from branch**
+   ![image](https://github.com/user-attachments/assets/4b1a00cd-9f53-4540-a5cb-316c150b6578)
+7. Once the app is loaded, click on the 'View' button that appears only then.
+8. Once your application is running, you can switch to **Automatic Deploys** so that any changes in the repositori are automatically reflected in Heroku deployed app.  
   
   
 # CREDITS & ACKNOWEDGEMENTS
@@ -455,6 +471,6 @@ frimufilms](https://www.freepik.com/author/frimufilms) at [Freepik](https://www.
 - All other images on the site have been created by ChatGPT specially for this site.
 
 ## ACKNOWLEDGEMENTS
-- Sites thoroughly researched: [Stackoverflow](https://stackoverflow.com/), [Django Projecc Forum](https://forum.djangoproject.com/).
+- Sites thoroughly researched: [Stackoverflow](https://stackoverflow.com/), [Django Projects Forum](https://forum.djangoproject.com/).
   
 
