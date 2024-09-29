@@ -3,7 +3,7 @@
 
 
 ## PROJECT OVERVIEW
-- A booking site for a business that offers different **out-of-the-box romantic day or night experiences** including meals, and that are available in two different time frames: daytime & nightime. Daytime includes brunch and lunch, and nightime includes dinner and breakfast.
+- A booking site for a business that offers different **out-of-the-box romantic day or night experiences** including meals vailable in two different time frames: daytime & nightime -daytime includes brunch and lunch, and nightime includes dinner and breakfast.
 - This new concept involves **private spaces called worlds, each exquisitely decorated to transport our guests to different times and places**. Each private world includes three areas: The **Dining Area**, an in-room or bathroom king-size **Jakuzzi**, and a **Resting Area** (or *siesta* area) furnished with a king size bed and fine linen.
 - The project's name reflects the very ***essence*** of the primary idea of the owner, which is to make **worlds fully immersed in a warm candlelight lighting**, which undoubtedly fosters a unique and unforgetable atmosphere.
 - These romantic experiences' **tasty dishes** are carefully selected with recipes from around the world, **adapted to each world's theme** and served by our discreet and professional table service.
@@ -124,7 +124,7 @@ The project goals are as follows:
 
 
 ## USER STORIES
-
+To make the user experience on the site seamless and meaningful, the following functionalities have been included on this site:
 ### As a first time B2C or B2B visitor 
 - [X] View available worlds.
 - [X] View world detail pages.
@@ -132,8 +132,7 @@ The project goals are as follows:
 - [X] Check the About page.
 - [X] Send a request through a form
 - [X] Sign up for an account after a conscient decision, to be able to make a booking.
-
-
+  
 ### As an Authorized User 
 - [X] Easily log in and log out.  
 - [X] Easily recover my password in case I forget it.
@@ -141,23 +140,22 @@ The project goals are as follows:
 - [X] View a confirmation message after registering.  
 - [X] Make a booking selecting the world and time.   
 - [X] View a list with my bookings after sending the booking form.
-- [X] Update or delete my bookings.  
+- [X] Update or delete a booking.  
 - [X] View confirmation message on the site for every action taken.
 - [X] Be sure that no one else can access my bookings. 
-
+  
 ## SITE OWNER STORIES
-As a site owner, the following functionalities have been included on this site, to manually access and set the following:
+To make the site owner's life easier, the following functionalities have been included on this site, to manually access and update the following from the admin panel, without touching any code:
 - [X] Add, update or delete worlds directly from the admin.  
-- [X] Style the font size and display of each world's details page.
-- [X] Add, update of delete images from the world's details page.
-- [X] Access contact requests sent by users throkugh the contact form to the admin.
+- [X] Edit and style the text of each world.
+- [X] Add, update or delete images from each world.
+- [X] Access from the admin the contact requests sent by users via the contact form.
 - [X] Display clearly if the request sender is an authenticated user or not.
-- [X] Know if the request sender is a acting on behalf of a company.
-- [X] Edit the about page from the admin.
-
-
+- [X] Display clearly if the request sender is a acting on behalf of a company.
+- [X] Edit and style the text, display and image of the about page from the admin panel.
+  
+  
 ## USER PROFILES
-
 ### B2C
 - Steve is a romantic man in his thirties and wants to surprise his partner with a very special gift for a special occasion
 - Siham is looking for a special gift for her parents' anniversary
@@ -166,6 +164,7 @@ As a site owner, the following functionalities have been included on this site, 
 ### B2B
 - Oisin is the CEO of a large company and wants to offer a special treat to the managers after reaching an importnt milestone.
 - Maeve is the owner of a family-owned establishment and wants a special 1st price for a raffle.
+
 
 # UI
 
@@ -232,11 +231,11 @@ As a site owner, the following functionalities have been included on this site, 
 
 ## FEATURES
 This site contains the following features:     
-- **Responsiveness**: All pages and features are fully responsive - please refer to the [Testing Targets Table](#testing-targets-table) or the [Responsive Testing Videos](#test-videos) for further details.
-- **Accessibility**: This site takes accessibility very seriously, and has performed different tests. All the reports can be checked [here]
+- **Responsiveness**: All pages and features are fully responsive - please refer to the [Testing Targets Table](#testing-targets-table) or the [Responsive Testing Videos](#test-result-videos) for further details.
+- **Accessibility**: This site takes accessibility very seriously, and has performed different tests. All the reports can be checked [here](#accessibility-testing)
 - **Navigation Bar**: Fixed to the top to make it easy for users to navigate around the site at any time. Contains links to pages, and acces to user's account.
-- **Backgroung**: Fixed to the background of the body, the hero image takes up all of the available space in all types fo devices.
-- **Background overlay**: Increases opacity of hero image fixed on the body to improve visual impact on text.
+- **Backgroung image**: Fixed to the background of the body, the hero image takes up all of the available space in all types fo devices.
+- **Background overlay**: Fixed on the upper layer of the background image, it increases opacity of hero image fixed on the body to improve visual accessibility of text.
 - **Footer**: Pushed to the bottom, contains social media icons with links to each social media pages.
 - **Booking Form**: A *crispy form* to book a world. The form contains a styled *Book Now* button below the following fields:
   * ***World selector***: Prepopulates automatically when user accesses the bookign form from the *Book Now!* button on the *world details page*
@@ -247,18 +246,19 @@ This site contains the following features:
   * ***company name*** - in case a company wants to contact, and keep trac kof B2B customers and request.
   * ***email***
   * ***message***
-- **Buttons**: All buttons are styled seamlessly for design consistency.
+- **Buttons**: All buttons are styled seamlessly for design consistency. The background colour is the main theme colour #f69700. On *hover*, it slightly darkens to #b57002 while the font colour remains dark grey #21201e
 - **Icons**: All icons are taken from *Fontawesome*, and have been styled to match the site's design:
-  * User: Placed on the navigation bar
-  * Update
+  * *User icon*: Placed on the navigation bar, it enables unidentified users to easily login or register for an account, and also enables authentified users to access their booking list, and to logout. It has been styled matching the main colour of the theme #f69700.
+  * *Update Booking icon*: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to update the booking to a new date, time, or world all together. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.
+  * *Delete Booking icon*: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to delete the booking. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.
 
 ## PAGES
-This site contains the following responsive pages, all of which contain the followingn features:
+This site contains the following responsive pages, all of which contain the following features. You can also check further details about each feature [here](#features):
 - **Navigation Bar**
-- **Backgroung hero image**: Fixed to the background
-- **Back transparent overlay**: Increased opacity of hero image to improve visual impact on text.
-- **Footer**: 
-- 
+- **Backgroung hero image**: Fixed to the body, and taking all available space in dynamic way.
+- **Back transparent overlay**: Increased opacity of hero image to improve accessibility.
+- **Footer**: FIxed to the botom of each page, it contains social media icons that redirect to the correspondent media profile of the web, enabling the users to easily check or follow our different social media profiles.
+  
 ### HOME PAGE
   ![image](https://github.com/user-attachments/assets/315d5c51-4eee-4aa1-b84d-328f347184d5)  
 
@@ -354,7 +354,7 @@ Please find the correspondent **compatibility and responsive testing** reflected
 | 13      | BrowserStack       | MacBook              | Safari 16.5        | OS X Ventura    |1920 x 1080                   |
 
 
-### 2. TEST VIDEOS
+### 2. TEST RESULT VIDEOS
 TEST 1
 -
 TEST 2
@@ -380,6 +380,8 @@ TEST 9
 TEST 10
 -
 
+
+## ACCESSIBILITY TESTING
 
 # TECHNOLOGIES and METHODOLOGIES USED
 **The following technologies have been used to create this site and to deploy it. The AGILE methodology has been approached and a kanban board is linked to this project. For further det that can be viewed [here](#)**
