@@ -3,10 +3,10 @@
 
 
 ## PROJECT OVERVIEW
-- A booking site for a business that offers different out-of-the-box romantic day or night experiences including meals, and avalable in two different time frames; one including daytime, and the other comprising dinner time until breakfast.
-- This new concept involves private spaces called worlds, each exquisitely decorated to transport our guests to different times and places. Each private world includes three areas: The dining Area, an in-room or bathroom king-size Jakuzzi, and a resting area (or *siesta* luxurious space) furnished with a king size bed and fine linen.
-- The project's name reflects the very essence of the primary idea of the owner, which is to make worlds fully immersed in a warm candlelight lighting, which undoubtedly fosters a unique and unforgetable atmosphere.
-- These romantic experiences' tasty dishes are carefully selected with recipes from around the world, adapted to each world's theme and served by our discreet and professional table service.
+- A booking site for a business that offers different **out-of-the-box romantic day or night experiences** including meals, and that are available in two different time frames: daytime & nightime. Daytime includes brunch and lunch, and nightime includes dinner and breakfast.
+- This new concept involves **private spaces called worlds, each exquisitely decorated to transport our guests to different times and places**. Each private world includes three areas: The **Dining Area**, an in-room or bathroom king-size **Jakuzzi**, and a **Resting Area** (or *siesta* area) furnished with a king size bed and fine linen.
+- The project's name reflects the very ***essence*** of the primary idea of the owner, which is to make **worlds fully immersed in a warm candlelight lighting**, which undoubtedly fosters a unique and unforgetable atmosphere.
+- These romantic experiences' **tasty dishes** are carefully selected with recipes from around the world, **adapted to each world's theme** and served by our discreet and professional table service.
 
 
 ## LIVE SITE
