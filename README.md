@@ -396,17 +396,17 @@ No outstanding defects have been detected on the site.
 
 
 ### TESTING TARGETS TABLE
-Following all the above information, compatibility and responsive testing has been done on the most common *browser versions*, *OS*, and *screen resolution* combinations, by using [Browser Stack](https://chrome.google.com/webstore/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb) Chrome extension, the *Chrome Dev tool's emulator*, and real devices owned by me. 
+Following all the above information, compatibility and responsive testing has been done on the most common *browser versions*, *OS*, and *screen resolution* combinations, by using [Browser Stack](https://chrome.google.com/webstore/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb) Chrome extension, the *Chrome Dev tool's emulator*, and real devices. On the mobile reasl device, XRecorder app has been used. 
 
 Please find the correspondent **compatibility and responsive testing** reflected in the following table:
 
 | TEST no.| TOOL               | DEVICE               | BROWSER            | OS              | VIEWPORT width x height (px) |
 |---------|--------------------|----------------------|--------------------|-----------------|------------------------------|
 | 1       | Chrome Dev emulator| [Samsung Galaxy S8](https://blisk.io/devices/details/galaxy-s8)   | Chrome 117         |Windows 11       |360 x 740             | 
-| 2       | BrowserStack       | Samsung Galaxy S22   | Chrome             |Android 12.0     |360 x 780                     |
+| 2       | BrowserStack       | [Samsung Galaxy S20](https://blisk.io/devices/details/galaxy-s20)   | Edge               |Android 11.0     |360 x 800           |
 | 3       | BrowserStack       | Samsung Galaxy S22   | Edge               |Android 12.0     |360 x 780                     |
 | 4       | BrowserStack       | iPhone 12 Mini       | Safari             | iOS 16.0        |360 x 780                     |
-| 5       | Blisk              | iPhone SE 2022       | Chrome             | iOS             |375 x 667                     |
+| 5       | BrowserStack       | [iPhone XS](https://blisk.io/devices/details/iphone-xs)            | Safari             | iOS 15.0        |375 x 812            |
 | 6       | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 729                     |
 | 7       | BrowserStack       | [Samsung Galaxy S22 Ultra](https://blisk.io/devices/details/galaxy-s22-ultra)| Chrome          | Android 13.0        |384 x 824  |
 | 8       | BrowserStack       | iPhone 14 Pro        | Safari 16.3        | iOS             |393 x 852                     |
@@ -426,6 +426,10 @@ https://github.com/user-attachments/assets/d89bee18-7c29-42b7-9e46-d9610ef703b6
 
 TEST 2
 -
+
+https://github.com/user-attachments/assets/974cfbd9-25ab-4338-8c72-54f99c63d793
+
+
 TEST 3
 -
 TEST 4
@@ -477,9 +481,10 @@ TEST 10
   - [Amiresponsive](https://ui.dev/amiresponsive) - To display the site in all types of devices simultaneously.
   - [EqualWeb Accessibility Checker](https://chrome.google.com/webstore/detail/equalweb-accessibility-ch/imemciokfejbnonkkinhcdfigdilcllg/related?utm_source=chrome-ntp-icon) - Google Chrome extension to check general errors and contract errors for optimal accessibility.
   - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorithm.
-  - [Blisk](https://blisk.io/devices) to check the viewport of multiple devices, very useful for testing.
+  - [Blisk](https://blisk.io/devices) to check the viewport of multiple devices, very useful for selecting testing targets.
+  - [Viewport Sizer](https://viewportsizer.com/devices/) - Used to check the viewport of multiple devices, very useful for selecting testing targets.
   - [BrowserStack](browserstack.com) to test responsiveness by emulating different devices, operating systems and browser vendors.
-  - [XRecorder](https://videoeditor-videorecorder-screenrecorder.en.uptodown.com/android) for Android to record the compatibility and responsiveness testing performed on real Android device.
+  - [XRecorder](https://videoeditor-videorecorder-screenrecorder.en.uptodown.com/android) for Android, to record the compatibility and responsiveness testing performed on real Android device.
 
 
 # DEPLOYMENT
