@@ -124,7 +124,7 @@ The project goals are as follows:
 
 
 ## USER STORIES
-To make the user experience on the site seamless and meaningful, the following functionalities have been included on this site:
+To make the user experience on the site seamless and meaningful, the following stories have been followed as a guide to implementing functionalities of the site:
 ### As a first time B2C or B2B visitor 
 - [X] View available worlds.
 - [X] View world detail pages.
@@ -231,7 +231,7 @@ To make the site owner's life easier, the following functionalities have been in
 
 ## FEATURES
 This site contains the following features:     
-- **Responsiveness**: All pages and features are fully responsive - please refer to the [Testing Targets Table](#2.-testing-targets-table) or the [Responsive Testing Videos](#3.-test-result-videos) for further details.
+- **Responsiveness**: All pages and features are fully responsive - please refer to the [Testing Targets Table](#-2.-testing-targets-table) or the [Responsive Testing Videos](#-3.-test-result-videos) for further details.
 - **Accessibility**: This site takes accessibility very seriously, and has performed different tests. All the reports can be checked [here](#accessibility-testing)
 - **Navigation Bar**: Fixed to the top to make it easy for users to navigate around the site at any time. Contains links to pages, and acces to user's account.
 - **Backgroung image**: Fixed to the background of the body, the hero image takes up all of the available space in all types fo devices.
