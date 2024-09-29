@@ -403,7 +403,8 @@ TEST 10
   - [EqualWeb Accessibility Checker](https://chrome.google.com/webstore/detail/equalweb-accessibility-ch/imemciokfejbnonkkinhcdfigdilcllg/related?utm_source=chrome-ntp-icon) - Google Chrome extension to check general errors and contract errors for optimal accessibility.
   - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorithm.
   - [Blisk](https://blisk.io/devices) to check the viewport of multiple devices, very useful for testing.
-  - [BrowserStack](browserstack.com) to test responsiveness by emulating different devices, os and browser vendors.
+  - [BrowserStack](browserstack.com) to test responsiveness by emulating different devices, operating systems and browser vendors.
+  - [XRecorder](https://videoeditor-videorecorder-screenrecorder.en.uptodown.com/android) for Android to record the compatibility and responsiveness testing performed on real Android device.
 
 
 # DEPLOYMENT
@@ -468,7 +469,7 @@ To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, S
 ## IMAGES
 - [Hero image](https://www.freepik.com/free-photo/enchanting-glow-fairy-lights-candles-creating-magical-ambiance_136714970.htm) by [
 frimufilms](https://www.freepik.com/author/frimufilms) at [Freepik](https://www.freepik.com/)
-- All other images on the site have been created by ChatGPT specially for this site.
+- All other images on the site have been generated with AI using *ChatGPT* tool, by the creator of this site, and exclusively for this site.
 
 ## ACKNOWLEDGEMENTS
 - Sites thoroughly researched: [Stackoverflow](https://stackoverflow.com/), [Django Projects Forum](https://forum.djangoproject.com/).
