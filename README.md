@@ -32,12 +32,12 @@ Edna Torres Munill
      - [Site Owner Stories](#site-owner-stories)
   * [User Profiles](#user-profiles)
 - [UI](#ui)
+  * [Design Choices](#design-choices)
+    - [Color Palette and Rationale of Use](#color-palette)
+    - [Typography and Rationale of Use](#typography)
   * [Wireframes](#wireframes)
   * [Features](#features)
   * [Pages](#pages)
-  * [Design Choices](#design-choices)
-    - [Color Palette and Rationale of Use](#color-palette-and-rationale-of-use)
-    - [Typography and Rationale of Use](#typography-and-rationale-of-use)
   * [CRUD Functionality](#crud-functionality)
     - [Create](#create)
     - [Read](#read)
@@ -149,13 +149,24 @@ To make the site owner's life easier, the following functionalities have been in
 
 # UI
 
+## HERO IMAGE
+This site has the following hero image:  
+  
+  ![bg-candles1 c539123d66b8](https://github.com/user-attachments/assets/d55c2807-32cb-4dc2-8041-5bc74599c283)  
+  
+
 ## COLOR PALETTE
-This site has the following palette, picked specifically to emulate real candlelight and the shadows provocked
-
-  ![candlelight color palette](https://github.com/user-attachments/assets/a2c1ebea-e3f2-40ea-87a1-6fa16cbb9ef9)
-
-
+This site has the following palette, picked specifically to emulate real candlelight and the shadows it provokes. The colours have carefully been picked inspired by the hero image of the site, which is always ppresent, fixed on the body element of the *base.html* file:   
+  
+  ![candlelight color palette](https://github.com/user-attachments/assets/a2c1ebea-e3f2-40ea-87a1-6fa16cbb9ef9)  
+  
+  
 ## TYPOGRAPHY
+This site's fonts have been selected from [Google fonts](https://fonts.google.com/):
+- [Montserrat](https://fonts.google.com/specimen/Montserrat?query=montserrat): Used on all the paragraphs of the site, and it is the default font of the body element.
+- [Montserrat Alternates](https://fonts.google.com/specimen/Montserrat+Alternates?query=montserrat): Used only for the name of the worlds, to give a special *exotic* touch without deviating of the main font style specified above.
+- [Lato](https://fonts.google.com/specimen/Lato?query=lato): Used only for the main title of the site and for the logo.
+- [Shadows Into Light](https://fonts.google.com/specimen/Shadows+Into+Light?query=Shadows+Into+Light): Used only for the slogan *'travel through space and time'* on the landing page below the main title.
 
 ## WIREFRAMES
 
@@ -241,6 +252,11 @@ This site contains the following features:
   * *Update Booking icon*: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to update the booking to a new date, time, or world all together. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.
   * *Delete Booking icon*: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to delete the booking. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.
 
+## DESIGN CHOICES
+
+
+
+
 ## PAGES
 This site contains the following responsive pages, all of which contain the following features which are placed on the *body* element of the *base.html* template, that acts as the main dynamic *django template* for all the other pages of the site. You can also check further details about each feature of the main **body** of each page [here](#features):
 - **Navigation Bar**
@@ -284,7 +300,6 @@ The **world details page** corresponds to the *world_details.html* template from
 ### 404 ERROR PAGE
 
 
-## DESIGN CHOICES
 
 ## CRUD FUNCTIONALITIES
 The following basic *CRUD* functionalities have been implementes to this site, as detailed below:  
