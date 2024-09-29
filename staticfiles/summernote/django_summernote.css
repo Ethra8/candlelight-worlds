@@ -6,3 +6,7 @@
 form .summernote-div .dropdown-menu {
   margin-left: 0;
 }
+
+img {
+  width: 100%;
+}

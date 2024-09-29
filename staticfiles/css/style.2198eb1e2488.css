@@ -305,6 +305,16 @@ p {
     object-fit: cover;
 }
 
+.scale2 {
+    position: relative;
+    width: 100% !important;
+    max-height: 480px !important;
+    vertical-align: middle;
+    margin-top: 72px !important;
+    object-fit: cover;
+    bottom: 50px;
+}
+
 .worlds-display_name {
     font-size: 1.1rem;
     font-weight: 500;
@@ -411,6 +421,7 @@ p {
 .btn-book,
 .btn-about {
     background-color: #f69700;
+    margin-top: 30px;
     padding: 10px;
     font-weight: 600;
     text-transform: uppercase;

@@ -30,9 +30,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
-# DEBUG = os.environ.get('DEVELOPMENT')
-# DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = False
+DEBUG = os.getenv("DEVELOPMENT", "False") == "True"
 
 ALLOWED_HOSTS = ['8000-ethra8-candlelightworld-ojikmyc7jx4.ws.codeinstitute-ide.net', 'candlelight-worlds-f913477cd630.herokuapp.com',]
 

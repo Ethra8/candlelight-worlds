@@ -74,11 +74,12 @@
                                 <a class="nav-link pt-0 pb-0" href="#" id="user-options" role="button" data-bs-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
                                     <div class="text-lg-center">
-                                        <p class="text-center m-0"><i class="user-icon fa-solid fa-user"></i>{% if user.is_authenticated %}<br>{{ user }}{% else %}<br>log-in{% endif %}</p>
+                                        <p class="text-center m-0"><i class="user-icon fa-solid fa-user"></i>{% if user.is_authenticated %}<br>{{ user }}{% else %}<br>Log-in{% endif %}</p>
                                     </div>
                                 </a>
                                 <div class="dropdown-menu border-0" aria-labelledby="user-options">
                                     {% if user.is_authenticated %}
+                                    <a href="{% url 'booking_new' %}" class="dropdown-item">New Booking</a>
                                     <a href="{% url 'booking_list' %}" class="dropdown-item">My Bookings</a>
                                     <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                                     {% else %}
