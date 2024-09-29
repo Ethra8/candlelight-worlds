@@ -1,5 +1,5 @@
 # CANDLELIGHT WORLDS
-![image](https://github.com/user-attachments/assets/8abc2cd4-d9e8-4539-9270-5d48dba8fa25)
+![image](https://github.com/user-attachments/assets/8bde8516-951f-4d6c-acc5-739914f6e475)
 
 
 ## PROJECT OVERVIEW
