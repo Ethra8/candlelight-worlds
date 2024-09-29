@@ -74,6 +74,7 @@ Edna Torres Munill
 - [CREDITS & ACKNOWEDGEMENTS](#credits-and-acknowledgements)
 
 
+  
 # UX
 You will find in the points stated below a brief study aiming at providing the user with the best possible experience when visiting this site.
 -
