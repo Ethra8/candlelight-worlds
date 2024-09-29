@@ -36,10 +36,8 @@ Edna Torres Munill
   * [Features](#features)
   * [Pages](#pages)
   * [Design Choices](#design-choices)
-    - [Colors](#colors)
-      * [Colors Rationale of Use](#colors-rationale-of-use)
-    - [Typography](#typography)
-      * [Typography Rationale of Use](#typography-rationale-of-use)
+    - [Color Palette and Rationale of Use](#color-palette-and-rationale-of-use)
+    - [Typography and Rationale of Use](#typography-and-rationale-of-use)
   * [CRUD Functionality](#crud-functionality)
     - [Create](#create)
     - [Read](#read)
@@ -49,14 +47,14 @@ Edna Torres Munill
 - [AGILE Methodology](#agile-methodology)
   * [Github Project - Kanban](#github-project---kanban)
 - [TESTING](#testing)
-  * [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
-    - [Preselecting Testing Targets](#preselecting-testing-targets)
-    - [Testing Targets Table](testing-targets-table)
-    - [Test Result Videos](test-results-videos)
   * [Defect Tracking](#defect-tracking)
     - [Github Issues](#github-issues)
     - [Defects of Note](#defects-of-note)
     - [Outstanding Defects](#outstanding-defects)
+  * [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
+    - [Preselecting Testing Targets](#preselecting-testing-targets)
+    - [Testing Targets Table](testing-targets-table)
+    - [Test Result Videos](test-results-videos)
   * [Core Web Vitals](#core-web-vitals)
      - [Lighthouse Reports](#lighthouse-reports)
   * [Accessibility](#accessibility)
@@ -301,7 +299,7 @@ The following basic *CRUD* functionalities have been implementes to this site, a
 ### DELETE
 
 # AGILE METHODOLOGY
-Agile methodologies and principles has guided the planning and creation of this site. Eventhough it does not strictly adhere to traditional Agile methodologies, the development process has been based on Agile principles, focusing on flexibility, continuous improvement, and an agile adaptation to change. The focus has been put on the priority level of the ***User Stories***, adding extra features once the basic functionality had been satisfied. The development of features has been made in a logical sequence, addressing core [***CRUD functionalities***](#crud-functionalities) first before expanding to the other features.
+Agile methodologies and principles has guided the planning and creation of this site. Eventhough it does not strictly adhere to traditional Agile methodologies, the development process has been based on Agile principles, focusing on flexibility, continuous improvement, and an agile adaptation to change. The focus has been put on the priority level of the [***User Stories***](#user-stories), adding extra features once the basic functionality had been satisfied. The development of features has been made in a logical sequence, addressing core [***CRUD functionalities***](#crud-functionalities) first before expanding to the other features.
 
 ## GITHUB PROJECT - KANBAN
 When bugs or issues are encountered, they are recorded as bug issues and added to the backlog, to the 'bug' column. This allows us to continue progressing in other areas while periodically revisiting and prioritizing the backlog based on severity and impact. This method ensures that we maintain development, while systematically addressing and resolving issues.
@@ -311,6 +309,18 @@ You can check the Kanban project [here](https://github.com/users/Ethra8/projects
 
 
 # TESTING
+
+## DEFECT TRACKING
+
+### GITHUB ISSUES
+The defects or bugs that have appeared while programming this site have been tracked usign the **Github issues**, and have been placed in the *bug* column of the *[project's kanban](https://github.com/users/Ethra8/projects/8/views/1)* to be easily tracked and solved.  
+
+### DEFECTS OF NOTE
+No defects of note have been detected on the site.
+  
+### OUTSTANDING DEFECTS
+No outstanding defects have been detected on the site.
+
 
 ## COMPATIBILITY AND RESPONSIVE TESTING  
 
@@ -386,17 +396,6 @@ TEST 9
 -
 TEST 10
 -
-
-## DEFECT TRACKING
-
-### GITHUB ISSUES
-The defects or bugs that have appeared while programming this site have been tracked usign the **Github issues**, and have been placed in the *bug* column of the *[project's kanban](https://github.com/users/Ethra8/projects/8/views/1)* to be easily tracked and solved.  
-
-### DEFECTS OF NOTE
-No defects of note have been detected on the site.
-  
-### OUTSTANDING DEFECTS
-No outstanding defects have been detected on the site.
 
 
 ## ACCESSIBILITY TESTING
