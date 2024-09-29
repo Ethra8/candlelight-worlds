@@ -272,30 +272,60 @@ The **home page** corresponds to the *index.html* template from the *home app*, 
   * ***Title*** of the site: Its colours guide the theme of the site -*CandleLight* in #f69700, and *Worlds* in white, standing out from the light grey of the rest of the text on the site.
   * ***Slogan*** of the site: *'Travel through space and time'* styled in a light grey #dbd0ba font *Shadows Into Light*.
 
+#### DESKTOP
+  
   ![image](https://github.com/user-attachments/assets/315d5c51-4eee-4aa1-b84d-328f347184d5)
+
+#### MOBILE
+
+  ![image](https://github.com/user-attachments/assets/4edbc2b4-b2a5-4ee9-882e-eaecda381613)
+
   
 ### WORLDS PAGE
 The **worlds page** corresponds to the *worlds.html* template from the *worlds app*, and contains the following features:
 - **Main body element** - as detailed [above](#pages)
 - **List of individual world cards**: Each world card is responsive, and includes a *short description*, the *picture* of the world's *dining area*, and a *button* to "see details" of that specific world.  
 
-  ![image](https://github.com/user-attachments/assets/8f442a73-d68f-4d94-9636-28ac66a8e714)  
+#### DESKTOP
+  
+  ![image](https://github.com/user-attachments/assets/8f442a73-d68f-4d94-9636-28ac66a8e714)   
 
+#### MOBILE
 
+  ![image](https://github.com/user-attachments/assets/68584e00-4b70-4135-a802-4fa635cb4337)  
+
+  
 ### WORLD DETAILS PAGE
 The **world details page** corresponds to the *world_details.html* template from the *worlds app*, and contains the following features:
 - **Main body element** - as detailed [above](#pages)
-- **Details of the selected world**: Responsive display of the world's details, which inlcude:
+- **Details of the selected world**: Responsive display of the world's details, which include:
    * *Title* - The world's name.
    * *Detailed description* of each of the three areas it includes *(dining area, jakuzzi, and resting area)*
    * *Three images* - Each one corresponding to one of the world's areas. 
    * *Price* - The world's price
    * *Button* - A button styled as detailed in the [feature section](#features).
-  
-  ![image](https://github.com/user-attachments/assets/98021936-5759-44a5-8047-69d714b909f2)  
+
+ #### DESKTOP
+
+   ![image](https://github.com/user-attachments/assets/98021936-5759-44a5-8047-69d714b909f2)   
+
+ #### MOBILE
+
+   ![image](https://github.com/user-attachments/assets/5ad29dce-5e11-482b-b5b2-4701078636c3)
 
 
 ### BOOKING FORM PAGE
+The **booking form page** corresponds to the *booking_new.html* template from the *bookings app*, and can only be accessed if a user is authenticated, and stored in the user's account. It contains the following features:
+- **Main body element** - as detailed [above](#pages)
+- **Booking Form**: Responsive *django-crispy* form, which generates taking the user includes te following fields, all mandatory:
+   * *Title* - 'Booking Form'.
+   * *World* - A dropdown with all the worlds for the user to make the selection. When the user accesses the page from a specific world's details page, this field is prepolulated with that world.
+   * *Date* - A date picker to select the date.
+   * *Time* - A dropdown with two available time frames (daytime or nightime) for the user to select.
+   * *Button* - A button styled as detailed in the [feature section](#features).
+
+
+
 ### BOOKING LIST PAGE
 ### CONTACT PAGE
 ### 404 ERROR PAGE
