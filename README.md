@@ -378,7 +378,7 @@ Please find the correspondent **compatibility and responsive testing** reflected
 | 4       | BrowserStack       | iPhone 12 Mini       | Safari             | iOS 16.0        |360 x 780                     |
 | 5       | Blisk              | iPhone SE 2022       | Chrome             | iOS             |375 x 667                     |
 | 6       | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 729                     |
-| 7       | BrowserStack       | iPhone 13            | Safari 17.0        | iOS             |390 x 844                     |
+| 7       | BrowserStack       | [Samsung GAlaxy S22 Ultra](https://blisk.io/devices/details/galaxy-s22-ultra)| Chrome          | Android 13.0        |384 x 824                     |
 | 8       | BrowserStack       | iPhone 14 Pro        | Safari 16.3        | iOS             |393 x 852                     |
 | 9       | REAL Laptop Device | PC Notebook HP -15-bs013ns| Chrome 117    |Windows 10 -64bit|1366 x 768                    |
 | 10      | Blisk              | MacBook Pro          | Chrome 117         | macOS           |1440 x 900                    |
@@ -405,7 +405,12 @@ https://github.com/user-attachments/assets/23fa1a68-13d4-40b8-8cca-e5cecfb7778a
 
 
 TEST 7
--
+-  
+
+https://github.com/user-attachments/assets/94540408-fa29-4702-8653-f4cdb78a8500
+
+
+  
 TEST 8
 -
 TEST 9
