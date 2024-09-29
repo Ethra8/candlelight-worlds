@@ -33,25 +33,8 @@ Edna Torres Munill
   * [User Profiles](#user-profiles)
 - [UI](#ui)
   * [Wireframes](#wireframes)
-    - [Mobile & Tablet (portrait)](#mobile-&-tablet-(portrait))
-    - [Desktop & Tablet (landscape)](#desktop-&-tablet-(landscape))
   * [Features](#features)
-    - [Responsiveness](#responsiveness)
-    - [Accessibility](#accessibility)
-    - [Navigation Bar](#navigation-bar)
-    - [Footer](#footer)
-    - [User Authentication](#user-authentication)
-    - [Confirmation Messages](#confirmation-messages)
-    - [404 Error Page](#404-error-page)
-    - [Admin Console](#admin-console)
   * [Pages](#pages)
-    - [Home Page](#home-page)
-    - [Worlds Page](#worlds-page)
-    - [World Details Page](#world-details-page)
-    - [Booking Form Page](#booking-form-page)
-    - [Booking List Page](#booking-list-page)
-    - [Contact Page](#contact-page)
-    - [404 Error Page](#404-error-page)
   * [Design Choices](#design-choices)
     - [Colors](#colors)
       * [Colors Rationale of Use](#colors-rationale-of-use)
@@ -246,7 +229,7 @@ This site contains the following features:
   * ***company name*** - in case a company wants to contact, and keep trac kof B2B customers and request.
   * ***email***
   * ***message***
-- **Buttons**: All buttons are styled seamlessly for design consistency. The background colour is the main theme colour #f69700. On *hover*, it slightly darkens to #b57002 while the font colour remains dark grey #21201e
+- **Buttons**: All buttons are styled equaly for design consistency. The *background colour* is the main theme colour *#f69700*. On *hover*, it slightly darkens to *#b57002* while the *font* colour remains dark grey *#21201e*.
 - **Icons**: All icons are taken from *Fontawesome*, and have been styled to match the site's design:
   * *User icon*: Placed on the navigation bar, it enables unidentified users to easily login or register for an account, and also enables authentified users to access their booking list, and to logout. It has been styled matching the main colour of the theme #f69700.
   * *Update Booking icon*: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to update the booking to a new date, time, or world all together. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.
@@ -269,22 +252,24 @@ The **home page** corresponds to the *index.html* template from the *home app*, 
   ![image](https://github.com/user-attachments/assets/315d5c51-4eee-4aa1-b84d-328f347184d5)
   
 ### WORLDS PAGE
+The **worlds page** corresponds to the *worlds.html* template from the *worlds app*, and contains the following features:
+- **Main body element** - as detailed [above](#pages)
+- **List of individual world cards**: Each world card is responsive, and includes a *short description*, the *picture* of the world's *dining area*, and a *button* to "see details" of that specific world.  
+
   ![image](https://github.com/user-attachments/assets/8f442a73-d68f-4d94-9636-28ac66a8e714)  
 
-The **worlds page** contains the following features:
-- Navigation Bar: Allows users to access different pages of the site, as well as registering or logging in to an account.
-- Hero image fixed as a background
-- A list of individual cards for each world including: a short description, the picture of the world's *dining area*, and a button to "see details" of each world.
-- Footer
 
 ### WORLD DETAILS PAGE
+The **world details page** corresponds to the *world_details.html* template from the *worlds app*, and contains the following features:
+- **Main body element** - as detailed [above](#pages)
+- **Details of the selected world**: Responsive display of the world's details, which inlcude:
+   * *Title* - The world's name.
+   * *Detailed description* of each of the three areas it includes *(dining area, jakuzzi, and resting area)*
+   * *Three images* - Each one corresponding to one of the world's areas. 
+   * *Price* - The world's price
+   * *Button* - A button styled as detailed in the [feature section](#features).
+  
   ![image](https://github.com/user-attachments/assets/98021936-5759-44a5-8047-69d714b909f2)  
-
-The **world details page** contains the following features:
-- Navigation Bar: Allows users to access different pages of the site, as well as registering or logging in to an account.
-- Hero image fixed as a background
-- All the worlds are displayed in individual cards with a short comment, the picture of each world's *dining area*, and a button to "see details" of each world.
-- Footer
 
 
 ### BOOKING FORM PAGE
