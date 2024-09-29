@@ -44,8 +44,6 @@ Edna Torres Munill
     - [Update](#update)
     - [Delete](#delete)
 
-- [AGILE Methodology](#agile-methodology)
-  * [Github Project - Kanban](#github-project---kanban)
 - [TESTING](#testing)
   * [Defect Tracking](#defect-tracking)
     - [Github Issues](#github-issues)
@@ -65,6 +63,8 @@ Edna Torres Munill
 - [TECHNOLOGIES and METHODOLOGIES USED](#technologies-and-methodologies-used)
   * [Languages](#languages)
   * [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
+  * [AGILE Methodology](#agile-methodology)
+     - [Github Project - Kanban](#github-project---kanban)
 - [DEPLOYMENT](#deployment)
   * [Version Control](#version-control)
   * [Heroku](#heroku)
@@ -558,7 +558,7 @@ To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, S
 ## IMAGES
 - [Hero image](https://www.freepik.com/free-photo/enchanting-glow-fairy-lights-candles-creating-magical-ambiance_136714970.htm) by [
 frimufilms](https://www.freepik.com/author/frimufilms) at [Freepik](https://www.freepik.com/)
-- All other images on the site have been generated with AI using *ChatGPT* tool, by the creator of this site, and exclusively for this site.
+**NB:** All other images on the site have been generated with AI using *ChatGPT* exclusively for this site by the author, and can be accessed by clicking on each. 
 
 ## ACKNOWLEDGEMENTS
 - Sites thoroughly researched: [Stackoverflow](https://stackoverflow.com/), [Django Projects Forum](https://forum.djangoproject.com/).
