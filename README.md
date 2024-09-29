@@ -230,11 +230,25 @@ This site's fonts have been selected from [Google fonts](https://fonts.google.co
 </details>
 
 
-## FEATURES
-This site contains the following features:     
-- **Responsiveness**: All pages and features are fully responsive - please refer to the [Testing Targets Table](#testing-targets-table) or the [Responsive Testing Videos](#test-result-videos) for further details.
-- **Accessibility**: This site takes accessibility very seriously, and has performed different tests. All the reports can be checked [here](#accessibility-testing)
-- **Navigation Bar**: Fixed to the top to make it easy for users to navigate around the site at any time. Contains links to pages, and acces to user's account.
+## FEATURES     
+**Responsiveness**: All pages and features are fully responsive - please refer to the [Testing Targets Table](#testing-targets-table) or the [Responsive Testing Videos](#test-result-videos) for further details.
+- 
+**Accessibility**: This site takes accessibility very seriously, and has performed different tests. All the reports can be checked [here](#accessibility-testing)
+-
+This site contains the following features:
+- **NAVIGATION BAR**: Fixed to the top to make it easy for users to navigate around the site at any time. Contains links to ***worlds, contact and about page***, and acces to ***user's account***, which includes a dropdown whose options vary depending on whether the user id authenticated or not. If it is an ***authenticated user***, the user icon dropdown shows the options ***new booking, my bookings, logout***; Whereas when the user is ///not authenticated*** in case the user is not authenticated, the dropdown options are ***login, register***.
+  * **Mobile**
+    |collapsed| uncollapsed|
+    |---------|------------|
+    |![image](https://github.com/user-attachments/assets/35d96ba1-02f2-4b87-a77e-461aab85d596)|![image](https://github.com/user-attachments/assets/3727364d-f1c8-4ede-ba52-e98592dd5e58)|
+
+
+  * **Desktop**
+      
+   ![image](https://github.com/user-attachments/assets/6175b242-af16-48de-b152-3a86f5bfd155)
+
+     
+
 - **Backgroung image**: Fixed to the background of the body, the hero image takes up all of the available space in all types fo devices.
 - **Background overlay**: Fixed on the upper layer of the background image, it increases opacity of hero image fixed on the body to improve visual accessibility of text.
 - **Footer**: Pushed to the bottom, contains social media icons with links to each social media pages.
