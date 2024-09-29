@@ -344,15 +344,6 @@ The following basic *CRUD* functionalities have been implementes to this site, a
 
 ### DELETE
 
-# AGILE METHODOLOGY
-Agile methodologies and principles has guided the planning and creation of this site. Eventhough it does not strictly adhere to traditional Agile methodologies, the development process has been based on Agile principles, focusing on flexibility, continuous improvement, and an agile adaptation to change. The focus has been put on the priority level of the [***User Stories***](#user-stories), adding extra features once the basic functionality had been satisfied. The development of features has been made in a logical sequence, addressing core [***CRUD functionalities***](#crud-functionalities) first before expanding to the other features.
-
-## GITHUB PROJECT - KANBAN
-When bugs or issues are encountered, they are recorded as bug issues and added to the backlog, to the 'bug' column. This allows us to continue progressing in other areas while periodically revisiting and prioritizing the backlog based on severity and impact. This method ensures that we maintain development, while systematically addressing and resolving issues.
-
-A project kanban board has been used to track progress, moving user stories between 'Todo', 'In Progress', 'Bug', and 'Done' columns as appropriate.
-You can check the Kanban project [here](https://github.com/users/Ethra8/projects/8)
-
 
 # TESTING
 
@@ -409,7 +400,7 @@ Please find the correspondent **compatibility and responsive testing** reflected
 | 5       | BrowserStack       | [iPhone XS](https://blisk.io/devices/details/iphone-xs)            | Safari             | iOS 15.0        |375 x 812            |
 | 6       | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 729                     |
 | 7       | BrowserStack       | [Samsung Galaxy S22 Ultra](https://blisk.io/devices/details/galaxy-s22-ultra)| Chrome          | Android 13.0        |384 x 824  |
-| 8       | BrowserStack       | iPhone 14 Pro        | Safari 16.3        | iOS             |393 x 852                     |
+| 8       | BrowserStack       | [iPhone 14](https://blisk.io/devices/details/iphone-14)        | Safari 16        | iOS             |390 x 844                   |
 | 9       | REAL Laptop Device | PC Notebook HP -15-bs013ns| Chrome 117    |Windows 10 -64bit|1366 x 768                    |
 | 10      | Blisk              | MacBook Pro          | Chrome 117         | macOS           |1440 x 900                    |
 | 11      | BrowserStack       | Asus ZenBook UX305   | Edge               |Windows 11       |1920 x 1080                   |
@@ -418,10 +409,9 @@ Please find the correspondent **compatibility and responsive testing** reflected
 
 
 ### TEST RESULT VIDEOS
-TEST 1
--
-
-https://github.com/user-attachments/assets/d89bee18-7c29-42b7-9e46-d9610ef703b6
+#### TEST 1
+  
+  https://github.com/user-attachments/assets/d89bee18-7c29-42b7-9e46-d9610ef703b6
 
 
 TEST 2
@@ -447,10 +437,14 @@ TEST 7
 
 https://github.com/user-attachments/assets/94540408-fa29-4702-8653-f4cdb78a8500
 
-
   
 TEST 8
--
+-  
+
+https://github.com/user-attachments/assets/aebd1c9b-e0bd-4dda-9b94-44b5e51c5645
+
+
+
 TEST 9
 -
 TEST 10
@@ -460,17 +454,20 @@ TEST 10
 ## ACCESSIBILITY TESTING
 
 # TECHNOLOGIES and METHODOLOGIES USED
-**The following technologies have been used to create this site and to deploy it. The AGILE methodology has been approached and a kanban board is linked to this project. For further det that can be viewed [here](#)**
+The following technologies, frameworks, libraries, programs and methodologies have been used to create this site and to deploy it. The AGILE methodology has been approached and a kanban board is linked to this project. More details on the sections below: 
+-
+  
 ## LANGUAGES
   - **Python 3.12.2**
   - **JS ES6**
   - **CSS3**
   - **HTML5**
 
-## Frameworks, Libraries and Programs
+## FRAMEWROKS, LIBRARIES and PROGRAMS
   - **Django 5.1** - Whithin django framework, many libraries and modules have been used. Some of the more relevant are states below, but for further reference, please refer to the requirements.txt file in the root directory. - Check [Django 5.1 Documentation](https://docs.djangoproject.com/en/5.1/)
   - **Bootstrap 5** - Check documentation [here](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
   - **Cloudinary** - Database for images uploaded through the admin panel to configure each worlds item. Check documentation [here](https://cloudinary.com/developers#:~:text=Android-,Documentation,-Check%20out%20our)
+  - **PostgreSQL** Database - To store static files, such as the custom css fiel of the site.
   - **Django Summernote** - To enable the site owner to style the description of a world when creating or updating it. Documentation can be found [here](https://github.com/lqez/django-summernote/blob/main/README.md)
   - Chrome Dev Tools - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used Lighthouse reports to check and improve core web vitals, including accessibility issues.
   - [Favicon](https://favicon.io/) - To create the logo, and the icon on the title included in each page of this site
@@ -485,8 +482,20 @@ TEST 10
   - [Viewport Sizer](https://viewportsizer.com/devices/) - Used to check the viewport of multiple devices, very useful for selecting testing targets.
   - [BrowserStack](browserstack.com) to test responsiveness by emulating different devices, operating systems and browser vendors.
   - [XRecorder](https://videoeditor-videorecorder-screenrecorder.en.uptodown.com/android) for Android, to record the compatibility and responsiveness testing performed on real Android device.
+  
+  
+## AGILE METHODOLOGY
+Agile methodologies and principles has guided the planning and creation of this site. Eventhough it does not strictly adhere to traditional Agile methodologies, the development process has been based on Agile principles, focusing on flexibility, continuous improvement, and an agile adaptation to change. The focus has been put on the priority level of the [***User Stories***](#user-stories), adding extra features once the basic functionality had been satisfied. The development of features has been made in a logical sequence, addressing core [***CRUD functionalities***](#crud-functionalities) first before expanding to the other features.
+
+  
+### GITHUB PROJECT - KANBAN
+When bugs or issues are encountered, they are recorded as bug issues and added to the backlog, to the 'bug' column. This allows us to continue progressing in other areas while periodically revisiting and prioritizing the backlog based on severity and impact. This method ensures that we maintain development, while systematically addressing and resolving issues.
+
+A **kanban board** has been linked to this project, and has been used to track progress, moving **user stories** between *'Todo'*, *'In Progress'*, *'Done'*, *'Bug'*, and *Fixed Bug* columns as appropriate.
+You can check the Kanban project [here](https://github.com/users/Ethra8/projects/8)
 
 
+  
 # DEPLOYMENT
 ## VERSION CONTROL
 The site was created using Gitpod editor and pushed to Github to the remote repository **‘candlelight-wolds’**.  
