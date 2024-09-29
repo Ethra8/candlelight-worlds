@@ -253,21 +253,21 @@ This site contains the following features:
   * *Delete Booking icon*: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to delete the booking. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.
 
 ## PAGES
-This site contains the following responsive pages, all of which contain the following features. You can also check further details about each feature [here](#features):
+This site contains the following responsive pages, all of which contain the following features which are placed on the *body* element of the *base.html* template, that acts as the main dynamic *django template* for all the other pages of the site. You can also check further details about each feature of the main **body** of each page [here](#features):
 - **Navigation Bar**
-- **Backgroung hero image**: Fixed to the body, and taking all available space in dynamic way.
-- **Back transparent overlay**: Increased opacity of hero image to improve accessibility.
-- **Footer**: FIxed to the botom of each page, it contains social media icons that redirect to the correspondent media profile of the web, enabling the users to easily check or follow our different social media profiles.
+- **Backgroung hero image**
+- **Back transparent overlay**
+- **Footer**
   
 ### HOME PAGE
-  ![image](https://github.com/user-attachments/assets/315d5c51-4eee-4aa1-b84d-328f347184d5)  
+The **home page** corresponds to the *index.html* template from the *home app*, acting as the landing page of the site, and contains the following features:
+- **Main body element** - as detailed [above](#pages)
+- **Main Header of the site**:
+  * ***Title*** of the site: Its colours guide the theme of the site -*CandleLight* in #f69700, and *Worlds* in white, standing out from the light grey of the rest of the text on the site.
+  * ***Slogan*** of the site: *'Travel through space and time'* styled in a light grey #dbd0ba font *Shadows Into Light*.
 
-The **home page** contains the following features:
-- Navigation Bar: Allows users to access different pages of the site, as well as registering or logging in to an account.
-- Hero image fixed as a background
-- Button to directly access the 'worlds' page
-- Footer
-
+  ![image](https://github.com/user-attachments/assets/315d5c51-4eee-4aa1-b84d-328f347184d5)
+  
 ### WORLDS PAGE
   ![image](https://github.com/user-attachments/assets/8f442a73-d68f-4d94-9636-28ac66a8e714)  
 
