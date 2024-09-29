@@ -380,6 +380,17 @@ TEST 9
 TEST 10
 -
 
+## DEFECT TRACKING
+
+### GITHUB ISSUES
+The defects or bugs that have appeared while programming this site have been tracked usign the **Github issues**, and have been placed in the *bug* column of the *[project's kanban](https://github.com/users/Ethra8/projects/8/views/1)* to be easily tracked and solved.  
+
+### DEFECTS OF NOTE
+No defects of note have been detected on the site.
+  
+### OUTSTANDING DEFECTS
+No outstanding defects have been detected on the site.
+
 
 ## ACCESSIBILITY TESTING
 
