@@ -28,35 +28,32 @@ Edna Torres Munill
   * [Target Audience](#target-audience)
   * [Project Goals](#project-goals)
   * [Stories](#stories)
-     - [User Stories](#user-stories)
-     - [Site Owner Stories](#site-owner-stories)
+    - [User Stories](#user-stories)
+    - [Site Owner Stories](#site-owner-stories)
   * [User Profiles](#user-profiles)
 - [UI](#ui)
+  * [Design Choices](#design-choices)
+    - [Color Palette and Rationale of Use](#color-palette)
+    - [Typography and Rationale of Use](#typography)
   * [Wireframes](#wireframes)
   * [Features](#features)
   * [Pages](#pages)
-  * [Design Choices](#design-choices)
-    - [Colors](#colors)
-      * [Colors Rationale of Use](#colors-rationale-of-use)
-    - [Typography](#typography)
-      * [Typography Rationale of Use](#typography-rationale-of-use)
   * [CRUD Functionality](#crud-functionality)
     - [Create](#create)
     - [Read](#read)
     - [Update](#update)
     - [Delete](#delete)
+  * [Send Mail]
 
-- [AGILE Methodology](#agile-methodology)
-  * [Github Project - Kanban](#github-project---kanban)
 - [TESTING](#testing)
-  * [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
-    - [Preselecting Testing Targets](#preselecting-testing-targets)
-    - [Testing Targets Table](testing-targets-table)
-    - [Test Result Videos](test-results-videos)
   * [Defect Tracking](#defect-tracking)
     - [Github Issues](#github-issues)
     - [Defects of Note](#defects-of-note)
     - [Outstanding Defects](#outstanding-defects)
+  * [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
+    - [Preselecting Testing Targets](#preselecting-testing-targets)
+    - [Testing Targets Table](testing-targets-table)
+    - [Test Result Videos](test-results-videos)
   * [Core Web Vitals](#core-web-vitals)
      - [Lighthouse Reports](#lighthouse-reports)
   * [Accessibility](#accessibility)
@@ -67,6 +64,8 @@ Edna Torres Munill
 - [TECHNOLOGIES and METHODOLOGIES USED](#technologies-and-methodologies-used)
   * [Languages](#languages)
   * [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
+  * [AGILE Methodology](#agile-methodology)
+     - [Github Project - Kanban](#github-project---kanban)
 - [DEPLOYMENT](#deployment)
   * [Version Control](#version-control)
   * [Heroku](#heroku)
@@ -76,6 +75,7 @@ Edna Torres Munill
 - [CREDITS & ACKNOWEDGEMENTS](#credits-and-acknowledgements)
 
 
+  
 # UX
 You will find in the points stated below a brief study aiming at providing the user with the best possible experience when visiting this site.
 -
@@ -151,6 +151,25 @@ To make the site owner's life easier, the following functionalities have been in
 
 # UI
 
+## HERO IMAGE
+This site has the following hero image:  
+  
+  ![bg-candles1 c539123d66b8](https://github.com/user-attachments/assets/d55c2807-32cb-4dc2-8041-5bc74599c283)  
+  
+
+## COLOR PALETTE
+This site has the following palette, picked specifically to emulate real candlelight and the shadows it provokes. The colours have carefully been picked inspired by the hero image of the site, which is always ppresent, fixed on the body element of the *base.html* file:   
+  
+  ![candlelight color palette](https://github.com/user-attachments/assets/a2c1ebea-e3f2-40ea-87a1-6fa16cbb9ef9)  
+  
+  
+## TYPOGRAPHY
+This site's fonts have been selected from [Google fonts](https://fonts.google.com/):
+- [Montserrat](https://fonts.google.com/specimen/Montserrat?query=montserrat): Used on all the paragraphs of the site, and it is the default font of the body element.
+- [Montserrat Alternates](https://fonts.google.com/specimen/Montserrat+Alternates?query=montserrat): Used only for the name of the worlds, to give a special *exotic* touch without deviating of the main font style specified above.
+- [Lato](https://fonts.google.com/specimen/Lato?query=lato): Used only for the main title of the site and for the logo.
+- [Shadows Into Light](https://fonts.google.com/specimen/Shadows+Into+Light?query=Shadows+Into+Light): Used only for the slogan *'travel through space and time'* on the landing page below the main title.
+
 ## WIREFRAMES
 
 ### MOBILE & TABLET (Portrait)
@@ -212,11 +231,25 @@ To make the site owner's life easier, the following functionalities have been in
 </details>
 
 
-## FEATURES
-This site contains the following features:     
-- **Responsiveness**: All pages and features are fully responsive - please refer to the [Testing Targets Table](#testing-targets-table) or the [Responsive Testing Videos](#test-result-videos) for further details.
-- **Accessibility**: This site takes accessibility very seriously, and has performed different tests. All the reports can be checked [here](#accessibility-testing)
-- **Navigation Bar**: Fixed to the top to make it easy for users to navigate around the site at any time. Contains links to pages, and acces to user's account.
+## FEATURES     
+**Responsiveness**: All pages and features are fully responsive - please refer to the [Testing Targets Table](#testing-targets-table) or the [Responsive Testing Videos](#test-result-videos) for further details.
+- 
+**Accessibility**: This site takes accessibility very seriously, and has performed different tests. All the reports can be checked [here](#accessibility-testing)
+-
+This site contains the following features:
+- **NAVIGATION BAR**: Fixed to the top to make it easy for users to navigate around the site at any time. Contains links to ***worlds, contact and about page***, and acces to ***user's account***, which includes a dropdown whose options vary depending on whether the user id authenticated or not. If it is an ***authenticated user***, the user icon dropdown shows the options ***new booking, my bookings, logout***; Whereas when the user is ///not authenticated*** in case the user is not authenticated, the dropdown options are ***login, register***.
+  * **Mobile**
+    |collapsed| uncollapsed|
+    |---------|------------|
+    |![image](https://github.com/user-attachments/assets/35d96ba1-02f2-4b87-a77e-461aab85d596)|![image](https://github.com/user-attachments/assets/3727364d-f1c8-4ede-ba52-e98592dd5e58)|
+
+
+  * **Desktop**
+      
+   ![image](https://github.com/user-attachments/assets/6175b242-af16-48de-b152-3a86f5bfd155)
+
+     
+
 - **Backgroung image**: Fixed to the background of the body, the hero image takes up all of the available space in all types fo devices.
 - **Background overlay**: Fixed on the upper layer of the background image, it increases opacity of hero image fixed on the body to improve visual accessibility of text.
 - **Footer**: Pushed to the bottom, contains social media icons with links to each social media pages.
@@ -224,71 +257,216 @@ This site contains the following features:
   * ***World selector***: Prepopulates automatically when user accesses the bookign form from the *Book Now!* button on the *world details page*
   * ***Date picker***
   * ***Time frame*** selector
-- **Contact Form**: A *crispy form* to contact the site's owner. a styled *Submit* button below the following fields, all of which are mandatory but the *company name* field:
-  * ***name***
+- **Contact Form**: A ***crispy form*** to contact the site's owner. a styled *Submit* button below the following fields, all of which are mandatory but the *company name* field:
+  * ***name****
   * ***company name*** - in case a company wants to contact, and keep trac kof B2B customers and request.
-  * ***email***
-  * ***message***
+  * ***email****
+  * ***message****
 - **Buttons**: All buttons are styled equaly for design consistency. The *background colour* is the main theme colour *#f69700*. On *hover*, it slightly darkens to *#b57002* while the *font* colour remains dark grey *#21201e*.
 - **Icons**: All icons are taken from *Fontawesome*, and have been styled to match the site's design:
   * *User icon*: Placed on the navigation bar, it enables unidentified users to easily login or register for an account, and also enables authentified users to access their booking list, and to logout. It has been styled matching the main colour of the theme #f69700.
   * *Update Booking icon*: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to update the booking to a new date, time, or world all together. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.
   * *Delete Booking icon*: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to delete the booking. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.
 
+
+  
 ## PAGES
-This site contains the following responsive pages, all of which contain the following features which are placed on the *body* element of the *base.html* template, that acts as the main dynamic *django template* for all the other pages of the site. You can also check further details about each feature of the main **body** of each page [here](#features):
+This site contains the following responsive pages, all of which contain the following features which are placed on the **body** element of the *base.html* template, that acts as the main dynamic *django template* for all the other pages of the site. For further details on each feature of the **body** which frames each page, please refer to [features](#features). These are the features of the **body**:
 - **Navigation Bar**
 - **Backgroung hero image**
 - **Back transparent overlay**
 - **Footer**
+
   
 ### HOME PAGE
-The **home page** corresponds to the *index.html* template from the *home app*, acting as the landing page of the site, and contains the following features:
-- **Main body element** - as detailed [above](#pages)
+The **home page** corresponds to the *index.html* template, acting as the landing page of the site, from the *home app* from the *home.views.index* view in the *home app and contains the following features:
+- **Main body element** - As detailed on the ***pages section description*** [above](#pages)
 - **Main Header of the site**:
   * ***Title*** of the site: Its colours guide the theme of the site -*CandleLight* in #f69700, and *Worlds* in white, standing out from the light grey of the rest of the text on the site.
   * ***Slogan*** of the site: *'Travel through space and time'* styled in a light grey #dbd0ba font *Shadows Into Light*.
 
+#### DESKTOP
+  
   ![image](https://github.com/user-attachments/assets/315d5c51-4eee-4aa1-b84d-328f347184d5)
+
+#### MOBILE
+
+  ![image](https://github.com/user-attachments/assets/4edbc2b4-b2a5-4ee9-882e-eaecda381613)
+
   
 ### WORLDS PAGE
 The **worlds page** corresponds to the *worlds.html* template from the *worlds app*, and contains the following features:
-- **Main body element** - as detailed [above](#pages)
+- **Main body element** - As detailed on the ***pages section description*** [above](#pages)
 - **List of individual world cards**: Each world card is responsive, and includes a *short description*, the *picture* of the world's *dining area*, and a *button* to "see details" of that specific world.  
 
-  ![image](https://github.com/user-attachments/assets/8f442a73-d68f-4d94-9636-28ac66a8e714)  
+#### DESKTOP
+  
+  ![image](https://github.com/user-attachments/assets/8f442a73-d68f-4d94-9636-28ac66a8e714)   
 
+#### MOBILE
 
+  ![image](https://github.com/user-attachments/assets/68584e00-4b70-4135-a802-4fa635cb4337)  
+
+  
 ### WORLD DETAILS PAGE
 The **world details page** corresponds to the *world_details.html* template from the *worlds app*, and contains the following features:
 - **Main body element** - as detailed [above](#pages)
-- **Details of the selected world**: Responsive display of the world's details, which inlcude:
+- **Details of the selected world**: Responsive display of the world's details, which include:
    * *Title* - The world's name.
    * *Detailed description* of each of the three areas it includes *(dining area, jakuzzi, and resting area)*
    * *Three images* - Each one corresponding to one of the world's areas. 
    * *Price* - The world's price
-   * *Button* - A button styled as detailed in the [feature section](#features).
-  
-  ![image](https://github.com/user-attachments/assets/98021936-5759-44a5-8047-69d714b909f2)  
+   * *Button* - A button styled as detailed in the [feature section](#features) that reads 'Book Now!'.
+
+ #### DESKTOP
+
+   ![image](https://github.com/user-attachments/assets/98021936-5759-44a5-8047-69d714b909f2)   
+
+ #### MOBILE
+
+   ![image](https://github.com/user-attachments/assets/5ad29dce-5e11-482b-b5b2-4701078636c3)
 
 
 ### BOOKING FORM PAGE
+The **booking form page** corresponds to the *booking_new.html* template from the *bookings app*, and can only be accessed if a user is authenticated, and stored in the user's account. It contains the following features:
+- **Main body element** - As detailed on the ***pages section description*** [above](#pages)
+- **Booking Form**: Responsive *django-crispy* form, which generates taking the user includes te following fields, all mandatory:
+   * *Title* - 'Booking Form'.
+   * *World* - A dropdown with all the worlds for the user to make the selection. When the user accesses the page from a specific world's details page, this field is prepolulated with that world.
+   * *Date* - A date picker to select the date.
+   * *Time* - A dropdown with two available time frames (daytime or nightime) for the user to select.
+   * *Button* - A button styled as detailed in the [feature section](#features) that reads 'Book Now'.
+
+#### DESKTOP
+
+  ![image](https://github.com/user-attachments/assets/3b6ca673-9874-4ec2-9827-8d0d67474bdc)
+
+#### MOBILE
+
+  ![image](https://github.com/user-attachments/assets/612126e8-cde6-478f-a4d5-4fcbc0da2b82)
+
+
 ### BOOKING LIST PAGE
+The **booking form page** corresponds to the *booking_new.html* template from the *bookings app*, and can only be accessed if a user is authenticated, and stored in the user's account. It contains the following features:
+- **Main body element** - As detailed on the ***pages section description*** [above](#pages)
+- **Booking Form**: Responsive *django-crispy* form, which generates taking the user includes te following fields, all mandatory:
+   * *Title* - 'Booking Form'.
+   * *World* - A dropdown with all the worlds for the user to make the selection. When the user accesses the page from a specific world's details page, this field is prepolulated with that world.
+   * *Date* - A date picker to select the date.
+   * *Time* - A dropdown with two available time frames (daytime or nightime) for the user to select.
+   * *Button* - A button styled as detailed in the [feature section](#features) that reads 'Book Now'.
+
+### BOOKING UPDATE PAGE
+
+  
 ### CONTACT PAGE
+
+  
 ### 404 ERROR PAGE
+Whenever the user erroneously changes an url, or a 404 error occurs, this page will display, instead of the default page that google would display for the error. The page mimics the home page in style and display of the elements contained, and has been minimally adapted for the purpose of the page:
+- **Main body element** - As detailed on the ***pages section description*** [above](#pages)
+- **Header** - Mimics the home page header, also with the same added black transparency with a 0.95 opacity for an optimal accessibility. It contains: 
+   * *Title* - '404 Error'.
+   * *Button* - A button styled as detailed in the [feature section](#features) that reads 'Back Home'.
+
+#### MOBILE
+
+  ![image](https://github.com/user-attachments/assets/badec76b-ed5c-4553-a229-64d06535d276)
 
 
-# AGILE METHODOLOGY
-Agile methodologies and principles has guided the planning and creation of this site. Eventhough it does not strictly adhere to traditional Agile methodologies, the development process has been based on Agile principles, focusing on flexibility, continuous improvement, and an agile adaptation to change. The focus has been put on the priority level of the User Stories, adding extra features once the basic functionality had been satisfied. The development of features has been made in a logical sequence, addressing core CRUD functionalities first before expanding to the other features.
+#### DESkTOP
 
-## GITHUB PROJECT - KANBAN
-When bugs or issues are encountered, they are recorded as bug issues and added to the backlog, to the 'bug' column. This allows us to continue progressing in other areas while periodically revisiting and prioritizing the backlog based on severity and impact. This method ensures that we maintain development, while systematically addressing and resolving issues.
+  ![image](https://github.com/user-attachments/assets/be12bb78-6b23-48d9-a1f2-746c8cb1ec51)
 
-A project kanban board has been used to track progress, moving user stories between 'Todo', 'In Progress', 'Bug', and 'Done' columns as appropriate.
-You can check the Kanban project [here](https://github.com/users/Ethra8/projects/8)
+
+
+## CRUD FUNCTIONALITIES
+The following basic *CRUD* functionalities have been implementes to this site, as detailed below:  
+  
+### CREATE
+1. Users can **create an account** by accessing the *sing-up* option in the dropdown of the user-icon placed in the navigation bar. They then become authenticated users.
+2. The authenticated user can **create a booking** via the *booking form*, generated by crispy forms after the ***bookings.models.Booking*** **model** and ***bookings.forms.BookingForm*** **form** displayed by the ***bookings.views.booking_new*** **view** via two different urls the ***/bookings/new*** **url** on the ***booking_new.html*** **template** which is stored in the project directory folder ***bookings/booking_new.html***.
+### READ
+
+### UPDATE
+
+### DELETE
+
+## SEND MAIL - STMP
+The user authentication requires **email verification** for the registration to succeed. This site uses sends verification emails via *smtp*. To do so, please follow these instructions if you are using Gmail services:  
+
+### EMAIL ACCOUNT SETUP
+
+1. Create an account for the site. 
+2. Activate 2-Way Authentication - This is a requirement for the following crucial step:
+
+   ![image](https://github.com/user-attachments/assets/ca27a242-f372-415c-b829-617db5944c39)
+   
+4. Create App Password:
+   
+   ![image](https://github.com/user-attachments/assets/8f46a8b4-9aba-4619-8168-9870973d9c91)
+
+5. Include the name of the app -or site-, and create the app password, which is automatically generated:  
+
+   ![image](https://github.com/user-attachments/assets/de079b2e-3b16-40f7-b8ef-69c3dbe856cc)
+  
+  
+### SETTINGS
+To implement stmp emaling service necessary for user authentication and email verification upon regis
+  
+1. On the ***settings.py*** file, include the following environment variables:
+  ```
+  EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+  EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+  EMAIL_USE_TLS = False
+  EMAIL_PORT = 587 # HTTPS secure port - for development, use 465 HTTP
+  EMAIL_USE_SSL = True
+  EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+  DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
+  ```
+  
+NB: The EMAIL_BACKEND during the development fase is ```EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'```, and emails get printed in the console. Remember to comment out or create 'if' statement before deplloy in order to change the default django backend the *smtp* .
+
+2. **IMPORTANT: Never disclose private information nor credentials such as EMAIL_HOST_USER or EMAIL_HOST_PASSWORD!:
+   Store the above environment variables on the ***env.py*** with your own credentials, and include the *app password* in the EMAIL_HOST_PASSWORD var:**
+   ```
+   os.environ['EMAIL_HOST_USER'] = '<example@email.com>'
+   os.environ['EMAIL_HOST_PASSWORD'] = '<app-password-generated-without-spacing>'
+   os.environ['DEFAULT_FROM_EMAIL'] = '<emailsendertocustomer@example.com>'
+   ```
+
+### CONFIGURE ADMIN PANEL - EMAILS
+Default configuration of the sender from whom the user receives mails sent from the site need to be customized. Otherwise, this is the email sender the user receives with the default configuration:  
+  
+  ![image](https://github.com/user-attachments/assets/a983a69f-1b60-4a90-85d7-86a264e95fcf)  
+
+To replace the <example.com> with the site url:
+1. Go to admin **Sites**, and select default site:  
+
+  ![image](https://github.com/user-attachments/assets/b6f5e810-17ff-4d27-a90a-cb53c10dab17)  
+  
+  ![image](https://github.com/user-attachments/assets/f9fc7b85-be42-4f1c-97f7-5eb403400bf9)  
+
+2. Update default settings of site:
+
+  ![image](https://github.com/user-attachments/assets/9d40ec27-b7f5-4c94-8a9e-a41bcae84ad3) ![image](https://github.com/user-attachments/assets/24cc8f95-79b0-4c70-ad62-1c22b8d900f3)
+![image](https://github.com/user-attachments/assets/aea3a181-747c-4642-99bf-3b96469b3b6e)  
+
 
 
 # TESTING
+
+## DEFECT TRACKING
+
+### GITHUB ISSUES
+The defects or bugs that have appeared while programming this site have been tracked usign the **Github issues**, and have been placed in the *bug* column of the *[project's kanban](https://github.com/users/Ethra8/projects/8/views/1)* to be easily tracked and solved.  
+
+### DEFECTS OF NOTE
+No defects of note have been detected on the site.
+  
+### OUTSTANDING DEFECTS
+No outstanding defects have been detected on the site.
+
 
 ## COMPATIBILITY AND RESPONSIVE TESTING  
 
@@ -318,32 +496,39 @@ You can check the Kanban project [here](https://github.com/users/Ethra8/projects
 
 
 ### TESTING TARGETS TABLE
-Following all the above information, compatibility and responsive testing has been done on the most common *browser versions*, *OS*, and *screen resolution* combinations, by using [Browser Stack](https://chrome.google.com/webstore/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb) Chrome extension, the *Chrome Dev tool's emulator*, and real devices owned by me. 
+Following all the above information, compatibility and responsive testing has been done on the most common *browser versions*, *OS*, and *screen resolution* combinations, by using [Browser Stack](https://chrome.google.com/webstore/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb) Chrome extension, the *Chrome Dev tool's emulator*, and real devices. On the mobile reasl device, XRecorder app has been used. 
 
 Please find the correspondent **compatibility and responsive testing** reflected in the following table:
 
 | TEST no.| TOOL               | DEVICE               | BROWSER            | OS              | VIEWPORT width x height (px) |
 |---------|--------------------|----------------------|--------------------|-----------------|------------------------------|
-| 1       | Chrome Dev emulator| Samsung Galaxy S20   | Chrome 117         |Windows 10       |360 x 800                     | 
-| 2       | BrowserStack       | Samsung Galaxy S22   | Chrome             |Android 12.0     |360 x 780                     |
-| 3       | BrowserStack       | Samsung Galaxy S22   | Edge               |Android 12.0     |360 x 780                     |
-| 4       | BrowserStack       | iPhone 12 Mini       | Safari             | iOS 16.0        |360 x 780                     |
-| 5       | Blisk              | iPhone SE 2022       | Chrome             | iOS             |375 x 667                     |
-| 6       | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 729                     |
-| 7       | BrowserStack       | iPhone 13            | Safari 17.0        | iOS             |390 x 844                     |
-| 8       | BrowserStack       | iPhone 14 Pro        | Safari 16.3        | iOS             |393 x 852                     |
-| 9       | REAL Laptop Device | PC Notebook HP -15-bs013ns| Chrome 117    |Windows 10 -64bit|1366 x 768                    |
-| 10      | Blisk              | MacBook Pro          | Chrome 117         | macOS           |1440 x 900                    |
-| 11      | BrowserStack       | Asus ZenBook UX305   | Edge               |Windows 11       |1920 x 1080                   |
-| 12      | BrowserStack       | Asus ZenBook UX305   | Firefox 117        |Windows 11       |1920 x 1080                   |
-| 13      | BrowserStack       | MacBook              | Safari 16.5        | OS X Ventura    |1920 x 1080                   |
+| [1](#test-1)        | Chrome Dev emulator| [Samsung Galaxy S8](https://blisk.io/devices/details/galaxy-s8)   | Chrome 117 |Windows 11  |360 x 740             | 
+| [2](#test-2)        | BrowserStack       | [Samsung Galaxy S20](https://blisk.io/devices/details/galaxy-s20)   | Edge    |Android 11.0 |360 x 800           |
+| [3](#test-3)        | BrowserStack       | Samsung Galaxy S22   | Edge               |Android 12.0     |360 x 780                     |
+| [4](#test-4)        | BrowserStack       | iPhone 12 Mini       | Safari             | iOS 16.0        |360 x 780                     |
+| [5](#test-5)        | BrowserStack       | [iPhone XS](https://blisk.io/devices/details/iphone-xs)| Safari   | iOS 15.0   |375 x 812            |
+| [6](#test-6)        | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 729                     |
+| [7](#test-7)        | BrowserStack       | [Samsung Galaxy S22 Ultra](https://blisk.io/devices/details/galaxy-s22-ultra)| Chrome | Android 13.0  |384 x 824  |
+| [8](#test-8)        | BrowserStack       | [iPhone 14](https://blisk.io/devices/details/iphone-14) | Safari 16.5  | iOS    |390 x 844                   |
+| [9](#test-9)        | REAL Laptop Device | PC Notebook HP -15-bs013ns| Chrome 117    |Windows 10 -64bit|1366 x 768                    |
+| [10](#test-10)       | Blisk              | MacBook Pro          | Chrome 117         | macOS           |1440 x 900                    |
+| [11](#test-11)       | BrowserStack       | Asus ZenBook UX305   | Edge               |Windows 11       |1920 x 1080                   |
+| [12](#test-12)       | BrowserStack       | Asus ZenBook UX305   | Firefox 117        |Windows 11       |1920 x 1080                   |
+| [13](#test-13)       | BrowserStack       | MacBook              | Safari 16.5        | OS X Ventura    |1920 x 1080                   |
 
 
 ### TEST RESULT VIDEOS
-TEST 1
--
+#### TEST 1
+  
+  https://github.com/user-attachments/assets/d89bee18-7c29-42b7-9e46-d9610ef703b6
+
+
 TEST 2
 -
+
+https://github.com/user-attachments/assets/974cfbd9-25ab-4338-8c72-54f99c63d793
+
+
 TEST 3
 -
 TEST 4
@@ -357,40 +542,42 @@ https://github.com/user-attachments/assets/23fa1a68-13d4-40b8-8cca-e5cecfb7778a
 
 
 TEST 7
--
+-  
+
+https://github.com/user-attachments/assets/94540408-fa29-4702-8653-f4cdb78a8500
+
+  
 TEST 8
--
+-  
+
+https://github.com/user-attachments/assets/aebd1c9b-e0bd-4dda-9b94-44b5e51c5645
+
+
+
 TEST 9
 -
 TEST 10
 -
 
-## DEFECT TRACKING
-
-### GITHUB ISSUES
-The defects or bugs that have appeared while programming this site have been tracked usign the **Github issues**, and have been placed in the *bug* column of the *[project's kanban](https://github.com/users/Ethra8/projects/8/views/1)* to be easily tracked and solved.  
-
-### DEFECTS OF NOTE
-No defects of note have been detected on the site.
-  
-### OUTSTANDING DEFECTS
-No outstanding defects have been detected on the site.
-
 
 ## ACCESSIBILITY TESTING
 
 # TECHNOLOGIES and METHODOLOGIES USED
-**The following technologies have been used to create this site and to deploy it. The AGILE methodology has been approached and a kanban board is linked to this project. For further det that can be viewed [here](#)**
+The following technologies, frameworks, libraries, programs and methodologies have been used to create this site and to deploy it. The AGILE methodology has been approached and a kanban board is linked to this project. More details on the sections below: 
+-
+  
 ## LANGUAGES
   - **Python 3.12.2**
   - **JS ES6**
   - **CSS3**
   - **HTML5**
 
-## Frameworks, Libraries and Programs
-  - **Django 5.1** - Whithin django framework, many libraries and modules have been used. For mode details, please refer to the requirements.txt file in the root directory.
-  - **Bootstrap 5**
-  - **Cloudinary** - Database for images
+## FRAMEWROKS, LIBRARIES and PROGRAMS
+  - **Django 5.1** - Whithin django framework, many libraries and modules have been used. Some of the more relevant are states below, but for further reference, please refer to the requirements.txt file in the root directory. - Check [Django 5.1 Documentation](https://docs.djangoproject.com/en/5.1/)
+  - **Bootstrap 5** - Check documentation [here](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+  - **Cloudinary** - Database for images uploaded through the admin panel to configure each worlds item. Check documentation [here](https://cloudinary.com/developers#:~:text=Android-,Documentation,-Check%20out%20our)
+  - **PostgreSQL** Database - To store static files, such as the custom css fiel of the site.
+  - **Django Summernote** - To enable the site owner to style the description of a world when creating or updating it. Documentation can be found [here](https://github.com/lqez/django-summernote/blob/main/README.md)
   - Chrome Dev Tools - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used Lighthouse reports to check and improve core web vitals, including accessibility issues.
   - [Favicon](https://favicon.io/) - To create the logo, and the icon on the title included in each page of this site
   - [Font Awesome](https://fontawesome.com/) - For the icons used
@@ -400,11 +587,25 @@ No outstanding defects have been detected on the site.
   - [Amiresponsive](https://ui.dev/amiresponsive) - To display the site in all types of devices simultaneously.
   - [EqualWeb Accessibility Checker](https://chrome.google.com/webstore/detail/equalweb-accessibility-ch/imemciokfejbnonkkinhcdfigdilcllg/related?utm_source=chrome-ntp-icon) - Google Chrome extension to check general errors and contract errors for optimal accessibility.
   - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorithm.
-  - [Blisk](https://blisk.io/devices) to check the viewport of multiple devices, very useful for testing.
+  - [Blisk](https://blisk.io/devices) to check the viewport of multiple devices, very useful for selecting testing targets.
+  - [Viewport Sizer](https://viewportsizer.com/devices/) - Used to check the viewport of multiple devices, very useful for selecting testing targets.
   - [BrowserStack](browserstack.com) to test responsiveness by emulating different devices, operating systems and browser vendors.
-  - [XRecorder](https://videoeditor-videorecorder-screenrecorder.en.uptodown.com/android) for Android to record the compatibility and responsiveness testing performed on real Android device.
+  - [XRecorder](https://videoeditor-videorecorder-screenrecorder.en.uptodown.com/android) for Android, to record the compatibility and responsiveness testing performed on real Android device.
+  - [Google Gmail](https://support.google.com/mail/answer/56256?hl=en#:~:text=Gmail-,Create%20a%20Gmail%20account,-To%20sign%20up): Used as email provider to send  emails to users and customers, also via *smtp*.
+  
+  
+## AGILE METHODOLOGY
+Agile methodologies and principles has guided the planning and creation of this site. Eventhough it does not strictly adhere to traditional Agile methodologies, the development process has been based on Agile principles, focusing on flexibility, continuous improvement, and an agile adaptation to change. The focus has been put on the priority level of the [***User Stories***](#user-stories), adding extra features once the basic functionality had been satisfied. The development of features has been made in a logical sequence, addressing core [***CRUD functionalities***](#crud-functionalities) first before expanding to the other features.
+
+  
+### GITHUB PROJECT - KANBAN
+When bugs or issues are encountered, they are recorded as bug issues and added to the backlog, to the 'bug' column. This allows us to continue progressing in other areas while periodically revisiting and prioritizing the backlog based on severity and impact. This method ensures that we maintain development, while systematically addressing and resolving issues.
+
+A **kanban board** has been linked to this project, and has been used to track progress, moving **user stories** between *'Todo'*, *'In Progress'*, *'Done'*, *'Bug'*, and *Fixed Bug* columns as appropriate.
+You can check the Kanban project [here](https://github.com/users/Ethra8/projects/8)
 
 
+  
 # DEPLOYMENT
 ## VERSION CONTROL
 The site was created using Gitpod editor and pushed to Github to the remote repository **‘candlelight-wolds’**.  
@@ -467,9 +668,11 @@ To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, S
 ## IMAGES
 - [Hero image](https://www.freepik.com/free-photo/enchanting-glow-fairy-lights-candles-creating-magical-ambiance_136714970.htm) by [
 frimufilms](https://www.freepik.com/author/frimufilms) at [Freepik](https://www.freepik.com/)
-- All other images on the site have been generated with AI using *ChatGPT* tool, by the creator of this site, and exclusively for this site.
+**NB:** All other images on the site have been generated with AI using *ChatGPT* exclusively for this site by the author, and can be accessed by clicking on each. 
 
 ## ACKNOWLEDGEMENTS
 - Sites thoroughly researched: [Stackoverflow](https://stackoverflow.com/), [Django Projects Forum](https://forum.djangoproject.com/).
+- [rusingh *Ru*'s Blog](https://rusingh.com/)
+- [Open Source](https://opensource.com) for their article on [smtp](https://opensource.com/article/22/12/django-send-emails-smtp).
   
 
