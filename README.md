@@ -267,21 +267,19 @@ This site contains the following features:
   * *Update Booking icon*: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to update the booking to a new date, time, or world all together. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.
   * *Delete Booking icon*: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to delete the booking. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.
 
-## DESIGN CHOICES
 
-
-
-
+  
 ## PAGES
-This site contains the following responsive pages, all of which contain the following features which are placed on the *body* element of the *base.html* template, that acts as the main dynamic *django template* for all the other pages of the site. You can also check further details about each feature of the main **body** of each page [here](#features):
+This site contains the following responsive pages, all of which contain the following features which are placed on the **body** element of the *base.html* template, that acts as the main dynamic *django template* for all the other pages of the site. For further details on each feature of the **body** which frames each page, please refer to [features](#features). These are the features of the **body**:
 - **Navigation Bar**
 - **Backgroung hero image**
 - **Back transparent overlay**
 - **Footer**
+
   
 ### HOME PAGE
-The **home page** corresponds to the *index.html* template from the *home app*, acting as the landing page of the site, and contains the following features:
-- **Main body element** - as detailed [above](#pages)
+The **home page** corresponds to the *index.html* template, acting as the landing page of the site, from the *home app* from the *home.views.index* view in the *home app and contains the following features:
+- **Main body element** - As detailed on the ***pages section description*** [above](#pages)
 - **Main Header of the site**:
   * ***Title*** of the site: Its colours guide the theme of the site -*CandleLight* in #f69700, and *Worlds* in white, standing out from the light grey of the rest of the text on the site.
   * ***Slogan*** of the site: *'Travel through space and time'* styled in a light grey #dbd0ba font *Shadows Into Light*.
@@ -297,7 +295,7 @@ The **home page** corresponds to the *index.html* template from the *home app*, 
   
 ### WORLDS PAGE
 The **worlds page** corresponds to the *worlds.html* template from the *worlds app*, and contains the following features:
-- **Main body element** - as detailed [above](#pages)
+- **Main body element** - As detailed on the ***pages section description*** [above](#pages)
 - **List of individual world cards**: Each world card is responsive, and includes a *short description*, the *picture* of the world's *dining area*, and a *button* to "see details" of that specific world.  
 
 #### DESKTOP
@@ -317,7 +315,7 @@ The **world details page** corresponds to the *world_details.html* template from
    * *Detailed description* of each of the three areas it includes *(dining area, jakuzzi, and resting area)*
    * *Three images* - Each one corresponding to one of the world's areas. 
    * *Price* - The world's price
-   * *Button* - A button styled as detailed in the [feature section](#features).
+   * *Button* - A button styled as detailed in the [feature section](#features) that reads 'Book Now!'.
 
  #### DESKTOP
 
@@ -330,19 +328,54 @@ The **world details page** corresponds to the *world_details.html* template from
 
 ### BOOKING FORM PAGE
 The **booking form page** corresponds to the *booking_new.html* template from the *bookings app*, and can only be accessed if a user is authenticated, and stored in the user's account. It contains the following features:
-- **Main body element** - as detailed [above](#pages)
+- **Main body element** - As detailed on the ***pages section description*** [above](#pages)
 - **Booking Form**: Responsive *django-crispy* form, which generates taking the user includes te following fields, all mandatory:
    * *Title* - 'Booking Form'.
    * *World* - A dropdown with all the worlds for the user to make the selection. When the user accesses the page from a specific world's details page, this field is prepolulated with that world.
    * *Date* - A date picker to select the date.
    * *Time* - A dropdown with two available time frames (daytime or nightime) for the user to select.
-   * *Button* - A button styled as detailed in the [feature section](#features).
+   * *Button* - A button styled as detailed in the [feature section](#features) that reads 'Book Now'.
 
+#### DESKTOP
+
+  ![image](https://github.com/user-attachments/assets/3b6ca673-9874-4ec2-9827-8d0d67474bdc)
+
+#### MOBILE
+
+  ![image](https://github.com/user-attachments/assets/612126e8-cde6-478f-a4d5-4fcbc0da2b82)
 
 
 ### BOOKING LIST PAGE
+The **booking form page** corresponds to the *booking_new.html* template from the *bookings app*, and can only be accessed if a user is authenticated, and stored in the user's account. It contains the following features:
+- **Main body element** - As detailed on the ***pages section description*** [above](#pages)
+- **Booking Form**: Responsive *django-crispy* form, which generates taking the user includes te following fields, all mandatory:
+   * *Title* - 'Booking Form'.
+   * *World* - A dropdown with all the worlds for the user to make the selection. When the user accesses the page from a specific world's details page, this field is prepolulated with that world.
+   * *Date* - A date picker to select the date.
+   * *Time* - A dropdown with two available time frames (daytime or nightime) for the user to select.
+   * *Button* - A button styled as detailed in the [feature section](#features) that reads 'Book Now'.
+
+### BOOKING UPDATE PAGE
+
+  
 ### CONTACT PAGE
+
+  
 ### 404 ERROR PAGE
+Whenever the user erroneously changes an url, or a 404 error occurs, this page will display, instead of the default page that google would display for the error. The page mimics the home page in style and display of the elements contained, and has been minimally adapted for the purpose of the page:
+- **Main body element** - As detailed on the ***pages section description*** [above](#pages)
+- **Header** - Mimics the home page header, also with the same added black transparency with a 0.95 opacity for an optimal accessibility. It contains: 
+   * *Title* - '404 Error'.
+   * *Button* - A button styled as detailed in the [feature section](#features) that reads 'Back Home'.
+
+#### MOBILE
+
+  ![image](https://github.com/user-attachments/assets/badec76b-ed5c-4553-a229-64d06535d276)
+
+
+#### DESkTOP
+
+  ![image](https://github.com/user-attachments/assets/be12bb78-6b23-48d9-a1f2-746c8cb1ec51)
 
 
 
