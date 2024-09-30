@@ -406,26 +406,42 @@ The user authentication requires **email verification** for the registration to 
    
    ![image](https://github.com/user-attachments/assets/8f46a8b4-9aba-4619-8168-9870973d9c91)
 
-5. Include the name of your app, and once you click on create, the app password is generated:  
+5. Include the name of the app -or site-, and create the app password, which is automatically generated:  
 
    ![image](https://github.com/user-attachments/assets/de079b2e-3b16-40f7-b8ef-69c3dbe856cc)
   
   
 ### SETTINGS
+To implement stmp emaling service necessary for user authentication and email verification upon regis
   
-1. On the ***settings.py*** file, include the following code:
-```
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.yourserver.com'
-EMAIL_USE_TLS = False
-EMAIL_PORT = 465
-EMAIL_USE_SSL = True
-EMAIL_HOST_USER = 'your@djangoapp.com'
-EMAIL_HOST_PASSWORD = 'your password'
-```  
-NB: The EMAIL_BACKEND during the development fase is ```EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'```, and emails get printed in the console. Remember to comment out or create 'if' statement before final in order to change the default django backend the *smtp* .
+1. On the ***settings.py*** file, include the following environment variables:
+  ```
+  EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+  EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+  EMAIL_USE_TLS = False
+  EMAIL_PORT = 587 # HTTPS secure port - for development, use 465 HTTP
+  EMAIL_USE_SSL = True
+  EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+  DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
+  ```
+  
+NB: The EMAIL_BACKEND during the development fase is ```EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'```, and emails get printed in the console. Remember to comment out or create 'if' statement before deplloy in order to change the default django backend the *smtp* .
 
-2. Store the above environment variables on the ***env.py*** with your own creedntials, and include the *app password* as the EMAIL_HOST_PASSWORD
+2. **IMPORTANT: Never disclose private information nor credentials such as EMAIL_HOST_USER or EMAIL_HOST_PASSWORD!:
+   Store the above environment variables on the ***env.py*** with your own credentials, and include the *app password* in the EMAIL_HOST_PASSWORD var:**
+   ```
+   os.environ['EMAIL_HOST_USER'] = '<example@email.com>'
+   os.environ['EMAIL_HOST_PASSWORD'] = '<app-password-generated-without-spacing>'
+   os.environ['DEFAULT_FROM_EMAIL'] = '<emailsendertocustomer@example.com>'
+   ```
+
+### CONFIGURE ADMIN PANEL - EMAILS
+Default configuration of the sender must be customized. For reference, with the default configuration, this is the email sender the user receives:  
+  ![image](https://github.com/user-attachments/assets/a983a69f-1b60-4a90-85d7-86a264e95fcf)  
+
+To replace the <example.com> with the site name, go to admin **Sites**, and update the default values with the name of the site and its url:   
+  ![image](https://github.com/user-attachments/assets/b6f5e810-17ff-4d27-a90a-cb53c10dab17)
+
 
 
 # TESTING
