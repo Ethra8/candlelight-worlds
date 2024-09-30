@@ -196,7 +196,7 @@ p {
 .account [type="submit"]:hover,
 #booking-confirm-delete [type="submit"],
 .contact-form button:hover {
-    background-color: #b57002;
+    background-color: #F2B61D;
 }
 
 .account a {
@@ -250,7 +250,7 @@ p {
 .world-detail-link:hover,
 .btn-book:hover,
 .btn-about:hover {
-    background-color: #b57002;
+    background-color: #F2B61D;
     color: #21201e;
 }
 
@@ -266,8 +266,6 @@ p {
 }
 
 #worlds {
-    background: url('/static/images/bg-candles1.jpg') no-repeat center center fixed;
-    background-size: cover;
     height: fit-content;
     padding: 0;
     z-index: 999 !important;
@@ -740,11 +738,6 @@ p {
         color: #dbd0ba;
     }
     
-    #about > :first-child {
-        /* padding: 30px; */
-    }
-    
-
 }
 
 
@@ -787,7 +780,7 @@ p {
         vertical-align: middle;
         margin-top: 72px !important;
         object-fit: cover;
-        bottom: 50px;
+        bottom: 30px;
     }    
 
     #booking-list {

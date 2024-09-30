@@ -78,7 +78,7 @@ p {
 
 .main-bg {
     margin-top: 94px;
-    flex: 1; /* forces content area to grow and fill remaining space between header and footer */
+    flex: 1; /* forces content area to grow and fill remaining space between nav and footer */
     min-height: calc(100vh - 222px) !important;
 }
 
@@ -196,7 +196,7 @@ p {
 .account [type="submit"]:hover,
 #booking-confirm-delete [type="submit"],
 .contact-form button:hover {
-    background-color: #b57002;
+    background-color: #F2B61D;
 }
 
 .account a {
@@ -250,7 +250,7 @@ p {
 .world-detail-link:hover,
 .btn-book:hover,
 .btn-about:hover {
-    background-color: #b57002;
+    background-color: #F2B61D;
     color: #21201e;
 }
 
@@ -266,8 +266,6 @@ p {
 }
 
 #worlds {
-    background: url("/static/images/bg-candles1.c539123d66b8.jpg") no-repeat center center fixed;
-    background-size: cover;
     height: fit-content;
     padding: 0;
     z-index: 999 !important;
@@ -614,8 +612,7 @@ p {
         padding: 4%;
         width: 75%;
     }
-    
-    
+        
 }
 
 
@@ -735,16 +732,11 @@ p {
         justify-content: start;
     }
     
-    #about {
+    #about {z
         padding: 3%;
         width: 100%;
         color: #dbd0ba;
     }
-    
-    #about > :first-child {
-        /* padding: 30px; */
-    }
-    
 
 }
 
@@ -780,6 +772,16 @@ p {
     .details-info {
         padding: 3%;
     }
+
+    .scale2 {
+        position: relative;
+        width: 100% !important;
+        max-height: auto !important;
+        vertical-align: middle;
+        margin-top: 72px !important;
+        object-fit: cover;
+        bottom: 30px;
+    }    
 
     #booking-list {
         padding: 40px 7%;
