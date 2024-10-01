@@ -781,6 +781,7 @@ To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, S
 ## IMAGES
 - [Hero image](https://www.freepik.com/free-photo/enchanting-glow-fairy-lights-candles-creating-magical-ambiance_136714970.htm) by [
 frimufilms](https://www.freepik.com/author/frimufilms) at [Freepik](https://www.freepik.com/)
+ 
 **NB:** All other images on the site have been generated with AI using *ChatGPT* exclusively for this site by the author, and can be accessed by clicking on each. 
 
 ## ACKNOWLEDGEMENTS
