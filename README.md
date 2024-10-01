@@ -81,9 +81,8 @@ You will find in the points stated below a brief study aiming at providing the u
 -
 
 ## TARGET AUDIENCE
-
-The target audience of this site are as follows: 
--
+The target audience of this site are as follows:  
+  
 - **B2C:**
   * Couples at any age wanting to add special memories
   * Someone looking for the special gift to offer
@@ -396,7 +395,7 @@ The following basic *CRUD* functionalities have been implementes to this site, a
 
 ### DELETE
 
-## SEND MAIL - STMP
+## VERIFICATION MAIL - STMP
 The user authentication requires **email verification** for the registration to succeed. This site uses sends verification emails via *smtp*. To do so, please follow these instructions if you are using Gmail services:  
 
 ### EMAIL ACCOUNT SETUP
@@ -550,6 +549,7 @@ No CSS errors have been found uppon performing the CSS validator test provided b
 
 ### JS ES6
 ### PYTHON 3.12
+
 
 ## DEFECT TRACKING
 
