@@ -6,7 +6,8 @@ from cloudinary.models import CloudinaryField
 
 class About(models.Model):
     """
-    Stores a single about me text
+    Stores a single 'about' with
+    title. text and image
     """
     title = models.CharField(max_length=200)
     image = CloudinaryField('image', default='placeholder')

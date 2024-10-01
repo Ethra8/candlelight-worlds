@@ -117,6 +117,9 @@ TEMPLATES = [
     },
 ]
 
+# Default message storage >> Comment out for deployment to Heroku
+# MESSAGE_STORAGE = 'django.contrib.messages.storage.fallback.FallbackStorage'
+
 WSGI_APPLICATION = 'candlelight.wsgi.application'
 
 
@@ -157,10 +160,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# ACCOUNT_EMAIL_VERIFICATION = 'none'
-
-# Default message storage >> Comment out for deployment to AWS S3 and Heroku
-# MESSAGE_STORAGE = 'django.contrib.messages.storage.fallback.FallbackStorage'
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
@@ -170,16 +169,16 @@ ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
-# if DEBUG == True:
-#     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-# else:
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com' 
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
-DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
+if DEBUG == True:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+else:
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_HOST = 'smtp.gmail.com' 
+    EMAIL_PORT = 587
+    EMAIL_USE_TLS = True
+    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+    DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
 
 LANGUAGE_CODE = 'en-us'
 

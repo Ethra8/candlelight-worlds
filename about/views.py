@@ -4,7 +4,7 @@ from .models import About
 
 def about_me(request):
     """
-    Renders the most recent information on the site.
+    Renders the 'about us' information of the site.
     Displays an individual instance of :model:`about.About`.
 
     """
