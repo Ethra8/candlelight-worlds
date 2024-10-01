@@ -6,33 +6,34 @@
 {% block content %}
 <div id="worlds" class="container-fluid">
     <div class="black-transparency">
-    <div class="row ml-0">
-        <!-- World Display -->
-        <div class="col-12 col-lg-11 col-xl-9 mt-3 ">
-            <div class="row ml-0 worlds-second-row">
-                {% for world in world_list %}
-                <div class="col-12 world-card">
-                    <div class="card mb-12">
-                        <div class="card-body">
-                            <div class="image-container">
-                                <div class="image-flash rounded">
-                                    <p class="worlds-display_name text-fire">{{ world.display_name }}</p>
+        <div class="row ml-0">
+            <!-- World Display -->
+            <div class="col-12 col-lg-11 col-xl-9 mt-3 ">
+                <div class="row ml-0 worlds-second-row">
+                    {% for world in world_list %}
+                    <div class="col-12 world-card">
+                        <div class="card mb-12">
+                            <div class="card-body">
+                                <div class="image-container">
+                                    <div class="image-flash rounded">
+                                        <p class="worlds-display_name text-fire">{{ world.display_name }}</p>
+                                    </div>
                                 </div>
+                                <img class="scale" src="{{ world.image_dining.url }}" alt="">
+                                <p class="world-short-description">{{ world.short_description }}</p>
+                                <a class="btn world-detail-link rounded" href="{% url 'world_details' world.id %}">
+                                    SEE DETAILS
+                                </a>
                             </div>
-                            <img class="scale" src="{{ world.image_dining.url }}" alt="">
-                            <p class="world-short-description">{{ world.short_description }}</p>
-                            <a class="btn world-detail-link rounded" href="{% url 'world_details' world.id %}">
-                                SEE DETAILS
-                            </a>
                         </div>
                     </div>
+                    {% if forloop.counter|divisibleby:2 %}
                 </div>
-                {% if forloop.counter|divisibleby:2 %}
-            </div>
-            <div class="row ml-0 worlds-second-row">
-                {% endif %}
-                {% endfor %}
+                <div class="row ml-0 worlds-second-row">
+                    {% endif %}
+                    {% endfor %}
 
+                </div>
             </div>
         </div>
     </div>
