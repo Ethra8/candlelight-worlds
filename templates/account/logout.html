@@ -10,17 +10,14 @@
     <div>
         <button type="button" class="btn-close btn-close-white" aria-label="Close" onclick="window.history.back();"></button>
 
-        <div class="row">
-    
+        <div class="row">   
             <div class="col-12 mt-3 mx-0">
                 <h3>{% trans "Sign Out" %}</h3>
-    
                 <p>{% trans 'Are you sure you want to sign out?' %}</p>
             </div>
         </div>
         <div class="row">
             <div class="col-12 mt-3 mx-0">
-    
                 <form method="post" action="{% url 'account_logout' %}">
                     {% csrf_token %}
                     {% if redirect_field_value %}
@@ -30,7 +27,6 @@
                 </form>
             </div>
         </div>
-    
     </div>
 </div>
 {% endblock %}
