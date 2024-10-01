@@ -46,6 +46,7 @@ Edna Torres Munill
   * [Send Mail]
 
 - [TESTING](#testing)
+  * [Code Validation]
   * [Defect Tracking](#defect-tracking)
     - [Github Issues](#github-issues)
     - [Defects of Note](#defects-of-note)
@@ -503,10 +504,43 @@ You can check the Kanban project [here](https://github.com/users/Ethra8/projects
 
 # TESTING
 
-## VALIDATION
+## CODE VALIDATION
 ### HTML5
+No errors nor warnings appear uppon HTML code validation. The validate the HTML code, I have used the [Nu HTML Checker](https://validator.w3.org/nu/) from W3.
+- **HOME PAGE** *home/index.html* file  
+  ![image](https://github.com/user-attachments/assets/d20e0472-885f-4675-b3c0-622b614973cd)
+  
+- **WORLDS PAGE** *worlds/worlds.html* file  
+  ![image](https://github.com/user-attachments/assets/5c612c61-4e6a-4119-b6e3-65a9a55a8a35)
+  
+- **WORLD DETAILS PAGE** *worlds/world_details.html* file  
+  ![image](https://github.com/user-attachments/assets/1f3714d3-1a5c-4002-a747-90b2384b3c9f)
 
+- **NEW BOOKING PAGE** *bookings/booking_form.html* file
+  ![image](https://github.com/user-attachments/assets/bc636956-dc6f-45e5-be14-6969e691bb64)  
+  
+- **MY BOOKINGS PAGE** *bookings/booking_list.html* file
+  ![image](https://github.com/user-attachments/assets/bc74861a-8d5b-4dc2-b894-dd24d5a439a1)
+  
+- **BOOKING UPDATE PAGE** *bookings/booking_update_form.html* file
+  ![image](https://github.com/user-attachments/assets/5a3b2c11-0da4-4f87-907d-382d4628a80f)  
+  
+- **BOKING DELETE PAGE** *bookings/booking_confirm_delete.html file
+  ![image](https://github.com/user-attachments/assets/315825ce-bbd7-49a3-8624-6a38885428ce)
+  
+- **CONTACT PAGE** *contacts/contact.html* file
+  ![image](https://github.com/user-attachments/assets/8fcd6012-e4c2-4e4f-9da7-57cff4ab9d2c)
+
+- **ABOUT PAGE** *about/about.html* file
+  ![image](https://github.com/user-attachments/assets/10a6543c-d151-4c99-8db8-e907ddb718d8)
+  
+  
+
+
+
+  
 ### CSS3
+
 ### JS ES6
 ### PYTHON 3.12
 
