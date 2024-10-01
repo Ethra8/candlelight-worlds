@@ -787,5 +787,6 @@ frimufilms](https://www.freepik.com/author/frimufilms) at [Freepik](https://www.
 - Sites thoroughly researched: [Stackoverflow](https://stackoverflow.com/), [Django Projects Forum](https://forum.djangoproject.com/).
 - [rusingh *Ru*'s Blog](https://rusingh.com/)
 - [Open Source](https://opensource.com) for their article on [smtp](https://opensource.com/article/22/12/django-send-emails-smtp).
+- [Team Tree House](https://teamtreehouse.com/) for their forum. It helped me [test JS ES6](#JS-ES6) code on [JShint](https://jshint.com/) properly to ignore warnings related to JS ES6 that the tool os not supporting by default. Check discussion [here](https://teamtreehouse.com/community/why-does-jshint-give-me-these-warnings-about-es6)
   
 
