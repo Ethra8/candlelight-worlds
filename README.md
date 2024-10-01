@@ -81,9 +81,8 @@ You will find in the points stated below a brief study aiming at providing the u
 -
 
 ## TARGET AUDIENCE
-
-The target audience of this site are as follows: 
--
+The target audience of this site are as follows:  
+  
 - **B2C:**
   * Couples at any age wanting to add special memories
   * Someone looking for the special gift to offer
@@ -396,7 +395,7 @@ The following basic *CRUD* functionalities have been implementes to this site, a
 
 ### DELETE
 
-## SEND MAIL - STMP
+## VERIFICATION MAIL - STMP
 The user authentication requires **email verification** for the registration to succeed. This site uses sends verification emails via *smtp*. To do so, please follow these instructions if you are using Gmail services:  
 
 ### EMAIL ACCOUNT SETUP
@@ -431,7 +430,7 @@ To implement stmp emaling service necessary for user authentication and email ve
   
 NB: The EMAIL_BACKEND during the development fase is ```EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'```, and emails get printed in the console. Remember to comment out or create 'if' statement before deplloy in order to change the default django backend the *smtp* .
 
-2. **IMPORTANT: Never disclose private information nor credentials such as EMAIL_HOST_USER or EMAIL_HOST_PASSWORD!:
+2. **IMPORTANT WARNING: Never disclose private information nor credentials such as EMAIL_HOST_USER or EMAIL_HOST_PASSWORD!:
    Store the above environment variables on the ***env.py*** with your own credentials, and include the *app password* in the EMAIL_HOST_PASSWORD var:**
    ```
    os.environ['EMAIL_HOST_USER'] = '<example@email.com>'
@@ -532,8 +531,16 @@ No errors nor warnings appear uppon HTML code validation. The validate the HTML 
 
 - **ABOUT PAGE** *about/about.html* file
   ![image](https://github.com/user-attachments/assets/10a6543c-d151-4c99-8db8-e907ddb718d8)
+
+- **ACCOUNT PAGES** *templates/account/** files have all same short config, so I have passed the following as validation proofs:
+  ![image](https://github.com/user-attachments/assets/eaddd8f5-c689-42b0-b2c1-0c4896677d17)  
+  ![image](https://github.com/user-attachments/assets/319b11ec-0408-42fb-8094-72ea51790109)  
+  ![image](https://github.com/user-attachments/assets/4cc3d681-7479-4528-be8c-4ca4a11e3511)  
   
-    
+
+
+
+      
 ### CSS3
 No CSS errors have been found uppon performing the CSS validator test provided by W3C - [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/):  
 
@@ -542,6 +549,7 @@ No CSS errors have been found uppon performing the CSS validator test provided b
 
 ### JS ES6
 ### PYTHON 3.12
+
 
 ## DEFECT TRACKING
 
@@ -648,6 +656,64 @@ TEST 10
 
 
 ## ACCESSIBILITY TESTING
+
+
+
+
+## MANUAL TESTING
+### ACCOUNT & USER AUTHENTICATION
+- [X] Registration 
+- [X] Email Verification:  
+   ![image](https://github.com/user-attachments/assets/1d255a5c-0c4e-4cf8-8f86-f42fb356dd02)  
+   ![image](https://github.com/user-attachments/assets/f08d45c8-7edd-479e-ab98-d3a82baa18c5)  
+   
+- [X] Login
+- [X] Logout
+- [X] Password Recovery - Email with link to recover password received successfully:  
+   ![image](https://github.com/user-attachments/assets/ea59ec54-85e0-4f44-832a-dc058a3d7030)  
+   ![image](https://github.com/user-attachments/assets/8f664589-241b-4fab-9c4a-7796e95932f2)
+- [X] All accounts' email addresses are stored separately, and can be manually verified by the admin, if needed. Also very useful for emailing campaigns:
+      ![image](https://github.com/user-attachments/assets/e6e2c976-0902-47e8-b36c-499e5fe79219)
+
+- [X] Site owner can create different *groups* from the admin to give different types of permissions to the users in that group:
+      ![image](https://github.com/user-attachments/assets/afd57894-1f22-4c90-a120-b0179802a0e0)
+
+
+  
+### BOOKINGS
+- [X] **C**reate booking
+- [X] **R**ead or view booking from *My Bookings* link on the navbar's user icon's dropdown menu
+- [X] **U**pdate booking - Change date, time, or world, checking for availability
+- [X] **D**elete booking uppon confirmation of deletion
+- [X] Users bookings are **secured**, and can only be accessed once logged into the same account, as bookings are linked to a particular user:  
+      1. View bookings page from my user: ![image](https://github.com/user-attachments/assets/de284b96-ad0a-4df7-8f51-3122020aefe2)  
+      2. When copying the url, and trying to access while being logged out, site demands to be logged in:
+        ![image](https://github.com/user-attachments/assets/4668e9f0-70e7-4159-8e66-0d381fc4760f)
+
+- [X] When the user accesses the booking form from a specific world's details page, the *world dropdown* on the form is preselected.
+
+### CONTACT FORM
+- [X] If user is authenticated, the **email field is prepopulated** with the user email:
+      ![image](https://github.com/user-attachments/assets/7c760770-7151-4863-aec5-a22e3c349859)  
+            
+- [X] Site owner can **keep track of user requests sent via the contact form**. All content is stored in the admin panel, for further review by the site owner, and confirmation message appears to user. The site owner can check the *'read'* checkbox once the request has been read:
+      ![image](https://github.com/user-attachments/assets/d68cb6bb-6998-4a8f-a3f7-75bade24e339)
+      ![image](https://github.com/user-attachments/assets/30744eb2-01ef-4112-b536-f4c9c89e5ba2)
+      ![image](https://github.com/user-attachments/assets/0e9acab6-8a03-48b6-ae41-fd718e3f840d)
+      ![image](https://github.com/user-attachments/assets/ed826552-bc68-42f3-8376-e26bee5a58f9)
+      ![image](https://github.com/user-attachments/assets/e3d90107-a340-4e27-a20d-5fb96c043b9b)
+      
+### ABOUT
+- [X] Site owner can manually edit the content of the about page, including the text and the section image, being also able to style the text via the *Summernote editor*. Many *abouts* configurations can be stored, which could be useful for seasonal customization:
+      ![image](https://github.com/user-attachments/assets/4842b75d-cbac-4a92-b8d3-b2eadceada07)
+      ![image](https://github.com/user-attachments/assets/952e65ac-42b0-473a-a364-457d610481ce)
+
+
+      
+
+
+
+      
 
 
 
