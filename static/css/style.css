@@ -776,7 +776,6 @@ p {
     .scale2 {
         position: relative;
         width: 100% !important;
-        max-height: auto !important;
         vertical-align: middle;
         margin-top: 72px !important;
         object-fit: cover;
