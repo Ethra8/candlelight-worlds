@@ -242,13 +242,13 @@ This site's fonts have been selected from [Google fonts](https://fonts.google.co
 -
 This site contains the following features:
 - **NAVIGATION BAR**: Fixed to the top to make it easy for users to navigate around the site at any time. Contains links to ***worlds, contact, and about page***, and acces to ***user's account***, which includes a dropdown whose options vary depending on whether the user is authenticated or not. If it is an **authenticated user**, the user icon dropdown shows the options ***new booking, my bookings, logout***; Whereas when the user is **not authenticated** in case the user is not authenticated, the dropdown options are ***login, register***:
-  * **Mobile**
+  * **Mobile & Tablet (portrait)**
     |collapsed| uncollapsed|
     |---------|------------|
     |![image](https://github.com/user-attachments/assets/35d96ba1-02f2-4b87-a77e-461aab85d596)|![image](https://github.com/user-attachments/assets/3727364d-f1c8-4ede-ba52-e98592dd5e58)|
 
 
-  * **Desktop**
+  * **Desktop & Tablet (landscape)**
       
    ![image](https://github.com/user-attachments/assets/6175b242-af16-48de-b152-3a86f5bfd155)
 
