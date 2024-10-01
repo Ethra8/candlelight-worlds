@@ -506,7 +506,7 @@ You can check the Kanban project [here](https://github.com/users/Ethra8/projects
 
 ## CODE VALIDATION
 ### HTML5
-No errors nor warnings appear uppon HTML code validation. The validate the HTML code, I have used the [Nu HTML Checker](https://validator.w3.org/nu/) from W3.
+No errors nor warnings appear uppon HTML code validation. The validate the HTML code, I have used the [Nu HTML Checker](https://validator.w3.org/nu/) from W3C.
 - **HOME PAGE** *home/index.html* file  
   ![image](https://github.com/user-attachments/assets/d20e0472-885f-4675-b3c0-622b614973cd)
   
@@ -534,12 +534,12 @@ No errors nor warnings appear uppon HTML code validation. The validate the HTML 
 - **ABOUT PAGE** *about/about.html* file
   ![image](https://github.com/user-attachments/assets/10a6543c-d151-4c99-8db8-e907ddb718d8)
   
-  
-
-
-
-  
+    
 ### CSS3
+No CSS errors have been found uppon performing the CSS validator test provided by W3C - [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/):  
+
+  ![image](https://github.com/user-attachments/assets/ff7de6d9-a19b-429e-b086-ad007e703c8f)
+
 
 ### JS ES6
 ### PYTHON 3.12
