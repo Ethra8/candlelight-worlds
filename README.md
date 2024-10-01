@@ -43,10 +43,9 @@ Edna Torres Munill
     - [Read](#read)
     - [Update](#update)
     - [Delete](#delete)
-  * [Send Mail]
-
+  * [Send Verification Email](#verification-email)
 - [TESTING](#testing)
-  * [Code Validation]
+  * [Code Validation](#code-validation)
   * [Defect Tracking](#defect-tracking)
     - [Github Issues](#github-issues)
     - [Defects of Note](#defects-of-note)
