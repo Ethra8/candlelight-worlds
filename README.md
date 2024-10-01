@@ -85,38 +85,40 @@ You will find in the points stated below a brief study aiming at providing the u
 The target audience of this site are as follows: 
 -
 - **B2C:**
-  * Medium to hight ticket sale
   * Couples at any age wanting to add special memories
-  * Someone seeking for a place to organize a special event such as weddings, anniversaries, or any other of the sort 
   * Someone looking for the special gift to offer
 
 - **B2B:**
-  * Companies that want to rent the events area
   * Companies that might want to offer a special gift to their premium clients or collaborators
   
-## PROJECT GOALS
+## GOALS
 
-The project goals are as follows:
-- 
-  * The site aims at providing B2C customers with luxuriously themed private spaces where to have any meal of the day.
-  * The site aims at providing B2B customers with luxuriously themed spaces for team building, staff gathering, and events.
-  * Any users can register for an account to store, read, update and cancel their bookings.
-  * B2B users can send a contact form to receive personalized atention from the team, depending on the type of event desired.
-  * B2C services available can be stored in a shopping bag and bought online through Stripe API.
-  * All users can subscribe to the monthly newsletter.
+### PROJECT GOALS
+  
+  * The site aims at providing customers with luxuriously themed private spaces where to have any meal of the day.
+  * Any users can register for an authenticated account to store, read, update and cancel their bookings.
+  * All users can send a request via a contact form to receive personalized atention from the team.
+
+### EXTERNAL USER'S GOAL
+
+  * The user would like to book a world in an out-of-the-box experience/restaurant and a particular time and date.
+  
+### SITE OWNER'S GOAL
+
+  * The site owner would like the ability to take online bookings for their eatery.
 
 
 ## USER STORIES
 To make the user experience on the site seamless and meaningful, the following stories have been followed as a guide to implementing functionalities of the site:
-### As a first time B2C or B2B visitor 
+#### As a first time B2C or B2B visitor 
 - [X] View available worlds.
 - [X] View world detail pages.
 - [X] View each worlds' details page images in full size
 - [X] Check the About page.
-- [X] Send a request through a form
+- [X] Send a request via a contact form
 - [X] Sign up for an account after a conscient decision, to be able to make a booking.
   
-### As an Authorized User 
+#### As an Authorized User 
 - [X] Easily log in and log out.  
 - [X] Easily recover my password in case I forget it.
 - [X] Receive an email to confirm my registration, so that I can be sure of my credentials.
@@ -135,7 +137,7 @@ To make the site owner's life easier, the following functionalities have been in
 - [X] Access from the admin the contact requests sent by users via the contact form.
 - [X] Display clearly if the request sender is an authenticated user or not.
 - [X] Display clearly if the request sender is a acting on behalf of a company.
-- [X] Edit and style the text, display and image of the about page from the admin panel.
+- [ ] Edit and style the text, display and image of the about page from the admin panel.
   
   
 ## USER PROFILES
@@ -150,6 +152,8 @@ To make the site owner's life easier, the following functionalities have been in
 
 
 # UI
+
+## DESIGN CHOICES
 
 ## HERO IMAGE
 This site has the following hero image:  
@@ -167,8 +171,8 @@ This site has the following palette, picked specifically to emulate real candlel
 This site's fonts have been selected from [Google fonts](https://fonts.google.com/):
 - [Montserrat](https://fonts.google.com/specimen/Montserrat?query=montserrat): Used on all the paragraphs of the site, and it is the default font of the body element.
 - [Montserrat Alternates](https://fonts.google.com/specimen/Montserrat+Alternates?query=montserrat): Used only for the name of the worlds, to give a special *exotic* touch without deviating of the main font style specified above.
-- [Lato](https://fonts.google.com/specimen/Lato?query=lato): Used only for the main title of the site and for the logo.
-- [Shadows Into Light](https://fonts.google.com/specimen/Shadows+Into+Light?query=Shadows+Into+Light): Used only for the slogan *'travel through space and time'* on the landing page below the main title.
+- [Lato](https://fonts.google.com/specimen/Lato?query=lato): Used only for the **main title** of the site and for the **logo**.
+- [Shadows Into Light](https://fonts.google.com/specimen/Shadows+Into+Light?query=Shadows+Into+Light): Used only for the **slogan** *'travel through space and time'* on the landing page below the main title.
 
 ## WIREFRAMES
 
@@ -237,21 +241,21 @@ This site's fonts have been selected from [Google fonts](https://fonts.google.co
 **Accessibility**: This site takes accessibility very seriously, and has performed different tests. All the reports can be checked [here](#accessibility-testing)
 -
 This site contains the following features:
-- **NAVIGATION BAR**: Fixed to the top to make it easy for users to navigate around the site at any time. Contains links to ***worlds, contact and about page***, and acces to ***user's account***, which includes a dropdown whose options vary depending on whether the user id authenticated or not. If it is an ***authenticated user***, the user icon dropdown shows the options ***new booking, my bookings, logout***; Whereas when the user is ///not authenticated*** in case the user is not authenticated, the dropdown options are ***login, register***.
-  * **Mobile**
+- **NAVIGATION BAR**: Fixed to the top to make it easy for users to navigate around the site at any time. Contains links to ***worlds, contact, and about page***, and acces to ***user's account***, which includes a dropdown whose options vary depending on whether the user is authenticated or not. If it is an **authenticated user**, the user icon dropdown shows the options ***new booking, my bookings, logout***; Whereas when the user is **not authenticated** in case the user is not authenticated, the dropdown options are ***login, register***:
+  * **Mobile & Tablet (portrait)**
     |collapsed| uncollapsed|
     |---------|------------|
     |![image](https://github.com/user-attachments/assets/35d96ba1-02f2-4b87-a77e-461aab85d596)|![image](https://github.com/user-attachments/assets/3727364d-f1c8-4ede-ba52-e98592dd5e58)|
 
 
-  * **Desktop**
+  * **Desktop & Tablet (landscape)**
       
    ![image](https://github.com/user-attachments/assets/6175b242-af16-48de-b152-3a86f5bfd155)
 
      
 
 - **Backgroung image**: Fixed to the background of the body, the hero image takes up all of the available space in all types fo devices.
-- **Background overlay**: Fixed on the upper layer of the background image, it increases opacity of hero image fixed on the body to improve visual accessibility of text.
+- **Background overlay**: Fixed an the upper layer of the background image, it increases opacity of hero image fixed on the body to *improve visual accessibility* of text.
 - **Footer**: Pushed to the bottom, contains social media icons with links to each social media pages.
 - **Booking Form**: A *crispy form* to book a world. The form contains a styled *Book Now* button below the following fields:
   * ***World selector***: Prepopulates automatically when user accesses the bookign form from the *Book Now!* button on the *world details page*
@@ -262,16 +266,16 @@ This site contains the following features:
   * ***company name*** - in case a company wants to contact, and keep trac kof B2B customers and request.
   * ***email****
   * ***message****
-- **Buttons**: All buttons are styled equaly for design consistency. The *background colour* is the main theme colour *#f69700*. On *hover*, it slightly darkens to *#b57002* while the *font* colour remains dark grey *#21201e*.
+- **Buttons**: All buttons are styled equally for design consistency. The *background colour* is the main theme colour *#f69700*. On *hover*, it slightly darkens to *#b57002* while the *font* colour remains dark grey *#21201e*.
 - **Icons**: All icons are taken from *Fontawesome*, and have been styled to match the site's design:
   * *User icon*: Placed on the navigation bar, it enables unidentified users to easily login or register for an account, and also enables authentified users to access their booking list, and to logout. It has been styled matching the main colour of the theme #f69700.
   * *Update Booking icon*: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to update the booking to a new date, time, or world all together. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.
   * *Delete Booking icon*: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to delete the booking. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.
 
-
   
 ## PAGES
-This site contains the following responsive pages, all of which contain the following features which are placed on the **body** element of the *base.html* template, that acts as the main dynamic *django template* for all the other pages of the site. For further details on each feature of the **body** which frames each page, please refer to [features](#features). These are the features of the **body**:
+This site contains the following responsive pages, all of which contain the following features which are placed on the **body** element of the *base.html* template, that acts as the main dynamic *django template* for all the other pages of the site. For further details on each feature of the **body** which frames each page, please refer to [features](#features).  
+These are the features of the **body**, present in all pages:  
 - **Navigation Bar**
 - **Backgroung hero image**
 - **Back transparent overlay**
@@ -453,8 +457,58 @@ To replace the <example.com> with the site url:
 ![image](https://github.com/user-attachments/assets/aea3a181-747c-4642-99bf-3b96469b3b6e)  
 
 
+# TECHNOLOGIES and METHODOLOGIES USED
+The following technologies, frameworks, libraries, programs and methodologies have been used to create this site and to deploy it. The AGILE methodology has been approached and a kanban board is linked to this project. More details on the sections below: 
+-
+  
+## LANGUAGES
+  - **Python 3.12.2**
+  - **JS ES6**
+  - **CSS3**
+  - **HTML5**
+  
+## FRAMEWROKS, LIBRARIES and PROGRAMS
+  - **Django 5.1** as MVC Framework - Within django framework, many libraries and modules have been used. Some of the more relevant are states below, but for further reference, please refer to the requirements.txt file in the root directory. - Check [Django 5.1 Documentation](https://docs.djangoproject.com/en/5.1/)
+  - **Bootstrap 5** - Check documentation [here](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+  - **Cloudinary** - Database for images uploaded through the admin panel to configure each worlds item. Check documentation [here](https://cloudinary.com/developers#:~:text=Android-,Documentation,-Check%20out%20our)
+  - **PostgreSQL** Relational Database - To store static files, such as the custom css fiel of the site.
+  - **Django Summernote** - To enable the site owner to style the description of a world when creating or updating it. Documentation can be found [here](https://github.com/lqez/django-summernote/blob/main/README.md)
+  - Chrome Dev Tools - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used Lighthouse reports to check and improve core web vitals, including accessibility issues.
+  - [Favicon](https://favicon.io/) - To create the logo, and the icon on the title included in each page of this site
+  - [Font Awesome](https://fontawesome.com/) - For the icons used
+  - [Google Fonts](https://fonts.google.com/) - To select fonts and implement them in the site
+  - [Github](https://github.com) - To deploy the site online, and Github desktop app to link _Visual Studio Code_ to Github.com
+  - [Coolors](https://coolors.co) - To insert colors selected previously directly through visual studio code, but used this tool to display the palette beautifully, and insert it in this readme file.
+  - [Amiresponsive](https://ui.dev/amiresponsive) - To display the site in all types of devices simultaneously.
+  - [EqualWeb Accessibility Checker](https://chrome.google.com/webstore/detail/equalweb-accessibility-ch/imemciokfejbnonkkinhcdfigdilcllg/related?utm_source=chrome-ntp-icon) - Google Chrome extension to check general errors and contract errors for optimal accessibility.
+  - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorithm.
+  - [Blisk](https://blisk.io/devices) to check the viewport of multiple devices, very useful for selecting testing targets.
+  - [Viewport Sizer](https://viewportsizer.com/devices/) - Used to check the viewport of multiple devices, very useful for selecting testing targets.
+  - [BrowserStack](browserstack.com) to test responsiveness by emulating different devices, operating systems and browser vendors.
+  - [XRecorder](https://videoeditor-videorecorder-screenrecorder.en.uptodown.com/android) for Android, to record the compatibility and responsiveness testing performed on real Android device.
+  - [Google Gmail](https://support.google.com/mail/answer/56256?hl=en#:~:text=Gmail-,Create%20a%20Gmail%20account,-To%20sign%20up): Used as email provider to send  emails to users and customers, also via *smtp*.  
+    
+    
+## AGILE METHODOLOGY
+Agile methodologies and principles has guided the planning and creation of this site. Eventhough it does not strictly adhere to traditional Agile methodologies, the development process has been based on Agile principles, focusing on flexibility, continuous improvement, and an agile adaptation to change. The focus has been put on the priority level of the [***User Stories***](#user-stories), adding extra features once the basic functionality had been satisfied. The development of features has been made in a logical sequence, addressing core [***CRUD functionalities***](#crud-functionalities) first before expanding to the other features.
+  
+   
+### GITHUB PROJECT - KANBAN
+When bugs or issues are encountered, they are recorded as bug issues and added to the backlog, to the 'bug' column. This allows us to continue progressing in other areas while periodically revisiting and prioritizing the backlog based on severity and impact. This method ensures that we maintain development, while systematically addressing and resolving issues.
+
+A **kanban board** has been linked to this project, and has been used to track progress, moving **user stories** between *'Todo'*, *'In Progress'*, *'Done'*, *'Bug'*, and *Fixed Bug* columns as appropriate.
+You can check the Kanban project [here](https://github.com/users/Ethra8/projects/8)
+
+
 
 # TESTING
+
+## VALIDATION
+### HTML5
+
+### CSS3
+### JS ES6
+### PYTHON 3.12
 
 ## DEFECT TRACKING
 
@@ -562,47 +616,7 @@ TEST 10
 
 ## ACCESSIBILITY TESTING
 
-# TECHNOLOGIES and METHODOLOGIES USED
-The following technologies, frameworks, libraries, programs and methodologies have been used to create this site and to deploy it. The AGILE methodology has been approached and a kanban board is linked to this project. More details on the sections below: 
--
-  
-## LANGUAGES
-  - **Python 3.12.2**
-  - **JS ES6**
-  - **CSS3**
-  - **HTML5**
 
-## FRAMEWROKS, LIBRARIES and PROGRAMS
-  - **Django 5.1** - Whithin django framework, many libraries and modules have been used. Some of the more relevant are states below, but for further reference, please refer to the requirements.txt file in the root directory. - Check [Django 5.1 Documentation](https://docs.djangoproject.com/en/5.1/)
-  - **Bootstrap 5** - Check documentation [here](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
-  - **Cloudinary** - Database for images uploaded through the admin panel to configure each worlds item. Check documentation [here](https://cloudinary.com/developers#:~:text=Android-,Documentation,-Check%20out%20our)
-  - **PostgreSQL** Database - To store static files, such as the custom css fiel of the site.
-  - **Django Summernote** - To enable the site owner to style the description of a world when creating or updating it. Documentation can be found [here](https://github.com/lqez/django-summernote/blob/main/README.md)
-  - Chrome Dev Tools - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used Lighthouse reports to check and improve core web vitals, including accessibility issues.
-  - [Favicon](https://favicon.io/) - To create the logo, and the icon on the title included in each page of this site
-  - [Font Awesome](https://fontawesome.com/) - For the icons used
-  - [Google Fonts](https://fonts.google.com/) - To select fonts and implement them in the site
-  - [Github](https://github.com) - To deploy the site online, and Github desktop app to link _Visual Studio Code_ to Github.com
-  - [Coolors](https://coolors.co) - To insert colors selected previously directly through visual studio code, but used this tool to display the palette beautifully, and insert it in this readme file.
-  - [Amiresponsive](https://ui.dev/amiresponsive) - To display the site in all types of devices simultaneously.
-  - [EqualWeb Accessibility Checker](https://chrome.google.com/webstore/detail/equalweb-accessibility-ch/imemciokfejbnonkkinhcdfigdilcllg/related?utm_source=chrome-ntp-icon) - Google Chrome extension to check general errors and contract errors for optimal accessibility.
-  - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorithm.
-  - [Blisk](https://blisk.io/devices) to check the viewport of multiple devices, very useful for selecting testing targets.
-  - [Viewport Sizer](https://viewportsizer.com/devices/) - Used to check the viewport of multiple devices, very useful for selecting testing targets.
-  - [BrowserStack](browserstack.com) to test responsiveness by emulating different devices, operating systems and browser vendors.
-  - [XRecorder](https://videoeditor-videorecorder-screenrecorder.en.uptodown.com/android) for Android, to record the compatibility and responsiveness testing performed on real Android device.
-  - [Google Gmail](https://support.google.com/mail/answer/56256?hl=en#:~:text=Gmail-,Create%20a%20Gmail%20account,-To%20sign%20up): Used as email provider to send  emails to users and customers, also via *smtp*.
-  
-  
-## AGILE METHODOLOGY
-Agile methodologies and principles has guided the planning and creation of this site. Eventhough it does not strictly adhere to traditional Agile methodologies, the development process has been based on Agile principles, focusing on flexibility, continuous improvement, and an agile adaptation to change. The focus has been put on the priority level of the [***User Stories***](#user-stories), adding extra features once the basic functionality had been satisfied. The development of features has been made in a logical sequence, addressing core [***CRUD functionalities***](#crud-functionalities) first before expanding to the other features.
-
-  
-### GITHUB PROJECT - KANBAN
-When bugs or issues are encountered, they are recorded as bug issues and added to the backlog, to the 'bug' column. This allows us to continue progressing in other areas while periodically revisiting and prioritizing the backlog based on severity and impact. This method ensures that we maintain development, while systematically addressing and resolving issues.
-
-A **kanban board** has been linked to this project, and has been used to track progress, moving **user stories** between *'Todo'*, *'In Progress'*, *'Done'*, *'Bug'*, and *Fixed Bug* columns as appropriate.
-You can check the Kanban project [here](https://github.com/users/Ethra8/projects/8)
 
 
   
