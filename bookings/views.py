@@ -42,30 +42,29 @@ class BookingListView(LoginRequiredMixin, ListView):
 
 class BookingUpdateView(LoginRequiredMixin, UpdateView):
     model = Booking
-    fields = ["world", "date", "time"]
+    form_class = BookingForm  # Use BookingForm instead of fields
     template_name_suffix = "_update_form"
 
     def form_valid(self, form):
-        # Make sure that booking can only be acessed by logged-in user
+        # Make sure that booking can only be accessed by the logged-in user
         if form.instance.user != self.request.user:
             messages.warning(self.request, 'You can only update your own bookings!')
             return redirect(reverse('booking_list'))
 
         temp_booking = form.save(commit=False)
-        # check if time/ date is available
+        # Check if the time/date is available
         existing_bookings = Booking.objects\
             .filter(date=temp_booking.date)\
-            .filter(time=temp_booking.time)\
             .filter(world=temp_booking.world)
-            
-        if existing_bookings :
+
+        if existing_bookings:
             messages.warning(self.request, f'At {temp_booking.time} on {temp_booking.date}, our {temp_booking.world} is already booked')
             return redirect(f'/bookings/update/{temp_booking.pk}/')
         else:
             messages.success(self.request, "Your booking's changes are confirmed!")
             temp_booking.save()
-        return redirect(f'/bookings/manage/')
 
+        return redirect(f'/bookings/manage/')
 
 
 class BookingDeleteView(LoginRequiredMixin, DeleteView):
