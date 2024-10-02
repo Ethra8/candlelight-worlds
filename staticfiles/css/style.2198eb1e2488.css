@@ -316,9 +316,9 @@ p {
     max-height: 480px;
     vertical-align: middle;
     margin-top: 72px !important;
-    margin-bottom: 30px !important;
+    /* margin-bottom: 30px !important; */
     object-fit: cover;
-    bottom: 50px;
+    /* bottom: 50px; */
 }
 
 .worlds-display_name {
