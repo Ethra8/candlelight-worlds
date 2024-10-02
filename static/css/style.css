@@ -89,6 +89,18 @@ p {
 }
 
 
+.icons-social {
+    font-size: 2rem !important;
+    width: 50px;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.icons-social:hover {
+    color: red;
+}
+
+
 /* Navbar Classes */
 
 .nav-link,
