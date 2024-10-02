@@ -470,10 +470,10 @@ The following technologies, frameworks, libraries, programs and methodologies ha
   - **Django 5.1** as MVC Framework - Within django framework, many libraries and modules have been used. Some of the more relevant are states below, but for further reference, please refer to the requirements.txt file in the root directory. - Check [Django 5.1 Documentation](https://docs.djangoproject.com/en/5.1/)
   - **Bootstrap 5** - Check documentation [here](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
   - **Cloudinary** - Database for images uploaded through the admin panel to configure each worlds item. Check documentation [here](https://cloudinary.com/developers#:~:text=Android-,Documentation,-Check%20out%20our)
-  - **PostgreSQL** Relational Database - To store static files, such as the custom css fiel of the site.
+  - **PostgreSQL** Relational Database - To store static files, such as the custom *styles.css* file of the site.
   - **Django Summernote** - To enable the site owner to style the description of a world when creating or updating it. Documentation can be found [here](https://github.com/lqez/django-summernote/blob/main/README.md)
   - Chrome Dev Tools - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used Lighthouse reports to check and improve core web vitals, including accessibility issues.
-  - [Favicon](https://favicon.io/) - To create the logo, and the icon on the title included in each page of this site
+  - [Favicon](https://favicon.io/) - To create the necessary files for the logo to be on the upper part of the browser tab next to the site tir.
   - [Font Awesome](https://fontawesome.com/) - For the icons used
   - [Google Fonts](https://fonts.google.com/) - To select fonts and implement them in the site
   - [Github](https://github.com) - To deploy the site online, and Github desktop app to link _Visual Studio Code_ to Github.com
@@ -548,13 +548,26 @@ No CSS errors have been found uppon performing the CSS validator test provided b
 
 
 ### JS ES6
-### PYTHON 3.12
+The validation of the code has been successful. The validator used has been [JShint](https://jshint.com/). In order to remove inaccurate warnings related solely to the fact that it by itself does not support JS ES6, I [found the helpful and easy way](https://teamtreehouse.com/community/why-does-jshint-give-me-these-warnings-about-es6#:~:text=By%20default%2C%20JSHint%20gives%20you%20warnings%20if%20you%20use%20new%20ES6%20features) to make the tool read and analyse the ES6 code effectively, by simply adding this comment at the top of your file/code:  
+```// jshint esversion: 6```  
 
+- The following JS ES6 code is located at the bottom of the booking_form.html file inside django's {% block extras %}{% endblock %} 
+  
+  ![image](https://github.com/user-attachments/assets/ad88ca01-6230-460d-8893-9880253e87c6)
+
+- The following JS ES6 code is located at the bottom of the world_details.html file inside django's {% block extras %}{% endblock %} 
+  
+  ![image](https://github.com/user-attachments/assets/ea6d26a8-dcfe-432f-a3e0-5dbb809bb885)
+
+
+### PYTHON 3.12
+Validation has been done using [CI Python Linter by Code Institute](https://pep8ci.herokuapp.com/), and the results have been the following:
+- 
 
 ## DEFECT TRACKING
 
 ### GITHUB ISSUES
-The defects or bugs that have appeared while programming this site have been tracked usign the **Github issues**, and have been placed in the *bug* column of the *[project's kanban](https://github.com/users/Ethra8/projects/8/views/1)* to be easily tracked and solved.  
+The defects or bugs that have appeared while programming this site have been tracked using **Github Issues** tool, and have been placed in the *bug* column of the *[project's kanban](https://github.com/users/Ethra8/projects/8/views/1)* to be easily tracked and fixed. Once fixed, they have been moved to the correspondent *FIxed Bug* column on the kanban.
 
 ### DEFECTS OF NOTE
 No defects of note have been detected on the site.
@@ -781,11 +794,13 @@ To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, S
 ## IMAGES
 - [Hero image](https://www.freepik.com/free-photo/enchanting-glow-fairy-lights-candles-creating-magical-ambiance_136714970.htm) by [
 frimufilms](https://www.freepik.com/author/frimufilms) at [Freepik](https://www.freepik.com/)
+ 
 **NB:** All other images on the site have been generated with AI using *ChatGPT* exclusively for this site by the author, and can be accessed by clicking on each. 
 
 ## ACKNOWLEDGEMENTS
 - Sites thoroughly researched: [Stackoverflow](https://stackoverflow.com/), [Django Projects Forum](https://forum.djangoproject.com/).
 - [rusingh *Ru*'s Blog](https://rusingh.com/)
 - [Open Source](https://opensource.com) for their article on [smtp](https://opensource.com/article/22/12/django-send-emails-smtp).
+- [Team Tree House](https://teamtreehouse.com/) for their forum. It helped me [validate JS ES6](#JS-ES6) code on [JShint](https://jshint.com/) properly to ignore warnings related to JS ES6 that the tool os not supporting by default. Check discussion [here](https://teamtreehouse.com/community/why-does-jshint-give-me-these-warnings-about-es6)
   
 
