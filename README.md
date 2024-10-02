@@ -470,10 +470,10 @@ The following technologies, frameworks, libraries, programs and methodologies ha
   - **Django 5.1** as MVC Framework - Within django framework, many libraries and modules have been used. Some of the more relevant are states below, but for further reference, please refer to the requirements.txt file in the root directory. - Check [Django 5.1 Documentation](https://docs.djangoproject.com/en/5.1/)
   - **Bootstrap 5** - Check documentation [here](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
   - **Cloudinary** - Database for images uploaded through the admin panel to configure each worlds item. Check documentation [here](https://cloudinary.com/developers#:~:text=Android-,Documentation,-Check%20out%20our)
-  - **PostgreSQL** Relational Database - To store static files, such as the custom css fiel of the site.
+  - **PostgreSQL** Relational Database - To store static files, such as the custom *styles.css* file of the site.
   - **Django Summernote** - To enable the site owner to style the description of a world when creating or updating it. Documentation can be found [here](https://github.com/lqez/django-summernote/blob/main/README.md)
   - Chrome Dev Tools - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used Lighthouse reports to check and improve core web vitals, including accessibility issues.
-  - [Favicon](https://favicon.io/) - To create the logo, and the icon on the title included in each page of this site
+  - [Favicon](https://favicon.io/) - To create the necessary files for the logo to be on the upper part of the browser tab next to the site tir.
   - [Font Awesome](https://fontawesome.com/) - For the icons used
   - [Google Fonts](https://fonts.google.com/) - To select fonts and implement them in the site
   - [Github](https://github.com) - To deploy the site online, and Github desktop app to link _Visual Studio Code_ to Github.com
