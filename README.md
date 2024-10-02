@@ -570,9 +570,9 @@ The validation of the code has been successful. The validator used has been [JSh
 
 
 ### PYTHON 3.12
-Validation has been done using [CI Python Linter by Code Institute](https://pep8ci.herokuapp.com/), and the results have been the following:
-- 
+**Validation has been done using [CI Python Linter by Code Institute](https://pep8ci.herokuapp.com/), and the results have been the following:**
 
+  
 ## DEFECT TRACKING
 
 ### GITHUB ISSUES
@@ -693,7 +693,13 @@ TEST 10
    ![image](https://github.com/user-attachments/assets/a902a04c-7cc6-4136-a39a-fb2c5012bef7)
 
 - [X] Login
+      
+
+https://github.com/user-attachments/assets/34eceaa5-0efc-4dca-a77d-617199282f3b
+
+
 - [X] Logout
+      
 - [X] Password Recovery - Email with link to recover password received successfully:  
    ![image](https://github.com/user-attachments/assets/ea59ec54-85e0-4f44-832a-dc058a3d7030)  
    ![image](https://github.com/user-attachments/assets/8f664589-241b-4fab-9c4a-7796e95932f2)
