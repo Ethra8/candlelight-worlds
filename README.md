@@ -675,11 +675,14 @@ TEST 10
 
 ## MANUAL TESTING
 ### ACCOUNT & USER AUTHENTICATION
-- [X] Registration 
+- [X] Registration
+   ![image](https://github.com/user-attachments/assets/e667753e-910d-4898-8048-32c0931e3d3b)
+   
 - [X] Email Verification:  
    ![image](https://github.com/user-attachments/assets/1d255a5c-0c4e-4cf8-8f86-f42fb356dd02)  
    ![image](https://github.com/user-attachments/assets/f08d45c8-7edd-479e-ab98-d3a82baa18c5)  
-   
+   ![image](https://github.com/user-attachments/assets/a902a04c-7cc6-4136-a39a-fb2c5012bef7)
+
 - [X] Login
 - [X] Logout
 - [X] Password Recovery - Email with link to recover password received successfully:  
