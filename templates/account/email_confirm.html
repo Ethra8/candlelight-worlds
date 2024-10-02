@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load account socialaccount %}
+{% load crispy_forms_tags %}
+
+{% block head_title %}{% trans "Confirm Email Address" %}{% endblock head_title %}
+
+
+{% block content %}
+<div class="container account">
+    <div>
+        <div class="row">
+            <div class="col-12 mt-3 mx-0">
+
+                <h3>{% trans "Confirm Email Address" %}</h3>
+
+                {% if confirmation %}
+
+                {% user_display confirmation.email_address.user as user_display %}
+
+                {% if can_confirm %}
+                <p>{% blocktrans with confirmation.email_address.email as email %}Please confirm that <a href="mailto:{{ email }}">{{ email }}</a> is an email address for user {{ user_display }}.{% endblocktrans %}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3 mx-0">
+
+                <form method="POST" action="{% url 'account_confirm_email' confirmation.key %}">
+                {% csrf_token %}
+                {{ form | crispy }}
+                    <button class="btn btn-signup right" type="submit">{% trans 'Confirm' %}</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3">
+
+                {% else %}
+                <p>{% blocktrans %}Unable to confirm {{ email }} because it is already confirmed by a different account.{% endblocktrans %}</p>
+                {% endif %}
+
+                {% else %}
+
+                {% url 'account_email' as email_url %}
+
+                <p>{% blocktrans %}This email confirmation link expired or is invalid. Please <a href="{{ email_url }}">issue a new email confirmation request</a>.{% endblocktrans %}</p>
+
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
