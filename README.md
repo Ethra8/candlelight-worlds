@@ -438,24 +438,24 @@ NB: The EMAIL_BACKEND during the development fase is ```EMAIL_BACKEND = 'django.
    os.environ['DEFAULT_FROM_EMAIL'] = '<emailsendertocustomer@example.com>'
    ```
 
-### CONFIGURE ADMIN PANEL - EMAILS
+### CONFIGURE ADMIN PANEL - SEND EMAIL
 Default configuration of the sender from whom the user receives mails sent from the site need to be customized. Otherwise, this is the email sender the user receives with the default configuration:  
   
   ![image](https://github.com/user-attachments/assets/a983a69f-1b60-4a90-85d7-86a264e95fcf)  
 
-To replace the <example.com> with the site url:
-1. Go to admin **Sites**, and select default site:  
-
-  ![image](https://github.com/user-attachments/assets/b6f5e810-17ff-4d27-a90a-cb53c10dab17)  
+- **To replace the default <example.com> displayed with the site url**:
+  1. Go to admin **Sites**, and select default site:  
   
-  ![image](https://github.com/user-attachments/assets/f9fc7b85-be42-4f1c-97f7-5eb403400bf9)  
-
-2. Update default settings of site:
-
-  ![image](https://github.com/user-attachments/assets/9d40ec27-b7f5-4c94-8a9e-a41bcae84ad3) ![image](https://github.com/user-attachments/assets/24cc8f95-79b0-4c70-ad62-1c22b8d900f3)
-![image](https://github.com/user-attachments/assets/aea3a181-747c-4642-99bf-3b96469b3b6e)  
-
-
+    ![image](https://github.com/user-attachments/assets/b6f5e810-17ff-4d27-a90a-cb53c10dab17)  
+    
+    ![image](https://github.com/user-attachments/assets/f9fc7b85-be42-4f1c-97f7-5eb403400bf9)  
+  
+  2. **Update default settings** of site name and url:  
+    
+    ![image](https://github.com/user-attachments/assets/9d40ec27-b7f5-4c94-8a9e-a41bcae84ad3)  
+    ![image](https://github.com/user-attachments/assets/e14a4179-5b5c-44af-93d6-a42274e323d4)  
+    
+  
 # TECHNOLOGIES and METHODOLOGIES USED
 The following technologies, frameworks, libraries, programs and methodologies have been used to create this site and to deploy it. The AGILE methodology has been approached and a kanban board is linked to this project. More details on the sections below: 
 -
