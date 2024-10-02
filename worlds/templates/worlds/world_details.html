@@ -47,7 +47,7 @@
         
         // jQuery to locate p that contain span 
         // (summernote default display of text)
-        $('p:has(span)').css('margin-top', '20px');
+        $('p:has(span)').css('margin-top', '40px');
         
         // add class to summernote img (automatically placed inside p elements)
         detailsDescriptionPara.each(function(i) {
@@ -64,6 +64,7 @@
             for (var i = 0; i <= imageEl.length; ++i) {
                 var imageElement = imageEl[i];
                 // Override summernote img default inline styling 
+                imageElement.style.width = '100%';
                 // imageElement.style.height = 'auto';
                 // imageElement.style.objectfit = 'cover';
                 imageElement.classList.add('scale2');
