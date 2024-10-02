@@ -27,7 +27,7 @@
                     </div>                    
                 </div>
             </div>
-            <div id="details-img-no-summernote" class="col-12 col-lg-4 order-lg-first details-img-parent d-flex flex-column justify-content-center {% if world.image_dining_url %}d-none" aria-current="image{% endif %}">
+            <div id="details-img-no-summernote" class="col-12 col-lg-4 order-lg-first details-img-parent d-flex flex-column justify-content-center {% if world.image_dining_url %}d-none{% endif %}" aria-current="image">
                 <div class="col-12 col-md-9 col-lg-12 img-fluid mx-auto d-block w-100 h-auto"><a href="{{ world.image_dining.url }}" target="_blank"><img class="details-scale1" src="{{ world.image_dining.url }}" alt="image of the dining area"></a></div>
                 <div class="col-12 col-md-9 col-lg-12 img-fluid mx-auto d-block w-100"><a href="{{ world.image_jakuzzi.url }}" target="_blank"><img class="details-scale" src="{{ world.image_jakuzzi.url }}" alt="image of the jakuzzi"></a></div>
                 <div class="col-12 col-md-9 col-lg-12 img-fluid mx-auto d-block w-100"><a href="{{ world.image_siesta.url }}" target="_blank"><img class="details-scale" src="{{ world.image_siesta.url }}" alt="image of the siesta area"></a></div>
@@ -65,8 +65,6 @@
                 var imageElement = imageEl[i];
                 // Override summernote img default inline styling 
                 imageElement.style.width = '100%';
-                // imageElement.style.height = 'auto';
-                // imageElement.style.objectfit = 'cover';
                 imageElement.classList.add('scale2');
                 imageElement.style.border = '2px solid #21201e';
             };
