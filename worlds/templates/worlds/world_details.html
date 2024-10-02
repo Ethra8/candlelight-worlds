@@ -39,17 +39,22 @@
 
 {% block extras %}
 <script>
-    window.addEventListener('load', function () {
+    window.addEventListener('load', function() {
         const detailsDescriptionPara = $('.details-description').children('p');
         let imageEl = detailsDescriptionPara.children('img');
         const imageFile = document.getElementById('details-img-no-summernote');
         const detailsText = document.getElementsByClassName('details-text')[0];
         
-        console.log(detailsDescriptionPara);
-        console.log(imageEl);
-        detailsDescriptionPara.each(function(i){          // For each paragraph
-            if ( ($(this).find('img').length) && (!$.trim($(this).text()).length)) {   // if there is img and there's no text
-                $(this).addClass('scale2');         // Add a special CSS class
+        // jQuery to locate p that contain span 
+        // (summernote default display of text)
+        $('p:has(span)').css('margin-top', '70px');
+        
+        // add class to summernote img (automatically placed inside p elements)
+        detailsDescriptionPara.each(function(i) {
+            // For each paragraph
+            if (($(this).find('img').length) && (!$.trim($(this).text()).length)) {
+                // if there is img and there's no text
+                $(this).addClass('scale2');
             }
         });
 
@@ -58,13 +63,14 @@
             detailsText.classList.remove('col-lg-8');
             for (var i = 0; i <= imageEl.length; ++i) {
                 var imageElement = imageEl[i];
-                // Override inner style in img added via summernote 
+                // Override summernote img default inline styling 
                 imageElement.style.width = '100%';
                 imageElement.style.height = 'auto';
                 imageElement.style.objectfit = 'cover';
                 imageElement.classList.add('scale2');
-                imageElement.style.border = '2px solid #21201e'; 
-            }    
+                imageElement.style.border = '2px solid #21201e';
+            };
+
         }
     })
 </script>
