@@ -77,19 +77,19 @@ Edna Torres Munill
 
   
 # UX
-You will find in the points stated below a brief study aiming at providing the user with the best possible experience when visiting this site.
--
-
+**You will find in the points stated below a brief study aiming at providing the user with the best possible experience when visiting this site.**  
+  
+  
 ## TARGET AUDIENCE
 The target audience of this site are as follows:  
   
 - **B2C:**
   * Couples at any age wanting to add special memories
-  * Someone looking for the special gift to offer
-
-- **B2B:**
-  * Companies that might want to offer a special gift to their premium clients or collaborators
+  * Someone looking for the special gift to offer  
   
+- **B2B:**
+  * Companies that might want to offer a special gift to their premium clients or collaborators  
+   
 ## GOALS
 
 ### PROJECT GOALS
@@ -97,46 +97,55 @@ The target audience of this site are as follows:
   * The site aims at providing customers with luxuriously themed private spaces where to have any meal of the day.
   * Any users can register for an authenticated account to store, read, update and cancel their bookings.
   * All users can send a request via a contact form to receive personalized atention from the team.
-
-### EXTERNAL USER'S GOAL
-
-  * The user would like to book a world in an out-of-the-box experience/restaurant and a particular time and date.
   
+### EXTERNAL USER'S GOAL
+  
+  * The user would like to book a world in an out-of-the-box experience/restaurant and a particular time and date.
+  * The user wants to be able to asily contact the admin.
+  * The user wants to be sure that the booking is safely stored in a secure account only accessible after authentification.
+  * The user wants to be able to easily update or cancel a booking at any time.
+   
 ### SITE OWNER'S GOAL
-
-  * The site owner would like the ability to take online bookings for their eatery.
-
-
+**The site owner's goal is to...**:  
+  * Take online bookings for their eatery.
+  * Manage the site via an admin panel, from which easily create, update, or delete the following:
+      - *Worlds -or booking choices- can be created, updated or deleted.*
+      - *Bookings*
+      - *Users - and assign special access permissions when needed*
+      - *Contact Requests*
+  
+  
 ## USER STORIES
 To make the user experience on the site seamless and meaningful, the following stories have been followed as a guide to implementing functionalities of the site:
 #### As a first time B2C or B2B visitor 
-- [X] View available worlds.
-- [X] View world detail pages.
-- [X] View each worlds' details page images in full size
-- [X] Check the About page.
-- [X] Send a request via a contact form
-- [X] Sign up for an account after a conscient decision, to be able to make a booking.
+  1. [X] View available worlds.
+  2. [X] View world detail pages.
+  3. [X] View each worlds' details page images in full size
+  4. [X] Check the About page.
+  5. [X] Send a request via a contact form
+  6. [X] Sign up for an account after a conscient decision, to be able to make a booking.
   
 #### As an Authorized User 
-- [X] Easily log in and log out.  
-- [X] Easily recover my password in case I forget it.
-- [X] Receive an email to confirm my registration, so that I can be sure of my credentials.
-- [X] View a confirmation message after registering.  
-- [X] Make a booking selecting the world and time.   
-- [X] View a list with my bookings after sending the booking form.
-- [X] Update or delete a booking.  
-- [X] View confirmation message on the site for every action taken.
-- [X] Be sure that no one else can access my bookings. 
+  7. [X] Easily log in and log out.
+  8. [X] Easily recover my password in case I forget it.
+  9. [X] Receive an email to confirm my registration, so that I can be sure of my credentials.
+  10. [X] View a confirmation message after registering.
+  11. [X] Make a booking selecting the world and time.
+  12. [X] View a list with my bookings after sending the booking form.
+  13. [X] Update or delete a booking.
+  14. [X] View confirmation message on the site for every action taken.
+  15. [X] Be sure that no one else can access my bookings. 
   
 ## SITE OWNER STORIES
-To make the site owner's life easier, the following functionalities have been included on this site, to manually access and update the following from the admin panel, without touching any code:
-- [X] Add, update or delete worlds directly from the admin.  
-- [X] Edit and style the text of each world.
-- [X] Add, update or delete images from each world.
-- [X] Access from the admin the contact requests sent by users via the contact form.
-- [X] Display clearly if the request sender is an authenticated user or not.
-- [X] Display clearly if the request sender is a acting on behalf of a company.
-- [ ] Edit and style the text, display and image of the about page from the admin panel.
+To make the site owner's life easier, the following functionalities have been included on this site, to manually create, access and update the following from the admin panel, without touching any code:  
+     
+  16. [X] Add, update or delete worlds directly from the admin.  
+  17. [X] Edit and style the text of each world - [Summernote editor](#frameworks-libraries-and-programs).
+  18. [X] Add, update or delete images from each world.
+  19. [X] Access from the admin the contact requests sent by users via the contact form.
+  20. [X] Display clearly if the request sender is an authenticated user or not.
+  21. [X] Display clearly if the request sender is acting on behalf of a company.
+  22. [X] Edit and style the text, display and image of the about page from the admin panel.
   
   
 ## USER PROFILES
