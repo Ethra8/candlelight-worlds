@@ -871,7 +871,7 @@ Please find the correspondent **compatibility and responsive testing** reflected
 | [5](#test-5)        | BrowserStack       | [Samsung Galaxy S22 Ultra](https://blisk.io/devices/details/galaxy-s22-ultra)| Chrome | Android 13.0  |384 x 824  |
 | [6](#test-6)        | BrowserStack       | [iPhone 14](https://blisk.io/devices/details/iphone-14) | Safari 16.5  | iOS    |390 x 844                   |
 | [7](#test-7)        | REAL Laptop Device | HP Laptop 15s-fq4xxx| Chrome 129.0.6668.72    |Windows 11 Home|1536 x 776                    |
-| [8](#test-8)       | BrowserStack               | HP Laptop 15s-fq4xxx         | Opera 114        | Windows 11 -64bit           |1440 x 900                    |
+| [8](#test-8)       | BrowserStack               | HP Laptop 15s-fq4xxx         | Opera 114        | Windows 11 -64bit           |1536 x 776                    |
 
 
 ### TEST RESULT VIDEOS
