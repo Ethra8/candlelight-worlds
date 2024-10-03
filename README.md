@@ -1168,7 +1168,8 @@ frimufilms](https://www.freepik.com/author/frimufilms) at [Freepik](https://www.
  
 **NB:** All other images on the site have been generated with AI using *ChatGPT* exclusively for this site by the author, and can be accessed by clicking on each. 
 
-## ACKNOWLEDGEMENTS
+## ACKNOWLEDGEMENTS & THANKS YOUS
+- Special thanks to the tutoring team at [Code Institute](https://codeinstitute.net/global/full-stack-software-development-diploma) and to my mentor Rory Patrick Sheridan.
 - Sites thoroughly researched: [Stackoverflow](https://stackoverflow.com/), [Django Projects Forum](https://forum.djangoproject.com/).
 - [rusingh *Ru*'s Blog](https://rusingh.com/)
 - [Open Source](https://opensource.com) for their article on [smtp](https://opensource.com/article/22/12/django-send-emails-smtp).
