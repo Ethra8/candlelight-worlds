@@ -26,7 +26,7 @@ Edna Torres Munill
   * [Author](#author)
 - [UX](#ux)
   * [Target Audience](#target-audience)
-  * [Project Goals](#project-goals)
+  * [Goals](#goals)
   * [Stories](#stories)
     - [User Stories](#user-stories)
     - [Site Owner Stories](#site-owner-stories)
@@ -262,28 +262,45 @@ This site contains the following features:
 
      
 
-- **Backgroung image**: Fixed to the background of the body, the hero image takes up all of the available space in all types fo devices:
+- **Backgroung image**: Fixed to the background of the body, the [hero image](#hero-image) takes up all of the available space in all types fo devices:
 - **Background overlay**: Fixed an the upper layer of the background image, it increases opacity of hero image fixed on the body to *improve visual accessibility* of text.
+  ![image](https://github.com/user-attachments/assets/e6775721-7866-43b9-b0f9-b08e67e55192)
+
+  ![image](https://github.com/user-attachments/assets/eac2e7cf-da79-4bc8-91d7-cdd4f5932165)
+  
   
 - **Footer**: Pushed to the bottom, contains social media icons with links to each social media pages.
   ![image](https://github.com/user-attachments/assets/dca018aa-3786-454f-9f0f-7b87914d88e9)
 
-
+  
 - **Booking Form**: A *crispy form* to book a world. The form contains a styled *Book Now* button below the following fields:
   * ***World selector***: Prepopulates automatically when user accesses the bookign form from the *Book Now!* button on the *world details page*
   * ***Date picker***
   * ***Time frame*** selector
+
+    ![image](https://github.com/user-attachments/assets/357753f6-ff5a-4cce-a7ee-dcc6826beefe)
+
 - **Contact Form**: A ***crispy form*** to contact the site's owner. a styled *Submit* button below the following fields, all of which are mandatory but the *company name* field:
   * ***name****
   * ***company name*** - in case a company wants to contact, and keep trac kof B2B customers and request.
   * ***email****
   * ***message****
+
+    ![image](https://github.com/user-attachments/assets/908693ed-a34b-4276-9e63-460b814a0adb)
+  
 - **Buttons**: All buttons are styled equally for design consistency. The *background colour* is the main theme colour *#f69700*. On *hover*, it slightly darkens to *#b57002* while the *font* colour remains dark grey *#21201e*.
 - **Icons**: All icons are taken from *Fontawesome*, and have been styled to match the site's design:
   * ***User icon***: Placed on the navigation bar, it enables unidentified users to easily login or register for an account, and also enables authentified users to access their booking list, and to logout. It has been styled matching the main colour of the theme #f69700.
-  * ***Update Booking icon***: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to update the booking to a new date, time, or world all together. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.
+
+     ![image](https://github.com/user-attachments/assets/a20e1b11-fa71-4f78-b9b9-ba6bef68805f)
+
+     ![image](https://github.com/user-attachments/assets/3b26dd9f-a6cf-4fa9-9d2d-050d93699d6b)
+
+
+  * ***Update Booking icon***: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to update the booking to a new date, time, or world all together. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.    
   * ***Delete Booking icon***: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to delete the booking. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.
 
+  ![image](https://github.com/user-attachments/assets/f89dc364-dfd3-423b-aecf-67ee75a7e753)
   
 ## PAGES
 This site contains the following responsive pages, all of which contain the following features which are placed on the **body** element of the *base.html* template, that acts as the main dynamic *django template* for all the other pages of the site. For further details on each feature of the **body** which frames each page, please refer to [features](#features).  
@@ -372,10 +389,38 @@ The **booking form page** corresponds to the *booking_new.html* template from th
    * *Time* - A dropdown with two available time frames (daytime or nightime) for the user to select.
    * *Button* - A button styled as detailed in the [feature section](#features) that reads 'Book Now'.
 
-### BOOKING UPDATE PAGE
+#### MOBILE
+  
+  ![image](https://github.com/user-attachments/assets/04b2ec50-643b-420c-aa72-59e4f3d2d86a)
 
   
+#### DESKTOP
+
+  ![image](https://github.com/user-attachments/assets/7e250a78-7c10-4f3a-91d9-00d3b6952bf2)
+
+  
+### BOOKING UPDATE PAGE
+
+#### MOBILE
+
+  ![image](https://github.com/user-attachments/assets/d8f1b4cc-8e51-443f-9016-0ebc81e02795)  
+ 
+
+  
+#### DESKTOP
+
+  ![image](https://github.com/user-attachments/assets/b38efd85-23d2-4f59-8266-4ed1cbe4739c)  
+
+    
 ### CONTACT PAGE
+#### MOBILE
+
+   ![image](https://github.com/user-attachments/assets/a8114588-0461-4935-8c0f-9d1366b7552f)  
+
+ 
+#### DESKTOP
+
+  ![image](https://github.com/user-attachments/assets/99cb4ba4-7094-458b-8bb8-c893833f99f2)  
 
   
 ### 404 ERROR PAGE
@@ -397,17 +442,160 @@ Whenever the user erroneously changes an url, or a 404 error occurs, this page w
 
 
 ## CRUD FUNCTIONALITIES
-The following basic *CRUD* functionalities have been implementes to this site, as detailed below:  
+The following basic *CRUD* functionalities have been implementes to this site, as detailed below:
+
+The model on which users can perform the complete CRUD functionality os the **Booking** model:
+
+  ```
+TIME_SLOTS = [
+    ('10 am - 5 pm', '10 am - 5 pm'),
+    ('7 pm - 8 am', '7 pm - 8 am'),
+]
+
+class Booking(models.Model):
+    user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
+    world = models.ForeignKey('worlds.World', on_delete=models.CASCADE, default=1)
+    date = models.DateField()
+    time = models.CharField(max_length=19, choices=TIME_SLOTS)
+
+    def __str__(self):
+        return f'Booking {self.id} - {self.user.username} - {self.world.display_name} - {self.date} - {self.get_time_display()}'
+```
+
+The Form model enables users to create a booking. The form uses ***crispy-forms*** from Django:  
+
+  ```
+class BookingForm(forms.ModelForm):
+    def __init__(self, *args, **kwargs):
+        super(BookingForm, self).__init__(*args, **kwargs)
+        self.helper = FormHelper()
+        self.helper.form_method = 'post'
+        self.helper.add_input(Submit('submit', 'Book Now'))
+
+    class Meta:
+        model = Booking
+        exclude = ['user']
+        widgets = {
+            'date': forms.DateInput(attrs={'type': 'date'}),
+        }
+
+    # Add validation for 'date' field
+    def clean_date(self):
+        booking_date = self.cleaned_data.get('date')
+
+        # Get today's date
+        today = date.today()
+
+        # Check if booking date is in past or today
+        if booking_date <= today:
+            raise ValidationError("You cannot book for today or past dates. Please select a future date.")
+
+        return booking_date
+```
+
   
 ### CREATE
 1. Users can **create an account** by accessing the *sing-up* option in the dropdown of the user-icon placed in the navigation bar. They then become authenticated users.
 2. The authenticated user can **create a booking** via the *booking form*, generated by crispy forms after the ***bookings.models.Booking*** **model** and ***bookings.forms.BookingForm*** **form** displayed by the ***bookings.views.booking_new*** **view** via two different urls the ***/bookings/new*** **url** on the ***booking_new.html*** **template** which is stored in the project directory folder ***bookings/booking_new.html***.
+
+The booking is created through this **view** in booking/views.py file:  
+
+  ```
+class CreateBookingView(LoginRequiredMixin, CreateView):
+    model = Booking
+    form_class = BookingForm
+    template_name = 'bookings/booking_form.html'
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        temp_booking = form.save(commit=False)
+        # check if time/ date is available
+        existing_bookings = Booking.objects\
+            .filter(date=temp_booking.date)\
+            .filter(time=temp_booking.time)\
+            .filter(world=temp_booking.world)
+            
+        if existing_bookings :
+            messages.warning(self.request, f'At {temp_booking.time} on {temp_booking.date}, our {temp_booking.world} is already booked')
+            return redirect(reverse('booking_new'))
+        else:
+            messages.success(self.request, 'Your booking is confirmed')
+            temp_booking.save()
+        return redirect(reverse('booking_list'))
+```
+   
 ### READ
+The authenticated user can read and view their bookings displayed as a list:  
+  
+  ![image](https://github.com/user-attachments/assets/f0f31459-bce6-487b-b120-cfd9a0decd97)  
 
+The booking list is displayed through the following **view** in bookings/views.py file:  
+
+  ```
+class BookingListView(LoginRequiredMixin, ListView):
+    model = Booking
+
+    def get_queryset(self, **kwargs):
+       qs = super().get_queryset(**kwargs).order_by('date')
+       return qs.filter(user=self.request.user)
+```
+  
 ### UPDATE
+The authenticated users can update their bookings directly from the booking list. The view checks availability, and changes are rejected with a message to the user in case the world is not available on the selected date. It also throws validation error if the user selects a date that is not in the future:
+  
+  https://github.com/user-attachments/assets/b4e3abd2-31db-4961-9cbb-d3000b24328d  
 
+The booking is updated through the following **view** in bookings/views.py file:  
+
+  ```
+class BookingUpdateView(LoginRequiredMixin, UpdateView):
+    model = Booking
+    form_class = BookingForm  # Use BookingForm instead of fields
+    template_name_suffix = "_update_form"
+
+    def form_valid(self, form):
+        # Make sure that booking can only be accessed by the logged-in user
+        if form.instance.user != self.request.user:
+            messages.warning(self.request, 'You can only update your own bookings!')
+            return redirect(reverse('booking_list'))
+
+        temp_booking = form.save(commit=False)
+        # Check if the time/date is available
+        existing_bookings = Booking.objects\
+            .filter(date=temp_booking.date)\
+            .filter(world=temp_booking.world)
+
+        if existing_bookings:
+            messages.warning(self.request, f'At {temp_booking.time} on {temp_booking.date}, our {temp_booking.world} is already booked')
+            return redirect(f'/bookings/update/{temp_booking.pk}/')
+        else:
+            messages.success(self.request, "Your booking's changes are confirmed!")
+            temp_booking.save()
+
+        return redirect(f'/bookings/manage/')
+```
+
+   
 ### DELETE
+The authenticated user can delete any booking at any time:  
+  
+  https://github.com/user-attachments/assets/ab504481-22d4-4d10-9bdc-5492c852726a
+  
+The booking is cancelled by the following **view** in the bookings/views.py file:  
 
+  ```
+class BookingDeleteView(LoginRequiredMixin, DeleteView):
+    model = Booking
+    template_name = 'bookings/booking_confirm_delete.html'
+    success_url = reverse_lazy('booking_list')
+    
+    # add def post() instead of delete() to avoid booking getting deleted before showing message
+    def post(self, request, *args, **kwargs):
+        messages.success(self.request, "Your booking has successfully been deleted.")
+        return super().post(request, *args, **kwargs)
+```
+
+  
 ## VERIFICATION MAIL - STMP
 The user authentication requires **email verification** for the registration to succeed. This site uses sends verification emails via *smtp*. To do so, please follow these instructions if you are using Gmail services:  
 
