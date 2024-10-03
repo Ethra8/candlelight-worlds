@@ -876,17 +876,12 @@ Please find the correspondent **compatibility and responsive testing** reflected
 |---------|--------------------|----------------------|--------------------|-----------------|------------------------------|
 | [1](#test-1)        | Chrome Dev emulator| [Samsung Galaxy S8](https://blisk.io/devices/details/galaxy-s8)   | Chrome 117 |Windows 11  |360 x 740             | 
 | [2](#test-2)        | BrowserStack       | [Samsung Galaxy S20](https://blisk.io/devices/details/galaxy-s20)   | Edge    |Android 11.0 |360 x 800           |
-| [3](#test-3)        | BrowserStack       | Samsung Galaxy S22   | Edge               |Android 12.0     |360 x 780                     |
-| [4](#test-4)        | BrowserStack       | iPhone 12 Mini       | Safari             | iOS 16.0        |360 x 780                     |
-| [5](#test-5)        | BrowserStack       | [iPhone XS](https://blisk.io/devices/details/iphone-xs)| Safari   | iOS 15.0   |375 x 812            |
-| [6](#test-6)        | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 729                     |
-| [7](#test-7)        | BrowserStack       | [Samsung Galaxy S22 Ultra](https://blisk.io/devices/details/galaxy-s22-ultra)| Chrome | Android 13.0  |384 x 824  |
-| [8](#test-8)        | BrowserStack       | [iPhone 14](https://blisk.io/devices/details/iphone-14) | Safari 16.5  | iOS    |390 x 844                   |
-| [9](#test-9)        | REAL Laptop Device | PC Notebook HP -15-bs013ns| Chrome 117    |Windows 10 -64bit|1366 x 768                    |
-| [10](#test-10)       | Blisk              | MacBook Pro          | Chrome 117         | macOS           |1440 x 900                    |
-| [11](#test-11)       | BrowserStack       | Asus ZenBook UX305   | Edge               |Windows 11       |1920 x 1080                   |
-| [12](#test-12)       | BrowserStack       | Asus ZenBook UX305   | Firefox 117        |Windows 11       |1920 x 1080                   |
-| [13](#test-13)       | BrowserStack       | MacBook              | Safari 16.5        | OS X Ventura    |1920 x 1080                   |
+| [3](#test-3)        | BrowserStack       | [iPhone XS](https://blisk.io/devices/details/iphone-xs)| Safari   | iOS 15.0   |375 x 812            |
+| [4](#test-4)        | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 729                     |
+| [5](#test-5)        | BrowserStack       | [Samsung Galaxy S22 Ultra](https://blisk.io/devices/details/galaxy-s22-ultra)| Chrome | Android 13.0  |384 x 824  |
+| [6](#test-6)        | BrowserStack       | [iPhone 14](https://blisk.io/devices/details/iphone-14) | Safari 16.5  | iOS    |390 x 844                   |
+| [7](#test-7)        | REAL Laptop Device | HP Laptop 15s-fq4xxx| Chrome 129.0.6668.72    |Windows 11 Home|1536 x 776                    |
+| [8](#test-8)       | BrowserStack               | HP Laptop 15s-fq4xxx         | Opera 114        | Windows 11 -64bit           |1440 x 900                    |
 
 
 ### TEST RESULT VIDEOS
@@ -905,31 +900,36 @@ TEST 3
 -
 TEST 4
 -
-TEST 5
--
-TEST 6
--
 
 https://github.com/user-attachments/assets/23fa1a68-13d4-40b8-8cca-e5cecfb7778a
 
 
-TEST 7
+TEST 5
 -  
 
 https://github.com/user-attachments/assets/94540408-fa29-4702-8653-f4cdb78a8500
 
   
-TEST 8
+TEST 6
 -  
 
 https://github.com/user-attachments/assets/aebd1c9b-e0bd-4dda-9b94-44b5e51c5645
 
 
 
-TEST 9
+TEST 7
 -
-TEST 10
+
+https://github.com/user-attachments/assets/271752f8-f3a2-4766-a8fd-94a737caf1ce
+
+
+
+TEST 8
 -
+
+https://github.com/user-attachments/assets/5922351e-4d5c-4b36-ad6b-074cf78e7e82
+
+
 
 
 ## ACCESSIBILITY TESTING
