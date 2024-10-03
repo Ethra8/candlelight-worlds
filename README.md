@@ -764,7 +764,68 @@ The validation of the code has been successful. The validator used has been [JSh
 
 
 ### PYTHON 3.12
-**Validation has been done using [CI Python Linter by Code Institute](https://pep8ci.herokuapp.com/), and the results have been the following:**
+**Validation has been done using [CI Python Linter by Code Institute](https://pep8ci.herokuapp.com/), and the results have been the following:**  
+#### ABOUT APP
+   * admin.py
+     ![image](https://github.com/user-attachments/assets/c64e988c-b9c8-4549-b8a0-fdbf1071821a)
+   * models.py
+     ![image](https://github.com/user-attachments/assets/f116e499-cd29-49fa-bfc6-7a9da8568d22)
+   * views.py
+     ![image](https://github.com/user-attachments/assets/1a101a0c-1ccb-464b-a31b-ae0b3b5ed8fc)
+
+#### BOOKING APP
+   * admin.py
+     ![image](https://github.com/user-attachments/assets/5fea1645-4f1c-4bde-881d-43da20f86cef)
+   * forms.py
+     ![image](https://github.com/user-attachments/assets/a21204f8-c047-42ca-9bf9-914875523fcd)
+
+   * models.py
+     ![image](https://github.com/user-attachments/assets/b47d8cce-7f02-4564-b074-931e8bfc9cd3)
+
+   * views.py
+     ![image](https://github.com/user-attachments/assets/b93b0d58-787c-45d8-b717-92e58fdd9c67)
+
+#### CANDLELIGHT PROJECT
+   * settings.py
+     ![image](https://github.com/user-attachments/assets/9c19decd-f777-47a3-b86c-f7e13e0ed1f1)
+
+#### CONTACTS APP
+   * admin.py
+     ![image](https://github.com/user-attachments/assets/7f991772-ca03-40e2-9d49-6b7e07c98b2a)
+
+   * forms.py
+     ![image](https://github.com/user-attachments/assets/e72801be-41c7-40e4-bb87-f95bc3e8809e)
+
+   * models.py
+     ![image](https://github.com/user-attachments/assets/b99375d5-077f-4937-9970-d6d13e5f30b3)
+
+   * views.py
+     ![image](https://github.com/user-attachments/assets/6dfd7dd4-b91d-423e-924b-8ad7f61084c9)
+  
+#### HOME APP
+   * views.py
+     ![image](https://github.com/user-attachments/assets/2541d55d-6b23-4641-bfad-2a835995f4eb)
+
+#### WORLDS APP
+   * admin.py
+     ![image](https://github.com/user-attachments/assets/fe27ec5d-db6f-42ae-83e0-d1f715f35c5c)
+
+   * models.py
+     ![image](https://github.com/user-attachments/assets/8e747760-66ac-4343-85cd-1b98b4a685f6)
+
+   * views.py
+     ![image](https://github.com/user-attachments/assets/e759f88d-b4d5-4a9e-a0d8-8e4bad188bae)
+  
+
+
+
+
+
+     
+
+
+
+
 
   
 ## DEFECT TRACKING
