@@ -432,12 +432,14 @@ Whenever the user erroneously changes an url, or a 404 error occurs, this page w
 
 #### MOBILE
 
-  ![image](https://github.com/user-attachments/assets/badec76b-ed5c-4553-a229-64d06535d276)
+  ![image](https://github.com/user-attachments/assets/fbacf3ce-d045-4917-91de-a8c3d655a0bf)
+
 
 
 #### DESkTOP
 
-  ![image](https://github.com/user-attachments/assets/be12bb78-6b23-48d9-a1f2-746c8cb1ec51)
+  ![image](https://github.com/user-attachments/assets/7ca37273-a35c-4c49-b7ed-a824f124f145)
+
 
 
 
