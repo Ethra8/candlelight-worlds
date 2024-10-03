@@ -26,7 +26,7 @@ Edna Torres Munill
   * [Author](#author)
 - [UX](#ux)
   * [Target Audience](#target-audience)
-  * [Project Goals](#project-goals)
+  * [Goals](#goals)
   * [Stories](#stories)
     - [User Stories](#user-stories)
     - [Site Owner Stories](#site-owner-stories)
@@ -262,28 +262,45 @@ This site contains the following features:
 
      
 
-- **Backgroung image**: Fixed to the background of the body, the hero image takes up all of the available space in all types fo devices:
+- **Backgroung image**: Fixed to the background of the body, the [hero image](#hero-image) takes up all of the available space in all types fo devices:
 - **Background overlay**: Fixed an the upper layer of the background image, it increases opacity of hero image fixed on the body to *improve visual accessibility* of text.
+  ![image](https://github.com/user-attachments/assets/e6775721-7866-43b9-b0f9-b08e67e55192)
+
+  ![image](https://github.com/user-attachments/assets/eac2e7cf-da79-4bc8-91d7-cdd4f5932165)
+  
   
 - **Footer**: Pushed to the bottom, contains social media icons with links to each social media pages.
   ![image](https://github.com/user-attachments/assets/dca018aa-3786-454f-9f0f-7b87914d88e9)
 
-
+  
 - **Booking Form**: A *crispy form* to book a world. The form contains a styled *Book Now* button below the following fields:
   * ***World selector***: Prepopulates automatically when user accesses the bookign form from the *Book Now!* button on the *world details page*
   * ***Date picker***
   * ***Time frame*** selector
+
+    ![image](https://github.com/user-attachments/assets/357753f6-ff5a-4cce-a7ee-dcc6826beefe)
+
 - **Contact Form**: A ***crispy form*** to contact the site's owner. a styled *Submit* button below the following fields, all of which are mandatory but the *company name* field:
   * ***name****
   * ***company name*** - in case a company wants to contact, and keep trac kof B2B customers and request.
   * ***email****
   * ***message****
+
+    ![image](https://github.com/user-attachments/assets/908693ed-a34b-4276-9e63-460b814a0adb)
+  
 - **Buttons**: All buttons are styled equally for design consistency. The *background colour* is the main theme colour *#f69700*. On *hover*, it slightly darkens to *#b57002* while the *font* colour remains dark grey *#21201e*.
 - **Icons**: All icons are taken from *Fontawesome*, and have been styled to match the site's design:
   * ***User icon***: Placed on the navigation bar, it enables unidentified users to easily login or register for an account, and also enables authentified users to access their booking list, and to logout. It has been styled matching the main colour of the theme #f69700.
-  * ***Update Booking icon***: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to update the booking to a new date, time, or world all together. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.
+
+     ![image](https://github.com/user-attachments/assets/a20e1b11-fa71-4f78-b9b9-ba6bef68805f)
+
+     ![image](https://github.com/user-attachments/assets/3b26dd9f-a6cf-4fa9-9d2d-050d93699d6b)
+
+
+  * ***Update Booking icon***: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to update the booking to a new date, time, or world all together. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.    
   * ***Delete Booking icon***: Placed on each individual booking item on the *Booking List* page, it enables the user upon clicking it to delete the booking. Its colour matches the font's light grey of the site #dbd0ba, and *on hover*, it turns to the main theme's *'candlelight'* colour #f69700.
 
+  ![image](https://github.com/user-attachments/assets/f89dc364-dfd3-423b-aecf-67ee75a7e753)
   
 ## PAGES
 This site contains the following responsive pages, all of which contain the following features which are placed on the **body** element of the *base.html* template, that acts as the main dynamic *django template* for all the other pages of the site. For further details on each feature of the **body** which frames each page, please refer to [features](#features).  
@@ -372,10 +389,38 @@ The **booking form page** corresponds to the *booking_new.html* template from th
    * *Time* - A dropdown with two available time frames (daytime or nightime) for the user to select.
    * *Button* - A button styled as detailed in the [feature section](#features) that reads 'Book Now'.
 
-### BOOKING UPDATE PAGE
+#### MOBILE
+  
+  ![image](https://github.com/user-attachments/assets/04b2ec50-643b-420c-aa72-59e4f3d2d86a)
 
   
+#### DESKTOP
+
+  ![image](https://github.com/user-attachments/assets/7e250a78-7c10-4f3a-91d9-00d3b6952bf2)
+
+  
+### BOOKING UPDATE PAGE
+
+#### MOBILE
+
+  ![image](https://github.com/user-attachments/assets/d8f1b4cc-8e51-443f-9016-0ebc81e02795)  
+ 
+
+  
+#### DESKTOP
+
+  ![image](https://github.com/user-attachments/assets/b38efd85-23d2-4f59-8266-4ed1cbe4739c)  
+
+    
 ### CONTACT PAGE
+#### MOBILE
+
+   ![image](https://github.com/user-attachments/assets/a8114588-0461-4935-8c0f-9d1366b7552f)  
+
+ 
+#### DESKTOP
+
+  ![image](https://github.com/user-attachments/assets/99cb4ba4-7094-458b-8bb8-c893833f99f2)  
 
   
 ### 404 ERROR PAGE
@@ -387,27 +432,172 @@ Whenever the user erroneously changes an url, or a 404 error occurs, this page w
 
 #### MOBILE
 
-  ![image](https://github.com/user-attachments/assets/badec76b-ed5c-4553-a229-64d06535d276)
+  ![image](https://github.com/user-attachments/assets/fbacf3ce-d045-4917-91de-a8c3d655a0bf)
+
 
 
 #### DESkTOP
 
-  ![image](https://github.com/user-attachments/assets/be12bb78-6b23-48d9-a1f2-746c8cb1ec51)
+  ![image](https://github.com/user-attachments/assets/7ca37273-a35c-4c49-b7ed-a824f124f145)
+
 
 
 
 ## CRUD FUNCTIONALITIES
-The following basic *CRUD* functionalities have been implementes to this site, as detailed below:  
+The following basic *CRUD* functionalities have been implementes to this site, as detailed below:
+
+The model on which users can perform the complete CRUD functionality os the **Booking** model:
+
+  ```
+TIME_SLOTS = [
+    ('10 am - 5 pm', '10 am - 5 pm'),
+    ('7 pm - 8 am', '7 pm - 8 am'),
+]
+
+class Booking(models.Model):
+    user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
+    world = models.ForeignKey('worlds.World', on_delete=models.CASCADE, default=1)
+    date = models.DateField()
+    time = models.CharField(max_length=19, choices=TIME_SLOTS)
+
+    def __str__(self):
+        return f'Booking {self.id} - {self.user.username} - {self.world.display_name} - {self.date} - {self.get_time_display()}'
+```
+
+The Form model enables users to create a booking. The form uses ***crispy-forms*** from Django:  
+
+  ```
+class BookingForm(forms.ModelForm):
+    def __init__(self, *args, **kwargs):
+        super(BookingForm, self).__init__(*args, **kwargs)
+        self.helper = FormHelper()
+        self.helper.form_method = 'post'
+        self.helper.add_input(Submit('submit', 'Book Now'))
+
+    class Meta:
+        model = Booking
+        exclude = ['user']
+        widgets = {
+            'date': forms.DateInput(attrs={'type': 'date'}),
+        }
+
+    # Add validation for 'date' field
+    def clean_date(self):
+        booking_date = self.cleaned_data.get('date')
+
+        # Get today's date
+        today = date.today()
+
+        # Check if booking date is in past or today
+        if booking_date <= today:
+            raise ValidationError("You cannot book for today or past dates. Please select a future date.")
+
+        return booking_date
+```
+
   
 ### CREATE
 1. Users can **create an account** by accessing the *sing-up* option in the dropdown of the user-icon placed in the navigation bar. They then become authenticated users.
 2. The authenticated user can **create a booking** via the *booking form*, generated by crispy forms after the ***bookings.models.Booking*** **model** and ***bookings.forms.BookingForm*** **form** displayed by the ***bookings.views.booking_new*** **view** via two different urls the ***/bookings/new*** **url** on the ***booking_new.html*** **template** which is stored in the project directory folder ***bookings/booking_new.html***.
+
+The booking is created through this **view** in booking/views.py file:  
+
+  ```
+class CreateBookingView(LoginRequiredMixin, CreateView):
+    model = Booking
+    form_class = BookingForm
+    template_name = 'bookings/booking_form.html'
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        temp_booking = form.save(commit=False)
+        # check if time/ date is available
+        existing_bookings = Booking.objects\
+            .filter(date=temp_booking.date)\
+            .filter(time=temp_booking.time)\
+            .filter(world=temp_booking.world)
+            
+        if existing_bookings :
+            messages.warning(self.request, f'At {temp_booking.time} on {temp_booking.date}, our {temp_booking.world} is already booked')
+            return redirect(reverse('booking_new'))
+        else:
+            messages.success(self.request, 'Your booking is confirmed')
+            temp_booking.save()
+        return redirect(reverse('booking_list'))
+```
+   
 ### READ
+The authenticated user can read and view their bookings displayed as a list:  
+  
+  ![image](https://github.com/user-attachments/assets/f0f31459-bce6-487b-b120-cfd9a0decd97)  
 
+The booking list is displayed through the following **view** in bookings/views.py file:  
+
+  ```
+class BookingListView(LoginRequiredMixin, ListView):
+    model = Booking
+
+    def get_queryset(self, **kwargs):
+       qs = super().get_queryset(**kwargs).order_by('date')
+       return qs.filter(user=self.request.user)
+```
+  
 ### UPDATE
+The authenticated users can update their bookings directly from the booking list. The view checks availability, and changes are rejected with a message to the user in case the world is not available on the selected date. It also throws validation error if the user selects a date that is not in the future:
+  
+  https://github.com/user-attachments/assets/b4e3abd2-31db-4961-9cbb-d3000b24328d  
 
+The booking is updated through the following **view** in bookings/views.py file:  
+
+  ```
+class BookingUpdateView(LoginRequiredMixin, UpdateView):
+    model = Booking
+    form_class = BookingForm  # Use BookingForm instead of fields
+    template_name_suffix = "_update_form"
+
+    def form_valid(self, form):
+        # Make sure that booking can only be accessed by the logged-in user
+        if form.instance.user != self.request.user:
+            messages.warning(self.request, 'You can only update your own bookings!')
+            return redirect(reverse('booking_list'))
+
+        temp_booking = form.save(commit=False)
+        # Check if the time/date is available
+        existing_bookings = Booking.objects\
+            .filter(date=temp_booking.date)\
+            .filter(world=temp_booking.world)
+
+        if existing_bookings:
+            messages.warning(self.request, f'At {temp_booking.time} on {temp_booking.date}, our {temp_booking.world} is already booked')
+            return redirect(f'/bookings/update/{temp_booking.pk}/')
+        else:
+            messages.success(self.request, "Your booking's changes are confirmed!")
+            temp_booking.save()
+
+        return redirect(f'/bookings/manage/')
+```
+
+   
 ### DELETE
+The authenticated user can delete any booking at any time:  
+  
+  https://github.com/user-attachments/assets/ab504481-22d4-4d10-9bdc-5492c852726a
+  
+The booking is cancelled by the following **view** in the bookings/views.py file:  
 
+  ```
+class BookingDeleteView(LoginRequiredMixin, DeleteView):
+    model = Booking
+    template_name = 'bookings/booking_confirm_delete.html'
+    success_url = reverse_lazy('booking_list')
+    
+    # add def post() instead of delete() to avoid booking getting deleted before showing message
+    def post(self, request, *args, **kwargs):
+        messages.success(self.request, "Your booking has successfully been deleted.")
+        return super().post(request, *args, **kwargs)
+```
+
+  
 ## VERIFICATION MAIL - STMP
 The user authentication requires **email verification** for the registration to succeed. This site uses sends verification emails via *smtp*. To do so, please follow these instructions if you are using Gmail services:  
 
@@ -574,7 +764,68 @@ The validation of the code has been successful. The validator used has been [JSh
 
 
 ### PYTHON 3.12
-**Validation has been done using [CI Python Linter by Code Institute](https://pep8ci.herokuapp.com/), and the results have been the following:**
+**Validation has been done using [CI Python Linter by Code Institute](https://pep8ci.herokuapp.com/), and the results have been the following:**  
+#### ABOUT APP
+   * admin.py
+     ![image](https://github.com/user-attachments/assets/c64e988c-b9c8-4549-b8a0-fdbf1071821a)
+   * models.py
+     ![image](https://github.com/user-attachments/assets/f116e499-cd29-49fa-bfc6-7a9da8568d22)
+   * views.py
+     ![image](https://github.com/user-attachments/assets/1a101a0c-1ccb-464b-a31b-ae0b3b5ed8fc)
+
+#### BOOKING APP
+   * admin.py
+     ![image](https://github.com/user-attachments/assets/5fea1645-4f1c-4bde-881d-43da20f86cef)
+   * forms.py
+     ![image](https://github.com/user-attachments/assets/a21204f8-c047-42ca-9bf9-914875523fcd)
+
+   * models.py
+     ![image](https://github.com/user-attachments/assets/b47d8cce-7f02-4564-b074-931e8bfc9cd3)
+
+   * views.py
+     ![image](https://github.com/user-attachments/assets/b93b0d58-787c-45d8-b717-92e58fdd9c67)
+
+#### CANDLELIGHT PROJECT
+   * settings.py
+     ![image](https://github.com/user-attachments/assets/9c19decd-f777-47a3-b86c-f7e13e0ed1f1)
+
+#### CONTACTS APP
+   * admin.py
+     ![image](https://github.com/user-attachments/assets/7f991772-ca03-40e2-9d49-6b7e07c98b2a)
+
+   * forms.py
+     ![image](https://github.com/user-attachments/assets/e72801be-41c7-40e4-bb87-f95bc3e8809e)
+
+   * models.py
+     ![image](https://github.com/user-attachments/assets/b99375d5-077f-4937-9970-d6d13e5f30b3)
+
+   * views.py
+     ![image](https://github.com/user-attachments/assets/6dfd7dd4-b91d-423e-924b-8ad7f61084c9)
+  
+#### HOME APP
+   * views.py
+     ![image](https://github.com/user-attachments/assets/2541d55d-6b23-4641-bfad-2a835995f4eb)
+
+#### WORLDS APP
+   * admin.py
+     ![image](https://github.com/user-attachments/assets/fe27ec5d-db6f-42ae-83e0-d1f715f35c5c)
+
+   * models.py
+     ![image](https://github.com/user-attachments/assets/8e747760-66ac-4343-85cd-1b98b4a685f6)
+
+   * views.py
+     ![image](https://github.com/user-attachments/assets/e759f88d-b4d5-4a9e-a0d8-8e4bad188bae)
+  
+
+
+
+
+
+     
+
+
+
+
 
   
 ## DEFECT TRACKING
@@ -625,17 +876,12 @@ Please find the correspondent **compatibility and responsive testing** reflected
 |---------|--------------------|----------------------|--------------------|-----------------|------------------------------|
 | [1](#test-1)        | Chrome Dev emulator| [Samsung Galaxy S8](https://blisk.io/devices/details/galaxy-s8)   | Chrome 117 |Windows 11  |360 x 740             | 
 | [2](#test-2)        | BrowserStack       | [Samsung Galaxy S20](https://blisk.io/devices/details/galaxy-s20)   | Edge    |Android 11.0 |360 x 800           |
-| [3](#test-3)        | BrowserStack       | Samsung Galaxy S22   | Edge               |Android 12.0     |360 x 780                     |
-| [4](#test-4)        | BrowserStack       | iPhone 12 Mini       | Safari             | iOS 16.0        |360 x 780                     |
-| [5](#test-5)        | BrowserStack       | [iPhone XS](https://blisk.io/devices/details/iphone-xs)| Safari   | iOS 15.0   |375 x 812            |
-| [6](#test-6)        | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 729                     |
-| [7](#test-7)        | BrowserStack       | [Samsung Galaxy S22 Ultra](https://blisk.io/devices/details/galaxy-s22-ultra)| Chrome | Android 13.0  |384 x 824  |
-| [8](#test-8)        | BrowserStack       | [iPhone 14](https://blisk.io/devices/details/iphone-14) | Safari 16.5  | iOS    |390 x 844                   |
-| [9](#test-9)        | REAL Laptop Device | PC Notebook HP -15-bs013ns| Chrome 117    |Windows 10 -64bit|1366 x 768                    |
-| [10](#test-10)       | Blisk              | MacBook Pro          | Chrome 117         | macOS           |1440 x 900                    |
-| [11](#test-11)       | BrowserStack       | Asus ZenBook UX305   | Edge               |Windows 11       |1920 x 1080                   |
-| [12](#test-12)       | BrowserStack       | Asus ZenBook UX305   | Firefox 117        |Windows 11       |1920 x 1080                   |
-| [13](#test-13)       | BrowserStack       | MacBook              | Safari 16.5        | OS X Ventura    |1920 x 1080                   |
+| [3](#test-3)        | BrowserStack       | [iPhone XS](https://blisk.io/devices/details/iphone-xs)| Safari   | iOS 15.0   |375 x 812            |
+| [4](#test-4)        | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 729                     |
+| [5](#test-5)        | BrowserStack       | [Samsung Galaxy S22 Ultra](https://blisk.io/devices/details/galaxy-s22-ultra)| Chrome | Android 13.0  |384 x 824  |
+| [6](#test-6)        | BrowserStack       | [iPhone 14](https://blisk.io/devices/details/iphone-14) | Safari 16.5  | iOS    |390 x 844                   |
+| [7](#test-7)        | REAL Laptop Device | HP Laptop 15s-fq4xxx| Chrome 129.0.6668.72    |Windows 11 Home|1536 x 776                    |
+| [8](#test-8)       | BrowserStack               | HP Laptop 15s-fq4xxx         | Opera 114        | Windows 11 -64bit           |1440 x 900                    |
 
 
 ### TEST RESULT VIDEOS
@@ -654,31 +900,36 @@ TEST 3
 -
 TEST 4
 -
-TEST 5
--
-TEST 6
--
 
 https://github.com/user-attachments/assets/23fa1a68-13d4-40b8-8cca-e5cecfb7778a
 
 
-TEST 7
+TEST 5
 -  
 
 https://github.com/user-attachments/assets/94540408-fa29-4702-8653-f4cdb78a8500
 
   
-TEST 8
+TEST 6
 -  
 
 https://github.com/user-attachments/assets/aebd1c9b-e0bd-4dda-9b94-44b5e51c5645
 
 
 
-TEST 9
+TEST 7
 -
-TEST 10
+
+https://github.com/user-attachments/assets/271752f8-f3a2-4766-a8fd-94a737caf1ce
+
+
+
+TEST 8
 -
+
+https://github.com/user-attachments/assets/5922351e-4d5c-4b36-ad6b-074cf78e7e82
+
+
 
 
 ## ACCESSIBILITY TESTING
@@ -705,20 +956,98 @@ All tests have passed at level AAA. The following reports have been generated by
 
 ### LIGHTHOUSE REPORTS
 #### MOBILE
-
+- **HOME PAGE**
+  
   ![image](https://github.com/user-attachments/assets/6cb248f4-a337-440e-aec1-fdcead09cbcc)
 
-  [lighhouse-report-mobile.pdf](https://github.com/user-attachments/files/17236975/lighhouse-report-mobile.pdf)
 
+- **WORLDS PAGE**  
+
+  ![image](https://github.com/user-attachments/assets/0bbb2ca4-d799-4ade-b2ee-d37e5678fb2b)
+    
+
+- **WORLD DETAILS PAGE**
+In this page, the sidte owner has both the option to upload the three images as independent files, or to include images inside Summernote editor. **The summernote editor doesn't seem to have a good performance when displaying images whithin**, and for this reason **it is highly recommended to upload the image files independently**:
+     
+  * With images ***not included in Summernote editor***, and uploaded as independent files:  
   
-#### DESKTOP
+    - **MOBILE**
+      ![image](https://github.com/user-attachments/assets/0c3d7a12-df07-4f6b-961e-648484f29ec5)  
+   
+    - **DESKTOP**
+      ![image](https://github.com/user-attachments/assets/76814e02-8143-4b52-8ca9-4963ae61fefe)  
+   
+  * With images ***included in Summernote editor*** instead of been uploaded as independent files, the performance and overall results lower substancially, so is therefor enot recommended:  
+    
+    - **MOBILE**
+      ![image](https://github.com/user-attachments/assets/a8e278b3-d797-4878-bb4c-259ff9d1f7cd)  
+    
+    - **DESKTOP**
+      ![image](https://github.com/user-attachments/assets/ad889029-7605-4d89-b465-093ee4e15431)  
+   
+- **BOOKING FORM PAGE**  
 
-  ![image](https://github.com/user-attachments/assets/892e2c82-4887-4bdb-9882-fcfe13d12d09)  
+    - **MOBILE**  
+     
+      ![image](https://github.com/user-attachments/assets/1df79940-25cc-49cc-b04f-ed3e33d05e20)   
   
-  [lighhouse-report-desktop.pdf](https://github.com/user-attachments/files/17236960/lighhouse-report-desktop.pdf)
+    - **DESKTOP**
+  
+      ![image](https://github.com/user-attachments/assets/5436f713-6ea3-47b9-ab35-3ddbd64419cd)
+
+- **BOOKING LIST PAGE**
+    
+    - **MOBILE**
+  
+      ![image](https://github.com/user-attachments/assets/f8f4772e-4e67-49cc-98a7-ac12ededa6f6)
+   
+    - **DESKTOP**
+  
+      ![image](https://github.com/user-attachments/assets/c194b570-71f0-4d4f-9027-b797672e0447)  
+  
+ - **UPDATE BOOKING PAGE**
+     - **MOBILE**
+  
+       ![image](https://github.com/user-attachments/assets/8af09c39-581c-48a8-a07e-44f9e97752ee)  
+         
+     - **DESKTOP**
+
+       ![image](https://github.com/user-attachments/assets/5deb69d9-c759-452a-8a07-58951d8c7ba3)  
 
 
+ - **CANCEL BOOKING PAGE**
+      - **MOBILE**
 
+        ![image](https://github.com/user-attachments/assets/2d7c685c-73dd-4bba-8461-04d52b79ee2f)  
+
+      - **DESKTOP**
+
+        ![image](https://github.com/user-attachments/assets/9f6ad874-e666-4137-89fc-a9450e5fc5a6)
+
+               
+ - **CONTACT**
+      - **MOBILE**
+
+        ![image](https://github.com/user-attachments/assets/609c88cd-979f-4a81-acef-4429f5e9ff0e)
+          
+         
+      - **DESKTOP**
+  
+        ![image](https://github.com/user-attachments/assets/9523aebb-0daf-4ee2-88ad-058ef0e799fd)
+  
+        
+ - **ABOUT**
+      - **MOBILE**
+  
+        ![image](https://github.com/user-attachments/assets/570cbad1-4982-4e60-9448-e22ed7fec91d)
+  
+        
+      - **DESKTOP**
+        
+        ![image](https://github.com/user-attachments/assets/5a00dc59-997a-4af0-bb1e-d8fde96741d0)
+  
+  
+  
 ### GENERAL WCAG 2.1 REPORT
 This website is compliant with all international standards, as proved after EqualWeb Accessibility Checker scan of the site:  
   
