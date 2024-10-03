@@ -7,7 +7,6 @@ from datetime import date
 from .models import Booking
 
 
-
 class BookingForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(BookingForm, self).__init__(*args, **kwargs)
@@ -31,6 +30,7 @@ class BookingForm(forms.ModelForm):
 
         # Check if booking date is in past or today
         if booking_date <= today:
-            raise ValidationError("You cannot book for today or past dates. Please select a future date.")
+            raise ValidationError("You cannot book for today or past dates.\
+            Please select a future date.")
 
         return booking_date

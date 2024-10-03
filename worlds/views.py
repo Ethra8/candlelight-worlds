@@ -12,16 +12,15 @@ class WorldList(generic.ListView):
 
 def world_details(request, pk):
     """
-    Display an individual model:`worlds.World`. on 
+    Display an individual model:`worlds.World`. on
     worlds/world_details.html page
     """
     queryset = World.objects.all()
     world = get_object_or_404(queryset, pk=pk)
-    
+
     template = 'worlds/world_details.html'
     context = {
         "world": world,
     }
 
     return render(request, template, context)
-

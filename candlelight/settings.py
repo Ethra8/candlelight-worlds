@@ -17,11 +17,11 @@ import cloudinary.api
 import cloudinary.uploader
 from cloudinary.utils import cloudinary_url
 
-# Configuration       
-cloudinary.config( 
-    cloud_name = "dxytqpftp", 
-    api_key = os.environ.get('api_key'), 
-    api_secret = os.environ.get('api_secret'), # Click 'View API Keys' above to copy your API secret
+# Configuration
+cloudinary.config(
+    cloud_name="dxytqpftp",
+    api_key=os.environ.get('api_key'),
+    api_secret=os.environ.get('api_secret'),  # noqa Click 'View API Keys' above to copy your API secret
     secure=True
 )
 
@@ -32,7 +32,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DEBUG = os.getenv("DEVELOPMENT", "False") == "True"
 
-ALLOWED_HOSTS = ['8000-ethra8-candlelightworld-ojikmyc7jx4.ws.codeinstitute-ide.net', 'candlelight-worlds-f913477cd630.herokuapp.com',]
+ALLOWED_HOSTS = [
+    '8000-ethra8-candlelightworld-ojikmyc7jx4.ws.codeinstitute-ide.net',
+    'candlelight-worlds-f913477cd630.herokuapp.com', ]
 
 USE_X_FORWARDED_HOST = True
 
@@ -48,10 +50,10 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',    
+    'allauth.socialaccount',
     'django_summernote',
     'crispy_forms',
-    'crispy_bootstrap5', 
+    'crispy_bootstrap5',
     'home',
     'worlds',
     'about',
@@ -70,7 +72,8 @@ SUMMERNOTE_CONFIG = {
             ['insert', ['link', 'picture', 'video']],
             ['view', ['fullscreen', 'codeview', 'help']],
         ],
-        'fontSizes': ['8', '9', '10', '11', '12', '14', '16', '18', '20', '24', '28', '36', '48', '64', '82', '100'],
+        'fontSizes': ['8', '9', '10', '11', '12', '14', '16', '18', '20', '24',
+                      '28', '36', '48', '64', '82', '100'],
     },
 }
 
@@ -140,7 +143,8 @@ else:
 CSRF_TRUSTED_ORIGINS = [
     "https://*.gitpod.io",
     "https://*.herokuapp.com",
-    'https://8000-ethra8-candlelightworld-ojikmyc7jx4.ws.codeinstitute-ide.net',
+    'https://8000-ethra8-candlelightworld-ojikmyc7jx4.ws.'
+    'codeinstitute-ide.net',
     'https://amiresponsive.co.uk/'
 ]
 
@@ -173,7 +177,7 @@ if DEBUG == True:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    EMAIL_HOST = 'smtp.gmail.com' 
+    EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_PORT = 587
     EMAIL_USE_TLS = True
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
@@ -205,16 +209,18 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # # Cloudinay Storage (img in admin)q
 # DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # # Optional, for static files
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'
 # All the above replaced in Django 5.1 to 'STORAGES':
 STORAGES = {
     "default": {
         "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
     },
-    "staticfiles": {"BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage"},
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage"},
 }
 
 CLOUDINARY_URL = 'CLOUDINARY_URL' in os.environ
 api_key = 'api_key' in os.environ
 api_secret = 'api_secret' in os.environ
 DATABASE_URL = 'DATABASE_URL' in os.environ
+
